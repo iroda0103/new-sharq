@@ -29,5 +29,8 @@ coverage
 
 *.tsbuildinfo
 .vercel
+<<<<<<< HEAD
 
 .env
+=======
+>>>>>>> dad943b (update)

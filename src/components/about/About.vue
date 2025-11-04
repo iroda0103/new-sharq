@@ -19,8 +19,13 @@
                 </div>
 
                 <div class="images">
+<<<<<<< HEAD
                     <img loading="lazy"class="top-img" src="/img/education/sharq1.webp" alt="Campus" />
                     <img loading="lazy"class="bottom-img" src="/img/education/sharq2.webp" alt="Students" />
+=======
+                    <img loading="lazy"class="top-img" src="../../../public/img/education/sharq1.webp" alt="Campus" />
+                    <img loading="lazy"class="bottom-img" src="../../../public/img/education/sharq2.webp" alt="Students" />
+>>>>>>> dad943b (update)
                 </div>
             </div>
 

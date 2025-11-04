@@ -1,9 +1,17 @@
 <template>
+<<<<<<< HEAD
     <header class="header" :class="{ 'menu-open': isMenuOpen }">
         <div class="container header__container">
             <div class="header-top">
                 <a class="header-top-logo" href="/">
                     <img loading="lazy" class="logo__img" src="/img/logo_sharq.webp" alt="Site logo" />
+=======
+    <header class="header" :class="{ 'menu-open': isMenuOpen, 'scrolled': scrolled }">
+        <div class="container header__container">
+            <div class="header-top">
+                <a class="header-top-logo" href="/">
+                    <img loading="lazy" class="logo__img" src="../../../public/img/logo_sharq.webp" alt="Site logo" />
+>>>>>>> dad943b (update)
                 </a>
                 <div class="contact-info">
                     <a href="mailto:info@sharqedu.uz" class="contact-link contact-mail">
@@ -39,7 +47,11 @@
 
             <div class="header-bottom" id="mobileMenu">
                 <a class="logo" href="/">
+<<<<<<< HEAD
                     <img loading="lazy" class="logo__img" src="/img/logo_sharq.webp" alt="Site logo" />
+=======
+                    <img loading="lazy" class="logo__img" src="../../../public/img/logo_sharq.webp" alt="Site logo" />
+>>>>>>> dad943b (update)
                 </a>
                 <nav class="nav">
                     <ul class="nav__list">
@@ -114,9 +126,16 @@
 </template>
 
 <script setup>
+<<<<<<< HEAD
 import { ref } from 'vue'
 
 const isMenuOpen = ref(false)
+=======
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isMenuOpen = ref(false)
+const scrolled = ref(false)
+>>>>>>> dad943b (update)
 
 const toggleMenu = () => {
     isMenuOpen.value = !isMenuOpen.value
@@ -130,6 +149,7 @@ const toggleDropdown = (event) => {
     const icon = parent.querySelector('.dropdown-icon')
 
     parent.classList.toggle('dropdown-open')
+<<<<<<< HEAD
     dropdown.style.maxHeight = parent.classList.contains('dropdown-open') ? dropdown.scrollHeight + 'px' : '0'
     icon.classList.toggle('fa-chevron-up')
     icon.classList.toggle('fa-chevron-down')
@@ -141,11 +161,48 @@ const toggleDropdown = (event) => {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
     position: fixed;
     background: linear-gradient(to right, #00455ede, #1b6ae9ee);
+=======
+    dropdown.style.maxHeight = parent.classList.contains('dropdown-open')
+        ? dropdown.scrollHeight + 'px'
+        : '0'
+    icon.classList.toggle('fa-chevron-up')
+    icon.classList.toggle('fa-chevron-down')
+}
+
+const handleScroll = () => {
+    scrolled.value = window.scrollY > 100
+}
+
+onMounted(() => {
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
+</script>
+
+
+<style scoped lang="scss">
+.header {
+    // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.233);
+    position: fixed;
+   // background: linear-gradient(to right, #00455ede, #1b6ae9ee);
+    // background: transparent;
+>>>>>>> dad943b (update)
     width: 100%;
     z-index: 1000;
     top: 0;
     left: 0;
 
+<<<<<<< HEAD
+=======
+    &.scrolled {
+        background: linear-gradient(to right, #00455ede, #1b6ae9ee);
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+>>>>>>> dad943b (update)
     &::before {
         content: "";
         position: absolute;
@@ -335,12 +392,23 @@ const toggleDropdown = (event) => {
         top: 100%;
         left: 50%;
         transform: translateX(-50%) translateY(-10px);
+<<<<<<< HEAD
         background-color: white;
+=======
+        // background-color: white;
+        background: linear-gradient(to right, #00455ede, #1b6ae9ee);
+        background: linear-gradient(180deg, #375277 0%, #3C6CAC 100%);
+        // color: white;
+>>>>>>> dad943b (update)
         border-radius: 6px;
         min-width: 200px;
         box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
         z-index: 20;
         visibility: hidden;
+<<<<<<< HEAD
+=======
+        overflow: hidden;
+>>>>>>> dad943b (update)
         opacity: 0;
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 
@@ -369,6 +437,10 @@ const toggleDropdown = (event) => {
                 display: block;
                 padding: 12px 20px;
                 color: #333;
+<<<<<<< HEAD
+=======
+                color:#fff;
+>>>>>>> dad943b (update)
                 text-decoration: none;
                 transition: all 0.2s ease;
 
@@ -468,9 +540,16 @@ const toggleDropdown = (event) => {
     }
 
     @media (max-width: 768px) {
+<<<<<<< HEAD
  .header-top-logo {
         display: block;
     }
+=======
+        .header-top-logo {
+            display: block;
+        }
+
+>>>>>>> dad943b (update)
         .mobile-only {
             display: block;
         }
@@ -491,9 +570,16 @@ const toggleDropdown = (event) => {
         //         font-size: 16px;
         //     }
         // }
+<<<<<<< HEAD
 .contact-info{
     display: none;
 }
+=======
+        .contact-info {
+            display: none;
+        }
+
+>>>>>>> dad943b (update)
         .header__social {
             gap: 10px;
 

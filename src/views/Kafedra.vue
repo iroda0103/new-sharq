@@ -324,6 +324,10 @@ onMounted(() => {
 </script>
 
 <style scoped lang="scss">
+<<<<<<< HEAD
+=======
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+>>>>>>> dad943b (update)
 
 .department-page {
     background: #f9fbff;

@@ -2,7 +2,11 @@
     <div class="container rektor__container">
         <div class="rektor__content">
             <div class="rektor__image-wrapper">
+<<<<<<< HEAD
                 <img loading="lazy" class="rektor__image" src="/img/person/sherzod_atamuradov.webp"
+=======
+                <img loading="lazy" class="rektor__image" src="../../public/img/person/sherzod_atamuradov.webp"
+>>>>>>> dad943b (update)
                     alt="Universitet rektori rasmi" />
             </div>
             <div class="rektor__info">
@@ -33,7 +37,10 @@
     background: #f4f7fa;
     color: #1b1b1b;
     height: 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> dad943b (update)
     &__container {
         display: flex;
         padding: 30px;
@@ -44,6 +51,10 @@
         padding-top: 80px;
         // padding-bottom: 90px;
         height: 100vh;
+<<<<<<< HEAD
+=======
+        padding-top: 180px;
+>>>>>>> dad943b (update)
     }
 
     &__content {

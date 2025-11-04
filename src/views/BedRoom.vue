@@ -9,11 +9,19 @@
                 <div class="hero-content">
                     <h1 class="hero-title">Talabalar yotoqxonasi</h1>
                     <p class="hero-subtitle">Qulay va xavfsiz yashash sharoitlari</p>
+<<<<<<< HEAD
                     <a href="#dormitories" class="cta-button">Yotoqxonalarni ko'rish <i
                             class="fas fa-arrow-down"></i></a>
                 </div>
                 <div class="hero-image">
                     <img loading="lazy"src="/img/bed-room/main.webp" alt="Yotoqxona binosi">
+=======
+                    <a href="/apply" class="cta-button">Ariza topshirish <i
+                            class="fas fa-arrow-down"></i></a>
+                </div>
+                <div class="hero-image">
+                    <img loading="lazy"src="../../public/img/bed-room/main.webp" alt="Yotoqxona binosi">
+>>>>>>> dad943b (update)
                     <!-- <img loading="lazy"src="https://new-sharq-vue.vercel.app/assets/main-C9gjlFc1.jpg" alt="Yotoqxona binosi"> -->
                 </div>
             </div>
@@ -136,6 +144,7 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import img1 from '/img/bed-room/img1.webp'
 import img2 from '/img/bed-room/img2.webp'
 import img3 from '/img/bed-room/img3.webp'
@@ -143,6 +152,15 @@ import img4 from '/img/bed-room/img4.webp'
 import img5 from '/img/bed-room/img5.webp'
 import img6 from '/img/bed-room/img6.webp'
 import img7 from '/img/bed-room/img7.webp'
+=======
+import img1 from '../../public/img/bed-room/img1.webp'
+import img2 from '../../public/img/bed-room/img2.webp'
+import img3 from '../../public/img/bed-room/img3.webp'
+import img4 from '../../public/img/bed-room/img4.webp'
+import img5 from '../../public/img/bed-room/img5.webp'
+import img6 from '../../public/img/bed-room/img6.webp'
+import img7 from '../../public/img/bed-room/img7.webp'
+>>>>>>> dad943b (update)
 export default {
     name: "DormitoryPage",
     data() {
@@ -259,7 +277,11 @@ export default {
 <style lang="scss" scoped>
 .dormitory-page {
     padding: 0;
+<<<<<<< HEAD
     padding-top: 50px;
+=======
+    padding-top: 150px;
+>>>>>>> dad943b (update)
     // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;

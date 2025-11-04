@@ -50,6 +50,10 @@ export default {
 .certificates-section {
   padding: 80px 20px;
   background: var(--light-color);
+<<<<<<< HEAD
+=======
+  padding-top: 150px;
+>>>>>>> dad943b (update)
 
   .section-title {
     text-align: center;

@@ -56,6 +56,10 @@ export default {
 </script>
 
 <style scoped>
+<<<<<<< HEAD
+=======
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
+>>>>>>> dad943b (update)
 
 .container {
   max-width: 1200px;

@@ -3,7 +3,11 @@
     <div class="footer__container">
       <div class="footer__main">
         <div class="footer__brand">
+<<<<<<< HEAD
           <img loading="lazy"src="/img/logo_sharq.webp" alt="Sharq University" class="footer__logo">
+=======
+          <img loading="lazy"src="../../../public/img/logo_sharq.webp" alt="Sharq University" class="footer__logo">
+>>>>>>> dad943b (update)
           <div class="footer__social">
             <a href="https://t.me/sharquniversiteti" aria-label="Telegram"><font-awesome-icon :icon="['fab', 'telegram']" /></a>
             <a href="https://www.instagram.com/sharquniversiteti/" aria-label="Instagram"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
