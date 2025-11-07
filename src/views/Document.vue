@@ -77,14 +77,9 @@ export default {
 <style lang="scss">
 .documents {
     padding: 3rem 1rem;
-<<<<<<< HEAD
-    padding: 90px 50px;
-    background-color: #f9f9f9;
-=======
     padding: 100px 50px;
     background-color: #f9f9f9;
     padding-top: 180px;  
->>>>>>> dad943b (update)
 
     &__container {
         max-width: 1200px;

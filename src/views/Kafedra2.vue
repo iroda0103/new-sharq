@@ -81,11 +81,8 @@
               <p>{{ selectedDepartment.team }}</p>
               <div class="department__team">
                 <div v-for="(member, index) in selectedDepartment.teamMembers" :key="index" class="department__member">
-<<<<<<< HEAD
-                  <img loading="lazy"src="/img/person/sherzod_atamuradov.jpg" :alt="member.name" class="department__member-photo">
-=======
+
                   <img loading="lazy"src="../../public/img/person/sherzod_atamuradov.jpg" :alt="member.name" class="department__member-photo">
->>>>>>> dad943b (update)
                   <div class="department__member-info">
                     <h4 class="department__member-name">{{ member.name }}</h4>
                     <p class="department__member-position">{{ member.position }}</p>
@@ -482,10 +479,7 @@ onMounted(() => {
 </script>
 
 <style lang="scss">
-<<<<<<< HEAD
-=======
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
->>>>>>> dad943b (update)
 
 .departments {
   display: flex;

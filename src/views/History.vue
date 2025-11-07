@@ -1,11 +1,8 @@
 <template>
     <div class="container history__container">
         <!-- <h2 class="history__title">Sharq Universiteti Tarixi</h2> -->
-<<<<<<< HEAD
-        <img loading="lazy" src="/img/place.webp">
-=======
+
         <img loading="lazy" src="../../public/img/place.webp">
->>>>>>> dad943b (update)
         <div class="history__content">
             <!-- <p>
                 Sharq Universiteti o‘z faoliyatini <strong>2025-yil</strong>da boshlagan bo‘lib,

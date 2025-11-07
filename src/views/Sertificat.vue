@@ -3,12 +3,8 @@
     <div class="container">
       <h2 class="section-title">Litsenziya va Sertifikatlar</h2>
       <div class="certificates-grid">
-        <div
-          class="certificate-card"
-          v-for="(item, index) in certificates"
-          :key="index"
-        >
-          <img loading="lazy":src="item.image" :alt="item.title" />
+        <div class="certificate-card" v-for="(item, index) in certificates" :key="index">
+          <img loading="lazy" :src="item.image" :alt="item.title" />
           <h3>{{ item.title }}</h3>
           <p>{{ item.description }}</p>
         </div>
@@ -50,10 +46,7 @@ export default {
 .certificates-section {
   padding: 80px 20px;
   background: var(--light-color);
-<<<<<<< HEAD
-=======
   padding-top: 150px;
->>>>>>> dad943b (update)
 
   .section-title {
     text-align: center;

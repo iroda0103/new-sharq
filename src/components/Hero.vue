@@ -1,25 +1,6 @@
 <template>
     <!-- START HERO SECTION -->
     <section class="hero">
-<<<<<<< HEAD
-        <div class="container hero__container">
-            <div class="hero-bg"></div>
-            <div class="hero__content">
-                <h2 class="hero__title">
-                    Zamonaviy <mark>ta'lim</mark>, imkoniyat va qadiryatlar uyg'unligi </h2>
-                <p class="hero__text">
-                    Sizni zamonaviy kelajak sari yetaklovchi, innovatsion universitetda oʻqish imkoniyati kutmoqda!
-                </p>
-                <a class="blue-link" href="https://qabul.sharqedu.uz/">Ariza berish</a>
-            </div>
-
-            <div class="hero__wrapper">
-                <!-- <iframe class="hero__video" width="458" height="258" src="https://www.youtube-nocookie.com/embed/6_pru8U2RmM"
-            title="YouTube video player" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe> -->
-                <img loading="lazy"class="hero__img" src="/img/place.webp" alt="Hero image">
-=======
         <div class="hero-bg"></div>
 
         <div class="container hero__container">
@@ -31,7 +12,8 @@
                     <span class="highlight-outline animate-fade">Qadriyatlar</span> uyg‘unligi
                 </h2>
                 <p class="hero__text">
-                    Sizni zamonaviy kelajak sari yetaklovchi, innovatsion universitetda oʻqish imkoniyati kutmoqda!
+                    Sizni zamonaviy kelajak sari yetaklovchi, innovatsion universitetda oʻqish imkoniyati
+                    kutmoqda!
                 </p>
                 <a class="blue-link font-bold" href="https://qabul.sharqedu.uz/">Ariza berish</a>
             </div>
@@ -45,20 +27,11 @@
           src="/img/place.webp"
           alt="Hero image"
         /> -->
->>>>>>> dad943b (update)
             </div>
         </div>
     </section>
     <!-- END HERO SECTION -->
 </template>
-<<<<<<< HEAD
-
-<style  lang="scss">
-.hero {
-    position: relative;
-    padding: 130px 0;
-
-=======
 <script>
 import Stats from './about/Stats.vue';
 
@@ -80,9 +53,10 @@ export default {
 };
 </script>
 <style lang="scss">
-header{
+header {
     background-color: transparent !important;
 }
+
 main {
     margin-top: 0 !important;
 }
@@ -106,18 +80,12 @@ main {
         z-index: -1;
         filter: brightness(0.6); // matn ko‘rinishi uchun biroz qoraytirib qo‘ydim
     }
->>>>>>> dad943b (update)
 
     &__container {
         display: flex;
         align-items: center;
         justify-content: space-between;
-<<<<<<< HEAD
-        flex-wrap: wrap; // fallback
-        gap: 32px;
-        .blue-link{
-            padding: 16px 76px;
-=======
+
         flex-wrap: wrap;
         gap: 32px;
         height: 420px;
@@ -125,15 +93,10 @@ main {
 
         .blue-link {
             padding: 12px 35px;
->>>>>>> dad943b (update)
         }
     }
 
     &__content {
-<<<<<<< HEAD
-        // flex: 1 1 400px;
-=======
->>>>>>> dad943b (update)
         max-width: 600px;
     }
 
@@ -166,42 +129,12 @@ main {
     &__img,
     &__video {
         max-width: 100%;
-<<<<<<< HEAD
-        height: auto; 
-=======
         height: auto;
->>>>>>> dad943b (update)
         border-radius: 10px;
     }
 }
 
 .blue-link {
-<<<<<<< HEAD
-  display: inline-block;
-  padding: 9px 26px;
-//   background-color: #00bafc;
-  background: linear-gradient(to right, rgba(0, 69, 94, 0.8705882353), rgba(27, 106, 233, 0.9333333333));;
-  border-radius: 5px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 20px;
-}
-
-.blue-link:hover {
-  opacity: 0.8;
-}
-
-.blue-link:active {
-  opacity: 0.6;
-}
-
-// Tablet (≤ 992px)
-@media only screen and (max-width: 894px) {
-    .header .header-bottom .nav__list {
-        gap: 10px;
-    }
-
-=======
     display: inline-block;
     padding: 9px 26px;
     background: linear-gradient(to right,
@@ -224,7 +157,6 @@ main {
 
 /* Tablet (≤ 992px) */
 @media only screen and (max-width: 894px) {
->>>>>>> dad943b (update)
     .hero {
         padding: 80px;
 
@@ -236,23 +168,13 @@ main {
             font-size: 16px;
             line-height: 24px;
         }
-<<<<<<< HEAD
 
-        // &__wrapper {
-        //   flex: 0;
-        // }
+
     }
 
 
 }
 
-// Mobile (≤ 768px)
-=======
-    }
-}
-
-/* Mobile (≤ 768px) */
->>>>>>> dad943b (update)
 @media only screen and (max-width: 768px) {
     .hero {
         padding: 40px;
@@ -282,11 +204,6 @@ main {
     }
 }
 
-<<<<<<< HEAD
-// Very small phones (≤ 425px)
-=======
-/* Very small phones (≤ 425px) */
->>>>>>> dad943b (update)
 @media only screen and (max-width: 425px) {
     .hero {
         padding: 30px 0;
@@ -300,9 +217,6 @@ main {
         }
     }
 }
-<<<<<<< HEAD
-</style>
-=======
 
 .hero__title {
     font-size: clamp(26px, 5vw, 48px);
@@ -361,4 +275,3 @@ main {
     transition: transform 0.3s ease, color 0.3s ease;
 }
 </style>
->>>>>>> dad943b (update)

@@ -17,12 +17,6 @@ import Grant from '../views/Grant.vue'
 import NotFound from '../views/NotFound.vue'
 import Library from '../views/Library.vue'
 import EducationPortal from '../views/EducationPortal.vue'
-<<<<<<< HEAD
-
-const routes = [
-    { path: '/', name: 'HomePage', component: HomePage },
-    { path: '/rektor', name: 'Rector', component: Rector },
-=======
 import AddPost from '../views/AddPost.vue'
 import ApplyFor from '../views/ApplyFor.vue'
 
@@ -32,7 +26,6 @@ const routes = [
     { path: '/rektor', name: 'Rector', component: Rector },
     { path: '/rektor', name: 'Rector', component: Rector },
     { path: '/post', name: 'AddPost', component: AddPost },
->>>>>>> dad943b (update)
     { path: '/faculty', name: 'FacultiesPage', component: FacultiesPage },
     { path: '/directions', name: 'Faculty', component: Faculty },
     { path: '/history', name: 'History', component: History },

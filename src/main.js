@@ -1,9 +1,5 @@
 import { createApp } from 'vue'
-<<<<<<< HEAD
-=======
 import './css/index.css'
-
->>>>>>> dad943b (update)
 // import { createPinia } from 'pinia'
 import App from './App.vue'
 import router from './router'
@@ -34,26 +30,17 @@ import {
     faUtensils,
     faMicrochip,
     faBook,
-<<<<<<< HEAD
-    faCircleInfo
-=======
     faCircleInfo,
     faTrophy,
     faGlobe,
     faJournalWhills,
     faPeopleGroup
->>>>>>> dad943b (update)
 
 } from '@fortawesome/free-solid-svg-icons'
 // import { faRocket } from '@fortawesome/free-regular-svg-icons'
 import {  faInstagram, faTelegram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
-/* add icons to the library */
-<<<<<<< HEAD
-library.add(faCircleInfo,faBook,faMicrochip,faShieldAlt, faRobot, faStar, faRocket,faEye, faInstagram, faTelegram, faFacebook,faYoutube, faFileAlt, faDownload,faMinus, faPlus, faCode,faChartLine,faBriefcase,faBullhorn,faCoins,faLandmark,faBrain,faLanguage,faBed,faBuilding,faWifi, faUtensils)
-=======
 library.add(faJournalWhills,faPeopleGroup,faGlobe,faTrophy,faCircleInfo,faBook,faMicrochip,faShieldAlt, faRobot, faStar, faRocket,faEye, faInstagram, faTelegram, faFacebook,faYoutube, faFileAlt, faDownload,faMinus, faPlus, faCode,faChartLine,faBriefcase,faBullhorn,faCoins,faLandmark,faBrain,faLanguage,faBed,faBuilding,faWifi, faUtensils)
->>>>>>> dad943b (update)
 import './css/index.css'
 
 createApp(App)

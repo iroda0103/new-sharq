@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* >>>>>>> dad943b (update) */
 html {
   box-sizing: border-box;
   height: 100%;
