@@ -19,11 +19,14 @@
                   <img loading="lazy" :src="'/img/person/' + item.image" :alt="item.name" />
                   <div class="image-overlay"></div>
                 </div>
+                <div class="about-mid__divider"></div>
                 <div class="card-content">
                   <div class="quote-mark">
                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-                      <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z" fill="currentColor"/>
-                      <path d="M24 20C24 14.477 28.477 10 34 10V14C30.686 14 28 16.686 28 20H32V30H24V20Z" fill="currentColor"/>
+                      <path d="M10 20C10 14.477 14.477 10 20 10V14C16.686 14 14 16.686 14 20H18V30H10V20Z"
+                        fill="currentColor" />
+                      <path d="M24 20C24 14.477 28.477 10 34 10V14C30.686 14 28 16.686 28 20H32V30H24V20Z"
+                        fill="currentColor" />
                     </svg>
                   </div>
                   <p class="testimonial-text">{{ item.text }}</p>
@@ -38,26 +41,23 @@
         </div>
 
         <!-- Navigation buttons -->
-        <button class="nav-btn prev-btn" @click="prevSlide" aria-label="Oldingi">
+        <!-- <button class="nav-btn prev-btn" @click="prevSlide" aria-label="Oldingi">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
         </button>
         <button class="nav-btn next-btn" @click="nextSlide" aria-label="Keyingi">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round" />
           </svg>
-        </button>
+        </button> -->
 
         <!-- Pagination dots -->
         <div class="carousel-pagination">
-          <button 
-            v-for="(item, index) in testimonials" 
-            :key="index" 
-            class="pagination-dot"
-            :class="{ active: currentIndex === index }" 
-            @click="goToSlide(index)"
-            :aria-label="`Slayd ${index + 1}`">
+          <button v-for="(item, index) in testimonials" :key="index" class="pagination-dot"
+            :class="{ active: currentIndex === index }" @click="goToSlide(index)" :aria-label="`Slayd ${index + 1}`">
           </button>
         </div>
       </div>
@@ -79,12 +79,12 @@ export default {
           image: "sherzod_atamuradov.webp",
           text: "Yuqori sifatli xizmat ko'rsatish va ilg'or innovatsion yechimlar faoliyatimizni samarali tarzda o'zgartirdi, bu esa barcha aloqa nuqtalarida talabalar ehtiyojini qondirish va universitetning jadal o'sishiga zamin yaratdi."
         },
-        {
-          name: "Botir Ibragimov",
-          position: "Registr ofis menejeri",
-          image: "botir _ibragimov.webp",
-          text: "Sharq Universiteti o'quv jarayoni HEMIS tizimi bilan integratsiyalashgan! Talabalar HEMIS orqali raqamli ta'lim infratuzilmasidan foydalanishing imkoniyatiga ega."
-        }
+        // {
+        //   name: "Botir Ibragimov",
+        //   position: "Registr ofis menejeri",
+        //   image: "botir _ibragimov.webp",
+        //   text: "Sharq Universiteti o'quv jarayoni HEMIS tizimi bilan integratsiyalashgan! Talabalar HEMIS orqali raqamli ta'lim infratuzilmasidan foydalanishing imkoniyatiga ega."
+        // }
       ]
     }
   },
@@ -136,7 +136,7 @@ export default {
     background: radial-gradient(circle at 20% 50%, rgba(0, 122, 204, 0.05) 0%, transparent 50%);
     pointer-events: none;
   }
-
+  
   .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -181,12 +181,12 @@ export default {
 
   .testimonial-carousel {
     position: relative;
-    max-width: 1000px;
+    // max-width: 1000px;
     margin: 0 auto;
 
     .carousel-container {
       overflow: hidden;
-      border-radius: 24px;
+    border-radius: 14px;
     }
 
     .carousel-track {
@@ -202,15 +202,23 @@ export default {
     }
   }
 
+  .about-mid__divider {
+    width: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(20, 87, 149, 1);
+  }
+
   .testimonial-card {
     background: #ffffff;
-    border-radius: 24px;
+    border-radius: 14px;
     overflow: hidden;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
     transition: all 0.4s ease;
     display: grid;
-    grid-template-columns: 400px 1fr;
-    min-height: 500px;
+    grid-template-columns: 400px 15px 1fr;
+    // min-height: 200px;
 
     &:hover {
       transform: translateY(-8px);
@@ -259,7 +267,7 @@ export default {
       }
 
       .testimonial-text {
-        font-size: 1.15rem;
+        font-size: 1.5rem;
         color: #333;
         line-height: 1.9;
         margin-bottom: 35px;
@@ -367,10 +375,10 @@ export default {
 
     .testimonial-card {
       grid-template-columns: 1fr;
-      min-height: auto;
+      // min-height: auto;
 
       .card-image {
-        height: 350px;
+        height: 450px;
       }
 
       .card-content {
@@ -492,6 +500,7 @@ export default {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);

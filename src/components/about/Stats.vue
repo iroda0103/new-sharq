@@ -51,6 +51,7 @@ export default {
     position: absolute;
     right: 50px;
     width: 40%;
+    max-width: 600px;
 }
 
 .stats-header {

@@ -1,3 +1,4 @@
+/* @import '../assets/styles/fonts.css' */
 
 @tailwind base;
 @tailwind components;
@@ -42,15 +43,16 @@ body {
   padding: 0;
   margin: 0;
   font-family: Urbanist, sans-serif;
+  font-family: "Museo Sans Cyrl", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 
 a {
@@ -71,7 +73,6 @@ main {
   }
 }
 
-
 .container {
   max-width: 1130px;
   padding-left: 15px;
@@ -80,6 +81,42 @@ main {
   margin-right: auto;
 }
 
+
+
+
+
+
+
+/* 4K monitorlar (≥2560px) */
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2300px;
+  }
+}
+/* 2K monitorlar (≥1920px) */
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1620px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+/* Full HD monitorlar (≥1600px) */
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+/* Katta noutbuklar (≥1300px) */
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 #app {
   /* height: 100vh; */
 }

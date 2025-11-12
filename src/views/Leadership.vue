@@ -119,7 +119,7 @@ Mutasaddi yuqori tashkilotlarning buyruqlarini, farmoyishlari va ko’rsatmalari
     min-height: 100vh;
     display: flex;
     gap: 20px;
-    padding-top: 40px;
+    padding-top: 140px;
 
     .rektor__image {
         width: 300px;

@@ -120,6 +120,7 @@ export default {
 }
 .edu-portal {
     padding: 60px 20px;
+    padding-top: 170px;
     background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 100%);
     font-family: 'Segoe UI', 'Roboto', sans-serif;
 

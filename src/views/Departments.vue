@@ -149,7 +149,7 @@ onMounted(() => {
   min-height: 100vh;
   display: flex;
   gap: 20px;
-  padding-top: 40px;
+  padding-top: 150px;
 
   .rektor__image {
     width: 300px;

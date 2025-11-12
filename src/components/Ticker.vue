@@ -13,13 +13,11 @@
                     <span class="ticker__title">Qabul-2025</span>
                     <a href="https://qabul.sharqedu.uz/" class="ticker__button">Ariza topshirish</a>
                 </div>
-                <!-- <div class="ticker__item">
-                        <span class="ticker__date">30-sentyabrgacha</span>
-                        <span class="ticker__title">O'qishni ko'chirish</span>
-                        <a href="https://qabul.sharqedu.uz/" class="ticker__button">Ariza topshirish</a>
-                    </div> -->
+             
             </div>
         </div>
+        <!-- <img src="../../public/img/giphy.gif" /> -->
+        <!-- <img src="../../public/img/camel2.png" height="200px" /> -->
     </section>
     <!-- END Ticker Section -->
 </template>
@@ -27,6 +25,10 @@
 /* Event Ticker */
 .ticker {
     background: var(--gradient);
+    /* background-image: url('../../public/img/headers1.png');
+    background-size: cover;
+    background-position: center; */
+    padding: 1rem;
     padding: 1.5rem 0;
     color: var(--white);
     overflow-x: hidden;
@@ -42,6 +44,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 1.5rem;
+
 }
 
 .ticker__item {

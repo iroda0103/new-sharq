@@ -1,5 +1,4 @@
 <template>
-
     <header class="header" :class="{ 'menu-open': isMenuOpen, 'scrolled': scrolled }">
         <div class="container header__container">
             <div class="header-top">
@@ -11,7 +10,7 @@
                         <i class="fas fa-envelope"></i> <span class="contact-text">info@sharqedu.uz</span>
                     </a>
                     <a href="tel:+998712234567" class="contact-link contact-tel">
-                        <i class="fas fa-phone"></i> <span class="contact-text">+998 (79) 222-07-00</span>
+                        <i class="fas fa-phone"></i> <span class="contact-text">+998 (79) 222-77-07</span>
                     </a>
                 </div>
                 <span class="header-warning" data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -40,21 +39,16 @@
 
             <div class="header-bottom" id="mobileMenu">
                 <a class="logo" href="/">
-
                     <img loading="lazy" class="logo__img" src="../../../public/img/logo_sharq.webp" alt="Site logo" />
+                    <!-- <img loading="lazy" class="logo__img" src="../../../public/img/logo_sharq_blue.png" alt="Site logo" /> -->
                 </a>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <!-- <li class="nav__item mobile-only">
-                            <a href="https://mentalaba.uz" class="nav__link men-talaba--logo">
-                                <img loading="lazy"src="https://mentalaba.uz/assets/sidebarMenuLogo.svg" alt="Men Talaba Logo" />
-                            </a>
-                        </li> -->
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <a class="nav__link" href="/">
                                 <span>Bosh sahifa</span>
                             </a>
-                        </li>
+                        </li> -->
 
                         <li class="nav__item nav__item--has-dropdown">
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
@@ -77,9 +71,48 @@
                             </a>
                             <ul class="dropdown">
                                 <li><a href="/leadership/">Rahbariyat</a></li>
-                                <li><a href="/faculty/">Fakultetlar</a></li>
-                                <li><a href="/kafedra">Kafedralar</a></li>
-                                <li><a href="/department">Bo'limlar</a></li>
+
+                                <li class="has-submenu">
+                                    <a href="/faculty/" class="submenu-trigger">
+                                        Fakultetlar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="/directions?faculty=texnika">Texnik va raqamli texnologiyalar fakulteti</a>
+                                        </li>
+                                        <li><a href="/directions?faculty=iqtisod">Iqtisod va biznes fakulteti</a></li>
+                                        <li><a href="/directions?faculty=gumanitar">Gumanitar fanlar fakulteti</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="/kafedra/" class="submenu-trigger">
+                                        Kafedralar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="/kafedra">Iqtisodiyot va menejment kafedrasi</a></li>
+                                        <li><a href="/kafedra">Gumanitar fanlar kafedrasi</a></li>
+                                        <li><a href="/kafedra">Axborot texnologiyalari kafedrasi</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-submenu">
+                                    <a href="/department/" class="submenu-trigger">
+                                        Bo'limlar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="/department">Moliya-iqtisod bo'limi</a></li>
+                                        <li><a href="/department">Xo'jalik bo'limi</a></li>
+                                        <li><a href="/department">Axborot texnologiyalar markazi</a></li>
+                                        <li><a href="/department">Axborot-resurslar markazi</a></li>
+                                        <li><a href="/department">Xodimlar bo'limi</a></li>
+                                        <li><a href="/department">O'quv-uslubiy bo'lim</a></li>
+                                        <li><a href="/department">Marketing va shartnomalar bo'limi</a></li>
+                                        <li><a href="/department">Talabalarga xizmat ko'rsatish bo'limi</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
 
@@ -115,7 +148,7 @@
     </header>
 </template>
 
-<script setup>
+<!-- <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const isMenuOpen = ref(false)
@@ -151,23 +184,108 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
 })
+</script> -->
+
+<script setup>
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+
+const isMenuOpen = ref(false)
+const scrolled = ref(false)
+
+// Bosh sahifani tekshirish
+const isHomePage = computed(() => {
+    return window.location.pathname === '/' || window.location.pathname === '/index.html'
+})
+
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value
+}
+
+const toggleDropdown = (event) => {
+    if (window.innerWidth > 768) return
+
+    const parent = event.currentTarget.closest('.nav__item--has-dropdown')
+    const dropdown = parent.querySelector('.dropdown')
+    const icon = parent.querySelector('.dropdown-icon')
+
+    parent.classList.toggle('dropdown-open')
+    dropdown.style.maxHeight = parent.classList.contains('dropdown-open')
+        ? dropdown.scrollHeight + 'px'
+        : '0'
+    icon.classList.toggle('fa-chevron-up')
+    icon.classList.toggle('fa-chevron-down')
+}
+
+const handleScroll = () => {
+    // Agar bosh sahifa bo'lsa, scroll qilganda scrolled class qo'shiladi
+    // Agar boshqa sahifa bo'lsa, darhol scrolled class qo'shiladi
+    if (isHomePage.value) {
+        scrolled.value = window.scrollY > 100
+    } else {
+        scrolled.value = true
+    }
+}
+
+onMounted(() => {
+    // Komponent yuklanganda darhol tekshirish
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+})
 </script>
-
-
 <style scoped lang="scss">
 .header {
-    // box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.233);
     position: fixed;
-    // background: linear-gradient(to right, #00455ede, #1b6ae9ee);
-    // background: transparent;
     width: 100%;
     z-index: 1000;
     top: 0;
     left: 0;
+    transition: all 0.3s ease;
 
     &.scrolled {
         background: linear-gradient(to right, #00455ede, #1b6ae9ee);
         box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        // background-color: #fff !important;
+
+        // a {
+        //     color: rgba(1, 11, 27, 1) !important;
+        // }
+
+        // i {
+        //     color: rgba(71, 82, 98, 1) !important;
+        //     color:#04217f !important;
+        //     // color:rgba(82, 148, 229, 1) !important;
+        // }
+
+        // &::before {
+        //     background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
+        // }
+
+        // .header-warning {
+        //     background: rgba(0, 0, 0, 0.05);
+        //     border: 1px solid rgba(0, 0, 0, 0.1);
+        //     color: rgba(0, 0, 0, 0.7);
+        // }
+
+        // .header-top {
+        //     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        // }
+
+        // .nav__link span {
+        //     font-family: "MuseoSansCyrl-500", sans-serif;
+        //     font-size: 16px;
+        //     line-height: 140%;
+        //     letter-spacing: -0.18px;
+        //     gap: 2px;
+        //     cursor: pointer;
+        //     font-weight: 400;
+        // }
+        // .dropdown a,.dropdown i{
+        //     color:#fff !important;
+        // }
     }
 
     &::before {
@@ -204,26 +322,12 @@ onUnmounted(() => {
     }
 
     .logo__img {
-        height: 48px;
+        height: 58px;
         width: auto;
         transition: transform 0.3s ease;
 
         &:hover {
             transform: scale(1.05);
-        }
-    }
-
-    .men-talaba--logo {
-        display: flex;
-        align-items: center;
-
-        img {
-            transition: transform 0.3s ease;
-            height: 24px;
-
-            &:hover {
-                transform: scale(1.1);
-            }
         }
     }
 
@@ -273,6 +377,10 @@ onUnmounted(() => {
         justify-content: center;
         width: 100%;
         padding: 10px 0;
+
+        .logo {
+            // display: none;
+        }
 
         .nav {
             width: 100%;
@@ -334,15 +442,13 @@ onUnmounted(() => {
     .nav__item--has-dropdown {
         position: relative;
 
-
-        &:hover .dropdown {
+        &:hover>.dropdown {
             visibility: visible;
             opacity: 1;
-            transform: translateY(0);
-            transform: translateX(-50%);
+            transform: translateY(0) translateX(-50%);
 
             @media (max-width: 768px) {
-                transform: translateX(0)
+                transform: translateX(0);
             }
         }
 
@@ -359,16 +465,13 @@ onUnmounted(() => {
         top: 100%;
         left: 50%;
         transform: translateX(-50%) translateY(-10px);
-        // background-color: white;
-        background: linear-gradient(to right, #00455ede, #1b6ae9ee);
         background: linear-gradient(180deg, #375277 0%, #3C6CAC 100%);
-        // color: white;
-        border-radius: 6px;
-        min-width: 200px;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        min-width: 220px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
         z-index: 20;
         visibility: hidden;
-        overflow: hidden;
+        overflow: visible;
         opacity: 0;
         transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
 
@@ -382,12 +485,13 @@ onUnmounted(() => {
             height: 0;
             border-left: 8px solid transparent;
             border-right: 8px solid transparent;
-            border-bottom: 8px solid white;
+            border-bottom: 8px solid #375277;
         }
 
         li {
             padding: 0;
-            border-bottom: 1px solid #f0f0f0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
 
             &:last-child {
                 border-bottom: none;
@@ -396,35 +500,95 @@ onUnmounted(() => {
             a {
                 display: block;
                 padding: 12px 20px;
-                color: #333;
                 color: #fff;
                 text-decoration: none;
                 transition: all 0.2s ease;
+                font-size: 15px;
 
                 &:hover {
-                    background-color: #f8f8f8;
-                    color: #1b6ae9;
+                    background-color: rgba(255, 255, 255, 0.15);
+                    padding-left: 25px;
+                }
+            }
+
+            &.has-submenu {
+                >a {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                }
+
+                .submenu-icon {
+                    font-size: 12px;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover {
+                    >.submenu {
+                        visibility: visible;
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+
+                    .submenu-icon {
+                        transform: translateX(3px);
+                    }
+                }
+            }
+        }
+    }
+
+    // Submenu styles (nested dropdown)
+    .submenu {
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background: linear-gradient(180deg, #2d4766 0%, #355e94 100%);
+        border-radius: 8px;
+        min-width: 280px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        visibility: hidden;
+        opacity: 0;
+        transform: translateX(-10px);
+        transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+        z-index: 21;
+        overflow: hidden;
+
+        li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+            &:last-child {
+                border-bottom: none;
+            }
+
+            a {
+                padding: 12px 20px;
+                font-size: 14px;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, 0.2);
                     padding-left: 25px;
                 }
             }
         }
     }
 
-    .mobile-only {
-        display: none;
-    }
-
     .contact-info {
         display: flex;
         gap: 30px;
         align-items: center;
-        justify-content: space-between;
 
         a {
             color: #fff;
             font-size: 15px;
             display: flex;
             align-items: center;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+
+            &:hover {
+                opacity: 0.8;
+            }
         }
 
         i {
@@ -440,10 +604,11 @@ onUnmounted(() => {
         a {
             color: #fff;
             font-size: 18px;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
 
             &:hover {
                 color: #ffffffce;
+                transform: translateY(-2px);
             }
         }
     }
@@ -466,33 +631,20 @@ onUnmounted(() => {
             gap: 15px;
         }
 
-        .header-bottom {
-            .nav__link {
-                font-size: 16px !important;
-            }
+        .header-bottom .nav__link {
+            font-size: 16px !important;
+        }
 
-            .nav__list {
-                gap: 15px;
-            }
+        .header-bottom .nav__list {
+            gap: 15px;
         }
 
         .logo__img {
             height: 40px;
         }
 
-        .contact-mail {
-            gap: 15px;
+        .contact-mail .contact-text {
             display: none;
-
-            .contact-text {
-                display: none;
-            }
-        }
-
-        .header-warning {
-            // &__text {
-            //     display: none;
-            // }
         }
     }
 
@@ -501,26 +653,9 @@ onUnmounted(() => {
             display: block;
         }
 
-        .mobile-only {
-            display: block;
-        }
-
         .header-top {
             padding: 8px 0;
         }
-
-        // .contact-info {
-        //     gap: 10px;
-
-        //     a {
-        //         font-size: 14px;
-        //     }
-
-        //     i {
-        //         margin-right: 0;
-        //         font-size: 16px;
-        //     }
-        // }
 
         .contact-info {
             display: none;
@@ -581,13 +716,11 @@ onUnmounted(() => {
             background: linear-gradient(to bottom, #00455e, #1b6ae9);
             box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.1);
             position: absolute;
-            top: 100%;
+            // top: 100%;
             left: 0;
             right: 0;
-
-            .logo {
-                display: none;
-            }
+            max-height: 80vh;
+            overflow-y: auto;
 
             .nav__list {
                 flex-direction: column;
@@ -633,6 +766,7 @@ onUnmounted(() => {
             box-shadow: none;
             width: 100%;
             border-radius: 0;
+            min-width: auto;
 
             &::before {
                 display: none;
@@ -650,15 +784,53 @@ onUnmounted(() => {
                         background-color: rgba(255, 255, 255, 0.2);
                     }
                 }
+
+                &.has-submenu {
+                    .submenu-trigger {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+
+                    .submenu-icon {
+                        transform: rotate(90deg);
+                    }
+                }
             }
         }
 
-        .dropdown-open .dropdown {
+        .submenu {
+            position: static;
+            transform: none;
+            visibility: visible;
+            opacity: 1;
+            max-height: 0;
+            overflow: hidden;
+            background: rgba(0, 0, 0, 0.15);
+            border-radius: 0;
+            box-shadow: none;
+            transition: max-height 0.3s ease;
+
+            li a {
+                padding-left: 50px !important;
+                font-size: 13px;
+
+                &:hover {
+                    padding-left: 55px !important;
+                }
+            }
+        }
+
+        .has-submenu:hover .submenu,
+        .has-submenu.submenu-open .submenu {
             max-height: 500px;
+        }
+
+        .dropdown-open .dropdown {
+            max-height: 1000px;
         }
     }
 
-    @media (max-width:670px) {
+    @media (max-width: 670px) {
         .header__social {
             display: none;
         }
@@ -666,27 +838,17 @@ onUnmounted(() => {
         .contact-text {
             display: none;
         }
+        .hero__container{
+            height: auto;
+        }
     }
 
     @media (max-width: 480px) {
-        .contact-info {
-            a {
-                font-size: 12px;
-            }
-
-            i {
-                font-size: 14px;
-            }
-        }
-
-        .header__social {
-            display: none;
-        }
-
         .header-warning {
             display: none;
         }
     }
+    
 }
 
 @keyframes fadeInDown {
@@ -699,5 +861,34 @@ onUnmounted(() => {
         opacity: 1;
         transform: translateY(0);
     }
+}
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2300px;
+  }
+}
+/* 2K monitorlar (≥1920px) */
+@media (max-width: 1920px) {
+  .container {
+    max-width: 1620px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+/* Full HD monitorlar (≥1600px) */
+@media (max-width: 1600px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+/* Katta noutbuklar (≥1300px) */
+@media (max-width: 1300px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 </style>

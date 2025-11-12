@@ -1,164 +1,278 @@
 <template>
-    <div class="container rektor__container">
-        <div class="rektor__content">
-            <div class="rektor__image-wrapper">
-                <img loading="lazy" class="rektor__image" src="../../public/img/person/sherzod_atamuradov.webp"
-                    alt="Universitet rektori rasmi" />
+    <div class="rector-page">
+        <div class="container">
+            <div class="rector-card">
+                <!-- Header -->
+                <div class="rector-header">
+                    <img src="../../public/img/person/sherzod_atamuradov.webp" alt="PhD. Sherzod Atamurodov" class="rector-image" />
+                    <div class="rector-main">
+                        <h1>PhD. Sherzod Atamurodov</h1>
+                        <p class="position">Sharq universiteti rektori</p>
+                        <div class="contacts">
+                            <a href="mailto:info@uzedu.uz"><i class="fas fa-envelope"></i> info@uzedu.uz</a>
+                            <a href="tel:+998712410115"><i class="fas fa-phone"></i> +998 (71) 241-01-15</a>
+                        </div>
+                        <!-- <div class="socials">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-telegram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div> -->
+                        
+                    </div>
+                </div>
+
+                <!-- About -->
+                <div class="rector-section">
+                    <h2>Tarjimai hol</h2>
+                    <div class="info-grid">
+                        <div class="info-item">
+                            <strong>Tug'ilgan:</strong> 26.09.1983, Navoiy viloyati
+                        </div>
+                        <div class="info-item">
+                            <strong>Ilmiy daraja:</strong> Iqtisodiyot fanlari bo'yicha PhD, dotsent
+                        </div>
+                        <div class="info-item">
+                            <strong>Millati:</strong> O'zbek
+                        </div>
+                        <div class="info-item">
+                            <strong>Tillar:</strong> Rus, Turk, Ingliz
+                        </div>
+                    </div>
+                    <p class="bio">20 yildan ortiq ta'lim sohasida faoliyat yuritib kelmoqda. Ko'plab ilmiy maqolalar, darsliklar yozgan va xalqaro loyihalarga asos solgan.</p>
+                </div>
+
+                <!-- Education -->
+                <div class="rector-section">
+                    <h2>Ma'lumoti</h2>
+                    <ul class="list">
+                        <li>2004 y. - Navoiy davlat konchilik instituti</li>
+                        <li>2006 y. - Samarqand iqtisodiyot va servis instituti (Magistratura)</li>
+                    </ul>
+                </div>
+
+                <!-- Experience -->
+                <div class="rector-section">
+                    <h2>Mehnat faoliyati</h2>
+                    <ul class="list timeline">
+                        <li><strong>2025 - h.v.</strong> Sharq universiteti rektori</li>
+                        <li><strong>2024-2025</strong> Navoiy DKvTU, "Iqtisodiyot va menejmеnt" kafedrasi dotsenti</li>
+                        <li><strong>2023-2024</strong> Navoiy innovatsiyalar universiteti, prorektor</li>
+                        <li><strong>2022-2023</strong> Navoiy DKvTU, dekan o'rinbosari</li>
+                        <li><strong>2018-2022</strong> Navoiy DKI, dekan o'rinbosari</li>
+                        <li><strong>2009-2018</strong> Navoiy DKI, katta o'qituvchi</li>
+                        <li><strong>2006-2009</strong> Navoiy DKI, assistent</li>
+                        <li><strong>2004-2006</strong> Samarqand IvSI, magistrant</li>
+                        <li><strong>2000-2004</strong> Navoiy DKI, talaba</li>
+                    </ul>
+                </div>
             </div>
-            <div class="rektor__info">
-                <h2 class="rektor__title">Universitet Rektori</h2>
-                <h3 class="rektor__name"> PhD. Sherzod Atamurodov</h3>
-                <p class="rektor__description">
-                    Sharq Universiteti rektori Phd. Sherzod Akramovich Atamurodov 20 yildan ortiq ta’lim sohasida
-                    faoliyat yuritib kelmoqda. O`z faoliyati davomida ko‘plab ilmiy maqolalar, darsliklar yozgan va bir
-                    necha xalqaro loyihalarga asos solgan. Uning boshqaruvi ostida universitet yangi rivojlanish
-                    bosqichiga chiqmoqda.
-                </p>
-                <p class="rektor__quote">
-                    <em>"Yoshlar bizning kelajagimizdir. Ularning ilmli, vatanparvar va faol bo‘lishi uchun biz barcha
-                        sharoitlarni yaratishga intilamiz."</em>
-                </p>
-            </div>
-            <p class="rektor__quote rektor__quote-back ">
-                <em>"Yoshlar bizning kelajagimizdir. Ularning ilmli, vatanparvar va faol bo‘lishi uchun biz barcha
-                    sharoitlarni yaratishga intilamiz."</em>
-            </p>
         </div>
     </div>
 </template>
 
 <style scoped lang="scss">
-.rektor {
-    padding: 60px 0;
-    background: #f4f7fa;
-    color: #1b1b1b;
-    height: 100%;
+.rector-page {
+    padding: 140px 20px 60px;
+    background: linear-gradient(135deg, #f5f7fa, #e8eef5);
+    min-height: 100vh;
+}
 
-    &__container {
-        display: flex;
-        padding: 30px;
-        align-items: flex-start;
-        justify-content: space-between;
-        gap: 40px;
-        flex-wrap: wrap;
-        padding-top: 80px;
-        // padding-bottom: 90px;
-        height: 100vh;
-        padding-top: 180px;
-    }
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
 
-    &__content {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 100%;
-    }
+.rector-card {
+    background: white;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
 
-    &__image-wrapper {
-        flex: 1 1 300px;
-        max-width: 300px;
-    }
+.rector-header {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #e8eef5;
+    margin-bottom: 24px;
 
-    &__image {
-        width: 100%;
-        height: auto;
+    .rector-image {
+        width: 180px;
+        height: 180px;
         border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
         object-fit: cover;
+        box-shadow: 0 4px 12px rgba(0, 69, 94, 0.15);
     }
 
-    &__info {
-        flex: 2;
-        max-width: 700px;
+    .rector-main {
+        flex: 1;
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            color: #00455e;
+            margin: 0 0 4px;
+        }
+
+        .position {
+            font-size: 16px;
+            color: #1b6ae9;
+            font-weight: 500;
+            margin: 0 0 16px;
+        }
+
+        .contacts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 12px;
+
+            a {
+                display: flex;
+                align-items: center;
+                gap: 6px;
+                color: #475262;
+                text-decoration: none;
+                font-size: 13px;
+                transition: color 0.3s;
+
+                i { color: #1b6ae9; }
+                &:hover { color: #1b6ae9; }
+            }
+        }
+
+        .socials {
+            display: flex;
+            gap: 8px;
+
+            a {
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                background: linear-gradient(135deg, #00455e, #1b6ae9);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                font-size: 14px;
+                transition: transform 0.3s;
+
+                &:hover { transform: translateY(-2px); }
+            }
+        }
+    }
+}
+
+.rector-section {
+    margin-bottom: 24px;
+
+    &:last-child { margin-bottom: 0; }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #00455e;
+        margin: 0 0 12px;
+        padding-left: 12px;
+        border-left: 3px solid #1b6ae9;
     }
 
-    &__title {
-        font-size: 32px;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 10px;
-        color: #0d172f;
+    .info-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 12px;
+        margin-bottom: 12px;
     }
 
-    &__name {
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 20px;
-        color: #004aad;
-    }
-
-    &__description {
-        font-size: 16px;
-        line-height: 1.6;
-        margin-bottom: 20px;
-    }
-
-    &__quote {
-        font-size: 16px;
-        font-style: italic;
-        color: #555;
-        border-left: 4px solid #00bafc;
-        padding-left: 15px;
-
-        &-back {
-            display: none;
+    .info-item {
+        font-size: 13px;
+        color: #475262;
+        
+        strong {
+            color: #00455e;
+            font-weight: 600;
         }
     }
 
+    .bio {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #475262;
+        margin: 12px 0 0;
+    }
+
+    .list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 13px;
+            line-height: 1.8;
+            color: #475262;
+            padding: 6px 0;
+
+            strong {
+                color: #00455e;
+                font-weight: 600;
+                min-width: 90px;
+                display: inline-block;
+            }
+        }
+
+        &.timeline li {
+            position: relative;
+            padding-left: 16px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 12px;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background: #1b6ae9;
+            }
+        }
+    }
 }
 
 @media (max-width: 768px) {
+    .rector-page { padding: 100px 15px 40px; }
+    
+    .rector-card { padding: 20px; }
 
-    // .rektor__image{
-    //     width: 270px;
-    // }
-    .rektor {
-        // padding-top: 0;
-        margin-top: 0;
-
-    }
-
-    .rektor__image-wrapper {
-        flex: 1 1 270px;
-        max-width: 270px;
-        height: 270px;
-    }
-
-    .rektor__quote {
-        display: none;
-    }
-
-    .rektor__quote-back {
-        display: block;
-    }
-}
-
-@media (max-width:670px) {
-    .rektor__description {
-        font-size: 15px;
-    }
-
-    .rektor__title {
-        font-size: 27px;
-    }
-
-    .rektor__name {
-        font-size: 20px;
-    }
-
-    .rektor__content {
-        gap: 18px;
-    }
-
-}
-
-@media (max-width:590px) {
-    .rektor__content {
+    .rector-header {
         flex-direction: column;
         align-items: center;
+        text-align: center;
 
+        .rector-image {
+            width: 150px;
+            height: 150px;
+        }
+
+        .rector-main {
+            h1 { font-size: 22px; }
+            .position { font-size: 14px; }
+
+            .contacts {
+                justify-content: center;
+                
+                a { font-size: 12px; }
+            }
+
+            .socials { justify-content: center; }
+        }
+    }
+
+    .rector-section {
+        h2 { font-size: 16px; }
+        
+        .info-grid { grid-template-columns: 1fr; }
+        .info-item, .list li, .bio { font-size: 12px; }
     }
 }
 </style>

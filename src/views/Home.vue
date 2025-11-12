@@ -2,13 +2,15 @@
     <div>
         <Hero></Hero>
         <Ticker></Ticker>
-        <About></About>
+        <!-- <About></About> -->
+        <TimelineSection></TimelineSection>
+
         <Testimonials></Testimonials>
         <!-- <Stats></Stats> -->
         <FAQ></FAQ>
         <Partners></Partners>
 
-        <RecentNews></RecentNews>
+        <!-- <RecentNews></RecentNews> -->
 
     </div>
 </template>
@@ -144,9 +146,10 @@ import Ticker from '../components/Ticker.vue';
 import About from '../components/about/About.vue';
 import FAQ from '../components/FAQ.vue';
 import Partners from '../components/Partners.vue';
-import RecentNews from '../components/RecentNews.vue';
+// import RecentNews from '../components/RecentNews.vue';
 import Testimonials from '../components/Testimonials.vue';
 import Stats from '../components/Stats.vue';
+import TimelineSection from '../components/TimelineSection.vue'
 
 export default {
     components: {
@@ -155,9 +158,10 @@ export default {
         About,
         FAQ,
         Partners,
-        RecentNews,
+        // RecentNews,
         Testimonials,
-        Stats
+        Stats,
+        TimelineSection
     }
 }
 </script>

@@ -333,7 +333,7 @@ onMounted(() => {
     display: flex;
     gap: 20px;
     font-family: 'Inter', sans-serif;
-
+padding-top: 170px;
     .rektor__info {
         text-align: start;
     }
@@ -390,7 +390,7 @@ onMounted(() => {
 
     .department__title {
         margin: 0;
-        padding-top: 40px;
+        // padding-top: 40px;
         border-bottom: none;
         font-size: 28px;
         font-weight: 700;

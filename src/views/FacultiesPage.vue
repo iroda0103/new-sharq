@@ -99,6 +99,7 @@ export default {
 .faculties-page {
   padding: 80px 0;
   padding-bottom: 160px;
+  padding-top: 200px;
 
   .documents__title {
     text-align: center;

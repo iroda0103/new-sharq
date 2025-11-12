@@ -415,6 +415,7 @@ export default {
   padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 160px;
 }
 
 .page-title {
@@ -635,9 +636,9 @@ export default {
             <div class="direction-price">
               <i class="fas fa-money-bill-wave"></i> {{ direction.price }}
             </div>
-            <a :href="direction.link" class="direction-link">
+            <!-- <a :href="direction.link" class="direction-link">
               Batafsil ma'lumot <i class="fas fa-arrow-right"></i>
-            </a>
+            </a> -->
           </div>
         </div>
       </div>

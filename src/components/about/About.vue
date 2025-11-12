@@ -25,7 +25,7 @@
                 </div>
             </div>
 
-            <div class="cards">
+            <!-- <div class="cards">
                 <InfoCard title="Bizning maqsadimiz"
                     text="Ilm-fan, ta'lim va innovatsiya jarayonlarni uyg'unlashtirgan holda, milliy va xalqaro standartlarga mos yuqori malakali mutaxassislarni tayyorlashdir.">
                     <template #icon>
@@ -33,18 +33,16 @@
                     </template>
                 </InfoCard>
                 <InfoCard title="Bizning imkoniyatimiz" :text="imkoniyatlar">
-                    <!-- icon="👁️"  -->
                     <template #icon>
                         <font-awesome-icon :icon="['fa', 'eye']" />
                     </template>
                 </InfoCard>
                 <InfoCard title="Bizning qadriyatimiz" :text="qadriyat">
-                    <!-- icon="⭐" -->
                     <template #icon>
                         <font-awesome-icon :icon="['fa', 'star']" />
                     </template>
                 </InfoCard>
-            </div>
+            </div> -->
         </div>
     </section>
 </template>
