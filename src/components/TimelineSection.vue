@@ -38,7 +38,7 @@
           <!-- Rasm (qarama-qarshi tomonda) -->
           <div class="image-container" :class="{ 'border-animate': item.visible }">
             <!-- <img :src="item.image" :alt="item.title" class="timeline-image" /> -->
-            <img :src="(item.id==1 || item.id==3)?'../../public/img/education/sharq1.webp':'../../public/img/education/sharq2.webp'" :alt="item.title" class="timeline-image" />
+            <img :src="(item.id==1 || item.id==3)?'/img/education/sharq1.webp':'/img/education/sharq2.webp'" :alt="item.title" class="timeline-image" />
           </div>
         </div>
       </div>
