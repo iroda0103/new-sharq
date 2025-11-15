@@ -19,13 +19,15 @@ import Library from '../views/Library.vue'
 import EducationPortal from '../views/EducationPortal.vue'
 import AddPost from '../views/AddPost.vue'
 import ApplyFor from '../views/ApplyFor.vue'
+import News from '../components/news/NewsDetail.vue'
 
 const routes = [
     { path: '/', name: 'HomePage', component: HomePage },
     { path: '/apply', name: 'ApplyFor', component: ApplyFor },
     { path: '/rektor', name: 'Rector', component: Rector },
     { path: '/rektor', name: 'Rector', component: Rector },
-    { path: '/post', name: 'AddPost', component: AddPost },
+    { path: '/addpost', name: 'AddPost', component: AddPost },
+    { path: '/news/:id', name: 'AddPost', component: News },
     { path: '/faculty', name: 'FacultiesPage', component: FacultiesPage },
     { path: '/directions', name: 'Faculty', component: Faculty },
     { path: '/history', name: 'History', component: History },

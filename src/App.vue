@@ -34,8 +34,13 @@ main {
 }
 </style>
 <script>
+import { onMounted } from 'vue'
+import { initFlowbite } from 'flowbite'
 import Header from './components/header/Header.vue';
 import Footer from './components/footer/Footer.vue';
+onMounted(() => {
+  initFlowbite();
+})
 
 export default {
   components: {

@@ -7,9 +7,10 @@
 
         <Testimonials></Testimonials>
         <!-- <Stats></Stats> -->
+         <News></News>
+
         <FAQ></FAQ>
         <Partners></Partners>
-
         <!-- <RecentNews></RecentNews> -->
 
     </div>
@@ -150,6 +151,7 @@ import Partners from '../components/Partners.vue';
 import Testimonials from '../components/Testimonials.vue';
 import Stats from '../components/Stats.vue';
 import TimelineSection from '../components/TimelineSection.vue'
+import News from '../components/news/NewsSection.vue';
 
 export default {
     components: {
@@ -159,6 +161,7 @@ export default {
         FAQ,
         Partners,
         // RecentNews,
+        News,
         Testimonials,
         Stats,
         TimelineSection
