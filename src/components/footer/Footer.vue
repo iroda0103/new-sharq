@@ -1,6 +1,18 @@
+<script setup lang="ts">
+import FooterFrame from './FooterFrame.vue';
+import FooterBottom from './FooterBottom.vue';
+</script>
+
 <template>
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer-top">
+      <FooterFrame></FooterFrame>
+    </div>
+    <div class="footer-bottom">
+      <FooterBottom></FooterBottom>-
+    </div>
+
+    <!-- <div class="footer__container">
       <div class="footer__main">
         <div class="footer__brand">
           <img loading="lazy"src="../../../public/img/logo_sharq.webp" alt="Sharq University" class="footer__logo">
@@ -44,16 +56,21 @@
 
         <p class="footer__copy">&copy; {{ new Date().getFullYear() }} Sharq University</p>
       </div>
-    </div>
+    </div> -->
   </footer>
 </template>
 <!-- 000129 -->
 
 <style lang="scss" scoped>
-.footer {
+.footer{
+  margin-top: 90px;
+}
+
+.footer-bottom {
   background: #000129;
   color: #fff;
   padding: 2rem 1rem;
+  z-index: 1000 !important;
 
   &__container {
     max-width: 1200px;

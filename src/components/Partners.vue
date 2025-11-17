@@ -36,7 +36,7 @@ const createData = () => {
     data.push({
       id: i + 1,
       name: `Partner ${i + 1}`,
-      img: `https://sharqedu.uz/assets/img/partners/part${i + 1}.png`
+      img: `/img/partners/part${i + 1}.png`
     });
   }
   originalPartners.value = data;
