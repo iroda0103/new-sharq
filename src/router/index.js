@@ -20,6 +20,7 @@ import EducationPortal from '../views/EducationPortal.vue'
 import AddPost from '../views/AddPost.vue'
 import ApplyFor from '../views/ApplyFor.vue'
 import News from '../components/news/NewsDetail.vue'
+import TelegramPage from '../views/TelegramPage.vue'
 
 const routes = [
     { path: '/', name: 'HomePage', component: HomePage },
@@ -39,6 +40,7 @@ const routes = [
     { path: '/bed-room', name: 'BedRoom', component: BedRoom },
     { path: '/department', name: 'Departments', component: Departments },
     { path: '/kafedra', name: 'Kafedra', component: Kafedra },
+    { path: '/tg', name: 'Kafedra', component: TelegramPage },
     // { path: '/kafedra2', name: 'Kafedra2', component: Kafedra2 },
     { path: '/grant', name: 'Grant', component: Grant },
     { path: '/library', name: 'Library', component: Library },
