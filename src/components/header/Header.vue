@@ -61,6 +61,7 @@
                                 <li><a href="/partners/">Hamkorlar</a></li>
                                 <li><a href="/document/">Asosiy me'yoriy hujjatlar</a></li>
                                 <li><a href="/sertificat/">Litsenziya va sertifikatlar</a></li>
+                                <li><a href="/campus/">360 gradusda binolar tuzilishi</a></li>
                             </ul>
                         </li>
 
