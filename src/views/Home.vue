@@ -8,9 +8,11 @@
         <Testimonials></Testimonials>
         <!-- <Stats></Stats> -->
          <News></News>
+         <CampusLife></CampusLife>
 
         <FAQ></FAQ>
         <Partners></Partners>
+        <Test></Test>
         <!-- <RecentNews></RecentNews> -->
 
     </div>
@@ -152,6 +154,8 @@ import Testimonials from '../components/Testimonials.vue';
 import Stats from '../components/Stats.vue';
 import TimelineSection from '../components/TimelineSection.vue'
 import News from '../components/news/NewsSection.vue';
+import CampusLife from '../components/sections/CampusLife.vue';
+import Test from '../components/campus/Test.vue';
 
 export default {
     components: {
@@ -164,7 +168,8 @@ export default {
         News,
         Testimonials,
         Stats,
-        TimelineSection
+        TimelineSection,
+        CampusLife,Test
     }
 }
 </script>
