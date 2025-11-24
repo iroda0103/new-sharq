@@ -143,6 +143,7 @@
 }
 </style>
 
+\
 <script>
 import Hero from '../components/Hero.vue'
 import Ticker from '../components/Ticker.vue';

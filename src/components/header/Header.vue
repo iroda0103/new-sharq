@@ -79,7 +79,8 @@
                                         <i class="fas fa-chevron-right submenu-icon"></i>
                                     </a>
                                     <ul class="submenu">
-                                        <li><a href="/directions?faculty=texnika">Texnik va raqamli texnologiyalar fakulteti</a>
+                                        <li><a href="/directions?faculty=texnika">Texnik va raqamli texnologiyalar
+                                                fakulteti</a>
                                         </li>
                                         <li><a href="/directions?faculty=iqtisod">Iqtisod va biznes fakulteti</a></li>
                                         <li><a href="/directions?faculty=gumanitar">Gumanitar fanlar fakulteti</a></li>
@@ -117,11 +118,7 @@
                             </ul>
                         </li>
 
-                        <li class="nav__item">
-                            <a class="nav__link" href="/grant">
-                                <span>Grantlar</span>
-                            </a>
-                        </li>
+
                         <li class="nav__item nav__item--has-dropdown">
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
                                 <span>Talabalarga</span>
@@ -130,6 +127,8 @@
                             <ul class="dropdown">
                                 <li><a href="/education-portal">Ta'lim portali</a></li>
                                 <li><a href="/library">Axborot resurslar markazi</a></li>
+                                <li><a href="/activity">Faoliyatlar</a></li>
+                                <li><a href="/galery">Gallery</a></li>
                             </ul>
                         </li>
                         <li class="nav__item nav__item--has-dropdown">
@@ -138,8 +137,20 @@
                                 <i class="fas fa-chevron-down dropdown-icon"></i>
                             </a>
                             <ul class="dropdown">
-                                <li><a href="/directions">Ta'lim yo'nalishlari</a></li>
+                                <li class="has-submenu"><a href="/directions" class="submenu-trigger">Ta'lim
+                                        yo'nalishlari
+
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="/">Umumiy ma'lumot</a></li>
+                                        <li><a href="/">Qabul statistikasi</a></li>
+                                        <li><a href="/">O‘qish to‘lovlari va stipendiyalar</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="/bed-room">Yotoqxona</a></li>
+                                <li><a href="/grant">Grantlar</a></li>
+
                             </ul>
                         </li>
                     </ul>
@@ -839,7 +850,8 @@ onUnmounted(() => {
         .contact-text {
             display: none;
         }
-        .hero__container{
+
+        .hero__container {
             height: auto;
         }
     }
@@ -849,7 +861,7 @@ onUnmounted(() => {
             display: none;
         }
     }
-    
+
 }
 
 @keyframes fadeInDown {
@@ -863,33 +875,37 @@ onUnmounted(() => {
         transform: translateY(0);
     }
 }
+
 @media (min-width: 2560px) {
-  .container {
-    max-width: 2300px;
-  }
+    .container {
+        max-width: 2300px;
+    }
 }
+
 /* 2K monitorlar (≥1920px) */
 @media (max-width: 1920px) {
-  .container {
-    max-width: 1620px;
-  }
+    .container {
+        max-width: 1620px;
+    }
 }
 
 @media (max-width: 1800px) {
-  .container {
-    max-width: 1600px;
-  }
+    .container {
+        max-width: 1600px;
+    }
 }
+
 /* Full HD monitorlar (≥1600px) */
 @media (max-width: 1600px) {
-  .container {
-    max-width: 1200px;
-  }
+    .container {
+        max-width: 1200px;
+    }
 }
+
 /* Katta noutbuklar (≥1300px) */
 @media (max-width: 1300px) {
-  .container {
-    max-width: 1200px;
-  }
+    .container {
+        max-width: 1200px;
+    }
 }
 </style>

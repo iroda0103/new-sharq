@@ -21,6 +21,7 @@ import AddPost from '../views/AddPost.vue'
 import ApplyFor from '../views/ApplyFor.vue'
 import News from '../components/news/NewsDetail.vue'
 import Test from '../components/campus/Test.vue'
+import Gallery from '../views/Gallery.vue'
 
 const routes = [
     { path: '/', name: 'HomePage', component: HomePage },
@@ -44,6 +45,7 @@ const routes = [
     { path: '/grant', name: 'Grant', component: Grant },
     { path: '/library', name: 'Library', component: Library },
     { path: '/campus', name: 'Campus', component: Test },
+    { path: '/galery', name: 'Gallery', component: Gallery },
     { path: '/education-portal', name: 'EducationPortal', component: EducationPortal },
     // { path: '/restaurant/:id', name: 'RestaurantMenu', component: RestaurantMenu }
       { path: '/:catchAll(.*)', name: 'NotFound', component: NotFound }
