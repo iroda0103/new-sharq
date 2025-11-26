@@ -22,10 +22,13 @@ import ApplyFor from '../views/ApplyFor.vue'
 import News from '../components/news/NewsDetail.vue'
 import Test from '../components/campus/Test.vue'
 import Gallery from '../views/Gallery.vue'
+import GalleryPage from '../views/GalleryPage.vue'
+import Codepen from '../components/gallery/Codepen.vue'
 
 const routes = [
     { path: '/', name: 'HomePage', component: HomePage },
     { path: '/apply', name: 'ApplyFor', component: ApplyFor },
+    { path: '/codepen', name: 'Codepen', component: Codepen },
     { path: '/rektor', name: 'Rector', component: Rector },
     { path: '/rektor', name: 'Rector', component: Rector },
     { path: '/addpost', name: 'AddPost', component: AddPost },
@@ -46,6 +49,7 @@ const routes = [
     { path: '/library', name: 'Library', component: Library },
     { path: '/campus', name: 'Campus', component: Test },
     { path: '/galery', name: 'Gallery', component: Gallery },
+    { path: '/gallery', name: 'Gallery', component: GalleryPage },
     { path: '/education-portal', name: 'EducationPortal', component: EducationPortal },
     // { path: '/restaurant/:id', name: 'RestaurantMenu', component: RestaurantMenu }
       { path: '/:catchAll(.*)', name: 'NotFound', component: NotFound }

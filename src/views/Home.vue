@@ -12,6 +12,7 @@
 
         <FAQ></FAQ>
         <Partners></Partners>
+        <!-- <Codepen></Codepen> -->
         <!-- <Test></Test> -->
         <!-- <RecentNews></RecentNews> -->
 
@@ -157,6 +158,7 @@ import TimelineSection from '../components/TimelineSection.vue'
 import News from '../components/news/NewsSection.vue';
 import CampusLife from '../components/sections/CampusLife.vue';
 // import Test from '../components/campus/Test.vue';
+// import Codepen from '../components/gallery/Codepen.vue';
 
 export default {
     components: {
@@ -172,6 +174,7 @@ export default {
         TimelineSection,
         CampusLife,
         // Test
+        // Codepen
     }
 }
 </script>
