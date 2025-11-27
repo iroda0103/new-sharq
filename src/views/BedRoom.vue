@@ -13,7 +13,8 @@
                             class="fas fa-arrow-down"></i></a>
                 </div>
                 <div class="hero-image">
-                    <img loading="lazy"src="/img/bed-room/main.webp" alt="Yotoqxona binosi">
+                    <img loading="lazy" src="/img/bed-room2/main.jpg" alt="Yotoqxona binosi">
+
                     <!-- <img loading="lazy"src="https://new-sharq-vue.vercel.app/assets/main-C9gjlFc1.jpg" alt="Yotoqxona binosi"> -->
                 </div>
             </div>
@@ -109,10 +110,15 @@
                 <h2 class="section-title">Yotoqxona hayoti</h2>
                 <p class="section-subtitle">Bizning yotoqxonalarimizdagi hayotdan lavhalar</p>
                 <div class="gallery-grid">
+                    <video autoplay muted loop class="gallery-item" >
+                        <source src="/img/bed-room2/video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.//>
+                    </video>
                     <div class="gallery-item" v-for="(item, index) in gallery" :key="index">
-                        <img loading="lazy":src="item.image" :alt="item.caption">
+                        <img loading="lazy" :src="item.image" :alt="item.caption">
                         <div class="gallery-caption">{{ item.caption }}</div>
                     </div>
+
                 </div>
             </div>
 
@@ -137,13 +143,18 @@
 
 
 <script>
-import img1 from '../../public/img/bed-room/img1.webp'
-import img2 from '../../public/img/bed-room/img2.webp'
-import img3 from '../../public/img/bed-room/img3.webp'
-import img4 from '../../public/img/bed-room/img4.webp'
-import img5 from '../../public/img/bed-room/img5.webp'
-import img6 from '../../public/img/bed-room/img6.webp'
-import img7 from '../../public/img/bed-room/img7.webp'
+import main from '../../public/img/bed-room2/main.jpg'
+import img1 from '../../public/img/bed-room2/img1.jpg'
+import img2 from '../../public/img/bed-room2/img2.jpg'
+import img3 from '../../public/img/bed-room2/img3.jpg'
+import img4 from '../../public/img/bed-room2/img4.jpg'
+import img8 from '../../public/img/bed-room2/img5.jpg'
+import img9 from '../../public/img/bed-room2/img6.jpg'
+// import img10 from '../../public/img/bed-room2/img7.jpg'
+// import img5 from '../../public/img/bed-room2/img5.jpg'
+// import img6 from '../../public/img/bed-room2/img6.jpg'
+// import img7 from '../../public/img/bed-room2/img7.jpg'
+
 export default {
     name: "DormitoryPage",
     data() {
@@ -207,12 +218,15 @@ export default {
                 }
             ],
             gallery: [
+                // { image: main, caption: "Tashqi taraf" },
                 { image: img4, caption: "Yotoqxona hovlisi" },
-                { image: img5, caption: "O'qish xonasi" },
-                { image: img6, caption: "Sport maydon" },
-                { image: img7, caption: "Dam olish zonas" },
+                { image: img3, caption: "Zal" },
+                // { image: img6, caption: "Sport maydon" },
+                // { image: img7, caption: "Dam olish zonas" },
                 { image: img2, caption: "Oshxona" },
-                { image: img1, caption: "Yotoq xonasi" }
+                { image: img8, caption: "Yotoq xonasi" },
+                { image: img9, caption: "Kir yuvish xonasi" },
+                // { image: img10, caption: "Yotoq xonasi" }
             ],
             faqs: [
                 {
@@ -349,13 +363,16 @@ export default {
 
 .hero-image {
     flex: 1;
+    // display: flex;
 
-    img {
+    img,
+    video {
         width: 100%;
         height: 100%;
         object-fit: cover;
         display: block;
     }
+
 }
 
 /* Stats section */
@@ -655,8 +672,14 @@ export default {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns:430px  repeat(auto-fill, minmax(350px, 1fr));
     gap: 20px;
+}
+
+video {
+    // height: 500px;
+    width: 100%;
+    object-fit: cover;
 }
 
 .gallery-item {
@@ -665,7 +688,7 @@ export default {
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    height: 200px;
+    height: 500px;
 
     &:hover {
         transform: scale(1.03);
@@ -674,6 +697,8 @@ export default {
     img {
         width: 100%;
         height: 100%;
+        width: 500px;
+
         object-fit: cover;
     }
 

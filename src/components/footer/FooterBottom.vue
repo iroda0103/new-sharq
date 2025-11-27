@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <div class="footer__container">
+    <div class="container footer__container">
       <div class="footer__main">
         <div class="footer__brand">
           <img loading="lazy"src="../../../public/img/logo_sharq.webp" alt="Sharq University" class="footer__logo">
@@ -57,11 +57,11 @@
   color: #fff;
   padding: 2rem 1rem;
 
-  &__container {
-    max-width: 1200px;
-    margin: 0 auto;
-    z-index: 10 !important;
-  }
+  // &__container {
+  //   max-width: 1200px;
+  //   margin: 0 auto;
+  //   z-index: 10 !important;
+  // }
 
   &__main {
     display: grid;

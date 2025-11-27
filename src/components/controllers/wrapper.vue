@@ -1,96 +1,114 @@
+<script setup lang="ts">
+import Banner from '../banner/Banner.vue';
+
+</script>
+
 <template>
-    <div class="wrapper"> <div class=" container">
-        <div class="page-row">
-            <div class="main-section page-row__col">
-                <div class="leadership">
-                    <div class="leadersheap-image">
-                        <div class="leadership-image__inner"> <img src="/img/person/sherzod_atamuradov.webp" alt="">
-                        </div>
-
-                    </div>
-
-                    <div class="leadership-info__wrapper">
-                        <div class="leadership-info">
-                            <h3 class="leadership-info__fio">PhD. Sherzod Atamurodov</h3>
-                            <div class="leadership-info__divider"></div>
-                            <p class="leadership-info__text">
-                                Sharq universiteti rektori </p>
-                            <div class="leadership-info__bottom">
-                                <div class="leadership-info__links">
-                                    <a href="mailto:info@uzedu.uz" class="leadership-info__link">
-                                       <i class="fa-regular fa-envelope"></i>
-                                        info@uzedu.uz </a>
-                                    <a href="tel:+998712410115" class="leadership-info__link">
-                                        <i class="fa-solid fa-phone"></i>
-                                        +998 (71) 241-01-15 </a>
-                                </div>
-                                <div class="leadership-info__social">
-                                    <a href="https://instagram.com" class="icon-instagram" rel="nofollow"
-                                        target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                    <a href="https://t.me" class="icon-telegram" rel="nofollow" target="_blank"><i
-                                            class="fa-brands fa-telegram"></i></a>
-                                    <a href="https://facebook.com" class="icon-facebook" rel="nofollow"
-                                        target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                                    <a href="https://youtube.com" class="icon-youtube" rel="nofollow" target="_blank"><i
-                                            class="fa-brands fa-youtube"></i></a>
-                                </div>
-
+    <div class="wrapper">
+        <!-- <Banner></Banner> -->
+        <div class=" container">
+            <div class="page-row">
+                <div class="main-section page-row__col">
+                    <div class="leadership">
+                        <div class="leadersheap-image">
+                            <div class="leadership-image__inner"> 
+                                <!-- <img src="/img/person/sherzod_atamuradov.webp" alt=""> -->
+                                <img src="/img/person/rector.jpg" alt="">
                             </div>
+
                         </div>
-                        <div class="page-block">
-                            <h3 class="page-block__subtitle">
-                                Tarjimai hol </h3>
-                            <div class="page-block__divider"></div>
-                            <div class="content">
-                                <p><span>Umarova Khilola Uktamovna was born in 1988 in Weimer in Germany. She graduated
-                                        from the University of World Economy and Diplomacy in Tashkent with a major in
-                                        International economic relations. Khilola Umarova is a researcher at the Academy
-                                        of Public Administration under the President of the Republic of Uzbekistan. She
-                                        is fluent in Uzbek, Russian and English. Khilola Umarova is married and has one
-                                        child.</span></p>
+
+                        <div class="leadership-info__wrapper">
+                            <div class="leadership-info">
+                                <h3 class="leadership-info__fio">PhD. Sherzod Atamurodov</h3>
+                                <div class="leadership-info__divider"></div>
+                                <p class="leadership-info__text">
+                                    Sharq universiteti rektori </p>
+                                <div class="leadership-info__bottom">
+                                    <div class="leadership-info__links">
+                                        <a href="mailto:info@uzedu.uz" class="leadership-info__link">
+                                            <i class="fa-regular fa-envelope"></i>
+                                            info@uzedu.uz </a>
+                                        <a href="tel:+998712410115" class="leadership-info__link">
+                                            <i class="fa-solid fa-phone"></i>
+                                            +998 (71) 241-01-15 </a>
+                                    </div>
+                                    <div class="leadership-info__social">
+                                        <a href="https://instagram.com" class="icon-instagram" rel="nofollow"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="https://t.me" class="icon-telegram" rel="nofollow" target="_blank"><i
+                                                class="fa-brands fa-telegram"></i></a>
+                                        <a href="https://facebook.com" class="icon-facebook" rel="nofollow"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                        <a href="https://youtube.com" class="icon-youtube" rel="nofollow"
+                                            target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+
+                                </div>
                             </div>
-                        </div>
-                        <div class="page-block">
-                            <h3 class="page-block__subtitle">
-                                Experience </h3>
-                            <div class="page-block__divider"></div>
-                            <div class="content">
-                                <ul>
-                                    <li>2019 - 2019 — Chief Manager on the affairs of supporting active
-                                        entrepreneurship, innovative ideas and technologies at Inha University in
-                                        Tashkent.</li>
-                                    <li>2019 - 2020 — Director of the specialized school named after Muhammad
-                                        al-Khorazmi, specializing in advanced education in information and communication
-                                        technologies.</li>
-                                    <li>2020 - 2022 — Director of the Agency for Presidential Educational Institutions
-                                        of the Republic of Uzbekistan</li>
-                                    <li>2022-2025 – Minister of Preschool and School Education.</li>
-                                    <li>2025 – Deputy Head of the Presidential Administration for Education Reform.</li>
-                                </ul>
+                            <div class="page-block">
+                                <h3 class="page-block__subtitle">
+                                    Tarjimai hol </h3>
+                                <div class="page-block__divider"></div>
+                                <div class="content">
+                                    <p><span>Umarova Khilola Uktamovna was born in 1988 in Weimer in Germany. She
+                                            graduated
+                                            from the University of World Economy and Diplomacy in Tashkent with a major
+                                            in
+                                            International economic relations. Khilola Umarova is a researcher at the
+                                            Academy
+                                            of Public Administration under the President of the Republic of Uzbekistan.
+                                            She
+                                            is fluent in Uzbek, Russian and English. Khilola Umarova is married and has
+                                            one
+                                            child.</span></p>
+                                </div>
+                            </div>
+                            <div class="page-block">
+                                <h3 class="page-block__subtitle">
+                                    Experience </h3>
+                                <div class="page-block__divider"></div>
+                                <div class="content">
+                                    <ul>
+                                        <li>2019 - 2019 — Chief Manager on the affairs of supporting active
+                                            entrepreneurship, innovative ideas and technologies at Inha University in
+                                            Tashkent.</li>
+                                        <li>2019 - 2020 — Director of the specialized school named after Muhammad
+                                            al-Khorazmi, specializing in advanced education in information and
+                                            communication
+                                            technologies.</li>
+                                        <li>2020 - 2022 — Director of the Agency for Presidential Educational
+                                            Institutions
+                                            of the Republic of Uzbekistan</li>
+                                        <li>2022-2025 – Minister of Preschool and School Education.</li>
+                                        <li>2025 – Deputy Head of the Presidential Administration for Education Reform.
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <aside class="page-row__col">
+                    <div class="aside">
+                        <div class="sidebar">
+                            <h3 class="sidebar-title">Rahbariyat</h3>
+                            <ul class="sidebar-menu-list">
+                                <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rector</a></li>
+                                <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
+                                </li>
+                                <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
+                                </li>
+                                <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
             </div>
-            <aside class="page-row__col">
-                <div class="aside">
-                    <div class="sidebar">
-                        <h3 class="sidebar-title">Rahbariyat</h3>
-                        <ul class="sidebar-menu-list">
-                            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rector</a></li>
-                            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
-                            </li>
-                            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
-                            </li>
-                            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </aside>
         </div>
-    </div></div>
-   
+    </div>
+
 </template>
 <style>
 .wrapper {
@@ -99,15 +117,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    
 
     background-color: rgba(255, 255, 255, 0.877);
     background-blend-mode: overlay;
+      margin-top: 130px;
+      padding-bottom: 80px;
+      z-index: -100;
 }
 
 .page-row {
     display: flex;
     gap: 14px;
-    margin-top: 130px;
+  
     /* height: 100vh; */
 }
 
@@ -192,18 +214,18 @@
 }
 
 .leadership-image__inner img {
-    width: 100%;
-    height: 100%;
-    object-position: center;
+    width: 280px;
+    height: 250px;
+    object-position: 15% center;
     object-fit: cover;
     border-radius: 12px;
-    min-width: 220px;
+    min-width: 280px;
 
 
 }
 
 .leadership-image {
-    width: 100%;
+    /* width: 100%; */
     margin: 0 auto;
 }
 
@@ -218,7 +240,7 @@
 }
 
 .leadership-info {
-    /* background: #FFF; */
+    background: #FFF;
     display: flex;
     flex-direction: column;
     padding: 16px;
@@ -342,39 +364,43 @@
 }
 
 .leadership-info__social {
-  display: flex;
-  gap: 6px;
-}
-.leadership-info__social a {
-  width: 34px;
-  aspect-ratio: 1/1;
-  border-radius: 8px;
-  border: 1px solid rgba(223, 228, 237, 1);
-  background: rgba(248, 250, 253, 1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: rgba(119, 129, 145, 1);
+    display: flex;
+    gap: 6px;
 }
 
-.sidebar-menu__link:hover, .sidebar-menu__link.active {
-  color: rgb(45, 48, 218);
+.leadership-info__social a {
+    width: 34px;
+    aspect-ratio: 1/1;
+    border-radius: 8px;
+    border: 1px solid rgba(223, 228, 237, 1);
+    background: rgba(248, 250, 253, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: rgba(119, 129, 145, 1);
 }
+
+.sidebar-menu__link:hover,
+.sidebar-menu__link.active {
+    color: rgb(45, 48, 218);
+}
+
 .sidebar-menu__item:hover .sidebar-menu__link::before {
-  height: 30%;
-  background-color: rgb(45, 48, 218);
-  color: rgb(45, 48, 218);
+    height: 30%;
+    background-color: rgb(45, 48, 218);
+    color: rgb(45, 48, 218);
 }
+
 .sidebar-menu__link::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
-  height: 0%;
-  width: 4px;
-  background-color: rgb(45, 48, 218);
-  transition: all 0.2s ease-in-out;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 0%;
+    width: 4px;
+    background-color: rgb(45, 48, 218);
+    transition: all 0.2s ease-in-out;
 }
 </style>

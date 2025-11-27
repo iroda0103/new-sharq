@@ -13,12 +13,21 @@ import BreadCrumb from '../breadcrumb/BreadCrumb.vue';
 </template>
 <style>
 .banner {
-    background-image: url('../../../public/img/banner.jpg');
+    /* background-image: url('../../../public/img/banner.jpg'); */
     background-size: cover;
     background-position: center;
     /* color: white; */
     text-align: center;
     position: relative;
+    /* background-image: url('/img/bg/image_copy.png'); */
+    /* background-image: url('/img/bg/image.png'); */
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-position: center;
+
+    background-color: rgba(255, 255, 255, 0.047);
+    background-color: #fff;;
+    height: 100px;
     /* background-color: ; */
 }
 

@@ -21,6 +21,7 @@
   position: relative;
   /* padding: 130px 0; */
   height: 100%;
+
 }
 
 .app {
