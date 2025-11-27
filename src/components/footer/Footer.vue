@@ -63,7 +63,7 @@ import FooterBottom from './FooterBottom.vue';
 
 <style lang="scss" scoped>
 .footer{
-  margin-top: 90px;
+ // margin-top: 90px;
 }
 
 .footer-bottom {

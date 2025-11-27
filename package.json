@@ -19,6 +19,7 @@
     "@fortawesome/vue-fontawesome": "^3.1.1",
     "axios": "^1.12.2",
     "flowbite": "^4.0.0",
+    "gsap": "^3.13.0",
     "vue": "^3.5.18",
     "vue-router": "^4.5.1"
   },

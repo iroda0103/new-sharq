@@ -10,6 +10,7 @@ html {
   scroll-behavior: smooth;
 }
 
+
 :root {
   --primary-color: #1e3a8a;
   --secondary-color: #3b82f6;
@@ -47,6 +48,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
+    
 }
 
 /* img {

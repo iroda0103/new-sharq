@@ -76,7 +76,8 @@ export default {
         {
           name: "Sherzod Atamuradov",
           position: "Rektor",
-          image: "sherzod_atamuradov.webp",
+          // image: "sherzod_atamuradov.webp",
+          image: "rector.jpg",
           text: "Yuqori sifatli xizmat ko'rsatish va ilg'or innovatsion yechimlar faoliyatimizni samarali tarzda o'zgartirdi, bu esa barcha aloqa nuqtalarida talabalar ehtiyojini qondirish va universitetning jadal o'sishiga zamin yaratdi."
         },
         // {
@@ -235,6 +236,9 @@ export default {
         height: 100%;
         object-fit: cover;
         transition: transform 0.6s ease;
+object-position: 10% center;
+            // background-position: right;
+
       }
 
       .image-overlay {

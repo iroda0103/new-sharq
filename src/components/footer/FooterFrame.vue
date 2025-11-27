@@ -63,7 +63,8 @@
     background-repeat: repeat;
     background-size: auto auto;
     position: relative;
-    z-index: -10;
+    /* z-index: -10; */
+    z-index: 1;
     padding-top: 30px;
 }
 .footer-top-wrapper::before {
@@ -93,6 +94,7 @@ ease;
     background: linear-gradient(0deg, #2A407A 0%, rgba(24, 38, 78, 0) 100%);
     height: 104px;
     bottom: 102px;
+    z-index: 1;
 }
 
 element.style {}
@@ -123,7 +125,8 @@ html:not(.bvi-panel) ::before {
     margin-bottom: calc(0px - var(--local-margin-bottom));
     margin-top: calc(0px - var(--local-margin-top));
     position: relative;
-    z-index: -1;
+    /* z-index: -1; */
+    z-index: 20;
 }
 
 .footer-mockup {
