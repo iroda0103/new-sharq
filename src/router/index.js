@@ -23,13 +23,14 @@ import News from '../components/news/NewsDetail.vue'
 import Test from '../components/campus/Test.vue'
 import Gallery from '../views/Gallery.vue'
 import GalleryPage from '../views/GalleryPage.vue'
-import Codepen from '../components/gallery/Codepen.vue'
+import Wrapper from '../components/controllers/wrapper.vue'
+// import Codepen from '../components/gallery/Codepen.vue'
 
 const routes = [
     { path: '/', name: 'HomePage', component: HomePage },
     { path: '/apply', name: 'ApplyFor', component: ApplyFor },
-    { path: '/codepen', name: 'Codepen', component: Codepen },
-    { path: '/rektor', name: 'Rector', component: Rector },
+    { path: '/wrapper', name: 'Wrapper', component: Wrapper },
+    // { path: '/codepen', name: 'Codepen', component: Codepen },
     { path: '/rektor', name: 'Rector', component: Rector },
     { path: '/addpost', name: 'AddPost', component: AddPost },
     { path: '/news/:id', name: 'AddPost', component: News },

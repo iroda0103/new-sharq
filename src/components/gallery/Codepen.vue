@@ -179,11 +179,11 @@ onMounted(() => {
     SHIFTS.forEach((BOX, index) => {
         const BOX_TL = gsap
             .timeline()
-            .set(BOX, { xPercent: 250, rotateY: -50, opacity: 0, scale: 0.5 })
+            // .set(BOX, { xPercent: 250, rotateY: -50, opacity: 0, scale: 0.5 })
 
             // Opacity && Scale
-            .to(BOX, { opacity: 1, scale: 1, duration: 0.1 }, 0)
-            .to(BOX, { opacity: 0, scale: 0.5, duration: 0.1 }, 0.9)
+            // .to(BOX, { opacity: 1, scale: 1, duration: 0.1 }, 0)
+            // .to(BOX, { opacity: 0, scale: 0.5, duration: 0.1 }, 0.9)
 
             // Panning
             .fromTo(BOX, { xPercent: 250 }, {
@@ -239,6 +239,7 @@ onMounted(() => {
         start: 0,
         end: '+=2000',
         horizontal: false,
+         pinSpacing: false,
         pin: boxesRef.value,
         onUpdate: self => {
             const SCROLL = self.scroll();
@@ -352,7 +353,7 @@ button:before {
 }
 
 button:active:before {
-    /* background: linear-gradient(#000, rgba(204, 204, 204, 0.65)) #000; */
+    background: linear-gradient(#000, rgba(204, 204, 204, 0.65)) #000;
 }
 
 button:nth-of-type(1) {
@@ -431,10 +432,10 @@ button:nth-of-type(1) svg {
     left: 50%;
     height: 100%;
     width: 100%;
-    /* background-image: var(--src); */
+    background-image: var(--src);
     background-size: cover;
     transform: translate(-50%, -50%) rotate(180deg) translate(0, -100%) translate(0, -0.5vmin);
-    /* opacity: 0.75; */
+    opacity: 0.65;
 }
 
 .box:before {
@@ -460,11 +461,11 @@ button:nth-of-type(1) svg {
 }
 
 .box:nth-of-type(odd) {
-    background: #b3f075;
+    /* background: #b3f075; */
 }
 
 .box:nth-of-type(even) {
-    background: #66b814;
+    /* background: #66b814; */
 }
 
 @supports (-webkit-box-reflect: below) {
