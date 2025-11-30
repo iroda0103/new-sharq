@@ -4,7 +4,7 @@ import 'flowbite';
 
 // import { createPinia } from 'pinia'
 import App from './App.vue'
-import router from './router'
+import router from './router/index'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome/index.es'
 import { library } from '@fortawesome/fontawesome-svg-core'
 

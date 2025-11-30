@@ -1,201 +1,21 @@
 <template>
-        <div class="row page-row container">
-                <div class="col page-row__col campus-content">
-                        <div class="page-block">
-                                <h2 class="sidebar-title campus360-title">Virtual Ko'rinish</h2>
+        <div class="campus">
+                <div class="">
+                        <div class=" campus-content">
+                                <div class="page-block">
+                                        <h2 class="page-title">Virtual Ko'rinish</h2>
 
-                                <iframe id="tour-embedded" name="Sharq_1_qavat" :src="tourUrl" frameborder="0"
-                                        width="100%" height="400px" scrolling="no" allowvr="yes"
-                                        allow="vr; xr; accelerometer; gyroscope; autoplay;" allowfullscreen="false"
-                                        webkitallowfullscreen="false" mozallowfullscreen="false"
-                                        loading="eager"></iframe>
-                        </div>
-                </div>
-
-                <div class="col page-row__col">
-                        <div class="aside">
-
-                                <!-- Sidebar Menu -->
-                                <div class="aside-menu sidebar">
-                                        <h3 class="sidebar-title">Bo'limlar</h3>
-                                        <ul class="list-unstyled main-collapse section-aside-menu-list sidebar-menu">
-
-                                                <!-- Rektor haqida -->
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="/rektor" class="sidebar-menu__link no-active">
-                                                                Rektor haqida
-                                                        </a>
-                                                </li>
-
-                                                <!-- Tarixi -->
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="/history" class="sidebar-menu__link no-active">
-                                                                Tarixi
-                                                        </a>
-                                                </li>
-
-                                                <!-- Hamkorlar -->
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="/partners" class="sidebar-menu__link no-active">
-                                                                Hamkorlar
-                                                        </a>
-                                                </li>
-
-                                                <!-- Me'yoriy hujjatlar -->
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="/document" class="sidebar-menu__link no-active">
-                                                                Asosiy me’yoriy hujjatlar
-                                                        </a>
-                                                </li>
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="/sertificat" class="sidebar-menu__link no-active">
-                                                                Litsenziya va sertifikatlar
-                                                        </a>
-                                                </li>
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="/sertificat" class="sidebar-menu__link no-active">
-                                                                Litsenziya va sertifikatlar
-                                                        </a>
-                                                </li>
-
-                                                <!-- Litsenziya & Sertifikatlar -->
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="/sertificat" class="sidebar-menu__link no-active">
-                                                                Litsenziya va sertifikatlar
-                                                        </a>
-                                                </li>
-
-                                                <!-- 360 | Campus Map & VR -->
-                                                <li class="section-aside-menu-list-item sidebar-menu__item">
-                                                        <a href="#!" class="sidebar-menu__link no-active"
-                                                                @click="toggle('campus')">
-                                                                Campus Map & 360° VR <i class="icon-branch"></i>
-                                                        </a>
-
-                                                        <ul v-show="open.campus" class="sub-menu-sidebar list-unstyled">
-                                                                <li class="sidebar-menu__item">
-                                                                        <a href="/campus" class="sidebar-menu__link">
-                                                                                360° Binolar tuzilishi
-                                                                        </a>
-                                                                </li>
-                                                                <li class="sidebar-menu__item">
-                                                                        <a href="/campus/map"
-                                                                                class="sidebar-menu__link">
-                                                                                Campus xaritasi
-                                                                        </a>
-                                                                </li>
-                                                        </ul>
-                                                </li>
-
-                                        </ul>
-                                        <!-- <ul class="list-unstyled main-collapse section-aside-menu-list sidebar-menu">
-
-            <li class="section-aside-menu-list-item sidebar-menu__item">
-              <a href="https://newuu.uz/en/about" class="sidebar-menu__link no-active">
-                Vision &amp; Mission
-              </a>
-            </li>
-
-            <li class="section-aside-menu-list-item sidebar-menu__item">
-              <a href="#!"
-                 class="sidebar-menu__link no-active"
-                 @click="toggle('leadership')">
-                Leadership <i class="icon-branch"></i>
-              </a>
-
-              <ul v-show="open.leadership" class="sub-menu-sidebar list-unstyled">
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/rector-message" class="sidebar-menu__link">Message from the Rector</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/leadership" class="sidebar-menu__link">Leadership Team</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/menu/university-governance-bodies" class="sidebar-menu__link">Governance Bodies</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/menu/our-team-" class="sidebar-menu__link">Our Team</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="section-aside-menu-list-item sidebar-menu__item">
-              <a href="#!"
-                 class="sidebar-menu__link no-active"
-                 @click="toggle('policies')">
-                Policies & Regulations <i class="icon-branch"></i>
-              </a>
-
-              <ul v-show="open.policies" class="sub-menu-sidebar list-unstyled">
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/menu/general-university-regulations" class="sidebar-menu__link">General Regulations</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/menu/academic-regulations" class="sidebar-menu__link">Academic Regulations</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/menu/admission-rules" class="sidebar-menu__link">Admission Rules</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/menu/financial-procurement" class="sidebar-menu__link">Financial & Procurement</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="section-aside-menu-list-item sidebar-menu__item">
-              <a href="#!"
-                 class="sidebar-menu__link no-active"
-                 @click="toggle('partners')">
-                Global Partnerships <i class="icon-branch"></i>
-              </a>
-
-              <ul v-show="open.partners" class="sub-menu-sidebar list-unstyled">
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/strategic-partners" class="sidebar-menu__link">Strategic Partners</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/partners" class="sidebar-menu__link">Partner Directory</a>
-                </li>
-                <li class="sidebar-menu__item">
-                  <a href="https://newuu.uz/en/stories" class="sidebar-menu__link">Success Stories</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="section-aside-menu-list-item sidebar-menu__item">
-              <a href="https://newuu.uz/en/campus-facilities" class="sidebar-menu__link no-active">
-                Campus & Facilities
-              </a>
-            </li>
-
-            <li class="section-aside-menu-list-item sidebar-menu__item">
-              <a href="https://newuu.uz/en/virtual-tour" class="sidebar-menu__link active">
-                Campus Map & 360° VR
-              </a>
-            </li>
-
-            <li class="section-aside-menu-list-item sidebar-menu__item">
-              <a href="https://newuu.uz/en/vacancy" class="sidebar-menu__link no-active">
-                Vacancy
-              </a>
-            </li>
-
-          </ul> -->
+                                        <iframe id="tour-embedded" name="Sharq_1_qavat" :src="tourUrl" frameborder="0"
+                                                width="100%" height="400px" scrolling="no" allowvr="yes"
+                                                allow="vr; xr; accelerometer; gyroscope; autoplay;"
+                                                allowfullscreen="false" webkitallowfullscreen="false"
+                                                mozallowfullscreen="false" loading="eager"></iframe>
                                 </div>
-
-                                <!-- Aside Banner -->
-                                <div class="aside-banner">
-                                        <a href="https://t.me/sharqMurojaat_bot">
-                                                <h3 class="aside-banner__title"> Rektorga <br>Murojaat</h3>
-                                                <button class="aside-banner__btn">Yuborish</button>
-                                                <img class="aside-banner__image" src="/img/murojaat.png"
-                                                        alt="Reach out to the Rector">
-                                        </a>
-                                </div>
-
                         </div>
+
                 </div>
         </div>
+
 </template>
 
 <script>
@@ -253,7 +73,7 @@ export default {
         display: flex;
         /* grid-template-columns: 3fr 1fr; */
         gap: 20px;
-        padding-top: 140px;
+        /* padding-top: 140px; */
 }
 
 .page-row__col {
@@ -263,23 +83,18 @@ export default {
 }
 
 .campus-content {
-        width: calc(100% - 267px)
+        /* width: calc(100% - 267px) */
 }
 
 .page-block {
         background: white;
 }
 
-.campus360-title {
-        font-size: 26px;
-        /* margin-bottom: 15px; */
-        font-weight: bold;
-}
 
-.aside {
+/* .aside {
         position: sticky;
         top: 148px;
-}
+} */
 
 .sidebar-title {
         font-size: 22px;

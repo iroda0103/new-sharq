@@ -1,21 +1,17 @@
 <template>
   <div class="partners-page">
     <section class="partners-page__header">
-      <div class="container">
-        <h1 class="partners-page__title">Hamkorlarimiz</h1>
-        <p class="partners-page__subtitle">
+      <div class="">
+        <h1 class="partners-page__title page-title">Hamkorlarimiz</h1>
+        <!-- <p class="partners-page__subtitle">
           Biz bilan hamkorlik qilayotgan tashkilotlar va korxonalar ro‘yxati.
-        </p>
+        </p> -->
       </div>
     </section>
     <div class="container">
       <div class="partners-grid">
-        <div
-          class="partner-card"
-          v-for="partner in partners"
-          :key="partner.id"
-        >
-          <img loading="lazy":src="partner.img" :alt="partner.name" />
+        <div class="partner-card" v-for="partner in partners" :key="partner.id">
+          <img loading="lazy" :src="partner.img" :alt="partner.name" />
         </div>
       </div>
     </div>
@@ -30,7 +26,7 @@ export default {
       partners: Array.from({ length: 18 }, (_, i) => ({
         id: i + 1,
         name: `Partner ${i + 1}`,
-        img: `https://sharqedu.uz/assets/img/partners/part${i + 1}.png`
+        img: `/img/partners/part${i + 1}.png`
       }))
     }
   }
@@ -38,9 +34,16 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+
 .partners-page {
-  padding-top: 80px;
+  // padding-top: 80px;
   color: #1b1b1b;
+  border-radius: 12px;
+  border: 1px solid rgba(234, 238, 245, 1);
+  // background: rgba(239, 243, 249, 1);
+  box-shadow: 0px 0px 30px 0px rgba(7, 12, 28, 0.04);
+  width: 100%;
 
   .container {
     max-width: 1200px;
@@ -49,7 +52,7 @@ export default {
   }
 
   &__header {
-    padding: 60px 0;
+    // padding: 60px 0;
     text-align: center;
 
     &__title {
@@ -68,15 +71,16 @@ export default {
 
   .partners-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     gap: 30px;
-    padding: 40px 0;
+    padding: 20px 0;
     align-items: center;
     justify-content: center;
   }
 
   .partner-card {
     background: white;
+    // background:rgba(239, 243, 249, 1);
     padding: 20px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
@@ -87,7 +91,7 @@ export default {
 
     img {
       max-width: 100%;
-      max-height: 100px;
+      max-height: 120px;
       object-fit: contain;
       filter: grayscale(100%);
       transition: filter 0.3s ease;

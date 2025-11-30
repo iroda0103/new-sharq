@@ -4,10 +4,10 @@
             <header class="portal-header">
                 <div class="logo">
                     <!-- <img loading="lazy"src="../img/logo_sharq.png" alt="SHarq Universiteti"> -->
-                    <h1>SHarq Universiteti Ta'lim Portali</h1>
+                    <h1 class="page-title">Ta'lim Portali</h1>
                 </div>
-                <p>Oliy ta'lim jarayonlarini boshqarish, shu jumladan o'quv, ilmiy va moliyaviy funksiyalar uchun yagona
-                    axborot tizimi</p>
+                <!-- <p>Oliy ta'lim jarayonlarini boshqarish, shu jumladan o'quv, ilmiy va moliyaviy funksiyalar uchun yagona
+                    axborot tizimi</p> -->
             </header>
 
             <div class="portal-features">
@@ -116,22 +116,21 @@ export default {
 
 <style lang="scss" scoped>
 .test-hemis--wrapper{
-    max-width: 600px;
+    // max-width: 600px;
 }
 .edu-portal {
-    padding: 60px 20px;
-    padding-top: 170px;
-    background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 100%);
+    // padding: 60px 20px;
+    // background: linear-gradient(135deg, #f8f9ff 0%, #eef2ff 100%);
     font-family: 'Segoe UI', 'Roboto', sans-serif;
 
     .container {
-        max-width: 1200px;
+        // max-width: 1200px;
         margin: 0 auto;
     }
 
     .portal-header {
         text-align: center;
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
 
         .logo {
             display: flex;
@@ -144,12 +143,12 @@ export default {
                 height: 50px;
             }
 
-            h1 {
-                font-size: 2.2rem;
-                color: #1e3a8a;
-                margin: 0;
-                font-weight: 700;
-            }
+            // h1 {
+            //     font-size: 2.2rem;
+            //     color: #1e3a8a;
+            //     margin: 0;
+            //     font-weight: 700;
+            // }
         }
 
         p {

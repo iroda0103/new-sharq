@@ -1,8 +1,8 @@
 <template>
     <section class="documents">
         <div class="documents__container">
-            <h2 class="documents__title">Asosiy Me'yoriy Hujjatlar</h2>
-            <p class="documents__subtitle">Sharq Universitetining asosiy normativ-huquqiy hujjatlari</p>
+            <h2 class="page-title">Asosiy Me'yoriy Hujjatlar</h2>
+            <!-- <p class="documents__subtitle">Sharq Universitetining asosiy normativ-huquqiy hujjatlari</p> -->
 
             <div class="documents__grid">
                 <div v-for="(document, index) in documents" :key="index" class="documents__card"
@@ -48,7 +48,7 @@ export default {
                 {
                     name: "Ichki tartib qoidalari",
                     date: "2024-yil 20-avgust",
-                    file: "internal_regulations.pdf"
+                    file: "odob-axloq.pdf"
                 },
                 {
                     name: "Universitet nizomi",
@@ -68,7 +68,7 @@ export default {
             // Bu yerda hujjatni yuklab olish logikasi
             console.log(`Downloading ${fileName}`);
             // Haqiqiy loyihada:
-            // window.open(`/documents/${fileName}`, '_blank');
+            window.open(`/file/${fileName}`, '_blank');
         }
     }
 }
@@ -77,9 +77,12 @@ export default {
 <style lang="scss">
 .documents {
     padding: 3rem 1rem;
-    padding: 100px 50px;
-    background-color: #f9f9f9;
-    padding-top: 180px;  
+    border-radius: 12px;
+    border: 1px solid rgba(234, 238, 245, 1);
+    background: #ffffffd8;
+    box-shadow: 0px 0px 30px 0px rgba(7, 12, 28, 0.04);
+    width: 100%;
+    height: 100%;
 
     &__container {
         max-width: 1200px;

@@ -1,17 +1,17 @@
 <template>
     <section class="dormitory-page">
-        <div class="container">
+        <div class="">
             <!-- <div class="breadcrumbs">
                 <a href="/">Bosh sahifa</a> / <a href="#">Talabalar uchun</a> / <span>Yotoqxonalar</span>
             </div> -->
 
             <div class="hero-section">
-                <div class="hero-content">
+                <!-- <div class="hero-content">
                     <h1 class="hero-title">Talabalar yotoqxonasi</h1>
                     <p class="hero-subtitle">Qulay va xavfsiz yashash sharoitlari</p>
                     <a href="#dormitories" class="cta-button">Yotoqxonalarni ko'rish <i
                             class="fas fa-arrow-down"></i></a>
-                </div>
+                </div> -->
                 <div class="hero-image">
                     <img loading="lazy" src="/img/bed-room2/main.jpg" alt="Yotoqxona binosi">
 
@@ -22,21 +22,21 @@
             <div class="stats-section">
                 <div class="stat-card">
                     <font-awesome-icon :icon="['fas', 'bed']" />
-                    <div>
+                    <div class="stat_wrapper">
                         <span class="stat-number">250+</span>
                         <span class="stat-label">Joylar</span>
                     </div>
                 </div>
                 <div class="stat-card">
                     <font-awesome-icon :icon="['fas', 'building']" />
-                    <div>
+                    <div class="stat_wrapper">
                         <span class="stat-number">100+</span>
-                        <span class="stat-label">Yotoqxona xonalari</span>
+                        <p class="stat-label">Yotoqxona xonalari</p>
                     </div>
                 </div>
                 <div class="stat-card">
                     <font-awesome-icon :icon="['fas', 'wifi']" />
-                    <div>
+                    <div class="stat_wrapper">
                         <span class="stat-number">100%</span>
                         <span class="stat-label">WiFi qamrovi</span>
                     </div>
@@ -44,7 +44,7 @@
                 <div class="stat-card">
                     <font-awesome-icon :icon="['fas', 'utensils']" />
 
-                    <div>
+                    <div class="stat_wrapper">
                         <span class="stat-number">3</span>
                         <span class="stat-label">Oshxona</span>
                     </div>
@@ -109,17 +109,32 @@
             <div class="gallery-section">
                 <h2 class="section-title">Yotoqxona hayoti</h2>
                 <p class="section-subtitle">Bizning yotoqxonalarimizdagi hayotdan lavhalar</p>
-                <div class="gallery-grid">
-                    <video autoplay muted loop class="gallery-item" >
+                <div class="gallery-wrapper"> <video autoplay muted loop class="video-item">
                         <source src="/img/bed-room2/video.mp4" type="video/mp4">
                         Your browser does not support the video tag.//>
                     </video>
-                    <div class="gallery-item" v-for="(item, index) in gallery" :key="index">
-                        <img loading="lazy" :src="item.image" :alt="item.caption">
-                        <div class="gallery-caption">{{ item.caption }}</div>
+                    <div class="wrapper-grid">
+                        <div class="gallery-grid">
+
+                            <div class="gallery-item" v-for="(item, index) in gallery" :key="index">
+                                <img loading="lazy" :src="item.image" :alt="item.caption">
+                                <div class="gallery-caption">{{ item.caption }}</div>
+                            </div>
+
+                        </div>
+                        <div class="gallery-grid">
+
+                            <div class="gallery-item" v-for="(item, index) in gallery" :key="index">
+                                <img loading="lazy" :src="item.image" :alt="item.caption">
+                                <div class="gallery-caption">{{ item.caption }}</div>
+                            </div>
+
+                        </div>
                     </div>
 
+
                 </div>
+
             </div>
 
             <div class="faq-section">
@@ -274,7 +289,7 @@ export default {
 <style lang="scss" scoped>
 .dormitory-page {
     padding: 0;
-    padding-top: 150px;
+    // padding-top: 150px;
     // font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
     line-height: 1.6;
@@ -378,20 +393,21 @@ export default {
 /* Stats section */
 .stats-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     margin-bottom: 60px;
 }
 
 .stat-card {
     background: white;
-    padding: 25px 20px;
+    padding: 15px 10px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     transition: transform 0.3s;
+    // justify-content: center;
 
     &:hover {
         transform: translateY(-5px);
@@ -400,10 +416,10 @@ export default {
     svg {
         font-size: 2rem;
         color: #3498db;
-        width: 60px;
-        height: 60px;
-        background: #f1f9fe;
-        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        background: #ffffff;
+        // border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -412,15 +428,21 @@ export default {
 
 .stat-number {
     display: block;
-    font-size: 1.8rem;
+    font-size: 20px;
     font-weight: 700;
     color: #2c3e50;
     line-height: 1.2;
 }
 
+.stat_wrapper {
+    // text-align: center;
+}
+
 .stat-label {
-    font-size: 0.9rem;
+    font-size: 14px;
     color: #7f8c8d;
+    display: block;
+    width: 100%;
 }
 
 /* Dormitories section */
@@ -672,13 +694,20 @@ export default {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns:430px  repeat(auto-fill, minmax(350px, 1fr));
-    gap: 20px;
+    // width: 100%;
+
+    // grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    width: 500px;
 }
 
 video {
-    // height: 500px;
-    width: 100%;
+    // height: 100px;
+    // width: 100%;
+    width: 200px;
+    // height: 300px;
     object-fit: cover;
 }
 
@@ -688,7 +717,10 @@ video {
     overflow: hidden;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-    height: 500px;
+    height: 150px;
+    width: 100%;
+    min-width: 200px;
+    overflow: hidden;
 
     &:hover {
         transform: scale(1.03);
@@ -697,7 +729,8 @@ video {
     img {
         width: 100%;
         height: 100%;
-        width: 500px;
+        // height: 100px;
+        // width: 500px;
 
         object-fit: cover;
     }
@@ -712,6 +745,25 @@ video {
         padding: 10px;
         text-align: center;
         font-size: 0.9rem;
+    }
+}
+
+.gallery-wrapper {
+    display: flex;
+    gap: 10px;
+    // overflow-x: auto;
+    padding-bottom: 10px;
+
+    .video-item {
+        flex: 0 0 auto;
+        width: 300px;
+        // max-height: 100%;
+        // height: 300px;
+        // height: 150px;
+        source{
+                    max-height: 100%;
+height: 100%;
+        }
     }
 }
 
@@ -822,4 +874,55 @@ video {
         grid-template-columns: 1fr;
     }
 }
+.gallery-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+/* Video uchun umumiy o‘lcham */
+.video-item {
+    width: 100%;
+    height: 350px; /* Shu yerda balandlikni o‘zingizga mos qilib o‘zgartirasiz */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Rasmlar uchun bir xil balandlik */
+.gallery-grid .gallery-item img {
+    width: 100%;
+    height: 350px; /* Videodagi balandlik bilan bir xil bo‘lsin */
+    object-fit: cover;
+    border-radius: 10px;
+}
+.gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+/* Chapdagi katta rasm */
+.gallery-left img {
+    width: 100%;
+    height: 300px;   /* Balandlikni bir xil qilamiz */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* O‘ngdagi rasm kartochkalari */
+.gallery-right .item img {
+    width: 100%;
+    height: 300px;  /* Chapdagi bilan bir xil bo‘lsin */
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* Kartochka ichidagi qora yozuv qismi */
+.gallery-right .item .caption {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 </style>

@@ -12,7 +12,7 @@
         <p>
           Elektron kutubxonada oliy taʼlim va ilmiy tadqiqot muassasalarining o‘quv adabiyotlari, monografiyalari, disseratsiyalari va ilmiy maqolalari jamlangan.
         </p>
-        <a href="https://unilibrary.uz" target="_blank" class="btn-more blue-link">Batafsil</a>
+        <!-- <a href="https://unilibrary.uz" target="_blank" class="btn-more blue-link">Batafsil</a> -->
       </div>
 
       <div class="stats-grid">
@@ -49,9 +49,9 @@ export default {
 
 <style lang="scss" scoped>
 .unilibrary {
-  padding: 60px 20px;
+  // padding: 60px 20px;
   font-family: 'Segoe UI', sans-serif;
-padding-top: 180px;
+// padding-top: 180px;
   .unlibrary__container {
     max-width: 1200px;
     margin: 0 auto;

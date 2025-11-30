@@ -51,6 +51,27 @@ body {
     
 }
 
+.page-title {
+  color: rgba(42, 64, 122, 1);
+  font-family: "MuseoSansCyrl-700", sans-serif;
+  font-size: 22px;
+  line-height: 140%;
+  letter-spacing: -0.24px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  text-align: center;
+  font-weight: 650;
+  margin-bottom: 12px;
+  
+}
+.public-card-wrapper{
+  border-radius: 12px;
+  border: 1px solid rgba(234, 238, 245, 1);
+  box-shadow: 0px 0px 30px 0px rgba(7, 12, 28, 0.04);
+  background-color: #fff;
+  padding: 15px;
+}
+
 /* img {
   max-width: 100%;
   height: auto;
@@ -79,8 +100,9 @@ main {
   max-width: 1130px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  /* margin-left: auto;
+  margin-right: auto; */
 }
 
 

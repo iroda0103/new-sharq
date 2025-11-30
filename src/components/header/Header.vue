@@ -115,25 +115,27 @@
                                         <li><a href="/department">Talabalarga xizmat ko'rsatish bo'limi</a></li>
                                     </ul>
                                 </li>
+                                <li class="has-submenu">
+                                    <a href="/activity/" class="submenu-trigger">
+                                        Faoliyatlar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </a>
+                                    <ul class="submenu">
+                                        <li><a href="/activity/yoshlar">Yoshlar ittifoqi</a>
+                                        </li>
+                                        <li><a href="/activity/women">Xotin-qizlar kengashi</a></li>
+                                        <li><a href="/activity/kasaba">Kasaba uyushmasi</a></li>
+                                        <li><a href="/activity/tutoring">Tyutorlar faoliyati</a></li>
+                                        <li><a href="/activity/psychology">Psixologlar faoliyati</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </li>
 
 
                         <li class="nav__item nav__item--has-dropdown">
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
-                                <span>Talabalarga</span>
-                                <i class="fas fa-chevron-down dropdown-icon"></i>
-                            </a>
-                            <ul class="dropdown">
-                                <li><a href="/education-portal">Ta'lim portali</a></li>
-                                <li><a href="/library">Axborot resurslar markazi</a></li>
-                                <li><a href="/activity">Faoliyatlar</a></li>
-                                <li><a href="/galery">Gallery</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav__item nav__item--has-dropdown">
-                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
-                                <span>Abituriyentlar</span>
+                                <span>Ta'lim</span>
                                 <i class="fas fa-chevron-down dropdown-icon"></i>
                             </a>
                             <ul class="dropdown">
@@ -144,14 +146,60 @@
                                     </a>
                                     <ul class="submenu">
                                         <li><a href="/">Umumiy ma'lumot</a></li>
-                                        <li><a href="/">Qabul statistikasi</a></li>
-                                        <li><a href="/">O‘qish to‘lovlari va stipendiyalar</a></li>
+                                        <li><a href="/payment">To'lov turlari</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/bed-room">Yotoqxona</a></li>
+                                <li><a href="/education-portal">Ta'lim portali</a></li>
+                                <li><a href="/library">Axborot resurslar markazi</a></li>
+                                <li><a href="/academic-calendar">Dars jadvali</a></li>
+
+                                <!-- <li><a href="/activity">Faoliyatlar</a></li> -->
+                                <!-- <li><a href="/galery">Gallery</a></li> -->
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Qabul</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="/education-portal">Bakalavr</a></li>
                                 <li><a href="/grant">Grantlar</a></li>
+                                <li><a href="/library">O'qishni ko'chirish</a></li>
+                                <li><a href="/academic-calendar">Matbuot xizmati</a></li>
+                                <li><a href="/galery">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Axborot ximati</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><a href="/education-portal">Yangiliklar</a></li>
+                                <li><a href="/library">Postlar</a></li>
+                                <li><a href="/academic-calendar">Matbuot xizmati</a></li>
+                                <li><a href="/galery">Gallery</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Talabalar hayoti</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+
+                                <li><a href="/bed-room">Yotoqxona</a></li>
+                                <li><a href="/grant">Klublar</a></li>
+                                <li><a href="/grant">Tadbirlar</a></li>
 
                             </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Kelajakka qadam</span>
+                            </a>
                         </li>
                     </ul>
                 </nav>

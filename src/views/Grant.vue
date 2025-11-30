@@ -1,10 +1,10 @@
 
 <template>
   <section class="grants-section">
-    <div class="container">
-      <h1 class="section-title">Grant va Chegirma Dasturlari</h1>
+    <div class="">
+      <h1 class="page-title">Grant va Chegirma Dasturlari</h1>
 
-      <div class="section-subtitle">Grant Dasturlari</div>
+      <!-- <div class="section-subtitle">Grant Dasturlari va Chegirma Dasturlari</div> -->
       <div class="cards-grid">
         <div class="card" v-for="item in grants" :key="item.title">
           <div class="icon-wrapper">
@@ -58,9 +58,7 @@ export default {
 <style scoped>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css');
 
-.grants-section{
-  padding-top: 130px;
-}
+
 .container {
   max-width: 1200px;
   margin: auto;

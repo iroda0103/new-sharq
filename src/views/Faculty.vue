@@ -412,19 +412,18 @@ export default {
 </style> -->
  <style lang="scss">
 .directions-page {
-  padding: 40px 20px;
+  // padding: 40px 20px;
   max-width: 1200px;
   margin: 0 auto;
-  padding-top: 160px;
 }
 
-.page-title {
-  font-size: 32px;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 10px;
-  color: #222;
-}
+// .page-title {
+//   font-size: 32px;
+//   font-weight: 700;
+//   text-align: center;
+//   margin-bottom: 10px;
+//   color: #222;
+// }
 
 .page-subtitle {
   font-size: 18px;
@@ -593,7 +592,7 @@ export default {
 
 <template>
   <section class="directions-page">
-    <div class="container">
+    <div class="">
       <h2 class="page-title">Ta'lim yo'nalishlari</h2>
       <p class="page-subtitle">Zamonaviy kasblar va istiqbolli mutaxassisliklar</p>
 

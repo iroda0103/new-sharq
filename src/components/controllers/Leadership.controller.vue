@@ -1,193 +1,83 @@
-<!-- <script setup lang="ts">
-import Banner from '../banner/Banner.vue';
-import LeadershipController from './Leadership.controller.vue';
-import SidebarController from './Sidebar.controller.vue';
-
-</script>
-
 <template>
-    <div class="wrapper">
-        <div class=" container">
-            <div class="page-row">
-                <div class="main-section page-row__col">
-                    <LeadershipController></LeadershipController>
+    <div class="leadership">
+        <div class="leadersheap-image">
+            <div class="leadership-image__inner">
+                <img src="/img/person/rector.jpg" alt="">
+            </div>
+
+        </div>
+
+        <div class="leadership-info__wrapper">
+            <div class="leadership-info">
+                <h3 class="leadership-info__fio">PhD. Sherzod Atamurodov</h3>
+                <div class="leadership-info__divider"></div>
+                <p class="leadership-info__text">
+                    Sharq universiteti rektori </p>
+                <div class="leadership-info__bottom">
+                    <div class="leadership-info__links">
+                        <a href="mailto:info@uzedu.uz" class="leadership-info__link">
+                            <i class="fa-regular fa-envelope"></i>
+                            info@uzedu.uz </a>
+                        <a href="tel:+998712410115" class="leadership-info__link">
+                            <i class="fa-solid fa-phone"></i>
+                            +998 (71) 241-01-15 </a>
+                    </div>
+                    <div class="leadership-info__social">
+                        <a href="https://instagram.com" class="icon-instagram" rel="nofollow" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me" class="icon-telegram" rel="nofollow" target="_blank"><i
+                                class="fa-brands fa-telegram"></i></a>
+                        <a href="https://facebook.com" class="icon-facebook" rel="nofollow" target="_blank"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://youtube.com" class="icon-youtube" rel="nofollow" target="_blank"><i
+                                class="fa-brands fa-youtube"></i></a>
+                    </div>
 
                 </div>
-                <aside class="page-row__col">
-                    <div class="aside">
-                        <SidebarController></SidebarController>
-                    </div>
-                </aside>
+            </div>
+            <div class="page-block">
+                <h3 class="page-block__subtitle">
+                    Tarjimai hol </h3>
+                <div class="page-block__divider"></div>
+                <div class="content">
+                    <p><span>Umarova Khilola Uktamovna was born in 1988 in Weimer in Germany. She
+                            graduated
+                            from the University of World Economy and Diplomacy in Tashkent with a major
+                            in
+                            International economic relations. Khilola Umarova is a researcher at the
+                            Academy
+                            of Public Administration under the President of the Republic of Uzbekistan.
+                            She
+                            is fluent in Uzbek, Russian and English. Khilola Umarova is married and has
+                            one
+                            child.</span></p>
+                </div>
+            </div>
+            <div class="page-block">
+                <h3 class="page-block__subtitle">
+                    Experience </h3>
+                <div class="page-block__divider"></div>
+                <div class="content">
+                    <ul>
+                        <li>2019 - 2019 — Chief Manager on the affairs of supporting active
+                            entrepreneurship, innovative ideas and technologies at Inha University in
+                            Tashkent.</li>
+                        <li>2019 - 2020 — Director of the specialized school named after Muhammad
+                            al-Khorazmi, specializing in advanced education in information and
+                            communication
+                            technologies.</li>
+                        <li>2020 - 2022 — Director of the Agency for Presidential Educational
+                            Institutions
+                            of the Republic of Uzbekistan</li>
+                        <li>2022-2025 – Minister of Preschool and School Education.</li>
+                        <li>2025 – Deputy Head of the Presidential Administration for Education Reform.
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
-</template> -->
-<!-- DynamicWrapper.vue -->
-<script setup lang="ts">
-import { computed, ref, onMounted } from 'vue'
-import Banner from '../banner/Banner.vue'
-import LeadershipController from './Leadership.controller.vue'
-import HistoryController from './HistoryController.vue'
-import SidebarController from './Sidebar.controller.vue'
-
-const currentPath = ref('')
-
-// Sahifa konfiguratsiyalari
-const pageConfigs = {
-  '/wrapper': {
-    title: 'Rektor',
-    showBanner: true,
-    background: '/img/bg/image_copy.png',
-    component: 'LeadershipController'
-  },
-  '/leadership': {
-    title: 'Rahbariyat',
-    showBanner: true,
-    background: '/img/bg/image_copy.png',
-    component: 'LeadershipController'
-  },
-  '/history': {
-    title: 'Universitet tarixi',
-    showBanner: true,
-    background: '/img/bg/history_bg.png',
-    component: 'HistoryController'
-  },
-  '/partners': {
-    title: 'Hamkorlar',
-    showBanner: true,
-    background: '/img/bg/partners_bg.png',
-    component: 'PartnersController'
-  },
-  '/faculty': {
-    title: 'Fakultetlar',
-    showBanner: true,
-    background: '/img/bg/faculty_bg.png',
-    component: 'FacultyController'
-  },
-  '/kafedra': {
-    title: 'Kafedralar',
-    showBanner: true,
-    background: '/img/bg/kafedra_bg.png',
-    component: 'KafedraController'
-  },
-  '/department': {
-    title: 'Bo\'limlar',
-    showBanner: true,
-    background: '/img/bg/department_bg.png',
-    component: 'DepartmentController'
-  },
-  '/directions': {
-    title: 'Ta\'lim yo\'nalishlari',
-    showBanner: true,
-    background: '/img/bg/directions_bg.png',
-    component: 'DirectionsController'
-  }
-}
-
-// Joriy sahifa konfiguratsiyasini olish
-const currentPageConfig = computed(() => {
-  const path = currentPath.value.split('?')[0]
-  return pageConfigs[path] || {
-    title: 'Sharq Universiteti',
-    showBanner: false,
-    background: '/img/bg/image_copy.png',
-    component: 'LeadershipController'
-  }
-})
-
-// Yo'lni yangilash
-const updatePath = () => {
-  currentPath.value = window.location.pathname
-}
-
-onMounted(() => {
-  updatePath()
-  window.addEventListener('popstate', updatePath)
-})
-</script>
-
-<template>
-  <div class="wrapper" :style="{ backgroundImage: `url(${currentPageConfig.background})` }">
-    <!-- <Banner v-if="currentPageConfig.showBanner" :title="currentPageConfig.title" /> -->
-    
-    <div class="container">
-      <div class="page-row">
-        <div class="main-section page-row__col">
-          <!-- Dinamik komponent yuklash -->
-          <component 
-            :is="currentPageConfig.component === 'LeadershipController' ? LeadershipController : currentPageConfig.component === 'HistoryController' ? HistoryController : null"
-          />
-        </div>
-        
-        <aside class="page-row__col">
-          <div class="aside">
-            <SidebarController />
-          </div>
-        </aside>
-      </div>
-    </div>
-  </div>
 </template>
-
-<style scoped>
-.wrapper {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(255, 255, 255, 0.877);
-  background-blend-mode: overlay;
-  margin-top: 130px;
-  padding-bottom: 80px;
-  z-index: -100;
-  transition: background-image 0.3s ease;
-}
-
-.page-row {
-  display: flex;
-  gap: 14px;
-}
-
-.page-row__col {
-  flex-grow: 1;
-  padding: 15px 0;
-}
-
-.page-row__col:nth-child(1) {
-  width: 70%;
-}
-
-.page-row__col:nth-child(2) {
-  width: 20%;
-}
-
-.aside {
-  position: sticky;
-  top: 130px;
-  width: 100%;
-  height: 100%;
-}
-
-@media only screen and (max-width: 768px) {
-  .page-row {
-    flex-direction: column;
-  }
-
-  .page-row__col:nth-child(1),
-  .page-row__col:nth-child(2) {
-    width: 100%;
-  }
-
-  .wrapper {
-    margin-top: 0;
-    padding-top: 60px;
-  }
-
-  .aside {
-    position: static;
-  }
-}
-</style>
 <style>
 .wrapper {
     background-image: url('/img/bg/image_copy.png');
@@ -222,19 +112,19 @@ onMounted(() => {
 }
 
 .page-row__col:nth-child(2) {
-    width: 20%;
+    /* width: 20%; */
 }
 
-.aside {
+/* .aside {
     position: sticky;
     top: 130px;
     width: 100%;
     height: 100%;
 
-}
+} */
 
 .sidebar {
-    height: 100%;
+    /* height: 100%; */
 
     border-radius: 12px;
     border: 1px solid rgba(234, 238, 245, 1);
@@ -486,6 +376,7 @@ onMounted(() => {
 
     .page-row__col:nth-child(2) {
         width: 100%;
+        flex-grow: 0;
     }
 
     .wrapper {
@@ -523,5 +414,4 @@ onMounted(() => {
         height: 240px;
 
     }
-}
-</style>
+}</style>

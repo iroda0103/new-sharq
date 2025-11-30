@@ -1,8 +1,7 @@
 <template>
   <section class="certificates-section">
     <div class="container">
-      <!-- <h2 class="public-card-wrapper page-title">Litsenziya va Sertifikatlar</h2> -->
-      <h2 class="page-title">Litsenziya va Sertifikatlar</h2>
+      <h2 class="section-title">Litsenziya va Sertifikatlar</h2>
       <div class="certificates-grid">
         <div class="certificate-card" v-for="(item, index) in certificates" :key="index">
           <img loading="lazy" :src="item.image" :alt="item.title" />
@@ -45,22 +44,15 @@ export default {
 
 <style lang="scss" scoped>
 .certificates-section {
-  // padding: 20px;
-  // background-color: #ffffff;
-  // border-radius: 12px;
-  // border: 1px solid rgba(234, 238, 245, 1);
-  // background: #fff;
-  // box-shadow: 0px 0px 30px 0px rgba(7, 12, 28, 0.04);
-  width: 100%;
-
-  // background: var(--light-color);
-  // padding-top: 150px;
+  padding: 80px 20px;
+  background: var(--light-color);
+  padding-top: 150px;
 
   .section-title {
     text-align: center;
     font-size: 2.2rem;
     color: var(--primary-color);
-    // margin-bottom: 40px;
+    margin-bottom: 40px;
     font-weight: bold;
   }
 
@@ -71,7 +63,6 @@ export default {
   }
 
   .certificate-card {
-    flex-grow: 1;
     background: #fff;
     border-radius: 16px;
     box-shadow: var(--shadow);
@@ -85,13 +76,9 @@ export default {
     }
 
     img {
-      // max-width: 100%;
+      max-width: 100%;
       border-radius: 12px;
       margin-bottom: 16px;
-      height: 430px;
-      width: 300px;
-      margin: 0 auto;
-      // width: 100%;
     }
 
     h3 {

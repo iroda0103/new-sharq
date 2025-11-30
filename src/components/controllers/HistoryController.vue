@@ -2,7 +2,7 @@
     <div class="container history__container">
         <!-- <h2 class="history__title">Sharq Universiteti Tarixi</h2> -->
 
-        <img loading="lazy" src="../../public/img/place.webp">
+        <img loading="lazy" src="/img/place.webp">
         <div class="history__content">
             <!-- <p>
                 Sharq Universiteti o‘z faoliyatini <strong>2025-yil</strong>da boshlagan bo‘lib,
@@ -48,9 +48,15 @@
     color: #1b1b1b;
 
     &__container {
-        padding: 45px 0;
-        max-width: 900px;
+        // padding: 45px 0;
+        // max-width: 900px;
         margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 12px;
+        border: 1px solid rgba(234, 238, 245, 1);
+        background: #fff;
+        box-shadow: 0px 0px 30px 0px rgba(7, 12, 28, 0.04);
+        width: 100%;
     }
 
     &__title {
