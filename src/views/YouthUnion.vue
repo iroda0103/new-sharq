@@ -22,7 +22,7 @@
                     <div class="leadership-info__links">
                         <a href="mailto:info@uzedu.uz" class="leadership-info__link">
                             <i class="fa-regular fa-envelope"></i>
-                            info@sharqedu.uz </a>
+                            uabduqayimov@mail.ru </a>
                         <a href="tel:+998712410115" class="leadership-info__link">
                             <i class="fa-solid fa-phone"></i>
                             +998 (93) 003-20-99 </a>
@@ -139,6 +139,7 @@
     display: flex;
     gap: 20px;
 }
+
 .info-row {
     display: flex;
     gap: 16px;
@@ -155,5 +156,4 @@
     color: #1f2937;
     border: 1px solid #e5e7eb;
 }
-
 </style>

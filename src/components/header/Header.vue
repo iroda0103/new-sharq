@@ -101,18 +101,18 @@
 
                                 <li class="has-submenu">
                                     <a href="/department/" class="submenu-trigger">
-                                        Bo'limlar
+                                        Bo‘limlar
                                         <i class="fas fa-chevron-right submenu-icon"></i>
                                     </a>
                                     <ul class="submenu">
-                                        <li><a href="/department">Moliya-iqtisod bo'limi</a></li>
-                                        <li><a href="/department">Xo'jalik bo'limi</a></li>
+                                        <li><a href="/department">Moliya-iqtisod bo‘limi</a></li>
+                                        <li><a href="/department">Xo‘jalik bo‘limi</a></li>
                                         <li><a href="/department">Axborot texnologiyalar markazi</a></li>
                                         <li><a href="/department">Axborot-resurslar markazi</a></li>
-                                        <li><a href="/department">Xodimlar bo'limi</a></li>
-                                        <li><a href="/department">O'quv-uslubiy bo'lim</a></li>
-                                        <li><a href="/department">Marketing va shartnomalar bo'limi</a></li>
-                                        <li><a href="/department">Talabalarga xizmat ko'rsatish bo'limi</a></li>
+                                        <li><a href="/department">Xodimlar bo‘limi</a></li>
+                                        <li><a href="/department">O‘quv-uslubiy bo‘lim</a></li>
+                                        <li><a href="/department">Marketing va shartnomalar bo‘limi</a></li>
+                                        <li><a href="/department">Talabalarga xizmat ko‘rsatish bo‘limi</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-submenu">
@@ -135,21 +135,21 @@
 
                         <li class="nav__item nav__item--has-dropdown">
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
-                                <span>Ta'lim</span>
+                                <span>Ta’lim</span>
                                 <i class="fas fa-chevron-down dropdown-icon"></i>
                             </a>
                             <ul class="dropdown">
-                                <li class="has-submenu"><a href="/directions" class="submenu-trigger">Ta'lim
-                                        yo'nalishlari
+                                <li class="has-submenu"><a href="/directions" class="submenu-trigger">Ta‘lim
+                                        yo‘nalishlari
 
                                         <i class="fas fa-chevron-right submenu-icon"></i>
                                     </a>
                                     <ul class="submenu">
-                                        <li><a href="/">Umumiy ma'lumot</a></li>
-                                        <li><a href="/payment">To'lov turlari</a></li>
+                                        <li><a href="/">Umumiy ma‘lumot</a></li>
+                                        <li><a href="/payment">To‘lov turlari</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="/education-portal">Ta'lim portali</a></li>
+                                <li><a href="/education-portal">Ta’lim portali</a></li>
                                 <li><a href="/library">Axborot resurslar markazi</a></li>
                                 <li><a href="/academic-calendar">Dars jadvali</a></li>
 
@@ -165,8 +165,8 @@
                             <ul class="dropdown">
                                 <li><a href="/education-portal">Bakalavr</a></li>
                                 <li><a href="/grant">Grantlar</a></li>
-                                <li><a href="/library">O'qishni ko'chirish</a></li>
-                                <li><a href="/academic-calendar">Matbuot xizmati</a></li>
+                                <li><a href="/academic-change">O‘qishni ko‘chirish</a></li>
+                                <li><a href="/payment">To‘lov turlari</a></li>
                                 <li><a href="/galery">FAQs</a></li>
                             </ul>
                         </li>
@@ -178,7 +178,7 @@
                             <ul class="dropdown">
                                 <li><a href="/education-portal">Yangiliklar</a></li>
                                 <li><a href="/library">Postlar</a></li>
-                                <li><a href="/academic-calendar">Matbuot xizmati</a></li>
+                                <li><a href="/press-service">Matbuot xizmati</a></li>
                                 <li><a href="/galery">Gallery</a></li>
                             </ul>
                         </li>

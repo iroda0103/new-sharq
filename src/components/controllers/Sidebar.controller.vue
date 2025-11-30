@@ -127,6 +127,15 @@ const sidebarData = {
             { label: 'Qabul statistikasi', href: '/statistics' },
             { label: 'O\'qish to\'lovlari va stipendiyalar', href: '/payment' }
         ]
+    },
+    press:{
+        title: 'Matbuot xizmati',
+        items: [
+            { label: 'Yangiliklar', href: '/news' },
+            { label: 'Postlar', href: '/posts' },
+            { label: 'Matbuot xizmati', href: '/press-service' },
+            { label: 'Rasmlar', href: '/gallery' },
+        ]
     }
 }
 
@@ -170,6 +179,10 @@ const currentSection = computed(() => {
         return sidebarData.abituriyentlar
     }
 
+    if (path.includes('/press-service') || path.includes('/news') ||
+        path.includes('/posts') || path.includes('/gallery')) {
+        return sidebarData.press
+    }
     return null
 })
 

@@ -30,6 +30,8 @@ import Kasaba from '../views/Kasaba.vue'
 import Psychology from '../views/Psychology.vue'
 import AcademicCalendar from '../views/AcademicCalendar.vue'
 import Payment from '../views/Payment.vue'
+import AcademicChange from '../views/AcademicChange.vue'
+import PressService from '../views/PressService.vue'
 
 
 // Layout componentlar
@@ -73,7 +75,9 @@ const routes = [
       { path: 'campus', name: 'Campus', component: Test },
       { path: 'gallery', name: 'Gallery', component: Gallery },
       { path: 'academic-calendar', name: 'AcademicCalendar', component: AcademicCalendar },
+      { path: 'academic-change', name: 'AcademicChange', component: AcademicChange },
       { path: 'payment', name: 'Payment', component: Payment },
+      { path: 'press-service', name: 'PressService', component: PressService },
       { path: 'activity', name: 'Activity', component: Activity },
       { path: 'activity/tutoring', name: 'Tyutor', component: Tyutor },
       { path: 'activity/yoshlar', name: 'YouthUnion', component: YouthUnion },
