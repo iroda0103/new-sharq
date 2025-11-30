@@ -22,6 +22,37 @@ html {
   --gradient: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
   --shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --blue-1: rgba(22, 35, 71, 1);
+  --blue-2: rgba(42, 64, 122, 1);
+  --blue-3: rgba(20, 87, 149, 1);
+  --blue-4: rgba(82, 148, 229, 1);
+  --green-1: rgba(20, 126, 92, 1);
+  --green-2: rgba(65, 176, 120, 1);
+  --campus-1: rgba(161, 194, 231, 1);
+  --campus-2: rgba(201, 223, 248, 1);
+  --campus-3: rgba(217, 234, 253, 1);
+  --black-1: rgba(1, 11, 27, 1);
+  --black-2: rgba(36, 45, 58, 1);
+  --black-3: rgba(71, 82, 98, 1);
+  --black-4: rgba(119, 129, 145, 1);
+  --black-5: rgba(150, 159, 173, 1);
+  --black-6: rgba(190, 202, 221, 1);
+  --black-7: rgba(223, 228, 237, 1);
+  --black-8: rgba(234, 238, 245, 1);
+  --black-9: rgba(239, 243, 249, 1);
+  --black-10: rgba(248, 250, 253, 1);
+  --white-1: rgba(255, 255, 255, 1);
+  --c-white-1: 255,255,255;
+  --c-green-1: 20, 126, 92;
+  --event: linear-gradient(180deg, #3E7CB5 0%, #125EA4 100%);
+  --linear-1: linear-gradient(90deg, #3E7CB5 0%, #39A589 100%);
+  --linear-2: linear-gradient(90deg, #145795 0%, #118C6C 100%);
+  --program-1: linear-gradient(180deg, #489CA7 0%, #197683 100%);
+  --program-2: linear-gradient(180deg, #3E7CB5 0%, #125EA4 100%);
+  --program-3: linear-gradient(180deg, #39A589 0%, #199A79 100%);
+  --program-4: linear-gradient(180deg, #5C88C4 0%, #3C6CAC 100%);
+  --campus: linear-gradient(180deg, #B9D2EE 0%, #D9EAFD 52.02%);
 }
 
 *,

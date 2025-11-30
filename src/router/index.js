@@ -10,7 +10,7 @@ import Sertificat from '../views/Sertificat.vue'
 import Leadership from '../views/Leadership.vue'
 import TimetablePage from '../views/TimetablePage.vue'
 import BedRoom from '../views/BedRoom.vue'
-import Departments from '../views/Departments.vue'
+import Departments from '../views/Departments2.vue'
 import Kafedra from '../views/Kafedra.vue'
 import Grant from '../views/Grant.vue'
 import NotFound from '../views/NotFound.vue'
@@ -32,6 +32,8 @@ import AcademicCalendar from '../views/AcademicCalendar.vue'
 import Payment from '../views/Payment.vue'
 import AcademicChange from '../views/AcademicChange.vue'
 import PressService from '../views/PressService.vue'
+import Club from '../views/Club.vue'
+import Staffs from '../views/Staffs.vue'
 
 
 // Layout componentlar
@@ -79,6 +81,8 @@ const routes = [
       { path: 'payment', name: 'Payment', component: Payment },
       { path: 'press-service', name: 'PressService', component: PressService },
       { path: 'activity', name: 'Activity', component: Activity },
+      { path: 'club', name: 'Club', component: Club },
+      { path: 'department/staffs', name: 'Staff', component: Staffs },
       { path: 'activity/tutoring', name: 'Tyutor', component: Tyutor },
       { path: 'activity/yoshlar', name: 'YouthUnion', component: YouthUnion },
       { path: 'activity/women', name: 'WomenCommunity', component: WomenCommunity },
