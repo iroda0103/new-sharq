@@ -17,7 +17,7 @@
                 </p>
                 <a class="blue-link font-bold" href="https://qabul.sharqedu.uz/">Ariza berish</a>
             </div>
-            <Stats :stats="statsData" :title="'Bizning Statistikalar'" :delay="200" />
+            <!-- <Stats :stats="statsData" :title="'Bizning Statistikalar'" :delay="200" /> -->
 
             <div class="hero__wrapper">
                 <!-- Video o‘rniga rasm -->
@@ -402,4 +402,75 @@ main {
         display: none;
     }
 }
+@media (max-width: 1100px) {
+.hero {
+padding: 90px 0;
+
+
+&__container {
+padding-top: 100px;
+}
+
+
+&__content { text-align: center; }
+}
+
+
+.hero__title { justify-content: center; }
+}
+
+
+/* Tablet — 768px ↓ */
+@media (max-width: 768px) {
+.hero {
+padding: 70px 0;
+
+
+&__container {
+flex-direction: column-reverse;
+align-items: center;
+text-align: center;
+padding-top: 60px;
+}
+
+
+&__wrapper {
+width: 100%;
+flex: none;
+}
+}
+
+
+.hero__title { font-size: clamp(22px, 5vw, 32px); }
+.hero__text { font-size: 14px; }
+}
+
+
+/* Mobile — max 425px */
+@media (max-width: 425px) {
+.hero { padding: 50px 0; }
+.hero__title { font-size: clamp(20px, 6vw, 26px); }
+}
+
+
+/* Large monitors — min 1600 */
+@media (min-width: 1600px) {
+.hero {
+padding: 180px 0;
+&__container { gap: 60px; }
+}
+}
+
+
+/* Ultra-wide — min 1920 */
+@media (min-width: 1920px) {
+.hero {
+padding: 220px 0;
+&-bg { background-position: center; }
+}
+}
+
+
+.stats-card { position: relative !important; }
+@media (max-width: 1150px) { .stats-card { display: none; } }
 </style>

@@ -168,4 +168,10 @@ import FooterBottom from './FooterBottom.vue';
     margin: 0;
   }
 }
+.footer-bottom{
+  position: relative;
+}
+.footer-top{
+ position: relative;
+}
 </style>

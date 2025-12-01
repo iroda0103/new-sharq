@@ -354,6 +354,8 @@
                             </a>
                             <ul class="dropdown">
                                 <li><router-link to="/press-service">Matbuot xizmati</router-link></li>
+                                <li><router-link to="/press-service">Yangiliklar</router-link></li>
+                                <li><router-link to="/press-service">Postlar</router-link></li>
                                 <li><router-link to="/gallery">Gallery</router-link></li>
                             </ul>
                         </li>
@@ -365,6 +367,7 @@
                             </a>
                             <ul class="dropdown">
                                 <li><router-link to="/bed-room">Yotoqxona</router-link></li>
+                                <li><router-link to="/bed-room">Tadbirlar</router-link></li>
                                 <li><router-link to="/club">Klublar</router-link></li>
                             </ul>
                         </li>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="home">
         <Hero></Hero>
         <Ticker></Ticker>
         <!-- <About></About> -->
@@ -20,6 +20,9 @@
 </template>
 
 <style scoped lang="scss">
+.home{
+    padding-bottom: 60px;
+}
 .hero {
     position: relative;
     padding: 130px 0;
@@ -94,8 +97,6 @@
         //   flex: 0;
         // }
     }
-
-
 }
 
 // Mobile (≤ 768px)
@@ -144,7 +145,6 @@
 }
 </style>
 
-\
 <script>
 import Hero from '../components/Hero.vue'
 import Ticker from '../components/Ticker.vue';
