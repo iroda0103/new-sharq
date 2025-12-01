@@ -333,7 +333,7 @@ onMounted(() => {
     display: flex;
     gap: 20px;
     font-family: 'Inter', sans-serif;
-padding-top: 170px;
+// padding-top: 170px;
     .rektor__info {
         text-align: start;
     }
@@ -426,6 +426,7 @@ padding-top: 170px;
 
 .kafedra-list {
     flex: 1 1 25%;
+    display: none;
     background: #fff;
     padding: 60px 30px;
     border-radius: 12px;

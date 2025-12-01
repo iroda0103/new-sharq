@@ -266,7 +266,9 @@
                                 <i class="fas fa-chevron-down dropdown-icon"></i>
                             </a>
                             <ul class="dropdown">
-                                <li><router-link to="/leadership">Rahbariyat</router-link></li>
+                                <!-- <li>Rahbariyat -->
+                                    <!-- <router-link to="/leadership">Rahbariyat</router-link> -->
+                                <!-- </li> -->
                                 <li class="has-submenu">
                                     <router-link to="/faculty" class="submenu-trigger">
                                         Fakultetlar
