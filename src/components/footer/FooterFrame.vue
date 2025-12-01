@@ -191,4 +191,43 @@ html:not(.bvi-panel) ::before {
 .footer-title span {
     color: #f7c744;
 }
+
+@media (max-width: 1036px) {
+  .footer-mockup img{
+    display: none;
+  }
+  .footer-mockup__social{
+    position: relative;
+  }
+  .footer-mockups{
+    margin-top: 0;
+    
+    position: static;
+    margin-bottom: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  .footer-mockups::after{
+    display: none;
+  }
+  .row{
+    justify-content: space-between;
+    width: 100%;
+  }
+  .footer-mockup__social{
+    position: static;
+    left: 0;
+    /* gap: 30px; */
+  }
+  .col:nth-child(2){
+    margin-bottom: 20px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 </style>

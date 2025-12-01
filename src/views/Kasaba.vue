@@ -19,15 +19,16 @@
                     <div class="leadership-info__links">
                         <a href="mailto:info@sharqedu.uz" class="leadership-info__link">
                             <i class="fa-regular fa-envelope"></i>
-                            info@sharqedu.uz
+                            markett22@mail.ru
                         </a>
                         <a href="tel:+998792227707" class="leadership-info__link">
                             <i class="fa-solid fa-phone"></i>
-                            +998 (79) 222-77-07
+                            +998 (91) 308-17-10
+                            
                         </a>
                     </div>
 
-                    <div class="leadership-info__social">
+                    <!-- <div class="leadership-info__social">
                         <a href="https://instagram.com" class="icon-instagram" target="_blank"><i
                                 class="fa-brands fa-instagram"></i></a>
                         <a href="https://t.me/SHARQ_YI" class="icon-telegram" target="_blank"><i
@@ -36,7 +37,7 @@
                                 class="fa-brands fa-facebook"></i></a>
                         <a href="https://youtube.com" class="icon-youtube" target="_blank"><i
                                 class="fa-brands fa-youtube"></i></a>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="info-row">
@@ -49,7 +50,7 @@
                 </div>
             </div>
 
-            <div class="page-block content">
+            <!-- <div class="page-block content">
                 <h3 class="page-block__subtitle">
                     Vazifalari
                 </h3>
@@ -80,7 +81,7 @@
 
 
 
-            </div>
+            </div> -->
             <div class="page-block content">
                 <h3 class="page-block__subtitle">
                     Universitet boshlang‘ich kasaba uyushma qo‘mitasi haqida
