@@ -1,21 +1,4 @@
-<!-- <template>
-    <div class="sidebar">
-        <h3 class="sidebar-title">Rahbariyat</h3>
-        <ul class="sidebar-menu-list">
-            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rector</a></li>
-            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
-            </li>
-            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
-            </li>
-            <li class="sidebar-menu__item"><a href="" class="sidebar-menu__link">Rahbariyat</a>
-            </li>
-        </ul>
-    </div>
-</template>
-
-<script>
-
-</script> -->
+<!-- 
 <template>
     <div class="aside">
         <div class="sidebar" v-if="currentSection">
@@ -47,7 +30,6 @@ import { useRoute } from 'vue-router'
 const route = useRoute()
 const currentPath = ref('')
 
-// Sidebar ma'lumotlari
 const sidebarData = {
     universitet: {
         title: 'Universitet',
@@ -139,7 +121,6 @@ const sidebarData = {
     }
 }
 
-// Joriy yo'lga mos bo'limni aniqlash
 const currentSection = computed(() => {
     const path = currentPath.value
 
@@ -186,12 +167,10 @@ const currentSection = computed(() => {
     return null
 })
 
-// Aktiv linkni tekshirish
 const isActive = (href) => {
     return currentPath.value === href || currentPath.value.startsWith(href)
 }
 
-// Yo'lni yangilash
 const updatePath = () => {
     currentPath.value = window.location.pathname + window.location.search
 }
@@ -201,12 +180,208 @@ onMounted(() => {
     window.addEventListener('popstate', updatePath)
 })
 
-// Vue Router ishlatilsa
 watch(() => route.path, () => {
     updatePath()
 }, { immediate: true })
-</script>
+</script> -->
+<template>
+    <div class="aside">
+        <div class="sidebar" v-if="currentSection">
+            <h3 class="sidebar-title">{{ currentSection.title }}</h3>
+            <ul class="sidebar-menu-list">
+                <li 
+                    v-for="(item, index) in currentSection.items" 
+                    :key="index" 
+                    class="sidebar-menu__item"
+                    :class="{ 'active': isActive(item.href) }"
+                >
+                    <router-link :to="item.href" class="sidebar-menu__link">
+                        {{ item.label }}
+                    </router-link>
+                </li>
+            </ul>
+        </div>
+        <div class="aside-banner">
+            <a href="https://t.me/sharqMurojaat_bot" target="_blank">
+                <h3 class="aside-banner__title">Rektorga <br>Murojaat</h3>
+                <button class="aside-banner__btn">Yuborish</button>
+                <img class="aside-banner__image" src="/img/murojaat.png" alt="Reach out to the Rector">
+            </a>
+        </div>
+    </div>
+</template>
 
+<script setup>
+import { ref, computed, onMounted, watch } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+
+const sidebarData = {
+    universitet: {
+        title: 'Universitet',
+        items: [
+            { label: 'Rektor haqida', href: '/rektor' },
+            { label: 'Tarixi', href: '/history' },
+            { label: 'Hamkorlar', href: '/partners' },
+            { label: 'Asosiy me\'yoriy hujjatlar', href: '/document' },
+            { label: 'Litsenziya va sertifikatlar', href: '/sertificat' },
+            { label: '360 gradusda binolar tuzilishi', href: '/campus' }
+        ]
+    },
+    tuzilma: {
+        title: 'Tuzilma',
+        items: [
+            { label: 'Rahbariyat', href: '/leadership' },
+            { label: 'Fakultetlar', href: '/faculty' },
+            { label: 'Kafedralar', href: '/kafedra' },
+            { label: 'Bo\'limlar', href: '/department' }
+        ]
+    },
+    fakultetlar: {
+        title: 'Fakultetlar',
+        items: [
+            { label: 'Texnik va raqamli texnologiyalar fakulteti', href: '/directions?faculty=texnika' },
+            { label: 'Iqtisod va biznes fakulteti', href: '/directions?faculty=iqtisod' },
+            { label: 'Gumanitar fanlar fakulteti', href: '/directions?faculty=gumanitar' }
+        ]
+    },
+    kafedralar: {
+        title: 'Kafedralar',
+        items: [
+            { label: 'Iqtisodiyot va menejment kafedrasi', href: '/kafedra?id=iqtisodiyot' },
+            { label: 'Gumanitar fanlar kafedrasi', href: '/kafedra?id=gumanitar' },
+            { label: 'Axborot texnologiyalari kafedrasi', href: '/kafedra?id=it' }
+        ]
+    },
+    bolimlar: {
+        title: 'Bo\'limlar',
+        items: [
+            { label: 'Moliya-iqtisod bo\'limi', href: '/department/staffs?department_id=1' },
+            { label: 'Xo\'jalik bo\'limi', href: '/department/staffs?department_id=2' },
+            { label: 'Axborot texnologiyalar markazi', href: '/department/staffs?department_id=3' },
+            { label: 'Axborot-resurslar markazi', href: '/department/staffs?department_id=4' },
+            { label: 'Xodimlar bo\'limi', href: '/department/staffs?department_id=5' },
+            { label: 'O\'quv-uslubiy bo\'lim', href: '/department/staffs?department_id=6' },
+            { label: 'Marketing va shartnomalar bo\'limi', href: '/department/staffs?department_id=7' },
+            { label: 'Talabalarga xizmat ko\'rsatish bo\'limi', href: '/department/staffs?department_id=8' }
+        ]
+    },
+    faoliyatlar: {
+        title: 'Faoliyatlar',
+        items: [
+            { label: 'Yoshlar ittifoqi', href: '/activity/yoshlar' },
+            { label: 'Xotin-qizlar kengashi', href: '/activity/women' },
+            { label: 'Kasaba uyushmasi', href: '/activity/kasaba' },
+            { label: 'Tyutorlar faoliyati', href: '/activity/tutoring' },
+            { label: 'Psixologik faoliyat', href: '/activity/psychology' }
+        ]
+    },
+    talim: {
+        title: 'Ta\'lim',
+        items: [
+            { label: 'Ta\'lim yo\'nalishlari', href: '/directions' },
+            { label: 'Ta\'lim portali', href: '/education-portal' },
+            { label: 'Axborot resurslar markazi', href: '/library' },
+            { label: 'Dars jadvali', href: '/academic-calendar' }
+        ]
+    },
+    qabul: {
+        title: 'Qabul',
+        items: [
+            { label: 'Bakalavr', href: '/directions' },
+            { label: 'Grantlar', href: '/grant' },
+            { label: 'O\'qishni ko\'chirish', href: '/academic-change' },
+            { label: 'To\'lov turlari', href: '/payment' }
+        ]
+    },
+    press: {
+        title: 'Matbuot xizmati',
+        items: [
+            { label: 'Matbuot xizmati', href: '/press-service' },
+            { label: 'Rasmlar', href: '/gallery' }
+        ]
+    },
+    studentlife: {
+        title: 'Talabalar hayoti',
+        items: [
+            { label: 'Yotoqxona', href: '/bed-room' },
+            { label: 'Klublar', href: '/club' }
+        ]
+    }
+}
+
+const currentSection = computed(() => {
+    const path = route.path
+    const fullPath = route.fullPath
+
+    // Universitet
+    if (['/rektor', '/history', '/partners', '/document', '/sertificat', '/campus'].some(p => path.includes(p))) {
+        return sidebarData.universitet
+    }
+    
+    // Tuzilma
+    if (path.includes('/leadership')) {
+        return sidebarData.tuzilma
+    }
+    
+    // Fakultetlar
+    if (path.includes('/faculty') || (path.includes('/directions') && fullPath.includes('faculty='))) {
+        return sidebarData.fakultetlar
+    }
+    
+    // Kafedralar
+    if (path.includes('/kafedra')) {
+        return sidebarData.kafedralar
+    }
+    
+    // Bo'limlar
+    if (path.includes('/department')) {
+        return sidebarData.bolimlar
+    }
+    
+    // Faoliyatlar
+    if (path.includes('/activity/')) {
+        return sidebarData.faoliyatlar
+    }
+    
+    // Ta'lim
+    if (['/education-portal', '/library', '/academic-calendar'].some(p => path === p) || 
+        (path === '/directions' && !fullPath.includes('faculty='))) {
+        return sidebarData.talim
+    }
+    
+    // Qabul
+    if (['/grant', '/academic-change', '/payment'].some(p => path === p)) {
+        return sidebarData.qabul
+    }
+    
+    // Press
+    if (['/press-service', '/gallery'].some(p => path === p)) {
+        return sidebarData.press
+    }
+    
+    // Student life
+    if (['/bed-room', '/club'].some(p => path === p)) {
+        return sidebarData.studentlife
+    }
+
+    return null
+})
+
+const isActive = (href) => {
+    const currentFullPath = route.fullPath
+    const currentPath = route.path
+    
+    // Query parametrlar bilan to'liq moslik
+    if (href.includes('?')) {
+        return currentFullPath === href
+    }
+    
+    // Oddiy path moslik
+    return currentPath === href
+}
+</script>
 <style scoped lang="scss">
 .aside{
     display: flex;

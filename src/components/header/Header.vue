@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <header class="header" :class="{ 'menu-open': isMenuOpen, 'scrolled': scrolled }">
         <div class="container header__container">
             <div class="header-top">
@@ -40,15 +40,9 @@
             <div class="header-bottom" id="mobileMenu">
                 <a class="logo" href="/">
                     <img loading="lazy" class="logo__img" src="../../../public/img/logo_sharq.webp" alt="Site logo" />
-                    <!-- <img loading="lazy" class="logo__img" src="../../../public/img/logo_sharq_blue.png" alt="Site logo" /> -->
                 </a>
                 <nav class="nav">
                     <ul class="nav__list">
-                        <!-- <li class="nav__item">
-                            <a class="nav__link" href="/">
-                                <span>Bosh sahifa</span>
-                            </a>
-                        </li> -->
 
                         <li class="nav__item nav__item--has-dropdown">
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
@@ -153,8 +147,6 @@
                                 <li><a href="/library">Axborot resurslar markazi</a></li>
                                 <li><a href="/academic-calendar">Dars jadvali</a></li>
 
-                                <!-- <li><a href="/activity">Faoliyatlar</a></li> -->
-                                <!-- <li><a href="/galery">Gallery</a></li> -->
                             </ul>
                         </li>
                         <li class="nav__item nav__item--has-dropdown">
@@ -206,8 +198,231 @@
             </div>
         </div>
     </header>
+</template> -->
+<template>
+    <header class="header" :class="{ 'menu-open': isMenuOpen, 'scrolled': scrolled }">
+        <div class="container header__container">
+            <div class="header-top">
+                <router-link class="header-top-logo" to="/">
+                    <img loading="lazy" class="logo__img" src="/img/logo_sharq.webp" alt="Site logo" />
+                </router-link>
+                <div class="contact-info">
+                    <a href="mailto:info@sharqedu.uz" class="contact-link contact-mail">
+                        <i class="fas fa-envelope"></i> 
+                        <span class="contact-text">info@sharqedu.uz</span>
+                    </a>
+                    <a href="tel:+998792227707" class="contact-link contact-tel">
+                        <i class="fas fa-phone"></i> 
+                        <span class="contact-text">+998 (79) 222-77-07</span>
+                    </a>
+                </div>
+                <span class="header-warning">
+                    <i class="fa fa-warning"></i>
+                    <span class="header-warning__text">The site works in test mode</span>
+                </span>
+                <div class="header__social">
+                    <a href="https://t.me/sharquniversiteti" aria-label="Telegram" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'telegram']" />
+                    </a>
+                    <a href="https://www.instagram.com/sharquniversiteti/" aria-label="Instagram" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'instagram']" />
+                    </a>
+                    <a href="https://www.facebook.com/sharquniversiteti" aria-label="Facebook" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'facebook']" />
+                    </a>
+                    <a href="https://www.youtube.com/@sharquniversiteti" aria-label="YouTube" target="_blank">
+                        <font-awesome-icon :icon="['fab', 'youtube']" />
+                    </a>
+                </div>
+                <button class="header__btn" @click="toggleMenu" aria-label="Toggle menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <div class="header-bottom" id="mobileMenu">
+                <router-link class="logo" to="/">
+                    <img loading="lazy" class="logo__img" src="/img/logo_sharq.webp" alt="Site logo" />
+                </router-link>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Universitet</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><router-link to="/rektor">Rektor haqida</router-link></li>
+                                <li><router-link to="/history">Tarixi</router-link></li>
+                                <li><router-link to="/partners">Hamkorlar</router-link></li>
+                                <li><router-link to="/document">Asosiy me'yoriy hujjatlar</router-link></li>
+                                <li><router-link to="/sertificat">Litsenziya va sertifikatlar</router-link></li>
+                                <li><router-link to="/campus">360 gradusda binolar tuzilishi</router-link></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Tuzilma</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><router-link to="/leadership">Rahbariyat</router-link></li>
+                                <li class="has-submenu">
+                                    <router-link to="/faculty" class="submenu-trigger">
+                                        Fakultetlar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </router-link>
+                                    <ul class="submenu">
+                                        <li><router-link to="/directions?faculty=texnika">Texnik va raqamli texnologiyalar fakulteti</router-link></li>
+                                        <li><router-link to="/directions?faculty=iqtisod">Iqtisod va biznes fakulteti</router-link></li>
+                                        <li><router-link to="/directions?faculty=gumanitar">Gumanitar fanlar fakulteti</router-link></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <router-link to="/kafedra" class="submenu-trigger">
+                                        Kafedralar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </router-link>
+                                    <ul class="submenu">
+                                        <li><router-link to="/kafedra?id=iqtisodiyot">Iqtisodiyot va menejment kafedrasi</router-link></li>
+                                        <li><router-link to="/kafedra?id=gumanitar">Gumanitar fanlar kafedrasi</router-link></li>
+                                        <li><router-link to="/kafedra?id=it">Axborot texnologiyalari kafedrasi</router-link></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <router-link to="/department" class="submenu-trigger">
+                                        Bo'limlar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </router-link>
+                                    <ul class="submenu">
+                                        <li><router-link to="/department/staffs?department_id=1">Moliya-iqtisod bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=2">Xo'jalik bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=3">Axborot texnologiyalar markazi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=4">Axborot-resurslar markazi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=5">Xodimlar bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=6">O'quv-uslubiy bo'lim</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=7">Marketing va shartnomalar bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=8">Talabalarga xizmat ko'rsatish bo'limi</router-link></li>
+                                    </ul>
+                                </li>
+                                <li class="has-submenu">
+                                    <router-link to="/activity" class="submenu-trigger">
+                                        Faoliyatlar
+                                        <i class="fas fa-chevron-right submenu-icon"></i>
+                                    </router-link>
+                                    <ul class="submenu">
+                                        <li><router-link to="/activity/yoshlar">Yoshlar ittifoqi</router-link></li>
+                                        <li><router-link to="/activity/women">Xotin-qizlar kengashi</router-link></li>
+                                        <li><router-link to="/activity/kasaba">Kasaba uyushmasi</router-link></li>
+                                        <li><router-link to="/activity/tutoring">Tyutorlar faoliyati</router-link></li>
+                                        <li><router-link to="/activity/psychology">Psixologlar faoliyati</router-link></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Ta'lim</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><router-link to="/directions">Ta'lim yo'nalishlari</router-link></li>
+                                <li><router-link to="/education-portal">Ta'lim portali</router-link></li>
+                                <li><router-link to="/library">Axborot resurslar markazi</router-link></li>
+                                <li><router-link to="/academic-calendar">Dars jadvali</router-link></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Qabul</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><router-link to="/directions">Bakalavr</router-link></li>
+                                <li><router-link to="/grant">Grantlar</router-link></li>
+                                <li><router-link to="/academic-change">O'qishni ko'chirish</router-link></li>
+                                <li><router-link to="/payment">To'lov turlari</router-link></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Axborot xizmati</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><router-link to="/press-service">Matbuot xizmati</router-link></li>
+                                <li><router-link to="/gallery">Gallery</router-link></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav__item nav__item--has-dropdown">
+                            <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
+                                <span>Talabalar hayoti</span>
+                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                            </a>
+                            <ul class="dropdown">
+                                <li><router-link to="/bed-room">Yotoqxona</router-link></li>
+                                <li><router-link to="/club">Klublar</router-link></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 </template>
 
+<script setup>
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const isMenuOpen = ref(false)
+const scrolled = ref(false)
+
+const isHomePage = computed(() => route.path === '/')
+
+const toggleMenu = () => {
+    isMenuOpen.value = !isMenuOpen.value
+    if (isMenuOpen.value) {
+        document.body.style.overflow = 'hidden'
+    } else {
+        document.body.style.overflow = ''
+    }
+}
+
+const toggleDropdown = (event) => {
+    if (window.innerWidth > 768) return
+
+    const parent = event.currentTarget.closest('.nav__item--has-dropdown')
+    const dropdown = parent.querySelector('.dropdown')
+    const icon = parent.querySelector('.dropdown-icon')
+
+    parent.classList.toggle('dropdown-open')
+    dropdown.style.maxHeight = parent.classList.contains('dropdown-open')
+        ? dropdown.scrollHeight + 'px'
+        : '0'
+    icon.classList.toggle('fa-chevron-up')
+    icon.classList.toggle('fa-chevron-down')
+}
+
+const handleScroll = () => {
+    scrolled.value = isHomePage.value ? window.scrollY > 100 : true
+}
+
+onMounted(() => {
+    handleScroll()
+    window.addEventListener('scroll', handleScroll)
+})
+
+onUnmounted(() => {
+    window.removeEventListener('scroll', handleScroll)
+    document.body.style.overflow = ''
+})
+</script>
 <!-- <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 
@@ -246,7 +461,7 @@ onUnmounted(() => {
 })
 </script> -->
 
-<script setup>
+<!-- <script setup>
 import { ref, onMounted, onUnmounted, computed } from 'vue'
 
 const isMenuOpen = ref(false)
@@ -295,7 +510,7 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('scroll', handleScroll)
 })
-</script>
+</script> -->
 <style scoped lang="scss">
 .header {
     position: fixed;

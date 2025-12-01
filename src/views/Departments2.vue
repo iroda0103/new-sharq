@@ -1,67 +1,56 @@
 <template>
   <div class="departments">
     <div class="departments-grid">
-      <div 
-        v-for="department in departments" 
-        :key="department.id"
-        class="department-wrapper"
-      >
-        <a 
+      <div v-for="department in departments" :key="department.id" class="department-wrapper"><router-link
+          class="program-card" :to="`/department/staffs?department_id=${department.id}`">Ta'lim yo'nalishlari
+          <!-- <a 
           :href="`/department/staffs?department_id=${department.id}`"
           class="program-card"
-        >
+        > -->
           <div class="program-card__header">
             <h3 class="program-card__title">{{ department.name }}</h3>
             <div class="program-card__icon">
               <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32.0027 7.34922C32.004 6.04522 31.2307 4.91855 30.0307 4.47855L19.4947 0.611888C17.2853 -0.197445 14.8547 -0.202778 12.6467 0.602555L1.98133 4.48255C0.778667 4.92122 0.00133333 6.04789 0.00266667 7.35189C0.00266667 8.65722 0.781333 9.78255 1.984 10.2186L12.5893 14.0666C13.6867 14.4652 14.84 14.6639 15.992 14.6639C17.144 14.6639 18.296 14.4652 19.392 14.0666L29.3333 10.4599V15.9986C29.3333 16.7346 29.9307 17.3319 30.6667 17.3319C31.4027 17.3319 32 16.7346 32 15.9986C32 15.9986 32.0027 7.35589 32.0027 7.34922ZM2.93733 21.3879C5.72 22.0852 11.0067 23.5906 14.6667 23.9266V29.4066C11.0067 29.7426 5.71867 31.2492 2.93733 31.9452C1.44267 32.3199 0 31.1839 0 29.6426V23.6906C0 22.1492 1.44267 21.0132 2.93733 21.3879ZM32 23.6906V29.6426C32 31.1839 30.5573 32.3199 29.0627 31.9452C26.28 31.2479 20.9933 29.7426 17.3333 29.4066V23.9266C20.9933 23.5906 26.2813 22.0839 29.0627 21.3879C30.5573 21.0132 32 22.1492 32 23.6906ZM6.66667 19.5959V14.7546L11.6787 16.5732C14.444 17.5772 17.5307 17.5786 20.3013 16.5732L25.332 14.7479V19.5946C22.7267 20.2626 19.332 21.3706 15.9987 21.3706C12.6653 21.3706 9.27067 20.2626 6.66533 19.5946L6.66667 19.5959Z"></path>
+                <path
+                  d="M32.0027 7.34922C32.004 6.04522 31.2307 4.91855 30.0307 4.47855L19.4947 0.611888C17.2853 -0.197445 14.8547 -0.202778 12.6467 0.602555L1.98133 4.48255C0.778667 4.92122 0.00133333 6.04789 0.00266667 7.35189C0.00266667 8.65722 0.781333 9.78255 1.984 10.2186L12.5893 14.0666C13.6867 14.4652 14.84 14.6639 15.992 14.6639C17.144 14.6639 18.296 14.4652 19.392 14.0666L29.3333 10.4599V15.9986C29.3333 16.7346 29.9307 17.3319 30.6667 17.3319C31.4027 17.3319 32 16.7346 32 15.9986C32 15.9986 32.0027 7.35589 32.0027 7.34922ZM2.93733 21.3879C5.72 22.0852 11.0067 23.5906 14.6667 23.9266V29.4066C11.0067 29.7426 5.71867 31.2492 2.93733 31.9452C1.44267 32.3199 0 31.1839 0 29.6426V23.6906C0 22.1492 1.44267 21.0132 2.93733 21.3879ZM32 23.6906V29.6426C32 31.1839 30.5573 32.3199 29.0627 31.9452C26.28 31.2479 20.9933 29.7426 17.3333 29.4066V23.9266C20.9933 23.5906 26.2813 22.0839 29.0627 21.3879C30.5573 21.0132 32 22.1492 32 23.6906ZM6.66667 19.5959V14.7546L11.6787 16.5732C14.444 17.5772 17.5307 17.5786 20.3013 16.5732L25.332 14.7479V19.5946C22.7267 20.2626 19.332 21.3706 15.9987 21.3706C12.6653 21.3706 9.27067 20.2626 6.66533 19.5946L6.66667 19.5959Z">
+                </path>
               </svg>
             </div>
           </div>
-          
+
           <span class="program-card__subtitle">
             Xodimlar: {{ department.employeeCount }}
           </span>
-          
+
           <div class="program-card__divider"></div>
-          
+
           <div class="program-card__footer">
             <div class="program-card__users">
-              <div 
-                v-for="(employee, index) in department.employees?.slice(0, 3)" 
-                :key="index"
-                class="program-card__user"
-              >
-                <img 
-                  v-if="employee.photo"
-                  :src="employee.photo" 
-                  :alt="employee.name"
-                />
+              <div v-for="(employee, index) in department.employees?.slice(0, 3)" :key="index"
+                class="program-card__user">
+                <img v-if="employee.photo" :src="employee.photo" :alt="employee.name" />
                 <span v-else class="user-initials">
                   {{ getInitials(employee.name) }}
                 </span>
               </div>
-              
-              <div 
-                v-if="department.employeeCount > 3"
-                class="program-card__user program-card__user--more"
-              >
+
+              <div v-if="department.employeeCount > 3" class="program-card__user program-card__user--more">
                 +{{ department.employeeCount - 3 }}
               </div>
             </div>
-            
+
             <span class="program-card__link">
               Batafsil <i class="icon-arrow-right">→</i>
             </span>
           </div>
-        </a>
-      </div>
+        </router-link> </div>
     </div>
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted } from 'vue';
+
 
 // Mock ma'lumotlar - keyinchalik API dan keladigan bo'ladi
 const departments = ref([
@@ -429,16 +418,16 @@ onMounted(() => {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-  
+
   .program-card {
     padding: 20px;
   }
-  
+
   .program-card__title {
     font-size: 18px;
     padding-right: 40px;
   }
-  
+
   .program-card__icon {
     width: 32px;
     height: 32px;
