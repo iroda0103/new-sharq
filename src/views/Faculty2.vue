@@ -18,7 +18,7 @@
               :key="dIndex"
               class="direction-item"
             >
-              <a :href="direction.link" class="graduate-card">
+                <router-link :to="direction.link" class="graduate-card">
                 <div class="graduate-card__image">
                   <div class="graduate-card__image__wrapper">
                     <img :src="direction.image" :alt="direction.title" />
@@ -31,7 +31,7 @@
                     Batafsil <i class="fa-solid fa-arrow-right"></i>
                   </span>
                 </div>
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
@@ -52,18 +52,18 @@ export default {
           directions: [
             {
               title: "Sun'iy intellekt",
-              link: "https://newuu.uz/en/graduate-program/msc-in-sustainable-chemical-engineering-materia",
-              image: "https://newuu.uz/uploads/graduate_program/b1a61c92cdce290c288c856fb520b105.png"
+              link: "/directions?faculty=texnika",
+              image: "/img/faculty/si.png"
             },
             {
               title: "Kiberxavfsizlik injiniringi",
-              link: "https://newuu.uz/en/graduate-program/msc-in-modern-physics",
-              image: "https://newuu.uz/uploads/graduate_program/f8252a2d30d94ecbe28b9bef3a2b42f1.png"
+              link: "/directions?faculty=texnika",
+              image: "/img/faculty/kiber.png"
             },
             {
               title: "Dasturiy injiniring",
-              link: "https://newuu.uz/en/graduate-program/msc-in-wireless-technologies",
-              image: "https://newuu.uz/uploads/graduate_program/22bcdaf62c516762e761ca2475a30551.png"
+              link: "/directions?faculty=texnika",
+              image: "/img/faculty/engineering.png"
             }
           ]
         },
@@ -73,13 +73,13 @@ export default {
           directions: [
             {
               title: "Iqtisodiyot",
-              link: "/page/direction-economics",
+              link: "/directions?faculty=iqtisod",
               image: "/img/faculty/iqtisodiyot.png"
             },
             {
               title: "Biznesni boshqarish",
-              link: "/page/direction-business",
-              image: "https://newuu.uz/uploads/graduate_program/f8252a2d30d94ecbe28b9bef3a2b42f1.png"
+              link: "/directions?faculty=iqtisod",
+              image: "/img/faculty/biznes.png"
             }
           ]
         },
@@ -89,18 +89,18 @@ export default {
           directions: [
             {
               title: "Tarix",
-              link: "/page/direction-history",
-              image: "https://newuu.uz/uploads/graduate_program/b1a61c92cdce290c288c856fb520b105.png"
+              link: "/directions?faculty=gumanitar",
+              image: "/img/faculty/tarix.png"
             },
             {
               title: "Psixologiya",
-              link: "/page/direction-psychology",
-              image: "https://newuu.uz/uploads/graduate_program/f8252a2d30d94ecbe28b9bef3a2b42f1.png"
+              link: "/directions?faculty=gumanitar",
+              image: "/img/faculty/filologiya.png"
             },
             {
               title: "Filologiya (ingliz tili)",
-              link: "/page/direction-english",
-              image: "https://newuu.uz/uploads/graduate_program/22bcdaf62c516762e761ca2475a30551.png"
+              link: "/directions?faculty=gumanitar",
+              image: "/img/faculty/english.png"
             }
           ]
         }

@@ -35,6 +35,7 @@ import PressService from '../views/PressService.vue'
 import Club from '../views/Club.vue'
 import Staffs from '../views/Staffs.vue'
 import TestStaff from '../views/TestStaff.vue'
+import FutureStep from '../views/FutureStep.vue'
 
 
 // Layout componentlar
@@ -50,6 +51,8 @@ const routes = [
       { path: '', name: 'HomePage', component: HomePage },
       { path: 'apply', name: 'ApplyFor', component: ApplyFor },
       { path: 'gallery', name: 'GalleryPage', component: GalleryPage },
+      { path: 'kelajakkaqadam', name: 'FutureStep', component: FutureStep },
+
       // Boshqa sidebarsiz sahifalar...
     ]
   },

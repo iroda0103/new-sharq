@@ -373,6 +373,9 @@
                                 <li><router-link to="/club">Klublar</router-link></li>
                             </ul>
                         </li>
+                        <li class="nav__item">
+                            <router-link to="kelajakkaqadam" class="nav__link">  <span>Kelajakka qadam</span></router-link>
+                        </li>
                     </ul>
                 </nav>
             </div>
