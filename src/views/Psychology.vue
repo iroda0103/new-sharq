@@ -16,7 +16,7 @@
                 <h3 class="leadership-info__fio">Bahora Alisherovna</h3>
                 <div class="leadership-info__divider"></div>
                 <p class="leadership-info__text">
-                    Psixolog trener </p>
+                    Psixolog / tadqiqotchi </p>
 
                 <div class="leadership-info__bottom">
                     <div class="leadership-info__links">

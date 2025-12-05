@@ -13,9 +13,7 @@
                 <div class="leadership-info__divider">Matbuot kotibi / Media menejer</div>
 
                 <p class="leadership-info__text">
-                    Ushbu bo'linma universitetning mustaqil tarkibiy bo‘linmasi hisoblanadi hamda bevosita muassasa Bosh
-                    direktori va
-                    Universitet rektoriga bo’ysunadi
+                    Ushbu boʻlinma universitetning mustaqil tarkibiy bo‘linmasi hisoblanadi hamda bevosita muassasa Bosh direktori va Universitet rektoriga boʻysunadi
                 </p>
 
                 <div class="leadership-info__bottom">
@@ -64,9 +62,9 @@
                 <p>Navoiy davlat konchilik va texnologiyalar universitetining “Iqtisodiyot va menejment” kafedrasida –
                     iqtisodiyot (tarmoqlar va sohalar bo‘yicha) yo‘nalishida tahsil olmoqda.
                     Ma’lumoti: tugallanmagan oliy. Mutaxassisligi: iqtisodchi.
-                    <br>
-                    <br>
-                    Mehnat faoliyatini Navoiy shahar hokimligi Axborot xizmatida mutaxassis — matbuot kotibi yordamchisi
+                        <br>
+                        <br>
+                    Mehnat faoliyatini Navoiy shahar hokimligi Axborot xizmatida mutaxassis  – matbuot kotibi yordamchisi
                     sifatida boshlagan. Ushbu davrda rasmiy axborotlarni yoritish, ommaviy tadbirlar va media
                     jarayonlarini muvofiqlashtirish bo‘yicha amaliy ko‘nikmalarni shakllantirgan.
                     <br><br>

@@ -2,82 +2,99 @@
     <div class="leadership">
         <div class="leadersheap-image">
             <div class="leadership-image__inner">
-                <img src="/img/person/rector.jpg" alt="">
+                <img src="/img/person/rector.jpg" alt="PhD. Sherzod Atamurodov">
             </div>
-
         </div>
 
         <div class="leadership-info__wrapper">
+            <!-- HEADER -->
             <div class="leadership-info">
                 <h3 class="leadership-info__fio">PhD. Sherzod Atamurodov</h3>
                 <div class="leadership-info__divider"></div>
-                <p class="leadership-info__text">
-                    Sharq universiteti rektori </p>
+                <p class="leadership-info__text">Sharq universiteti rektori</p>
+
                 <div class="leadership-info__bottom">
                     <div class="leadership-info__links">
                         <a href="mailto:info@uzedu.uz" class="leadership-info__link">
                             <i class="fa-regular fa-envelope"></i>
-                            info@uzedu.uz </a>
+                            info@uzedu.uz
+                        </a>
                         <a href="tel:+998712410115" class="leadership-info__link">
                             <i class="fa-solid fa-phone"></i>
-                            +998 (71) 241-01-15 </a>
-                    </div>
-                    <div class="leadership-info__social">
-                        <a href="https://instagram.com" class="icon-instagram" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://t.me" class="icon-telegram" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-telegram"></i></a>
-                        <a href="https://facebook.com" class="icon-facebook" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://youtube.com" class="icon-youtube" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-youtube"></i></a>
+                            +998 (71) 241-01-15
+                        </a>
                     </div>
 
+                    <div class="leadership-info__social">
+                        <a href="#" class="icon-instagram" rel="nofollow" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="icon-telegram" rel="nofollow" target="_blank">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <a href="#" class="icon-facebook" rel="nofollow" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" class="icon-youtube" rel="nofollow" target="_blank">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+            <!-- BIOGRAPHY -->
             <div class="page-block">
-                <h3 class="page-block__subtitle">
-                    Tarjimai hol </h3>
+                <h3 class="page-block__subtitle">Tarjimai hol</h3>
                 <div class="page-block__divider"></div>
                 <div class="content">
-                    <p><span>Umarova Khilola Uktamovna was born in 1988 in Weimer in Germany. She
-                            graduated
-                            from the University of World Economy and Diplomacy in Tashkent with a major
-                            in
-                            International economic relations. Khilola Umarova is a researcher at the
-                            Academy
-                            of Public Administration under the President of the Republic of Uzbekistan.
-                            She
-                            is fluent in Uzbek, Russian and English. Khilola Umarova is married and has
-                            one
-                            child.</span></p>
+                    <p>
+                        <strong>Tug'ilgan:</strong> 26.09.1983, Navoiy viloyati<br>
+                        <strong>Ilmiy daraja:</strong> Iqtisodiyot fanlari bo'yicha PhD, dotsent<br>
+                        <strong>Millati:</strong> O'zbek<br>
+                        <strong>Tillar:</strong> Rus, Turk, Ingliz
+                    </p>
+                    <p>
+                        20 yildan ortiq taʼlim sohasida faoliyat yuritib kelmoqda.
+                        Ko‘plab ilmiy maqolalar, darsliklar muallifi va bir qator xalqaro loyihalar asoschisi.
+                    </p>
                 </div>
             </div>
+
+            <!-- EDUCATION -->
             <div class="page-block">
-                <h3 class="page-block__subtitle">
-                    Experience </h3>
+                <h3 class="page-block__subtitle">Ma'lumoti</h3>
                 <div class="page-block__divider"></div>
                 <div class="content">
                     <ul>
-                        <li>2019 - 2019 — Chief Manager on the affairs of supporting active
-                            entrepreneurship, innovative ideas and technologies at Inha University in
-                            Tashkent.</li>
-                        <li>2019 - 2020 — Director of the specialized school named after Muhammad
-                            al-Khorazmi, specializing in advanced education in information and
-                            communication
-                            technologies.</li>
-                        <li>2020 - 2022 — Director of the Agency for Presidential Educational
-                            Institutions
-                            of the Republic of Uzbekistan</li>
-                        <li>2022-2025 – Minister of Preschool and School Education.</li>
-                        <li>2025 – Deputy Head of the Presidential Administration for Education Reform.
-                        </li>
+                        <li>2004 y. — Navoiy davlat konchilik instituti</li>
+                        <li>2006 y. — Samarqand iqtisodiyot va servis instituti (Magistratura)</li>
                     </ul>
                 </div>
             </div>
+
+            <!-- EXPERIENCE -->
+            <div class="page-block">
+                <h3 class="page-block__subtitle">Mehnat faoliyati</h3>
+                <div class="page-block__divider"></div>
+                <div class="content">
+                    <ul>
+                        <li>2025 — h.v. — Sharq universiteti rektori</li>
+                        <li>2024–2025 — Navoiy DKvTU, "Iqtisodiyot va menejment" kafedrasi dotsenti</li>
+                        <li>2023–2024 — Navoiy innovatsiyalar universiteti, prorektor</li>
+                        <li>2022–2023 — Navoiy DKvTU, dekan o‘rinbosari</li>
+                        <li>2018–2022 — Navoiy DKI, dekan o‘rinbosari</li>
+                        <li>2009–2018 — Navoiy DKI, katta o‘qituvchi</li>
+                        <li>2006–2009 — Navoiy DKI, assistent</li>
+                        <li>2004–2006 — Samarqand IvSI, magistrant</li>
+                        <li>2000–2004 — Navoiy DKI, talaba</li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
     </div>
 </template>
+
 <style>
 .wrapper {
     background-image: url('/img/bg/image_copy.png');
@@ -108,24 +125,9 @@
 
 .page-row__col:nth-child(1) {
     width: 70%;
-    /* background-color: #000; */
 }
-
-.page-row__col:nth-child(2) {
-    /* width: 20%; */
-}
-
-/* .aside {
-    position: sticky;
-    top: 130px;
-    width: 100%;
-    height: 100%;
-
-} */
 
 .sidebar {
-    /* height: 100%; */
-
     border-radius: 12px;
     border: 1px solid rgba(234, 238, 245, 1);
     background: #fff;
@@ -144,7 +146,6 @@
 }
 
 .sidebar-menu__item {
-    /* background-color: aqua; */
     border-top: 1px solid rgba(223, 228, 237, 1);
 }
 
@@ -181,7 +182,6 @@
 }
 
 .leadership-image__inner img {
-    /* width: 100%; */
     height: 250px;
     object-position: 15% center;
     object-fit: cover;
@@ -192,7 +192,6 @@
 }
 
 .leadership-image {
-    /* width: 100%; */
     margin: 0 auto;
 }
 
@@ -203,7 +202,6 @@
 }
 
 .leadership-info__wrapper {
-    /* width: calc(100% - 70px); */
 }
 
 .leadership-info {
@@ -213,7 +211,6 @@
     padding: 16px;
     border: 1px solid rgba(239, 243, 249, 1);
     border-radius: 12px;
-    /* height: 100%; */
     position: relative;
 }
 
@@ -248,7 +245,6 @@
 .leadership-info__bottom {
     margin-top: 16px;
     display: flex;
-    /* justify-content: space-between; */
     align-items: flex-end;
     flex-wrap: wrap;
     gap: 16px;
@@ -281,7 +277,6 @@
 
 .leadership-info__links {
     display: flex;
-    /* flex-direction: column; */
     align-items: flex-start;
     flex-direction: row;
     gap: 16px;

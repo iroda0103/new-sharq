@@ -1,6 +1,6 @@
 <template>
   <section class="faculties-page">
-    <div class="container">
+    <div class="">
       <h2 class="documents__title page-title">Fakultetlar</h2>
       <p class="documents__subtitle page-subtitle">Bizda mavjud bo‘lgan fakultetlar ro‘yxati bilan tanishing</p>
 
@@ -98,8 +98,8 @@ export default {
 <style lang="scss">
 .faculties-page {
   padding: 80px 0;
-  padding-bottom: 160px;
-  padding-top: 200px;
+  // padding-bottom: 160px;
+  // padding-top: 200px;
 
   .documents__title {
     text-align: center;

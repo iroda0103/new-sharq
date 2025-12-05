@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomePage from '../views/Home.vue'
 import Faculty from '../views/Faculty.vue'
-import FacultiesPage from '../views/FacultiesPage.vue'
+import FacultiesPage from '../views/Faculty2.vue'
 import Rector from '../views/Rector2.vue'
 import History from '../views/History2.vue'
 import Partners from '../views/Partners.vue'
@@ -34,6 +34,7 @@ import AcademicChange from '../views/AcademicChange.vue'
 import PressService from '../views/PressService.vue'
 import Club from '../views/Club.vue'
 import Staffs from '../views/Staffs.vue'
+import TestStaff from '../views/TestStaff.vue'
 
 
 // Layout componentlar
@@ -89,6 +90,11 @@ const routes = [
       { path: 'activity/kasaba', name: 'Kasaba', component: Kasaba },
       { path: 'activity/psychology', name: 'Psychology', component: Psychology },
       { path: 'education-portal', name: 'EducationPortal', component: EducationPortal },
+
+
+      { path: 'test-staff', name: 'TestStaff', component: TestStaff },
+
+
     ]
   },
 

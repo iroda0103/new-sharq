@@ -355,7 +355,7 @@
                                 <i class="fas fa-chevron-down dropdown-icon"></i>
                             </a>
                             <ul class="dropdown">
-                                <li><router-link to="/press-service">Matbuot xizmati</router-link></li>
+                                <li><router-link to="/press-service">Media boʻlimi</router-link></li>
                                 <li><router-link to="/press-service">Yangiliklar</router-link></li>
                                 <li><router-link to="/press-service">Postlar</router-link></li>
                                 <li><router-link to="/gallery">Gallery</router-link></li>

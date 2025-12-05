@@ -228,6 +228,9 @@ html:not(.bvi-panel) ::before {
     align-items: center;
     justify-content: center;
   }
+  .footer-mockup__social{
+    transform: translate(0);
+  }
 }
 
 </style>

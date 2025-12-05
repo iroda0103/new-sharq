@@ -199,6 +199,7 @@ onMounted(() => {
 }
 
 .rahbariyat-list {
+display: none;
   flex: 1 1 30%;
   background: #fff;
   padding: 1.5rem;

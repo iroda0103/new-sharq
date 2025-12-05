@@ -2,7 +2,7 @@
   <div class="departments">
     <div class="departments-grid">
       <div v-for="department in departments" :key="department.id" class="department-wrapper"><router-link
-          class="program-card" :to="`/department/staffs?department_id=${department.id}`">Ta'lim yo'nalishlari
+          class="program-card" :to="`/department/staffs?department_id=${department.id}`">
           <!-- <a 
           :href="`/department/staffs?department_id=${department.id}`"
           class="program-card"
@@ -54,6 +54,21 @@ import { ref, onMounted } from 'vue';
 
 // Mock ma'lumotlar - keyinchalik API dan keladigan bo'ladi
 const departments = ref([
+    {
+    id: 10,
+    slug: 'nazorat-sifat',
+    name: "Nazorat va sifat monitoringi bo’limi",
+    description: "Taʼlim sifatini nazorat qilish boʻlimining asosiy maqsadi Sharq universiteti talabalari bilimlarining davlat taʼlim standartlariga muvofiqligini oʻrganib borish, tahlil qilish, kadrlar tayyorlash sifati monitoringini yuritish, Sharq universiteti ichki attestatsiyadan oʻtkazishni tashkil etish va uning natijalari boʻyicha taʼlim sifatiga salbiy taʼsir etuvchi omillarni aniqlash hamda ularni bartaraf etish va oldini olish choralarini koʻrishdan iborat.",
+    email: 'info@sharqedu.uz',
+    phone: '+998 79 222 07 00',
+    address: '4-qavat, 405-xona',
+    motto: "Qulay muhit — samarali ta'limning garovi.",
+    employeeCount: 8,
+    employees: [
+      { name: 'Aliyev Botir', photo: null },
+      { name: 'Tursunov Jahongir', photo: null }
+    ]
+  },
   {
     id: 1,
     slug: 'moliya-iqtisod',
