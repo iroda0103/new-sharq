@@ -181,7 +181,6 @@ onMounted(() => {
 
 .staff-info__fio {
   color: var(--local-color, var(--black-1));
-  font-family: "MuseoSansCyrl-700", sans-serif;
   font-size: 20px;
   font-weight: 600;
   line-height: 140%;
@@ -190,7 +189,6 @@ onMounted(() => {
 
 .staff-info__text {
   color: var(--local-text-color, var(--black-3));
-  font-family: "MuseoSansCyrl-500", sans-serif;
   font-size: var(--size-text-16);
   line-height: 140%;
   letter-spacing: -0.16px;
@@ -225,7 +223,6 @@ onMounted(() => {
   display: flex;
   align-items: center;
   color: var(--local-color, var(--black-1));
-  font-family: "MuseoSansCyrl-300", sans-serif;
   font-size: 15px;
   line-height: 138%;
   letter-spacing: -0.16px;

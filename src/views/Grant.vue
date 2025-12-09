@@ -63,7 +63,6 @@ export default {
   max-width: 1200px;
   margin: auto;
   padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
   /* background-color: #f5f9ff; */
 }
 

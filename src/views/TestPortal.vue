@@ -606,7 +606,6 @@ export default {
 
 <style lang="scss" scoped>
 .tasks-schedule {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   max-width: 100%;
   background-color: #f5f7fa;
   min-height: 100vh;

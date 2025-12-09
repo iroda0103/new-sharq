@@ -239,7 +239,6 @@ export default {
 
 .graduate-card__title {
   color: rgba(22, 35, 71, 1);
-  font-family: "MuseoSansCyrl-700", sans-serif;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: -0.2px;
@@ -257,7 +256,6 @@ export default {
   display: flex;
   align-items: center;
   color: rgba(20, 87, 149, 1);
-  font-family: "MuseoSansCyrl-500", sans-serif;
   font-size: 15px;
   line-height: 140%;
   letter-spacing: -0.16px;

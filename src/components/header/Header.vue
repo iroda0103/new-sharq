@@ -208,11 +208,11 @@
                 </router-link>
                 <div class="contact-info">
                     <a href="mailto:info@sharqedu.uz" class="contact-link contact-mail">
-                        <i class="fas fa-envelope"></i> 
+                        <i class="fas fa-envelope"></i>
                         <span class="contact-text">info@sharqedu.uz</span>
                     </a>
                     <a href="tel:+998792227707" class="contact-link contact-tel">
-                        <i class="fas fa-phone"></i> 
+                        <i class="fas fa-phone"></i>
                         <span class="contact-text">+998 (79) 222-77-07</span>
                     </a>
                 </div>
@@ -248,7 +248,10 @@
                         <li class="nav__item nav__item--has-dropdown">
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
                                 <span>Universitet</span>
-                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                                <span class="dropdown-icon" ><i class="fa-solid fa-chevron-up"></i></span>
+                                <!-- <span class="dropdown-icon"><i class="fas fa-chevron-down "></i></span> -->
+
+                                <!-- <i class="fa-solid fa-chevron-down"></i> -->
                             </a>
                             <ul class="dropdown">
                                 <li><router-link to="/rektor">Rektor haqida</router-link></li>
@@ -263,11 +266,12 @@
                         <li class="nav__item nav__item--has-dropdown">
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown($event)">
                                 <span>Tuzilma</span>
-                                <i class="fas fa-chevron-down dropdown-icon"></i>
+                                <span class="dropdown-icon"><i class="fas fa-chevron-down "></i></span>
+
                             </a>
                             <ul class="dropdown">
                                 <!-- <li>Rahbariyat -->
-                                    <!-- <router-link to="/leadership">Rahbariyat</router-link> -->
+                                <!-- <router-link to="/leadership">Rahbariyat</router-link> -->
                                 <!-- </li> -->
                                 <li class="has-submenu">
                                     <router-link to="/faculty" class="submenu-trigger">
@@ -275,9 +279,12 @@
                                         <i class="fas fa-chevron-right submenu-icon"></i>
                                     </router-link>
                                     <ul class="submenu">
-                                        <li><router-link to="/directions?faculty=texnika">Texnik va raqamli texnologiyalar fakulteti</router-link></li>
-                                        <li><router-link to="/directions?faculty=iqtisod">Iqtisod va biznes fakulteti</router-link></li>
-                                        <li><router-link to="/directions?faculty=gumanitar">Gumanitar fanlar fakulteti</router-link></li>
+                                        <li><router-link to="/directions?faculty=texnika">Texnik va raqamli
+                                                texnologiyalar fakulteti</router-link></li>
+                                        <li><router-link to="/directions?faculty=iqtisod">Iqtisod va biznes
+                                                fakulteti</router-link></li>
+                                        <li><router-link to="/directions?faculty=gumanitar">Gumanitar fanlar
+                                                fakulteti</router-link></li>
                                     </ul>
                                 </li>
                                 <li class="has-submenu">
@@ -286,9 +293,12 @@
                                         <i class="fas fa-chevron-right submenu-icon"></i>
                                     </router-link>
                                     <ul class="submenu">
-                                        <li><router-link to="/kafedra?id=iqtisodiyot">Iqtisodiyot va menejment kafedrasi</router-link></li>
-                                        <li><router-link to="/kafedra?id=gumanitar">Gumanitar fanlar kafedrasi</router-link></li>
-                                        <li><router-link to="/kafedra?id=it">Axborot texnologiyalari kafedrasi</router-link></li>
+                                        <li><router-link to="/kafedra?id=iqtisodiyot">Iqtisodiyot va menejment
+                                                kafedrasi</router-link></li>
+                                        <li><router-link to="/kafedra?id=gumanitar">Gumanitar fanlar
+                                                kafedrasi</router-link></li>
+                                        <li><router-link to="/kafedra?id=it">Axborot texnologiyalari
+                                                kafedrasi</router-link></li>
                                     </ul>
                                 </li>
                                 <li class="has-submenu">
@@ -297,14 +307,22 @@
                                         <i class="fas fa-chevron-right submenu-icon"></i>
                                     </router-link>
                                     <ul class="submenu">
-                                        <li><router-link to="/department/staffs?department_id=1">Moliya-iqtisod bo'limi</router-link></li>
-                                        <li><router-link to="/department/staffs?department_id=2">Xo'jalik bo'limi</router-link></li>
-                                        <li><router-link to="/department/staffs?department_id=3">Axborot texnologiyalar markazi</router-link></li>
-                                        <li><router-link to="/department/staffs?department_id=4">Axborot-resurslar markazi</router-link></li>
-                                        <li><router-link to="/department/staffs?department_id=5">Xodimlar bo'limi</router-link></li>
-                                        <li><router-link to="/department/staffs?department_id=6">O'quv-uslubiy bo'lim</router-link></li>
-                                        <li><router-link to="/department/staffs?department_id=7">Marketing va shartnomalar bo'limi</router-link></li>
-                                        <li><router-link to="/department/staffs?department_id=8">Talabalarga xizmat ko'rsatish bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=1">Moliya-iqtisod
+                                                bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=2">Xo'jalik
+                                                bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=3">Axborot texnologiyalar
+                                                markazi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=4">Axborot-resurslar
+                                                markazi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=5">Xodimlar
+                                                bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=6">O'quv-uslubiy
+                                                bo'lim</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=7">Marketing va
+                                                shartnomalar bo'limi</router-link></li>
+                                        <li><router-link to="/department/staffs?department_id=8">Talabalarga xizmat
+                                                ko'rsatish bo'limi</router-link></li>
                                     </ul>
                                 </li>
                                 <li class="has-submenu">
@@ -317,7 +335,8 @@
                                         <li><router-link to="/activity/women">Xotin-qizlar kengashi</router-link></li>
                                         <li><router-link to="/activity/kasaba">Kasaba uyushmasi</router-link></li>
                                         <li><router-link to="/activity/tutoring">Tyutorlar faoliyati</router-link></li>
-                                        <li><router-link to="/activity/psychology">Psixologlar faoliyati</router-link></li>
+                                        <li><router-link to="/activity/psychology">Psixologlar faoliyati</router-link>
+                                        </li>
                                     </ul>
                                 </li>
                             </ul>
@@ -374,7 +393,8 @@
                             </ul>
                         </li>
                         <li class="nav__item">
-                            <router-link to="kelajakkaqadam" class="nav__link">  <span>Kelajakka qadam</span></router-link>
+                            <router-link to="kelajakkaqadam" class="nav__link"> <span>Kelajakka
+                                    qadam</span></router-link>
                         </li>
                     </ul>
                 </nav>
@@ -558,8 +578,7 @@ onUnmounted(() => {
         // }
 
         // .nav__link span {
-        //     font-family: "MuseoSansCyrl-500", sans-serif;
-        //     font-size: 16px;
+        //           //     font-size: 16px;
         //     line-height: 140%;
         //     letter-spacing: -0.18px;
         //     gap: 2px;
@@ -710,8 +729,11 @@ onUnmounted(() => {
                 }
 
                 &:hover {
+
                     &::after {
                         width: calc(100% - 8px);
+                        transition-delay: 300ms;
+
                     }
 
                     span {
@@ -729,6 +751,7 @@ onUnmounted(() => {
             visibility: visible;
             opacity: 1;
             transform: translateY(0) translateX(-50%);
+            transition-delay: 400ms;
 
             @media (max-width: 768px) {
                 transform: translateX(0);
@@ -742,6 +765,31 @@ onUnmounted(() => {
             transition: transform 0.3s ease;
         }
     }
+
+    // a {
+    //     display: block;
+    //     padding: 12px 20px;
+    //     color: #fff;
+    //     text-decoration: none;
+    //     transition: all 0.2s ease;
+    //     font-size: 15px;
+
+    // &:first-child :hover {
+    //     border-top-left-radius: 8px;
+    //     border-top-right-radius: 8px;
+    // }
+
+    // &:last-child :hover {
+    //     border-bottom-left-radius: 8px;
+    //     border-bottom-right-radius: 8px;
+    // }
+
+    // &:hover {
+    //     background-color: rgba(255, 255, 255, 0.15);
+    //     padding-left: 25px;
+
+    // }
+    // }
 
     .dropdown {
         position: absolute;
@@ -788,10 +836,14 @@ onUnmounted(() => {
                 transition: all 0.2s ease;
                 font-size: 15px;
 
+
+
                 &:hover {
                     background-color: rgba(255, 255, 255, 0.15);
-                    padding-left: 25px;
+                    // padding-left: 22px;
+
                 }
+
             }
 
             &.has-submenu {
@@ -799,6 +851,7 @@ onUnmounted(() => {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
+
                 }
 
                 .submenu-icon {
@@ -818,13 +871,23 @@ onUnmounted(() => {
                     }
                 }
             }
+
+            &:first-child a:hover {
+                border-top-left-radius: 8px;
+                border-top-right-radius: 8px;
+            }
+
+            &:last-child a:hover {
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+            }
         }
     }
 
     // Submenu styles (nested dropdown)
     .submenu {
         position: absolute;
-        left: 100%;
+        left: 101%;
         top: 0;
         background: linear-gradient(180deg, #2d4766 0%, #355e94 100%);
         border-radius: 8px;
@@ -848,10 +911,12 @@ onUnmounted(() => {
                 padding: 12px 20px;
                 font-size: 14px;
 
-                &:hover {
-                    background-color: rgba(255, 255, 255, 0.2);
-                    padding-left: 25px;
-                }
+                // &:hover {
+                // background-color: rgba(255, 255, 255, 0.2);
+                // padding-left: 25px;
+                // border-left: 8px solid transparent;
+                // border-right: 8px solid transparent;
+                // }
             }
         }
     }
@@ -890,8 +955,9 @@ onUnmounted(() => {
             transition: all 0.3s ease;
 
             &:hover {
-                color: #ffffffce;
-                transform: translateY(-2px);
+                color: #ffffff;
+                transform: translateY(-3px);
+                // transform: scale(1.1);
             }
         }
     }

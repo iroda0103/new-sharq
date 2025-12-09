@@ -484,7 +484,6 @@ onMounted(() => {
 .departments {
   display: flex;
   min-height: 100vh;
-  font-family: 'Inter', sans-serif;
   background-color: #f8fafc;
 
   &__sidebar {

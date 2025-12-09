@@ -65,8 +65,8 @@ const departments = ref([
     motto: "Qulay muhit — samarali ta'limning garovi.",
     employeeCount: 8,
     employees: [
-      { name: 'Aliyev Botir', photo: null },
-      { name: 'Tursunov Jahongir', photo: null }
+      { name: 'Habibullayev Qahramon', photo: null },
+      // { name: 'Tursunov Jahongir', photo: null }
     ]
   },
   {
@@ -80,9 +80,9 @@ const departments = ref([
     motto: 'Moliyaviy intizom — barqaror taraqqiyot asosi.',
     employeeCount: 5,
     employees: [
-      { name: 'Usmonov Akmal', photo: '/img/person/usmon.jpg' },
-      { name: 'Karimova Dilnoza', photo: null },
-      { name: 'Rahimov Sardor', photo: null }
+      // { name: 'Usmonov Akmal', photo: '/img/person/usmon.jpg' },
+      // { name: 'Karimova Dilnoza', photo: null },
+      // { name: 'Rahimov Sardor', photo: null }
     ]
   },
   {
@@ -96,8 +96,8 @@ const departments = ref([
     motto: "Qulay muhit — samarali ta'limning garovi.",
     employeeCount: 8,
     employees: [
-      { name: 'Aliyev Botir', photo: null },
-      { name: 'Tursunov Jahongir', photo: null }
+      // { name: 'Aliyev Botir', photo: null },
+      // { name: 'Tursunov Jahongir', photo: null }
     ]
   },
   {
@@ -111,8 +111,8 @@ const departments = ref([
     motto: 'Raqamli taraqqiyot — kelajak kaliti.',
     employeeCount: 6,
     employees: [
-      { name: 'Mahmudov Aziz', photo: null },
-      { name: 'Yusupova Madina', photo: null }
+      // { name: 'Mahmudov Aziz', photo: null },
+      // { name: 'Yusupova Madina', photo: null }
     ]
   },
   {
@@ -126,8 +126,8 @@ const departments = ref([
     motto: 'Ilm — eng qudratli qurol.',
     employeeCount: 4,
     employees: [
-      { name: 'Ergasheva Nilufar', photo: null },
-      { name: 'Saidov Jamshid', photo: null }
+      // { name: 'Ergasheva Nilufar', photo: null },
+      // { name: 'Saidov Jamshid', photo: null }
     ]
   },
   {
@@ -141,7 +141,7 @@ const departments = ref([
     motto: 'Kadrlar hal qiluvchi kuchdir.',
     employeeCount: 3,
     employees: [
-      { name: 'Nazarova Feruza', photo: null }
+      // { name: 'Nazarova Feruza', photo: null }
     ]
   },
   {
@@ -155,8 +155,8 @@ const departments = ref([
     motto: "Tizimli ta'lim — bilim kaliti.",
     employeeCount: 7,
     employees: [
-      { name: 'Qodirov Sanjar', photo: null },
-      { name: 'Hasanova Gulnora', photo: null }
+      // { name: 'Qodirov Sanjar', photo: null },
+      // { name: 'Hasanova Gulnora', photo: null }
     ]
   },
   {
@@ -170,8 +170,8 @@ const departments = ref([
     motto: 'Tanlov — bizni aniqlaydi.',
     employeeCount: 5,
     employees: [
-      { name: 'Ibragimov Rustam', photo: null },
-      { name: 'Karimova Nodira', photo: null }
+      // { name: 'Ibragimov Rustam', photo: null },
+      // { name: 'Karimova Nodira', photo: null }
     ]
   },
   {
@@ -185,8 +185,8 @@ const departments = ref([
     motto: 'Talaba — bizning markazimizda.',
     employeeCount: 6,
     employees: [
-      { name: 'Tursunova Malika', photo: null },
-      { name: 'Abdullayev Farhod', photo: null }
+      // { name: 'Tursunova Malika', photo: null },
+      // { name: 'Abdullayev Farhod', photo: null }
     ]
   }
 ]);

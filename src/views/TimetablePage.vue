@@ -64,7 +64,6 @@ const lessons = [
 
 <style scoped>
 .timetable-page {
-  font-family: 'Inter', sans-serif;
   background: linear-gradient(to bottom right, #f9f9f9, #e8f0ff);
   min-height: 100vh;
 }

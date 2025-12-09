@@ -332,7 +332,6 @@ onMounted(() => {
     min-height: 100vh;
     display: flex;
     gap: 20px;
-    font-family: 'Inter', sans-serif;
 // padding-top: 170px;
     .rektor__info {
         text-align: start;

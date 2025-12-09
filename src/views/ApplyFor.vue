@@ -623,7 +623,6 @@
 
     .checkmark:after {
         content: "\f00c";
-        font-family: "Font Awesome 6 Free";
         font-weight: 900;
         color: white;
         font-size: 0.75rem;

@@ -163,7 +163,6 @@
 <style>
 .library-content__title {
     color: rgba(1, 11, 27, 1);
-    font-family: "MuseoSansCyrl-700", sans-serif;
     font-size: 24px;
     line-height: 140%;
     letter-spacing: -0.32px;
@@ -173,7 +172,6 @@
 
 /* .content i, .content p, .content ul li, .content span {
   color: rgba(71, 82, 98, 1);
-  font-family: "MuseoSansCyrl-500", sans-serif;
   font-size: 14px;
   line-height: 140%;
   letter-spacing: -0.16px;
@@ -188,7 +186,6 @@
 
 .content table td {
     color: rgba(36, 45, 58, 1);
-    font-family: "MuseoSansCyrl-500", sans-serif;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: -0.18px;
@@ -233,7 +230,6 @@ tr {
     padding: 14px 6px;
     padding-left: 6px;
     color: #fff;
-    font-family: "MuseoSansCyrl-500", sans-serif;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: -0.18px;

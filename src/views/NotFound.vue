@@ -28,7 +28,6 @@ export default {
   background-color: #f4f7fe;
   text-align: center;
   padding: 2rem;
-  font-family: 'Segoe UI', sans-serif;
 }
 
 .container {

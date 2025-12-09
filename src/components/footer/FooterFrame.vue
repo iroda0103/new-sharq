@@ -156,7 +156,6 @@ html:not(.bvi-panel) ::before {
     border-radius: 12px;
     background: linear-gradient(90deg, #3E7CB5 0%, #39A589 100%);
     box-shadow: 0px 2px 0px 0px #29676A, 0px 8px 16px 0px rgba(255, 255, 255, 0.1) inset, 0px 2px 0px 0px rgba(255, 255, 255, 0.1) inset;
-    font-family: "MuseoSansCyrl-500", sans-serif;
     font-size:16px;
     line-height: 140%;
     letter-spacing: -0.18px;
@@ -181,7 +180,6 @@ html:not(.bvi-panel) ::before {
 .footer-title {
     color: #fff;
     font-weight: 700;
-    font-family: "MuseoSansCyrl-700", sans-serif;
     font-size: 26px;
     line-height: 140%;
     letter-spacing: -0.32px;

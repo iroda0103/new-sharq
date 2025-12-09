@@ -43,7 +43,7 @@ html {
   --black-9: rgba(239, 243, 249, 1);
   --black-10: rgba(248, 250, 253, 1);
   --white-1: rgba(255, 255, 255, 1);
-  --c-white-1: 255,255,255;
+  --c-white-1: 255, 255, 255;
   --c-green-1: 20, 126, 92;
   --event: linear-gradient(180deg, #3E7CB5 0%, #125EA4 100%);
   --linear-1: linear-gradient(90deg, #3E7CB5 0%, #39A589 100%);
@@ -74,17 +74,18 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: Urbanist, sans-serif;
-  font-family: "Museo Sans Cyrl", sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #000000;
-    
+  /* font-family: Urbanist, sans-serif; */
+  /* font-family: "Museo Sans Cyrl", sans-serif; */
+  /* font-family: Monse; */
+ font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .page-title {
   color: rgba(42, 64, 122, 1);
-  font-family: "MuseoSansCyrl-700", sans-serif;
   font-size: 22px;
   line-height: 140%;
   letter-spacing: -0.24px;
@@ -93,9 +94,10 @@ body {
   text-align: center;
   font-weight: 650;
   margin-bottom: 12px;
-  
+
 }
-.public-card-wrapper{
+
+.public-card-wrapper {
   border-radius: 12px;
   border: 1px solid rgba(234, 238, 245, 1);
   box-shadow: 0px 0px 30px 0px rgba(7, 12, 28, 0.04);
@@ -148,6 +150,7 @@ main {
     max-width: 2300px;
   }
 }
+
 /* 2K monitorlar (≥1920px) */
 @media (max-width: 1920px) {
   .container {
@@ -160,18 +163,21 @@ main {
     max-width: 1600px;
   }
 }
+
 /* Full HD monitorlar (≥1600px) */
 @media (max-width: 1600px) {
   .container {
     max-width: 1200px;
   }
 }
+
 /* Katta noutbuklar (≥1300px) */
 @media (max-width: 1300px) {
   .container {
     max-width: 1200px;
   }
 }
+
 #app {
   /* height: 100vh; */
 }

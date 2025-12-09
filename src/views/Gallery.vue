@@ -194,7 +194,6 @@ onMounted(() => {
     max-width: 1200px;
     margin: 0 auto;
     padding: 24px;
-    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
     color: #1b1b1b;
     padding-top: 140px;
 

@@ -50,7 +50,6 @@ export default {
 <style lang="scss" scoped>
 .unilibrary {
   // padding: 60px 20px;
-  font-family: 'Segoe UI', sans-serif;
 // padding-top: 180px;
   .unlibrary__container {
     max-width: 1200px;

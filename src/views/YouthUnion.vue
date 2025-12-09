@@ -151,7 +151,6 @@
     background: #f5f7fa;
     padding: 10px 16px;
     border-radius: 8px;
-    font-family: "MuseoSansCyrl-500", sans-serif;
     font-size: 14px;
     color: #1f2937;
     border: 1px solid #e5e7eb;

@@ -246,7 +246,6 @@ onMounted(() => {
 .sidebar-title {
     padding: 12px;
     color: rgba(1, 11, 27, 1);
-    font-family: "MuseoSansCyrl-700", sans-serif;
     font-size: 20px;
     line-height: 140%;
     font-weight: 600;
@@ -264,7 +263,6 @@ onMounted(() => {
     position: relative;
     color: rgba(1, 11, 27, 1);
     ;
-    font-family: "MuseoSansCyrl-500", sans-serif;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: -0.16px;
@@ -336,7 +334,6 @@ onMounted(() => {
 
 .leadership-info__fio {
     color: rgba(1, 11, 27, 1);
-    font-family: "MuseoSansCyrl-700", sans-serif;
     font-size: 24px;
     line-height: 140%;
     letter-spacing: -0.24px;
@@ -344,7 +341,6 @@ onMounted(() => {
 
 .leadership-info__text {
     color: rgba(71, 82, 98, 1);
-    font-family: "MuseoSansCyrl-500", sans-serif;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: -0.16px;
@@ -374,7 +370,6 @@ onMounted(() => {
     display: flex;
     align-items: center;
     color: rgba(1, 11, 27, 1);
-    font-family: "MuseoSansCyrl-300", sans-serif;
     font-size: 16px;
     line-height: 138%;
     letter-spacing: -0.16px;
@@ -399,7 +394,6 @@ onMounted(() => {
 
 .page-block__subtitle {
     color: rgba(22, 35, 71, 1);
-    font-family: "MuseoSansCyrl-700", sans-serif;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.2px;
@@ -422,7 +416,6 @@ onMounted(() => {
 
 .page-block__subtitle {
     color: rgba(22, 35, 71, 1);
-    font-family: "MuseoSansCyrl-700", sans-serif;
     font-size: 20px;
     line-height: 140%;
     letter-spacing: -0.2px;

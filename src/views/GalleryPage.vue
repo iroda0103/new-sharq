@@ -83,7 +83,6 @@ const handleImageClick = (index) => {
   max-width: 1280px;
   margin: 0 auto;
   padding: 140px 24px 48px;
-  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   min-height: 100vh;
 }
 

@@ -113,7 +113,6 @@ export default {
 .campus-el__title {
   color: var(--black-1);
   font-weight: 600;
-  font-family: "MuseoSansCyrl-500", sans-serif;
   font-size: 15px;
   line-height: 140%;
   letter-spacing: -0.16px;
@@ -126,7 +125,6 @@ export default {
 }
 
 .campus-el__btn {
-  font-family: "MuseoSansCyrl-500", sans-serif;
   font-size: 15px;
   display: flex;
   align-items: center;

@@ -589,8 +589,7 @@ const isActive = (href) => {
 .aside-banner__title {
         color: rgba(1, 11, 27, 1);
         ;
-        font-family: "MuseoSansCyrl-500", sans-serif;
-        font-size: 15px;
+              font-size: 15px;
         line-height: 140%;
         letter-spacing: -0.16px;
         margin-bottom: 12px;
@@ -607,8 +606,7 @@ const isActive = (href) => {
         gap: 8px;
         outline: none;
         color: #fff;
-        font-family: "MuseoSansCyrl-500", sans-serif;
-        font-size: 15px;
+              font-size: 15px;
         line-height: 140%;
         letter-spacing: -0.16px;
         border-radius: 8px;
