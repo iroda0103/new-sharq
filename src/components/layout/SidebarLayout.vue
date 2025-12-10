@@ -1,5 +1,6 @@
 <template>
   <div class="wrapper" :style="{ backgroundImage: `url(${currentPageConfig.background})` }">
+    <Banner></Banner>
     <div class="container">
       <div class="page-row">
         <!-- Main Content -->
@@ -22,6 +23,7 @@
 import { computed, ref, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
 import SidebarController from '../controllers/Sidebar.controller.vue'
+import Banner from '../banner/Banner.vue'
 
 const route = useRoute()
 const currentPath = ref('')

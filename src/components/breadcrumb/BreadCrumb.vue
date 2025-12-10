@@ -4,10 +4,10 @@
       <li class="inline-flex items-center">
         <a
           href="/"
-          class="inline-flex items-center text-sm font-medium text-white hover:text-blue-600"
+          class="inline-flex items-center text-sm font-medium text-white hover:text-blue-600 home-breadcrumb"
         >
           <svg
-            class="w-4 h-4 me-1.5"
+            class="w-4 h-4 me-1.5 home-breadcrumb"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -34,7 +34,7 @@
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
           </svg>
-          <a href="/#posts" class="text-sm font-medium text-gray-700 hover:text-blue-600">Projects</a>
+          <a href="/#posts" class="text-sm font-medium text-gray-700 hover:text-blue-600 home-breadcrumb">Universitet</a>
         </div>
       </li>
       <li aria-current="page">
@@ -48,7 +48,7 @@
           >
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7" />
           </svg>
-          <span class="text-sm font-medium text-gray-500">Flowbite</span>
+          <span class="text-sm font-medium text-gray-500 home-breadcrumb">Rektor</span>
         </div>
       </li>
     </ol>
@@ -58,3 +58,8 @@
 <script setup>
 import 'flowbite'
 </script>
+<style>
+  .home-breadcrumb{
+    font-size: 16px;
+  }
+</style>

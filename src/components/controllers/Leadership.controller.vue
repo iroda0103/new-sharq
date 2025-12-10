@@ -17,11 +17,11 @@
                     <div class="leadership-info__links">
                         <a href="mailto:info@uzedu.uz" class="leadership-info__link">
                             <i class="fa-regular fa-envelope"></i>
-                            info@uzedu.uz
+                            info@sharqedu.uz
                         </a>
                         <a href="tel:+998712410115" class="leadership-info__link">
                             <i class="fa-solid fa-phone"></i>
-                            +998 (71) 241-01-15
+                            +998 (79) 222-77-07
                         </a>
                     </div>
 
