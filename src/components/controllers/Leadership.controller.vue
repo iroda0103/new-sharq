@@ -345,7 +345,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-
     .leadership-image__inner img {
         min-width: 160px;
         height: 179px;

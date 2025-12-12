@@ -28,17 +28,20 @@
           alt="Hero image"
         /> -->
             </div>
+            <LocationButton></LocationButton>
         </div>
     </section>
     <!-- END HERO SECTION -->
 </template>
 <script>
+import LocationButton from '../utilits/other/locationButton.vue';
 import Stats from './about/Stats.vue';
 
 export default {
     name: 'HeroSection',
     components: {
-        Stats
+        Stats,
+        LocationButton
     },
     data() {
         return {
