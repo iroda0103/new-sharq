@@ -1,21 +1,10 @@
 <template>
     <section class="dormitory-page">
         <div class="">
-            <!-- <div class="breadcrumbs">
-                <a href="/">Bosh sahifa</a> / <a href="#">Talabalar uchun</a> / <span>Yotoqxonalar</span>
-            </div> -->
-
             <div class="hero-section">
-                <!-- <div class="hero-content">
-                    <h1 class="hero-title">Talabalar yotoqxonasi</h1>
-                    <p class="hero-subtitle">Qulay va xavfsiz yashash sharoitlari</p>
-                    <a href="#dormitories" class="cta-button">Yotoqxonalarni ko'rish <i
-                            class="fas fa-arrow-down"></i></a>
-                </div> -->
                 <div class="hero-image">
                     <img loading="lazy" src="/img/bed-room2/main.jpg" alt="Yotoqxona binosi">
 
-                    <!-- <img loading="lazy"src="https://new-sharq-vue.vercel.app/assets/main-C9gjlFc1.jpg" alt="Yotoqxona binosi"> -->
                 </div>
             </div>
 
@@ -50,61 +39,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- <div id="dormitories" class="dormitories-section">
-                <h2 class="section-title">Yotoqxona turlari</h2>
-                <p class="section-subtitle">Har qanday talaba uchun mos yotoqxonalar</p>
-
-                <div class="dormitory-filters">
-                    <div class="filter-group">
-                        <label for="type-filter"><i class="fas fa-filter"></i> Turi bo'yicha:</label>
-                        <select id="type-filter" v-model="selectedType">
-                            <option value="all">Barchasi</option>
-                            <option value="standard">Standart</option>
-                            <option value="premium">Premium</option>
-                            <option value="family">Oilaviy</option>
-                        </select>
-                    </div>
-                    <div class="filter-group">
-                        <label for="gender-filter"><i class="fas fa-venus-mars"></i> Jins bo'yicha:</label>
-                        <select id="gender-filter" v-model="selectedGender">
-                            <option value="all">Barchasi</option>
-                            <option value="male">Erkaklar</option>
-                            <option value="female">Ayollar</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="dormitory-grid">
-                    <div v-for="(dormitory, index) in filteredDormitories" :key="index" class="dormitory-card"
-                        :class="dormitory.type">
-                        <div class="dormitory-image">
-                            <img loading="lazy":src="dormitory.image" :alt="dormitory.name">
-                            <div class="price-tag">{{ dormitory.price }}</div>
-                        </div>
-                        <div class="dormitory-content">
-                            <div class="dormitory-header">
-                                <h3>{{ dormitory.name }}</h3>
-                                <span class="type-badge" :class="dormitory.type">{{ dormitory.typeLabel }}</span>
-                            </div>
-                            <div class="dormitory-meta">
-                                <span><i class="fas fa-venus-mars"></i> {{ dormitory.gender }}</span>
-                                <span><i class="fas fa-bed"></i> {{ dormitory.capacity }}</span>
-                                <span><i class="fas fa-building"></i> {{ dormitory.building }}</span>
-                            </div>
-                            <p class="dormitory-description">{{ dormitory.description }}</p>
-                            <div class="dormitory-features">
-                                <span v-for="(feature, i) in dormitory.features" :key="i">
-                                    <i :class="feature.icon"></i> {{ feature.text }}
-                                </span>
-                            </div>
-                            <a :href="dormitory.link" class="view-button">
-                                Batafsil <i class="fas fa-arrow-right"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
 
             <div class="gallery-section">
                 <h2 class="section-title">Yotoqxona hayoti</h2>
@@ -165,10 +99,6 @@ import img3 from '../../public/img/bed-room2/img3.jpg'
 import img4 from '../../public/img/bed-room2/img4.jpg'
 import img8 from '../../public/img/bed-room2/img5.jpg'
 import img9 from '../../public/img/bed-room2/img6.jpg'
-// import img10 from '../../public/img/bed-room2/img7.jpg'
-// import img5 from '../../public/img/bed-room2/img5.jpg'
-// import img6 from '../../public/img/bed-room2/img6.jpg'
-// import img7 from '../../public/img/bed-room2/img7.jpg'
 
 export default {
     name: "DormitoryPage",

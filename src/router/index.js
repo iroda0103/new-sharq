@@ -36,6 +36,7 @@ import Club from '../views/Club.vue'
 import Staffs from '../views/Staffs.vue'
 import TestStaff from '../views/TestStaff.vue'
 import FutureStep from '../views/FutureStep.vue'
+import Direction from '../views/Direction.vue'
 
 
 // Layout componentlar
@@ -96,6 +97,7 @@ const routes = [
 
 
       { path: 'test-staff', name: 'TestStaff', component: TestStaff },
+      { path: 'direction/:id', name: 'Direction', component: Direction },
 
 
     ]

@@ -286,23 +286,6 @@ const sidebarData = {
             { label: 'Dars jadvali', href: '/academic-calendar' }
         ]
     },
-    yonalishlar: {
-        title: 'Ta\'lim yo\'nalishlari',
-        items: [
-            { label: 'Tarix', href: '/direction/tarix' },
-            { label: 'Psixologiya', href: '/direction/psixologiya' },
-            { label: 'Ingliz tili', href: '/direction/ingliz-tili' },
-            { label: 'Rus tili', href: '/direction/rus-tili' },
-            { label: 'O\'zbek tili', href: '/direction/ozbek-tili' },
-            { label: 'Iqtisodiyot', href: '/direction/iqtisodiyot' },
-            { label: 'Moliya va moliyaviy texnologiyalar', href: '/direction/moliya' },
-            { label: 'Marketing', href: '/direction/marketing' },
-            { label: 'Biznesni boshqarish', href: '/direction/biznes' },
-            { label: 'Kiberxavfsizlik injiniringi', href: '/direction/kiberxavfsizlik' },
-            { label: 'Dasturiy injiniring', href: '/direction/dasturiy-injiniring' },
-            { label: 'Sun\'iy intellekt', href: '/direction/suniy-intellekt' }
-        ]
-    },
     qabul: {
         title: 'Qabul',
         items: [
@@ -331,11 +314,6 @@ const sidebarData = {
 const currentSection = computed(() => {
     const path = route.path
     const fullPath = route.fullPath
-
-    // Yo'nalishlar (direction pages)
-    if (path.startsWith('/direction/')) {
-        return sidebarData.yonalishlar
-    }
 
     // Universitet
     if (['/rektor', '/history', '/partners', '/document', '/sertificat', '/campus'].some(p => path.includes(p))) {
