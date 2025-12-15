@@ -33,6 +33,43 @@ const props = defineProps({
 
 const newsData = ref([
     {
+          id: 10,
+        title: "🎉 YANGI YIL KECHASI — MASQUARADE BALL! 🎭",
+        image: "/img/blog/news.png",
+        date: "2025-12-14",
+        views: 543,
+        featured: true
+    },
+      {
+          id: 9,
+        title: `Sharq Universiteti hamda Prague Institute of Management and Technology universiteti o‘rtasida hamkorlik bo‘yicha memorandum imzolandi.`,
+        image: "/img/blog/praga.png",
+        date: "2025-12-11",
+        views: 591,
+        featured: true
+    },
+     {
+        id: 8,
+        title: ' “Sharq kitobxonlari” tanlovi',
+        image: "/img/blog/kitobxon3.png",
+        date: "2025-12-3",
+        views: 807
+    },
+        {
+        id: 7,
+        title: '📚 Sharq Universiteti kutubxonasida “Tanishing: yangi adabiyotlar” nomli kitoblar taqdimoti bo‘lib o‘tdii',
+        image: "/img/blog/kitob.png",
+        date: "2025-12-2",
+        views: 807
+    },
+          {
+        id: 6,
+        title: 'Sharq universitetida Talabalar ligasiga START berildi! Guruhlar o‘rtasida futbol musobaqasi bo‘lib o‘tadi.',
+        image: "/img/blog/futbol.png",
+        date: "2025-12-2",
+        views: 569
+    },
+    {
         id: 1,
         title: "🇺🇿 Yurt bayrog‘i — milliy g‘urur, tinchlik va hamjihatlik timsoli.",
         image: "/img/blog/flag.jpg",

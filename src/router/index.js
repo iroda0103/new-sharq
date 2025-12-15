@@ -18,7 +18,7 @@ import Library from '../views/Library.vue'
 import EducationPortal from '../views/EducationPortal.vue'
 import AddPost from '../views/AddPost.vue'
 import ApplyFor from '../views/ApplyFor.vue'
-import News from '../components/news/NewsDetail.vue'
+import NewsDetail from '../components/news/NewsDetail.vue'
 import Test from '../components/campus/Test.vue'
 import Gallery from '../views/Gallery.vue'
 import GalleryPage from '../views/GalleryPage.vue'
@@ -37,7 +37,7 @@ import Staffs from '../views/Staffs.vue'
 import TestStaff from '../views/TestStaff.vue'
 import FutureStep from '../views/FutureStep.vue'
 import Direction from '../views/Direction.vue'
-
+import News from '../views/News.vue'
 
 // Layout componentlar
 import DefaultLayout from '../components/layout/DefaultLayout.vue'
@@ -65,7 +65,8 @@ const routes = [
     children: [
       { path: 'rektor', name: 'Rector', component: Rector },
       { path: 'addpost', name: 'AddPost', component: AddPost },
-      { path: 'news/:id', name: 'NewsDetail', component: News },
+      { path: 'news/:id', name: 'NewsDetail', component: NewsDetail },
+      { path: 'news', name: 'News', component: News },
       { path: 'faculty', name: 'FacultiesPage', component: FacultiesPage },
       { path: 'directions', name: 'Faculty', component: Faculty },
       { path: 'history', name: 'History', component: History },

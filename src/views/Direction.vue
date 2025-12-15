@@ -95,8 +95,9 @@
               <div v-if="activeTab === 'fees'" class="space-y-4">
                 <div class="border rounded-lg p-4">
                   <div class="font-semibold mb-1">Mahalliy talabalar</div>
-                  <div class="text-2xl text-blue-600">{{ direction.fees.local }}</div>
+                  <div class="text-xl">{{ direction.fees.local }}</div>
                 </div>
+                <Payment></Payment>
                 <!-- <div class="border rounded-lg p-4">
                   <div class="font-semibold mb-1">Xorijiy talabalar</div>
                   <div class="text-2xl text-blue-600">{{ direction.fees.international }}</div>
@@ -125,6 +126,7 @@
 import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
 import { directions } from '../data/directionData'
+import Payment from './Payment.vue';
 
 const route = useRoute();
 const direction = ref(null);
