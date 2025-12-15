@@ -28,8 +28,8 @@
           </div>
         </div>
 
-        <div class="page-block">
-          <div class="lg:col-span-2">
+        <div  class="direction-about-wrapper">
+          <div class="lg:col-span-2 page-block ">
             <div class="bg-white rounded-lg shadow-sm p-4">
               <h1 class="page-title">
                 {{ direction.degree }} - {{ direction.name }}
@@ -39,6 +39,8 @@
               <!-- Yo'nalish haqida -->
               <div v-if="activeTab === 'description'" class="prose max-w-none">
                 <p class="text-gray-700 leading-relaxed">{{ direction.description }}</p>
+                          
+
               </div>
 
               <!-- Tuzilma -->
@@ -116,7 +118,9 @@
               </div>
             </div>
           </div>
+           <img v-if="activeTab === 'description'" :src="direction.img"></img>
         </div>
+         
       </div>
     </div>
   </div>
@@ -184,3 +188,18 @@ watch(
   }
 );
 </script>
+<style>
+  .direction-about-wrapper{
+    display: flex;
+    gap: 20px;
+  }
+  .direction-about-wrapper img{
+    height: 340px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 13px;
+  }
+  .direction-about-wrapper div{
+    width: 100%;
+  }
+</style>
