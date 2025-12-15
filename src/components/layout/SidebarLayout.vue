@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper" :style="{ backgroundImage: `url(${currentPageConfig.background})` }">
-    <Banner></Banner>
+    <!-- <Banner></Banner> -->
     <div class="container">
       <div class="page-row">
         <!-- Main Content -->

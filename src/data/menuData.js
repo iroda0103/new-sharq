@@ -85,7 +85,7 @@ export const menuItems = [
     children: [
       { title: "Media bo‘limi", to: "/press-service" },
       { title: "Yangiliklar", to: "/news" },
-      { title: "Postlar", to: "/posts" },
+      // { title: "Postlar", to: "/posts" },
       { title: "Gallery", to: "/gallery" },
     ],
   },
@@ -94,7 +94,7 @@ export const menuItems = [
     title: "Talabalar hayoti",
     children: [
       { title: "Yotoqxona", to: "/bed-room" },
-      { title: "Tadbirlar", to: "/events" },
+      // { title: "Tadbirlar", to: "/events" },
       { title: "Klublar", to: "/club" },
     ],
   },

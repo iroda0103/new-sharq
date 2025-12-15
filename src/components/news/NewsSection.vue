@@ -33,7 +33,7 @@ const props = defineProps({
 
 const newsData = ref([
     {
-          id: 10,
+          id: 1,
         title: "🎉 YANGI YIL KECHASI — MASQUARADE BALL! 🎭",
         image: "/img/blog/news.png",
         date: "2025-12-14",
@@ -41,7 +41,7 @@ const newsData = ref([
         featured: true
     },
       {
-          id: 9,
+          id: 2,
         title: `Sharq Universiteti hamda Prague Institute of Management and Technology universiteti o‘rtasida hamkorlik bo‘yicha memorandum imzolandi.`,
         image: "/img/blog/praga.png",
         date: "2025-12-11",
@@ -49,28 +49,28 @@ const newsData = ref([
         featured: true
     },
      {
-        id: 8,
+        id: 3,
         title: ' “Sharq kitobxonlari” tanlovi',
         image: "/img/blog/kitobxon3.png",
         date: "2025-12-3",
         views: 807
     },
         {
-        id: 7,
+        id: 4,
         title: '📚 Sharq Universiteti kutubxonasida “Tanishing: yangi adabiyotlar” nomli kitoblar taqdimoti bo‘lib o‘tdii',
         image: "/img/blog/kitob.png",
         date: "2025-12-2",
         views: 807
     },
           {
-        id: 6,
+        id: 5,
         title: 'Sharq universitetida Talabalar ligasiga START berildi! Guruhlar o‘rtasida futbol musobaqasi bo‘lib o‘tadi.',
         image: "/img/blog/futbol.png",
         date: "2025-12-2",
         views: 569
     },
     {
-        id: 1,
+        id: 6,
         title: "🇺🇿 Yurt bayrog‘i — milliy g‘urur, tinchlik va hamjihatlik timsoli.",
         image: "/img/blog/flag.jpg",
         date: "2025-11-18",
@@ -78,28 +78,28 @@ const newsData = ref([
         featured: true
     },
     {
-        id: 2,
+        id: 7,
         title: ' “Sharq kitobxonlari” tanlovi',
         image: "/img/blog/reader_competetion.jpg",
         date: "2025-11-13",
         views: 507
     },
     {
-        id: 3,
+        id: 8,
         title: "🎭 Diqqat, ijodkor talabalar!",
         image: "/img/blog/kasting.jpg",
         date: "2025-11-13",
         views: 701
     },
     {
-        id: 4,
+        id: 9,
         title: "🎓 Sharq Universiteti “Tarix” yo‘nalishi talabalari Arxeologiya fanidan seminar mashg‘ulotini amaliy shaklda Navoiy viloyati tarixi va madaniyati davlat muzeyida tashkil etdilar. ",
         image: "/img/blog/muzey.jpg",
         date: "2025-11-07",
         views: 544
     },
     {
-        id: 5,
+        id: 10,
         title: "Talabalar bilan huquqbuzarlik va jinoyatchilikni oldini olish mavzusida uchrashuv bo‘lib o‘tdi.",
         image: "/img/blog/uchrashuv.jpg",
         date: "2025-11-07",
