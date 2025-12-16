@@ -1,13 +1,13 @@
 <template>
     <section class="campus-life">
-        <div class="header">
+        <div class="header container">
             <!-- <div class="logo">
         <img src="/img/logo.svg" alt="Logo" />
       </div> -->
             <h2 class="title">Campus <span class="highlight">Life</span></h2>
-            <p class="description">
+            <!-- <p class="description">
                 A vibrant campus with clubs, sports, and endless opportunities for growth.
-            </p>
+            </p> -->
         </div>
 
         <div class="carousel-container">
@@ -98,7 +98,7 @@ export default {
 }
 
 .title {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 700;
     color: #1a237e;
     margin: 0;
@@ -119,7 +119,8 @@ export default {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    max-width: 1200px;
+    width: 100%;
+    /* max-width: 1200px; */
     margin: 0 auto;
 }
 

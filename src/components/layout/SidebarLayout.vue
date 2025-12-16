@@ -9,7 +9,7 @@
         </div>
 
         <!-- Sidebar -->
-        <aside class="page-row__col">
+        <aside class="page-row__col flex ">
           <!-- <div class="aside"> -->
             <SidebarController />
           <!-- </div> -->

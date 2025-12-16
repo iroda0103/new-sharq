@@ -1,8 +1,8 @@
 <template>
   <section class="faq-section">
     <div class="container faq-container">
-      <h2 class="faq-title">Tez-tez Beriladigan Savollar</h2>
-      <p class="faq-subtitle">O'quv jarayoni, qabul va grantlar haqida eng ko'p so'raladigan savollarga javoblar</p>
+      <h2 class="title">Tez-tez Beriladigan Savollar</h2>
+      <!-- <p class="faq-subtitle">O'quv jarayoni, qabul va grantlar haqida eng ko'p so'raladigan savollarga javoblar</p> -->
 
       <div class="faq-accordion">
         <div v-for="(item, index) in faqItems" :key="index" class="faq-item"

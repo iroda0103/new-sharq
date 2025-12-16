@@ -194,8 +194,9 @@ watch(
     gap: 20px;
   }
   .direction-about-wrapper img{
-    height: 340px;
-    width: 400px;
+    /* height: 406px; */
+    width: 405px;
+    height: 321px;
     object-fit: cover;
     border-radius: 13px;
   }

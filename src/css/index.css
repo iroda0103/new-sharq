@@ -110,6 +110,13 @@ body {
   height: auto;
 } */
 
+.title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a237e;
+    text-align: center;
+    margin: 0;
+}
 
 a {
   text-decoration: none;

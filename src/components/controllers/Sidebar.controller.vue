@@ -185,31 +185,96 @@ watch(() => route.path, () => {
 }, { immediate: true })
 </script> -->
 <template>
-    <div class="aside">
-        <div class="sidebar" v-if="currentSection">
-            <h3 class="sidebar-title">{{ currentSection.title }}</h3>
-            <ul class="sidebar-menu-list">
-                <li 
-                    v-for="(item, index) in currentSection.items" 
-                    :key="index" 
-                    class="sidebar-menu__item"
-                    :class="{ 'active': isActive(item.href) }"
-                >
-                    <router-link :to="item.href" class="sidebar-menu__link">
-                        {{ item.label }}
-                    </router-link>
-                </li>
-            </ul>
-        </div>
-        <div class="aside-banner">
-            <a href="https://t.me/sharqMurojaat_bot" target="_blank">
-                <h3 class="aside-banner__title">Rektorga <br>Murojaat</h3>
-                <button class="aside-banner__btn">Yuborish</button>
-                <img class="aside-banner__image" src="/img/murojaat.png" alt="Reach out to the Rector">
-            </a>
-        </div>
+  <aside class="sticky top-[140px] self-start w-[290px] flex-grow flex flex-col gap-5">
+  <!-- <aside class="flex-grow flex flex-col gap-5 sticky top-[140px] w-[290px] w-[100%] "> -->
+    
+    <!-- Sidebar -->
+    <div
+      v-if="currentSection"
+      class="rounded-xl shadow-md overflow-hidden bg-white"
+    >
+      <h3
+        class="text-[18px] font-semibold px-4 py-3 relative"
+      >
+        {{ currentSection.title }}
+        <!-- <span class="absolute left-4 bottom-0 w-14 h-[3px] rounded bg-gradient-to-r from-[#00455e] to-[#1b6ae9]" /> -->
+      </h3>
+
+      <ul class="flex flex-col">
+        <li
+          v-for="(item, i) in currentSection.items"
+          :key="i"
+          class="sidebar-menu__item"
+        >
+          <router-link
+            :to="item.href"
+            class="sidebar-link"
+            :class="{ 'sidebar-link--active': isActive(item.href) }"
+          >
+            <span class="truncate block w-full">
+              {{ item.label }}
+            </span>
+          </router-link>
+        </li>
+      </ul>
     </div>
+
+    <!-- Banner -->
+    <div class="relative rounded-xl border bg-gradient-to-r from-[#EAEEF5] to-[#DFE4ED] p-3 overflow-hidden">
+      <a
+        href="https://t.me/sharqMurojaat_bot"
+        target="_blank"
+        class="relative z-10 block"
+      >
+        <h3 class="text-[15px] leading-[140%] mb-3 text-[#010b1b]">
+          Rektorga <br /> Murojaat
+        </h3>
+
+        <button
+          class="text-[15px] text-white px-2 py-1 rounded-md bg-gradient-to-r from-[#000e5a] to-[#003283]"
+        >
+          Yuborish
+        </button>
+      </a>
+
+      <img
+        src="/img/murojaat.png"
+        class="absolute right-0 top-0 h-full object-contain opacity-80"
+        alt=""
+      />
+    </div>
+  </aside>
 </template>
+<style scoped>
+.sidebar-link {
+  @apply
+    block
+    w-full
+    px-4
+    py-3
+    text-[15px]
+    font-medium
+    text-[#252729]
+    transition-colors
+    duration-200
+    overflow-hidden;
+}
+
+.sidebar-link:hover {
+  background: rgba(27, 106, 233, 0.1);
+  color: #00455e;
+}
+
+.sidebar-link--active {
+  background: linear-gradient(135deg, #00455e 0%, #1b6ae9 100%);
+  color: #fff;
+  font-weight: 600;
+}
+.sidebar-menu__item {
+    border-top: 1px solid rgb(223, 228, 237);
+}
+</style>
+
 
 <script setup>
 import { ref, computed, onMounted, watch } from 'vue'
@@ -404,255 +469,3 @@ const isActive = (href) => {
     return currentPath === href
 }
 </script>
-<style scoped lang="scss">
-.aside{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-     position: sticky;
-    top: 140px;
-    // max-height: calc(100vh - 120px);
-    overflow-y: auto;
-    overflow: hidden;
-    // height: 100%;
-}
-.sidebar {
-    //   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 12px;
-    // flex-grow: 1;
-    //   padding: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    // position: sticky;
-    // top: 140px;
-    // max-height: calc(100vh - 120px);
-    // overflow-y: auto;
-    // overflow: hidden;
-
-    &::-webkit-scrollbar {
-        width: 6px;
-    }
-
-    &::-webkit-scrollbar-track {
-        background: rgba(0, 0, 0, 0.05);
-        border-radius: 10px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-        background: rgba(0, 69, 94, 0.3);
-        border-radius: 10px;
-
-        &:hover {
-            background: rgba(0, 69, 94, 0.5);
-        }
-    }
-}
-
-.sidebar-title {
-    font-size: 18px;
-    font-weight: 550;
-    //   font-weight: 700;
-    //   color: #00455e;
-    //   padding-left: 30px;
-    //   margin-bottom: 20px;  
-    //   padding-bottom: 16px;
-    //   border-bottom: 3px solid #1b6ae9;
-    position: relative;
-
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -3px;
-        left: 0;
-        width: 60px;
-        height: 3px;
-        // background: linear-gradient(90deg, #00455e, #1b6ae9);
-        border-radius: 2px;
-    }
-}
-
-.sidebar-menu-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar-menu__item {
-    //   margin-bottom: 8px;
-    transition: all 0.3s ease;
-    overflow: hidden;
-
-    &:last-child {
-        margin-bottom: 0;
-    }
-
-    &.active {
-        .sidebar-menu__link {
-            background: linear-gradient(135deg, #00455e 0%, #1b6ae9 100%);
-            color: #fff;
-            font-weight: 600;
-            padding-left: 20px;
-            box-shadow: 0 4px 15px rgba(27, 106, 233, 0.3);
-
-            &::before {
-                opacity: 1;
-                transform: translateX(0);
-            }
-        }
-    }
-
-    &:hover:not(.active) {
-        .sidebar-menu__link {
-            background: rgba(27, 106, 233, 0.1);
-            padding-left: 40px;
-            color: #00455e;
-        }
-    }
-}
-
-.sidebar-menu__link {
-    display: block;
-    padding: 14px 16px;
-    //   color: #495057;
-    color: #252729;
-    text-decoration: none;
-    border-radius: 8px;
-    font-size: 15px;
-    font-weight: 500;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-
-    &::before {
-        content: '';
-        position: absolute;
-        left: 8px;
-        top: 50%;
-        transform: translateY(-50%) translateX(-10px);
-        width: 4px;
-        height: 20px;
-        background: #fff;
-        border-radius: 2px;
-        opacity: 0;
-        transition: all 0.3s ease;
-    }
-
-    &:hover {
-        // transform: translateX(4px);
-        transform: scale(1.1);
-        padding-left: 20px;
-    }
-}
-
-@media (max-width: 992px) {
-    .sidebar {
-        // position: static;
-        // max-height: none;
-        // margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 768px) {
-    .sidebar {
-        // padding: 20px;
-    }
-
-    .sidebar-title {
-        font-size: 20px;
-        // margin-bottom: 16px;
-        // padding-bottom: 12px;
-    }
-
-    .sidebar-menu__link {
-        font-size: 14px;
-        padding: 12px 14px;
-    }
-}
-
-@media (max-width: 480px) {
-    .sidebar {
-        // padding: 16px;
-        border-radius: 8px;
-    }
-
-    .sidebar-title {
-        font-size: 18px;
-    }
-
-    .sidebar-menu__link {
-        font-size: 13px;
-        // padding: 10px 12px;
-    }
-}
-
-// Testtttt
-// .sidebar-menu__link:hover,
-// .sidebar-menu__link.active {
-//     color: rgb(45, 48, 218);
-// }
-
-// .sidebar-menu__item:hover .sidebar-menu__link::before {
-//     height: 30%;
-//     background-color: rgb(45, 48, 218);
-//     color: rgb(45, 48, 218);
-// }
-
-// .sidebar-menu__link::before {
-//     content: "";
-//     position: absolute;
-//     top: 50%;
-//     left: 0;
-//     transform: translateY(-50%);
-//     height: 0%;
-//     width: 4px;
-//     background-color: rgb(45, 48, 218);
-//     transition: all 0.2s ease-in-out;
-// }
-
-.aside-banner__title {
-        color: rgba(1, 11, 27, 1);
-        ;
-              font-size: 15px;
-        line-height: 140%;
-        letter-spacing: -0.16px;
-        margin-bottom: 12px;
-}
-
-.aside-banner__btn {
-        background-color: transparent;
-        padding: 0;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        outline: none;
-        color: #fff;
-              font-size: 15px;
-        line-height: 140%;
-        letter-spacing: -0.16px;
-        border-radius: 8px;
-        padding: 6px 8px;
-        /* background: rgb(20, 62, 126); */
-        background: linear-gradient(to right, rgba(0, 14, 90, 0.822), rgba(0, 50, 131, 0.973));
-}
-
-.aside-banner {
-        border-radius: 12px;
-        border: 1px solid var(--black-7);
-        background: linear-gradient(90deg, #EAEEF5 0%, #DFE4ED 100%);
-        padding: 12px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-}
-
-.aside-banner__image {
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 100%;
-        width: auto;
-        z-index: -1;
-}
-</style>

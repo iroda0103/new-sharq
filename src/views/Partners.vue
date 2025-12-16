@@ -45,11 +45,11 @@ export default {
   box-shadow: 0px 0px 30px 0px rgba(7, 12, 28, 0.04);
   width: 100%;
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
-  }
+  // .container {
+  //   max-width: 1200px;
+  //   margin: 0 auto;
+  //   padding: 0 16px;
+  // }
 
   &__header {
     // padding: 60px 0;

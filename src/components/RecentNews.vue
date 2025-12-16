@@ -105,12 +105,6 @@ export default {
   background-color: #f9f9f9;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 15px;
-}
-
 .section-title {
   text-align: center;
   font-size: 32px;

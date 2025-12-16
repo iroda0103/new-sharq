@@ -1,7 +1,7 @@
 <template>
   <section class="partners">
     <div class="container section-title" data-aos="fade-up">
-      <h2 class="faq-title">Hamkorlarimiz</h2>
+      <h2 class="title">Hamkorlarimiz</h2>
     </div>
 
     <div class="partners-slider" ref="sliderRef" @mouseenter="pause" @mouseleave="start">

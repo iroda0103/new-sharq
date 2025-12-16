@@ -13,7 +13,7 @@ export const menuItems = [
 
   {
     title: "Tuzilma",
-    children: [
+    children: [      { title: "Rahbariyat", to: "/leadership" },
       {
         title: "Fakultetlar",
         to: "/faculty",

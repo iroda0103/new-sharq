@@ -67,10 +67,10 @@ const qadriyat = `Sharqona ma'daniyat bilan zamonaviy bilimlarni uyg'unlashtiris
     padding: 60px 20px;
     background: #fff;
 
-    .container {
-        max-width: 1200px;
-        margin: auto;
-    }
+    // .container {
+    //     max-width: 1200px;
+    //     margin: auto;
+    // }
 
     .row {
         display: flex;

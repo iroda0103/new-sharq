@@ -116,10 +116,6 @@ const featuredNews = computed(() => newsData.value.slice(0, props.limit))
     background: #f5f7fa;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
 
 .news-header {
     display: flex;

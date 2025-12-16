@@ -1242,7 +1242,7 @@ onUnmounted(() => {
 /* Full HD monitorlar (≥1600px) */
 @media (max-width: 1600px) {
     .container {
-        max-width: 1200px;
+        max-width: 1400px;
     }
 }
 

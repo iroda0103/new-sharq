@@ -151,6 +151,7 @@ onMounted(() => {
 .page-row__col {
   flex-grow: 1;
   padding: 15px 0;
+  display: flex;
 }
 
 .page-row__col:nth-child(1) {
@@ -166,6 +167,9 @@ onMounted(() => {
   top: 130px;
   width: 100%;
   height: 100%;
+}
+.page-row__col aside{
+  flex-grow: 1;
 }
 
 @media only screen and (max-width: 768px) {

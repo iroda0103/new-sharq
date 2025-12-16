@@ -183,7 +183,7 @@ export const directions = {
         name: 'Kiberxavfsizlik injiniringi',
         nameEn: 'Cybersecurity Engineering',
         degree: 'Bakalavr',
-        img: '/img/faculty/engineering.png',
+        img: '/img/faculty/kiber.png',
         description: `Kiberxavfsizlik injiniringi --- bu axborot tizimlarini, kompyuter tarmoqlarini, dasturiy ta'minot va foydalanuvchi ma'lumotlarini tashqi va ichki tahdidlardan himoya qilishga yo'naltirilgan ilg'or texnologik yo'nalishdir.`,
         structure: [
             { year: 1, subjects: ['Dasturlash asoslari', 'Kompyuter tizimlari', 'Tarmoqlar asoslari', 'Matematik mantiq'] },
@@ -203,7 +203,7 @@ export const directions = {
         name: 'Dasturiy injiniring',
         nameEn: 'Software Engineering',
         degree: 'Bakalavr',
-        img: '/img/faculty/si.png',
+        img: '/img/faculty/engineering.png',
         description: `Dasturiy injiniring --- bu dasturiy mahsulotlarni tizimli loyihalash, ishlab chiqish, test qilish va qo'llab-quvvatlash bilan shug'ullanuvchi zamonaviy muhandislik yo'nalishidir. Talabalar algoritmlar, dasturlash tillari, ma'lumotlar tuzilmasi, AI, mobil va veb-ilovalar yaratish bo'yicha bilim egallaydi.`,
         structure: [
             { year: 1, subjects: ['Dasturlash asoslari', 'Matematik analiz', 'Diskret matematika', 'Web asoslari'] },
