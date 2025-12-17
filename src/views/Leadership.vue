@@ -89,7 +89,7 @@ Faoliyat yo’nalishi bo’yicha takliflar tayyorlash va ishlarni tashkil etish;
                     id: 3,
                     ism: "Qodirov Bektosh",
                     lavozim: "Yoshlar va ma’naviy-ma’rifiy ishlar prorektori",
-                    img: "/img/person/bektosh_qodirov.webp",
+                    img: "/img/person/bektosh.jpg",
                     bio: "",
                     description: `   O’zbekiston Respublikasi qonunlari, Prezident farmonlari va farmoyishlari, Oliy Majlis va Vazirlar Mahkamasining ta’lim va kadrlar tayyorlash sohasidagi qarorlarini amalga oshirishni tashkil etish;
 Davlat ta’lim standartlari asosida o’quv, ilmiy, moliyaviy va ma’naviy- tarbiya ishlarini tashkil etish va malakali kadrlar tayyorlashni ta’minlash;

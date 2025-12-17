@@ -86,7 +86,7 @@ export const menuItems = [
       { title: "Media bo‘limi", to: "/press-service" },
       { title: "Yangiliklar", to: "/news" },
       // { title: "Postlar", to: "/posts" },
-      { title: "Gallery", to: "/gallery" },
+      { title: "Galeriya", to: "/gallery" },
     ],
   },
 

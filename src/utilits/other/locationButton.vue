@@ -2,7 +2,7 @@
   <router-link to="/campus" class="location-link">
     <button class="location-btn">
       <i class="fa-solid fa-location-crosshairs"></i>
-      <span>360° Virtual Tour</span>
+      <span>360° Virtual sayohat</span>
     </button>
   </router-link>
 </template>

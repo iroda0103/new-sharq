@@ -9,7 +9,7 @@ import FooterBottom from './FooterBottom.vue';
       <FooterFrame></FooterFrame>
     </div>
     <div class="footer-bottom">
-      <FooterBottom></FooterBottom>-
+      <FooterBottom></FooterBottom>
     </div>
 
     <!-- <div class="footer__container">

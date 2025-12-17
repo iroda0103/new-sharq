@@ -230,5 +230,38 @@ html:not(.bvi-panel) ::before {
     transform: translate(0);
   }
 }
+/* Instagram */
+.footer-mockup[href*="instagram"] .footer-mockup__social {
+  background: linear-gradient(
+    45deg,
+    #f58529,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+}
+
+/* Telegram */
+.footer-mockup[href*="t.me"] .footer-mockup__social {
+  background: linear-gradient(90deg, #0088cc 0%, #00aaff 100%);
+}
+
+/* Facebook */
+.footer-mockup[href*="facebook"] .footer-mockup__social {
+  background: linear-gradient(90deg, #1877f2 0%, #0f5dc2 100%);
+}
+
+/* YouTube */
+.footer-mockup[href*="youtube"] .footer-mockup__social {
+  background: linear-gradient(90deg, #ff0000 0%, #cc0000 100%);
+}
+.footer-mockup__social {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.footer-mockup:hover .footer-mockup__social {
+  /* transform: translateY(-4px); */
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.25);
+}
 
 </style>

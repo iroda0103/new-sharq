@@ -1,87 +1,105 @@
 <template>
-    <div class="row flex">
-        <div class="col-12 col-xl-6">
-            <div class="leadership active">
-                <div class="leadership-image">
-                    <div class="leadership-image__inner">
-                        <img src="/img/person/rector.jpg" alt="Dr. Hilola Umarova Uktamovna">
-                    </div>
-                </div>
-                <div class="leadership-info__wrapper">
-                    <div class="leadership-info">
-                        <h3 class="leadership-info__fio">PhD. Sherzod Atamurodov</h3>
-                        <div class="leadership-info__divider"></div>
-                        <p class="leadership-info__text">
-                            Sharq universiteti rektori
-
-                        </p>
-                        <div class="leadership-info__bottom">
-                            <div class="leadership-info__links">
-                                <a href="mailto:info@uzedu.uz" class="leadership-info__link">
-                                    <i class="icon-email"></i>
-
-                                    info@sharqedu.uz
-                                </a>
-                                <a href="tel:+" class="leadership-info__link">
-                                    <i class="icon-phone"></i>
-                                    +998 (79) 222-77-07 </a>
-                                <p class="leadership-info__link">
-                                    <i class="icon-phone"></i>
-                                    <strong>Qabul vaqtlari:</strong> Du–Ju, 09:00–17:00
-                                </p>
-                            </div>
-                            <!-- <a href="https://newuu.uz/en/leadership/dr-hilola-umarova-uktamovna">
-                                <button class="leadership-info__btn">
-                                    See more <i class="icon-ar flex-right"></i>
-                                </button>
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <div class="row flex">
+    <div
+      v-for="(leader, index) in leaders"
+      :key="index"
+      class="col-12 col-xl-6"
+    >
+      <div class="leadership active">
+        <div class="leadership-image">
+          <div class="leadership-image__inner">
+            <img :src="leader.image" :alt="leader.name">
+          </div>
         </div>
-         <div class="col-12 col-xl-6">
-            <div class="leadership active">
-                <div class="leadership-image">
-                    <div class="leadership-image__inner">
-                        <img src="/img/person/bektosh_qodirov.webp" alt="Dr. Hilola Umarova Uktamovna">
-                    </div>
-                </div>
-                <div class="leadership-info__wrapper">
-                    <div class="leadership-info">
-                        <h3 class="leadership-info__fio">Qodirov Bektosh</h3>
-                        <div class="leadership-info__divider"></div>
-                        <p class="leadership-info__text">
-                            Akademik faoliyat boshqarmasi boshlig'i
 
-                        </p>
-                        <div class="leadership-info__bottom">
-                            <div class="leadership-info__links">
-                                <a href="mailto:info@uzedu.uz" class="leadership-info__link">
-                                    <i class="icon-email"></i>
+        <div class="leadership-info__wrapper">
+          <div class="leadership-info">
+            <h3 class="leadership-info__fio">
+              {{ leader.name }}
+            </h3>
 
-                                    info@sharqedu.uz
-                                </a>
-                                <a href="tel:+" class="leadership-info__link">
-                                    <i class="icon-phone"></i>
-                                    +998 (79) 222-77-07 </a>
-                                <p class="leadership-info__link">
-                                    <i class="icon-phone"></i>
-                                    <strong>Qabul vaqtlari:</strong> Du–Ju, 09:00–17:00
-                                </p>
-                            </div>
-                            <!-- <a href="https://newuu.uz/en/leadership/dr-hilola-umarova-uktamovna">
-                                <button class="leadership-info__btn">
-                                    See more <i class="icon-arrow-right"></i>
-                                </button>
-                            </a> -->
-                        </div>
-                    </div>
-                </div>
+            <div class="leadership-info__divider"></div>
+
+            <p class="leadership-info__text">
+              {{ leader.position }}
+            </p>
+
+            <div class="leadership-info__bottom">
+              <div class="leadership-info__links">
+
+                <a
+                  v-if="leader.email"
+                  :href="`mailto:${leader.email}`"
+                  class="leadership-info__link"
+                >
+                  <i class="icon-email"></i>
+                  {{ leader.email }}
+                </a>
+
+                <a
+                  v-if="leader.phone"
+                  :href="`tel:${leader.phone}`"
+                  class="leadership-info__link"
+                >
+                  <i class="icon-phone"></i>
+                  {{ leader.phone }}
+                </a>
+
+                <p
+                  v-if="leader.reception"
+                  class="leadership-info__link"
+                >
+                  <i class="icon-phone"></i>
+                  <strong>Qabul vaqtlari:</strong>
+                  {{ leader.reception }}
+                </p>
+
+              </div>
             </div>
+
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </template>
+<script>
+export default {
+  name: 'LeadershipList',
+
+  data() {
+    return {
+      leaders: [
+        {
+          name: 'PhD. Sherzod Atamurodov',
+          position: 'Sharq universiteti rektori',
+          image: '/img/person/rector.jpg',
+          email: 'info@sharqedu.uz',
+          phone: '+998 (79) 222-77-07',
+          reception: 'Du–Ju, 09:00–17:00'
+        },
+        {
+          name: 'Qodirov Bektosh',
+          position: "Akademik faoliyat boshqarmasi boshlig'i",
+          image: '/img/person/bektosh.jpg',
+          email: 'info@sharqedu.uz',
+          phone: '+998 (79) 222-77-07',
+          reception: 'Du–Ju, 09:00–17:00'
+        },
+         {
+          name: 'Habibullayev Qahramon',
+          position: "Kasaba uyushmasi raisi",
+          image: '/img/person/qahramon.jpg',
+          email: 'markett22@mail.ru',
+          phone: '+998 (91) 308-17-10',
+          reception: 'Du–Ju, 09:00–17:00'
+        }
+      ]
+    }
+  }
+}
+</script>
+
 <style scoped>
 .row {
     display: flex;
@@ -147,6 +165,7 @@
     font-size: 24px;
     line-height: 140%;
     letter-spacing: -0.24px;
+    font-weight: 600;
 }
 
 .leadership-info__bottom {

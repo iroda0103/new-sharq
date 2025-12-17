@@ -28,14 +28,14 @@
                             +998 (79) 222-77-07 </a>
                     </div>
                     <div class="leadership-info__social">
-                        <a href="https://instagram.com" class="icon-instagram" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://t.me/SHARQ_YI" class="icon-telegram" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-telegram"></i></a>
-                        <a href="https://facebook.com" class="icon-facebook" rel="nofollow" target="_blank"><i
+                        <a href="https://www.instagram.com/sharq_university_psychologist" class="icon-instagram"
+                            rel="nofollow" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/Sharq_StressFreeZone" class="icon-telegram" rel="nofollow"
+                            target="_blank"><i class="fa-brands fa-telegram"></i></a>
+                        <!-- <a href="https://facebook.com" class="icon-facebook" rel="nofollow" target="_blank"><i
                                 class="fa-brands fa-facebook"></i></a>
                         <a href="https://youtube.com" class="icon-youtube" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-youtube"></i></a>
+                                class="fa-brands fa-youtube"></i></a> -->
                     </div>
 
                 </div>
@@ -49,8 +49,107 @@
                     </div>
                 </div>
             </div>
+              <div class="page-block">
+                    <h3 class="page-block__subtitle">
+                        Psixolog haqida
+                    </h3>
 
+                    <p>
+                        O‘zbekiston Milliy universitetining <strong>“Umumiy psixologiya”</strong>
+                        kafedrasida yoshlar psixologiyasi yo‘nalishi bo‘yicha ta’lim olgan.
+                        Hozirda Navoiy davlat universitetida magistratura bosqichida
+                        <strong>pedagogika tarixi va nazariyasi</strong> yo‘nalishida tahsil olmoqda.
+                    </p>
+
+                    <p>
+                        Ma’lumoti – oliy; mutaxassisligi – <strong>psixolog, tadqiqotchi va pedagog</strong>.
+                        Hozirda Sharq Universitetida
+                        <strong>“Ijtimoiy-gumanitar fanlar”</strong> kafedrasida kabinet mudirasi
+                        sifatida faoliyat yuritmoqda.
+                    </p>
+
+                    <p>
+                        Shu bilan birga, universitetda amaliy psixologiyani rivojlantirishga
+                        katta hissa qo‘shib, talabalarda psixologik treninglar o‘tkazish va
+                        ularga psixologik yordam ko‘rsatish bilan shug‘ullanadi.
+                    </p>
+                </div>
             <div class="page-block content">
+                <h3 class="page-block__subtitle">
+                    Vazifalari
+                </h3>
+
+                <ul>
+                    <li>
+                        <strong>Talabalarga psixologik yordam ko‘rsatish</strong>
+                        <p>
+                            Stress, xavotir, depressiya va o‘qishdagi qiyinchiliklar bo‘yicha
+                            individual maslahatlar berish. Shaxsiy muammolar yoki moslashish
+                            jarayonida amaliy yordam ko‘rsatish.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Motivatsiya va shaxsiy rivojlanish bo‘yicha konsultatsiyalar</strong>
+                        <p>
+                            O‘qishga bo‘lgan qiziqishni oshirish, o‘zini boshqarish va vaqtni
+                            samarali rejalashtirish bo‘yicha individual suhbatlar o‘tkazish.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Guruh va jamoaviy treninglar</strong>
+                        <p>
+                            Stressni boshqarish, kommunikatsiya ko‘nikmalari, liderlik va
+                            konfliktlarni hal qilish bo‘yicha treninglar tashkil etish.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Psixologik diagnostika</strong>
+                        <p>
+                            Talabalarning psixologik holatini aniqlash uchun testlar,
+                            so‘rovnomalar va kuzatuv metodlaridan foydalanish hamda
+                            psixologik qiyinchiliklarni erta aniqlash.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Moslashuv jarayoniga ko‘maklashish</strong>
+                        <p>
+                            Birinchi bosqich talabalariga universitet muhitiga moslashishda
+                            yordam berish, o‘qishdagi ortda qolish sabablari bilan ishlash.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Psixoprofilaktik ishlar</strong>
+                        <p>
+                            Stress, charchoq va zo‘riqishning oldini olishga qaratilgan
+                            seminar va mashg‘ulotlar o‘tkazish.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Inqiroz holatlarida yordam</strong>
+                        <p>
+                            Og‘ir psixologik holatga tushgan talabalarga tezkor yordam ko‘rsatish
+                            hamda zarur hollarda ixtisoslashgan markazlarga yo‘naltirish.
+                        </p>
+                    </li>
+
+                    <li>
+                        <strong>Maxfiylik va etik me’yorlarga amal qilish</strong>
+                        <p>
+                            Barcha suhbatlar va shaxsiy ma’lumotlarni maxfiy saqlash,
+                            psixologik etikaga qat’iy rioya qilish.
+                        </p>
+                    </li>
+                </ul>
+              
+            </div>
+
+            <!-- <div class="page-block content">
                 <h3 class="page-block__subtitle">
                     Vazifalari </h3>
                 <p>
@@ -86,7 +185,7 @@
                     Yoshlar Ittifoqi tomonidan amalga oshirilayotgan barcha tadbirlar
                     tizimli ravishda yuritilib, universitet rahbariyatiga muntazam taqdim etib boriladi.
                 </p>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- <div class="col">
@@ -139,6 +238,7 @@
     display: flex;
     gap: 20px;
 }
+
 .info-row {
     display: flex;
     gap: 16px;
@@ -154,5 +254,4 @@
     color: #1f2937;
     border: 1px solid #e5e7eb;
 }
-
 </style>

@@ -4,7 +4,7 @@
             <!-- <div class="logo">
         <img src="/img/logo.svg" alt="Logo" />
       </div> -->
-            <h2 class="title">Campus <span class="highlight">Life</span></h2>
+            <h2 class="title">Kampus <span class="highlight">Hayoti</span></h2>
             <!-- <p class="description">
                 A vibrant campus with clubs, sports, and endless opportunities for growth.
             </p> -->

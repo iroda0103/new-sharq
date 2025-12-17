@@ -4,9 +4,9 @@
     <section class="news-section" id="posts">
         <div class="container">
             <div class="news-header">
-                <h2>University <span>Posts</span></h2>
+                <h2>Universitet <span>Yangiliklari</span></h2>
                 <router-link to="/news" class="see-more">
-                    See more <i class="fas fa-chevron-right"></i>
+                    ko'proq ko'rish <i class="fas fa-chevron-right"></i>
                 </router-link>
             </div>
 
