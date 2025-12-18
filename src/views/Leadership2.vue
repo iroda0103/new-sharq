@@ -41,7 +41,8 @@
                   :href="`tel:${leader.phone}`"
                   class="leadership-info__link"
                 >
-                  <i class="icon-phone"></i>
+                  <i class="icon-phone"></i>3
+                  
                   {{ leader.phone }}
                 </a>
 

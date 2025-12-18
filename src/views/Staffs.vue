@@ -27,102 +27,110 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, computed, watch } from 'vue';
 import { useRoute } from 'vue-router';
+import { useDepartmentsStore } from '../stores/department';
 
 const route = useRoute();
+const departmentsStore = useDepartmentsStore();
+
+// Default ma'lumotlar
+const mockEmployees={}
+// const mockEmployees = {
+//   10: [
+//     {
+//       id: 1,
+//       fullName: "Habibullayev Qahramon",
+//       position: "Bo'lim boshlig'i",
+//       email: "markett22@mail.ru",
+//       photo: "/img/person/qahramon.jpg"
+//     }
+//   ],
+//   1: [
+//     {
+//       id: 1,
+//       fullName: "Turgunova Komola Baxriddinovna",
+//       position: "Chief Specialist",
+//       email: "k.turgunova@newuu.uz",
+//       photo: "/img/person/usmon.jpg"
+//     },
+//     {
+//       id: 2,
+//       fullName: "Karimova Dilnoza Sharipovna",
+//       position: "Senior Specialist",
+//       email: "d.karimova@newuu.uz",
+//       photo: "/img/person/usmon.jpg"
+//     },
+//     {
+//       id: 3,
+//       fullName: "Rahimov Sardor Azimovich",
+//       position: "Specialist",
+//       email: "s.rahimov@newuu.uz",
+//       photo: "/img/person/usmon.jpg"
+//     }
+//   ],
+//   2: [
+//     {
+//       id: 4,
+//       fullName: "Aliyev Botir Raximovich",
+//       position: "Department Head",
+//       email: "b.aliyev@newuu.uz",
+//       photo: "/img/person/usmon.jpg"
+//     },
+//     {
+//       id: 5,
+//       fullName: "Tursunov Jahongir Karimovich",
+//       position: "Chief Specialist",
+//       email: "j.tursunov@newuu.uz",
+//       photo: "/img/person/usmon.jpg"
+//     }
+//   ],
+//   3: [
+//     {
+//       id: 6,
+//       fullName: "Mahmudov Aziz Shavkatovich",
+//       position: "IT Director",
+//       email: "a.mahmudov@newuu.uz",
+//       photo: "/img/person/usmon.jpg"
+//     }
+//   ]
+// };
+
+// Local employees ref
 const employees = ref([]);
 
-// Mock ma'lumotlar - Keyinchalik API dan keladi
-const mockEmployees = {
-  10: [
-    {
-      id: 1,
-      fullName: "Habibullayev Qahramon ",
-      position: "Bo'lim boshlig'i",
-      email: "markett22@mail.ru",
-      photo: "/img/person/qahramon.jpg"
-    },
-    // {
-    //   id: 2,
-    //   fullName: "",
-    //   position: "Senior Specialist",
-    //   email: "d.karimova@newuu.uz",
-    //   photo: "/img/person/usmon.jpg"
-    // },
-    // {
-    //   id: 3,
-    //   fullName: "Rahimov Sardor Azimovich",
-    //   position: "Specialist",
-    //   email: "s.rahimov@newuu.uz",
-    //   photo: "/img/person/usmon.jpg"
-    // }
-  ],
-  1: [
-    {
-      id: 1,
-      fullName: "Turgunova Komola Baxriddinovna",
-      position: "Chief Specialist",
-      email: "k.turgunova@newuu.uz",
-      photo: "/img/person/usmon.jpg"
-    },
-    {
-      id: 2,
-      fullName: "Karimova Dilnoza Sharipovna",
-      position: "Senior Specialist",
-      email: "d.karimova@newuu.uz",
-      photo: "/img/person/usmon.jpg"
-    },
-    {
-      id: 3,
-      fullName: "Rahimov Sardor Azimovich",
-      position: "Specialist",
-      email: "s.rahimov@newuu.uz",
-      photo: "/img/person/usmon.jpg"
-    }
-  ],
-  2: [
-    {
-      id: 4,
-      fullName: "Aliyev Botir Raximovich",
-      position: "Department Head",
-      email: "b.aliyev@newuu.uz",
-      photo: "/img/person/usmon.jpg"
-    },
-    {
-      id: 5,
-      fullName: "Tursunov Jahongir Karimovich",
-      position: "Chief Specialist",
-      email: "j.tursunov@newuu.uz",
-      photo: "/img/person/usmon.jpg"
-    }
-  ],
-  3: [
-    {
-      id: 6,
-      fullName: "Mahmudov Aziz Shavkatovich",
-      position: "IT Director",
-      email: "a.mahmudov@newuu.uz",
-      photo: "/img/person/usmon.jpg"
-    }
-  ]
-};
+// Department ID ni olish
+const departmentId = computed(() => route.query.department_id);
 
 // API dan xodimlarni olish
-const fetchEmployees = async (departmentId) => {
-  try {
-    // Real API chaqiruvi (keyinchalik):
-    // const response = await fetch(`/api/departments/${departmentId}/employees`);
-    // const data = await response.json();
-    // employees.value = data;
-
-    // Hozircha mock data:
-    employees.value = mockEmployees[departmentId] || [];
-
-  } catch (error) {
-    console.error('Xodimlarni yuklashda xatolik:', error);
+const fetchEmployees = async (deptId) => {
+  if (!deptId) {
     employees.value = [];
+    return;
   }
+
+  try {
+    // Store dan ma'lumotni olamiz (departments allaqachon yuklanganmi)
+    let storeEmployees = departmentsStore.getEmployeesByDepartmentId(deptId);
+
+    // Agar API dan ma'lumot kelsa, uni ishlatamiz
+    if (storeEmployees && storeEmployees.length > 0) {
+      employees.value = storeEmployees.map(emp => ({
+        id: emp.id,
+        fullName: emp.fullName || emp.name,
+        position: emp.position || 'Lavozim ko\'rsatilmagan',
+        email: emp.email,
+        phone: emp.phone,
+        photo: emp.photo
+      }));
+      return;
+    }
+  } catch (error) {
+    console.error('Store dan xodimlarni olishda xatolik:', error);
+  }
+
+  // Agar store da ma'lumot bo'lmasa, default ma'lumotlarni ko'rsatamiz
+  employees.value = mockEmployees[deptId] || [];
 };
 
 // Rasm yuklanmasa default rasm
@@ -130,10 +138,16 @@ const handleImageError = (event) => {
   event.target.src = '/img/person/usmon.jpg';
 };
 
+// Department ID o'zgarganda xodimlarni qayta yuklash
+watch(departmentId, (newId, oldId) => {
+  if (newId && newId !== oldId) {
+    fetchEmployees(newId);
+  }
+}, { immediate: false });
+
 onMounted(() => {
-  const departmentId = route.query.department_id;
-  if (departmentId) {
-    fetchEmployees(departmentId);
+  if (departmentId.value) {
+    fetchEmployees(departmentId.value);
   }
 });
 </script>
@@ -152,20 +166,17 @@ onMounted(() => {
 
 .staff {
   display: flex;
-  /* max-width: 400px; */
   flex-grow: 1;
   justify-content: space-between;
   gap: 5px;
   flex: 0 0 auto;
   width: calc(50% - 20px);
   max-width: 100%;
-  /* height: 100%; */
 }
 
 .staff-info__wrapper {
   width: calc(100% - 160px - 8px);
   width: 100%;
-
 }
 
 .staff-info {
@@ -239,12 +250,6 @@ onMounted(() => {
   object-fit: cover;
 }
 
-/* 
-.staff-image {
-    width: 100%;
-    max-width: 160px;
-    margin: 0 auto;
-} */
 .staff-info__link i {
   font-size: 18px;
   color: rgba(82, 148, 229, 1);
