@@ -36,7 +36,7 @@
               >
                 <img 
                   v-if="employee.photo" 
-                  :src="employee.photo" 
+                  :src="`https://api.sharqedu.uz/uploads/img/person/${employee.fullName}.jpg`" 
                   :alt="employee.name"
                 />
                 <span v-else class="user-initials">
@@ -71,116 +71,116 @@ const departmentsStore = useDepartmentsStore();
 
 // Default ma'lumotlar
 const defaultDepartments = [
-  {
-    id: 10,
-    slug: 'nazorat-sifat',
-    name: "Nazorat va sifat monitoringi bo'limi",
-    description: "Taʼlim sifatini nazorat qilish boʻlimining asosiy maqsadi Sharq universiteti talabalari bilimlarining davlat taʼlim standartlariga muvofiqligini oʻrganib borish, tahlil qilish, kadrlar tayyorlash sifati monitoringini yuritish, Sharq universiteti ichki attestatsiyadan oʻtkazishni tashkil etish va uning natijalari boʻyicha taʼlim sifatiga salbiy taʼsir etuvchi omillarni aniqlash hamda ularni bartaraf etish va oldini olish choralarini koʻrishdan iborat.",
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '4-qavat, 405-xona',
-    motto: "Qulay muhit — samarali ta'limning garovi.",
-    employeeCount: 8,
-    employees: [
-      { name: 'Habibullayev Qahramon', photo: null },
-    ]
-  },
-  {
-    id: 1,
-    slug: 'moliya-iqtisod',
-    name: "Moliya-iqtisod bo'limi",
-    description: "Moliya-iqtisod bo'limi universitetning moliyaviy barqarorligini ta'minlash, byudjetlarni shakllantirish va harajatlarni tahlil qilish, hisobotlarni tayyorlash bilan shug'ullanadi.",
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '1-qavat, 102-xona',
-    motto: 'Moliyaviy intizom — barqaror taraqqiyot asosi.',
-    employeeCount: 5,
-    employees: []
-  },
-  {
-    id: 2,
-    slug: 'xojalik',
-    name: "Xo'jalik bo'limi",
-    description: "Xo'jalik bo'limi universitet binolarining ta'miri, tozaligi, yoritilishi, isitilishi va barcha moddiy-texnik infratuzilmasi uchun mas'ul.",
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '1-qavat, 104-xona',
-    motto: "Qulay muhit — samarali ta'limning garovi.",
-    employeeCount: 8,
-    employees: []
-  },
-  {
-    id: 3,
-    slug: 'atm',
-    name: 'Axborot texnologiyalar markazi',
-    description: 'ATM raqamli infratuzilmani rivojlantirish, ichki axborot tizimlari, internet xizmatlari, serverlar va foydalanuvchi kompyuterlarini nazorat qilish bilan shug\'ullanadi.',
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '2-qavat, 201-xona',
-    motto: 'Raqamli taraqqiyot — kelajak kaliti.',
-    employeeCount: 6,
-    employees: []
-  },
-  {
-    id: 4,
-    slug: 'arm',
-    name: 'Axborot-resurslar markazi',
-    description: "ARM universitet kutubxona tizimini boshqaradi. O'quv, ilmiy, metodik va badiiy adabiyotlar bilan ta'minlaydi.",
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '2-qavat, 210-xona',
-    motto: 'Ilm — eng qudratli qurol.',
-    employeeCount: 4,
-    employees: []
-  },
-  {
-    id: 5,
-    slug: 'xodimlar',
-    name: "Xodimlar bo'limi",
-    description: 'Kadrlar bilan ishlash, mehnat shartnomalarini rasmiylashtirish, ishga qabul qilish va bo\'shatish, attestatsiyalar, ish tartibini monitoring qilish bilan shug\'ullanadi.',
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '3-qavat, 301-xona',
-    motto: 'Kadrlar hal qiluvchi kuchdir.',
-    employeeCount: 3,
-    employees: []
-  },
-  {
-    id: 6,
-    slug: 'oubolim',
-    name: "O'quv-uslubiy bo'lim",
-    description: "O'quv jarayonini rejalashtirish, o'quv rejalari va fan dasturlarini ishlab chiqish, kredit-modul tizimini boshqarish va ta'lim monitoringini yuritadi.",
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '3-qavat, 305-xona',
-    motto: "Tizimli ta'lim — bilim kaliti.",
-    employeeCount: 7,
-    employees: []
-  },
-  {
-    id: 7,
-    slug: 'marketing',
-    name: 'Marketing va shartnomalar bo\'limi',
-    description: "Talabalarni jalb qilish, reklama kampaniyalari, ta'lim xizmatlari bo'yicha shartnomalarni rasmiylashtirish va nazorat qilish bilan shug'ullanadi.",
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '4-qavat, 401-xona',
-    motto: 'Tanlov — bizni aniqlaydi.',
-    employeeCount: 5,
-    employees: []
-  },
-  {
-    id: 8,
-    slug: 'talabalarga-xizmat',
-    name: "Talabalarga xizmat ko'rsatish bo'limi",
-    description: "Talabalar uchun hujjatlarni rasmiylashtirish, stipendiya, yotoqxona, maslahat va huquqiy yordam xizmatlarini ko'rsatadi.",
-    email: 'info@sharqedu.uz',
-    phone: '+998 79 222 07 00',
-    address: '4-qavat, 410-xona',
-    motto: 'Talaba — bizning markazimizda.',
-    employeeCount: 6,
-    employees: []
-  }
+  // {
+  //   id: 10,
+  //   slug: 'nazorat-sifat',
+  //   name: "Nazorat va sifat monitoringi bo'limi",
+  //   description: "Taʼlim sifatini nazorat qilish boʻlimining asosiy maqsadi Sharq universiteti talabalari bilimlarining davlat taʼlim standartlariga muvofiqligini oʻrganib borish, tahlil qilish, kadrlar tayyorlash sifati monitoringini yuritish, Sharq universiteti ichki attestatsiyadan oʻtkazishni tashkil etish va uning natijalari boʻyicha taʼlim sifatiga salbiy taʼsir etuvchi omillarni aniqlash hamda ularni bartaraf etish va oldini olish choralarini koʻrishdan iborat.",
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '4-qavat, 405-xona',
+  //   motto: "Qulay muhit — samarali ta'limning garovi.",
+  //   employeeCount: 8,
+  //   employees: [
+  //     { name: 'Habibullayev Qahramon', photo: null },
+  //   ]
+  // },
+  // {
+  //   id: 1,
+  //   slug: 'moliya-iqtisod',
+  //   name: "Moliya-iqtisod bo'limi",
+  //   description: "Moliya-iqtisod bo'limi universitetning moliyaviy barqarorligini ta'minlash, byudjetlarni shakllantirish va harajatlarni tahlil qilish, hisobotlarni tayyorlash bilan shug'ullanadi.",
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '1-qavat, 102-xona',
+  //   motto: 'Moliyaviy intizom — barqaror taraqqiyot asosi.',
+  //   employeeCount: 5,
+  //   employees: []
+  // },
+  // {
+  //   id: 2,
+  //   slug: 'xojalik',
+  //   name: "Xo'jalik bo'limi",
+  //   description: "Xo'jalik bo'limi universitet binolarining ta'miri, tozaligi, yoritilishi, isitilishi va barcha moddiy-texnik infratuzilmasi uchun mas'ul.",
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '1-qavat, 104-xona',
+  //   motto: "Qulay muhit — samarali ta'limning garovi.",
+  //   employeeCount: 8,
+  //   employees: []
+  // },
+  // {
+  //   id: 3,
+  //   slug: 'atm',
+  //   name: 'Axborot texnologiyalar markazi',
+  //   description: 'ATM raqamli infratuzilmani rivojlantirish, ichki axborot tizimlari, internet xizmatlari, serverlar va foydalanuvchi kompyuterlarini nazorat qilish bilan shug\'ullanadi.',
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '2-qavat, 201-xona',
+  //   motto: 'Raqamli taraqqiyot — kelajak kaliti.',
+  //   employeeCount: 6,
+  //   employees: []
+  // },
+  // {
+  //   id: 4,
+  //   slug: 'arm',
+  //   name: 'Axborot-resurslar markazi',
+  //   description: "ARM universitet kutubxona tizimini boshqaradi. O'quv, ilmiy, metodik va badiiy adabiyotlar bilan ta'minlaydi.",
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '2-qavat, 210-xona',
+  //   motto: 'Ilm — eng qudratli qurol.',
+  //   employeeCount: 4,
+  //   employees: []
+  // },
+  // {
+  //   id: 5,
+  //   slug: 'xodimlar',
+  //   name: "Xodimlar bo'limi",
+  //   description: 'Kadrlar bilan ishlash, mehnat shartnomalarini rasmiylashtirish, ishga qabul qilish va bo\'shatish, attestatsiyalar, ish tartibini monitoring qilish bilan shug\'ullanadi.',
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '3-qavat, 301-xona',
+  //   motto: 'Kadrlar hal qiluvchi kuchdir.',
+  //   employeeCount: 3,
+  //   employees: []
+  // },
+  // {
+  //   id: 6,
+  //   slug: 'oubolim',
+  //   name: "O'quv-uslubiy bo'lim",
+  //   description: "O'quv jarayonini rejalashtirish, o'quv rejalari va fan dasturlarini ishlab chiqish, kredit-modul tizimini boshqarish va ta'lim monitoringini yuritadi.",
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '3-qavat, 305-xona',
+  //   motto: "Tizimli ta'lim — bilim kaliti.",
+  //   employeeCount: 7,
+  //   employees: []
+  // },
+  // {
+  //   id: 7,
+  //   slug: 'marketing',
+  //   name: 'Marketing va shartnomalar bo\'limi',
+  //   description: "Talabalarni jalb qilish, reklama kampaniyalari, ta'lim xizmatlari bo'yicha shartnomalarni rasmiylashtirish va nazorat qilish bilan shug'ullanadi.",
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '4-qavat, 401-xona',
+  //   motto: 'Tanlov — bizni aniqlaydi.',
+  //   employeeCount: 5,
+  //   employees: []
+  // },
+  // {
+  //   id: 8,
+  //   slug: 'talabalarga-xizmat',
+  //   name: "Talabalarga xizmat ko'rsatish bo'limi",
+  //   description: "Talabalar uchun hujjatlarni rasmiylashtirish, stipendiya, yotoqxona, maslahat va huquqiy yordam xizmatlarini ko'rsatadi.",
+  //   email: 'info@sharqedu.uz',
+  //   phone: '+998 79 222 07 00',
+  //   address: '4-qavat, 410-xona',
+  //   motto: 'Talaba — bizning markazimizda.',
+  //   employeeCount: 6,
+  //   employees: []
+  // }
 ];
 
 // Local departments ref

@@ -3,7 +3,7 @@
     <div v-for="employee in employees" :key="employee.id" class="staff">
       <div class="staff-image">
         <div class="staff-image__inner">
-          <img :src="employee.photo || '/img/person/usmon.jpg'" :alt="employee.fullName" loading="lazy"
+          <img :src="`https://api.sharqedu.uz/uploads/img/person/${employee.fullName}.jpg`" :alt="employee.fullName" loading="lazy"
             @error="handleImageError">
         </div>
       </div>
@@ -35,66 +35,65 @@ const route = useRoute();
 const departmentsStore = useDepartmentsStore();
 
 // Default ma'lumotlar
-const mockEmployees={}
-// const mockEmployees = {
-//   10: [
-//     {
-//       id: 1,
-//       fullName: "Habibullayev Qahramon",
-//       position: "Bo'lim boshlig'i",
-//       email: "markett22@mail.ru",
-//       photo: "/img/person/qahramon.jpg"
-//     }
-//   ],
-//   1: [
-//     {
-//       id: 1,
-//       fullName: "Turgunova Komola Baxriddinovna",
-//       position: "Chief Specialist",
-//       email: "k.turgunova@newuu.uz",
-//       photo: "/img/person/usmon.jpg"
-//     },
-//     {
-//       id: 2,
-//       fullName: "Karimova Dilnoza Sharipovna",
-//       position: "Senior Specialist",
-//       email: "d.karimova@newuu.uz",
-//       photo: "/img/person/usmon.jpg"
-//     },
-//     {
-//       id: 3,
-//       fullName: "Rahimov Sardor Azimovich",
-//       position: "Specialist",
-//       email: "s.rahimov@newuu.uz",
-//       photo: "/img/person/usmon.jpg"
-//     }
-//   ],
-//   2: [
-//     {
-//       id: 4,
-//       fullName: "Aliyev Botir Raximovich",
-//       position: "Department Head",
-//       email: "b.aliyev@newuu.uz",
-//       photo: "/img/person/usmon.jpg"
-//     },
-//     {
-//       id: 5,
-//       fullName: "Tursunov Jahongir Karimovich",
-//       position: "Chief Specialist",
-//       email: "j.tursunov@newuu.uz",
-//       photo: "/img/person/usmon.jpg"
-//     }
-//   ],
-//   3: [
-//     {
-//       id: 6,
-//       fullName: "Mahmudov Aziz Shavkatovich",
-//       position: "IT Director",
-//       email: "a.mahmudov@newuu.uz",
-//       photo: "/img/person/usmon.jpg"
-//     }
-//   ]
-// };
+const mockEmployees = {
+  // 10: [
+  //   {
+  //     id: 1,
+  //     fullName: "Habibullayev Qahramon",
+  //     position: "Bo'lim boshlig'i",
+  //     email: "markett22@mail.ru",
+  //     photo: "/img/person/qahramon.jpg"
+  //   }
+  // ],
+  // 1: [
+  //   {
+  //     id: 1,
+  //     fullName: "Turgunova Komola Baxriddinovna",
+  //     position: "Chief Specialist",
+  //     email: "k.turgunova@newuu.uz",
+  //     photo: "/img/person/usmon.jpg"
+  //   },
+  //   {
+  //     id: 2,
+  //     fullName: "Karimova Dilnoza Sharipovna",
+  //     position: "Senior Specialist",
+  //     email: "d.karimova@newuu.uz",
+  //     photo: "/img/person/usmon.jpg"
+  //   },
+  //   {
+  //     id: 3,
+  //     fullName: "Rahimov Sardor Azimovich",
+  //     position: "Specialist",
+  //     email: "s.rahimov@newuu.uz",
+  //     photo: "/img/person/usmon.jpg"
+  //   }
+  // ],
+  // 2: [
+  //   {
+  //     id: 4,
+  //     fullName: "Aliyev Botir Raximovich",
+  //     position: "Department Head",
+  //     email: "b.aliyev@newuu.uz",
+  //     photo: "/img/person/usmon.jpg"
+  //   },
+  //   {
+  //     id: 5,
+  //     fullName: "Tursunov Jahongir Karimovich",
+  //     position: "Chief Specialist",
+  //     email: "j.tursunov@newuu.uz",
+  //     photo: "/img/person/usmon.jpg"
+  //   }
+  // ],
+  // 3: [
+  //   {
+  //     id: 6,
+  //     fullName: "Mahmudov Aziz Shavkatovich",
+  //     position: "IT Director",
+  //     email: "a.mahmudov@newuu.uz",
+  //     photo: "/img/person/usmon.jpg"
+  //   }
+  // ]
+};
 
 // Local employees ref
 const employees = ref([]);
@@ -110,11 +109,18 @@ const fetchEmployees = async (deptId) => {
   }
 
   try {
-    // Store dan ma'lumotni olamiz (departments allaqachon yuklanganmi)
-    let storeEmployees = departmentsStore.getEmployeesByDepartmentId(deptId);
+    // DOIM avval store ni tekshiramiz va kerak bo'lsa yuklaymiz
+    if (!departmentsStore.departments || departmentsStore.departments.length === 0) {
+      console.log('Store bo\'sh, API dan yuklanmoqda...');
+      await departmentsStore.fetchDepartments({ });
+    }
 
-    // Agar API dan ma'lumot kelsa, uni ishlatamiz
+    // Store dan ma'lumotni olamiz
+    const storeEmployees = departmentsStore.getEmployeesByDepartmentId(deptId);
+
+    // Agar store dan ma'lumot kelsa, uni ishlatamiz
     if (storeEmployees && storeEmployees.length > 0) {
+      console.log('Store dan xodimlar topildi:', storeEmployees.length);
       employees.value = storeEmployees.map(emp => ({
         id: emp.id,
         fullName: emp.fullName || emp.name,
@@ -125,29 +131,34 @@ const fetchEmployees = async (deptId) => {
       }));
       return;
     }
+    
+    // Agar store da yo'q bo'lsa, ma'lumot yo'q deb xabar beramiz
+    console.log('Store da bu bo\'lim xodimlari topilmadi');
+    employees.value = mockEmployees[deptId] || [];
   } catch (error) {
-    console.error('Store dan xodimlarni olishda xatolik:', error);
+    console.error('Xodimlarni yuklashda xatolik:', error);
+    // Xatolik bo'lsa default ma'lumotlarni ko'rsatamiz
+    employees.value = mockEmployees[deptId] || [];
   }
-
-  // Agar store da ma'lumot bo'lmasa, default ma'lumotlarni ko'rsatamiz
-  employees.value = mockEmployees[deptId] || [];
 };
 
 // Rasm yuklanmasa default rasm
 const handleImageError = (event) => {
-  event.target.src = '/img/person/usmon.jpg';
+  event.target.src = '/img/person/default.png';
 };
 
 // Department ID o'zgarganda xodimlarni qayta yuklash
-watch(departmentId, (newId, oldId) => {
+watch(departmentId, async (newId, oldId) => {
+  console.log('Department ID o\'zgardi:', oldId, '->', newId);
   if (newId && newId !== oldId) {
-    fetchEmployees(newId);
+    await fetchEmployees(newId);
   }
 }, { immediate: false });
 
-onMounted(() => {
+onMounted(async () => {
+  console.log('Staff component mounted, department_id:', departmentId.value);
   if (departmentId.value) {
-    fetchEmployees(departmentId.value);
+    await fetchEmployees(departmentId.value);
   }
 });
 </script>

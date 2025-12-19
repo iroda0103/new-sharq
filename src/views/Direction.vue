@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div v-if="loading" class="flex justify-center items-center h-64">
         <div class="text-xl text-gray-600">Yuklanmoqda...</div>
       </div>
@@ -17,7 +17,7 @@
               :key="tab.id"
               @click="activeTab = tab.id"
               :class="[
-                'px-6 py-4 whitespace-nowrap font-medium transition',
+                'px-4 sm:px-6 py-4 whitespace-nowrap font-medium transition text-sm sm:text-base',
                 activeTab === tab.id
                   ? 'border-b-2 border-blue-600 text-blue-600'
                   : 'text-gray-600 hover:text-gray-900'
@@ -28,19 +28,16 @@
           </div>
         </div>
 
-        <div  class="direction-about-wrapper">
-          <div class="lg:col-span-2 page-block ">
-            <div class="bg-white rounded-lg shadow-sm p-4">
-              <h1 class="page-title">
+        <div class="direction-about-wrapper">
+          <div class="page-block">
+            <div class="bg-white rounded-lg shadow-sm p-4 sm:p-6">
+              <h1 class="page-title text-2xl sm:text-3xl">
                 {{ direction.degree }} - {{ direction.name }}
               </h1>
-              <!-- <p class="text-gray-600 mb-6">{{ direction.nameEn }}</p> -->
 
               <!-- Yo'nalish haqida -->
               <div v-if="activeTab === 'description'" class="prose max-w-none">
                 <p class="text-gray-700 leading-relaxed">{{ direction.description }}</p>
-                          
-
               </div>
 
               <!-- Tuzilma -->
@@ -100,10 +97,6 @@
                   <div class="text-xl">{{ direction.fees.local }}</div>
                 </div>
                 <Payment></Payment>
-                <!-- <div class="border rounded-lg p-4">
-                  <div class="font-semibold mb-1">Xorijiy talabalar</div>
-                  <div class="text-2xl text-blue-600">{{ direction.fees.international }}</div>
-                </div> -->
               </div>
 
               <!-- Ish o'rinlari -->
@@ -118,19 +111,26 @@
               </div>
             </div>
           </div>
-           <img v-if="activeTab === 'description'" :src="direction.img"></img>
+          <img 
+            v-if="activeTab === 'description'" 
+            :src="direction.img"
+            class="direction-image"
+          />
         </div>
-         
       </div>
     </div>
+    
+    <!-- Student Ambassador Chat Component -->
+    <StudentChat />
   </div>
 </template>
 
 <script setup>
 import { ref, onMounted, watch } from 'vue';
 import { useRoute } from 'vue-router';
-import { directions } from '../data/directionData'
+import { directions } from '../data/directionData';
 import Payment from './Payment.vue';
+import StudentChat from '../components/card/StudentChat.vue';
 
 const route = useRoute();
 const direction = ref(null);
@@ -148,59 +148,73 @@ const tabs = [
 const loadDirection = () => {
   loading.value = true;
   const directionId = route.params.id;
-  
-  // Haqiqiy loyihada API chaqiruvi
-  // try {
-  //   const response = await fetch(`/api/directions/${directionId}`);
-  //   const data = await response.json();
-  //   direction.value = data;
-  // } catch (error) {
-  //   console.error('Xatolik:', error);
-  //   direction.value = null;
-  // } finally {
-  //   loading.value = false;
-  // }
-  
-  // Mock data bilan
-//   setTimeout(() => {
-    direction.value = directions[directionId];
-    loading.value = false;
-//   }, 300);
+  direction.value = directions[directionId];
+  loading.value = false;
 };
 
-// Component yuklanganda
 onMounted(() => {
   loadDirection();
 });
 
-// Route o'zgarganda (sidebar dan boshqa yo'nalishga o'tilganda)
 watch(
   () => route.params.id,
   (newId, oldId) => {
     if (newId !== oldId) {
-      // Tab'ni default holatga qaytarish
       activeTab.value = 'description';
-      // Yangi yo'nalish ma'lumotlarini yuklash
       loadDirection();
-      // Sahifani tepaga scroll qilish
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   }
 );
 </script>
-<style>
-  .direction-about-wrapper{
-    display: flex;
-    gap: 20px;
+
+<style scoped>
+.direction-about-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.direction-image {
+  width: 100%;
+  max-width: 405px;
+  height: 321px;
+  object-fit: cover;
+  border-radius: 13px;
+  flex-shrink: 0;
+}
+
+.page-block {
+  flex: 1;
+  min-width: 300px;
+}
+
+.page-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .direction-about-wrapper {
+    flex-direction: column;
   }
-  .direction-about-wrapper img{
-    /* height: 406px; */
-    width: 405px;
-    height: 321px;
-    object-fit: cover;
-    border-radius: 13px;
+  
+  .direction-image {
+    max-width: 100%;
+    height: auto;
+    min-height: 250px;
   }
-  .direction-about-wrapper div{
-    width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .direction-image {
+    height: 200px;
   }
+  
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
 </style>

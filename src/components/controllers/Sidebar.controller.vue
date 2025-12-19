@@ -1,203 +1,13 @@
-<!-- 
-<template>
-    <div class="aside">
-        <div class="sidebar" v-if="currentSection">
-            <h3 class="sidebar-title">{{ currentSection.title }}</h3>
-            <ul class="sidebar-menu-list">
-                <li v-for="(item, index) in currentSection.items" :key="index" class="sidebar-menu__item"
-                    :class="{ 'active': isActive(item.href) }">
-                    <a :href="item.href" class="sidebar-menu__link">
-                        {{ item.label }}
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="aside-banner">
-            <a href="https://t.me/sharqMurojaat_bot">
-                <h3 class="aside-banner__title"> Rektorga <br>Murojaat</h3>
-                <button class="aside-banner__btn">Yuborish</button>
-                <img class="aside-banner__image" src="/img/murojaat.png" alt="Reach out to the Rector">
-            </a>
-        </div>
-    </div>
-
-</template>
-
-<script setup>
-import { ref, computed, onMounted, watch } from 'vue'
-import { useRoute } from 'vue-router'
-
-const route = useRoute()
-const currentPath = ref('')
-
-const sidebarData = {
-    universitet: {
-        title: 'Universitet',
-        items: [
-            { label: 'Rektor haqida', href: '/rektor' },
-            { label: 'Tarixi', href: '/history' },
-            { label: 'Hamkorlar', href: '/partners' },
-            { label: 'Asosiy me\'yoriy hujjatlar', href: '/document' },
-            { label: 'Litsenziya va sertifikatlar', href: '/sertificat' },
-            { label: '360 gradusda binolar tuzilishi', href: '/campus' }
-        ]
-    },
-    tuzilma: {
-        title: 'Tuzilma',
-        items: [
-            { label: 'Rahbariyat', href: '/leadership' },
-            { label: 'Fakultetlar', href: '/faculty' },
-            { label: 'Kafedralar', href: '/kafedra' },
-            { label: 'Bo\'limlar', href: '/department' }
-        ]
-    },
-    fakultetlar: {
-        title: 'Fakultetlar',
-        items: [
-            { label: 'Texnik va raqamli texnologiyalar fakulteti', href: '/directions?faculty=texnika' },
-            { label: 'Iqtisod va biznes fakulteti', href: '/directions?faculty=iqtisod' },
-            { label: 'Gumanitar fanlar fakulteti', href: '/directions?faculty=gumanitar' }
-        ]
-    },
-    kafedralar: {
-        title: 'Kafedralar',
-        items: [
-            { label: 'Iqtisodiyot va menejment kafedrasi', href: '/kafedra?id=iqtisodiyot' },
-            { label: 'Gumanitar fanlar kafedrasi', href: '/kafedra?id=gumanitar' },
-            { label: 'Axborot texnologiyalari kafedrasi', href: '/kafedra?id=it' }
-        ]
-    },
-    bolimlar: {
-        title: 'Bo\'limlar',
-        items: [
-            { label: 'Moliya-iqtisod bo\'limi', href: '/department?id=moliya' },
-            { label: 'Xo\'jalik bo\'limi', href: '/department?id=xojalik' },
-            { label: 'Axborot texnologiyalar markazi', href: '/department?id=it' },
-            { label: 'Axborot-resurslar markazi', href: '/department?id=library' },
-            { label: 'Xodimlar bo\'limi', href: '/department?id=hr' },
-            { label: 'O\'quv-uslubiy bo\'lim', href: '/department?id=metodic' },
-            { label: 'Marketing va shartnomalar bo\'limi', href: '/department?id=marketing' },
-            { label: 'Talabalarga xizmat ko\'rsatish bo\'limi', href: '/department?id=student-service' }
-        ]
-    },
-    faoliyatlar:{
-        title: 'Faoliyatlar',
-        items: [
-            { label: 'Yoshlar ittifoqi', href: '/activity/yoshlar' },
-            {label:'Xotin-qizlar kengashi', href:'/activity/women'},
-            {label:'Kasaba uyushma', href:'/activity/kasaba'},
-            {label:'Tyutorlar faoliyati', href:'/activity/tutoring'},
-            {label:"Psixologik faoliyat", href:'/activity/psychology'}]
-    },
-    talim: {
-        title: 'Ta\'lim',
-        items: [
-            { label: 'Ta\'lim portali', href: '/education-portal' },
-            { label: 'Axborot resurslar markazi', href: '/library' },
-            { label: 'Dars jadvali', href: '/academic-calendar' },
-            { label: 'Faoliyatlar', href: '/activity' },
-            { label: 'Gallery', href: '/galery' }
-        ]
-    },
-    abituriyentlar: {
-        title: 'Abituriyentlar',
-        items: [
-            { label: 'Ta\'lim yo\'nalishlari', href: '/directions' },
-            { label: 'Yotoqxona', href: '/bed-room' },
-            { label: 'Grantlar', href: '/grant' },
-            { label: 'Umumiy ma\'lumot', href: '/info' },
-            { label: 'Qabul statistikasi', href: '/statistics' },
-            { label: 'O\'qish to\'lovlari va stipendiyalar', href: '/payment' }
-        ]
-    },
-    press:{
-        title: 'Matbuot xizmati',
-        items: [
-            { label: 'Yangiliklar', href: '/news' },
-            { label: 'Postlar', href: '/posts' },
-            { label: 'Matbuot xizmati', href: '/press-service' },
-            { label: 'Rasmlar', href: '/gallery' },
-        ]
-    }
-}
-
-const currentSection = computed(() => {
-    const path = currentPath.value
-
-    if (path.includes('/rektor') || path.includes('/history') || path.includes('/wrapper') ||
-        path.includes('/partners') || path.includes('/document') ||
-        path.includes('/sertificat') || path.includes('/campus')) {
-        return sidebarData.universitet
-    }
-
-    if (path.includes('/leadership')) {
-        return sidebarData.tuzilma
-    }
-
-    if (path.includes('/faculty') || (path.includes('/directions') && path.includes('faculty='))) {
-        return sidebarData.fakultetlar
-    }
-
-    if (path.includes('/kafedra')) {
-        return sidebarData.kafedralar
-    }
-
-    if (path.includes('/department')) {
-        return sidebarData.bolimlar
-    }
-      if (path.includes('/activity') && path.includes('/activity')) {
-        return sidebarData.faoliyatlar
-    }
-
-    if (path.includes('/education-portal') || path.includes('/library') || path.includes('/academic-calendar') ||
-        path.includes('/activity') || path.includes('/galery')) {
-        return sidebarData.talim
-    }
-
-    if (path.includes('/directions') || path.includes('/bed-room') ||
-        path.includes('/grant') || path.includes('/info') ||
-        path.includes('/statistics') || path.includes('/payment')) {
-        return sidebarData.abituriyentlar
-    }
-
-    if (path.includes('/press-service') || path.includes('/news') ||
-        path.includes('/posts') || path.includes('/gallery')) {
-        return sidebarData.press
-    }
-    return null
-})
-
-const isActive = (href) => {
-    return currentPath.value === href || currentPath.value.startsWith(href)
-}
-
-const updatePath = () => {
-    currentPath.value = window.location.pathname + window.location.search
-}
-
-onMounted(() => {
-    updatePath()
-    window.addEventListener('popstate', updatePath)
-})
-
-watch(() => route.path, () => {
-    updatePath()
-}, { immediate: true })
-</script> -->
 <template>
   <aside class="sticky top-[140px] self-start w-[290px] flex-grow flex flex-col gap-5">
-  <!-- <aside class="flex-grow flex flex-col gap-5 sticky top-[140px] w-[290px] w-[100%] "> -->
     
     <!-- Sidebar -->
     <div
       v-if="currentSection"
       class="rounded-xl shadow-md overflow-hidden bg-white"
     >
-      <h3
-        class="text-[18px] font-semibold px-4 py-3 relative"
-      >
+      <h3 class="text-[18px] font-semibold px-4 py-3 relative">
         {{ currentSection.title }}
-        <!-- <span class="absolute left-4 bottom-0 w-14 h-[3px] rounded bg-gradient-to-r from-[#00455e] to-[#1b6ae9]" /> -->
       </h3>
 
       <ul class="flex flex-col">
@@ -245,6 +55,7 @@ watch(() => route.path, () => {
     </div>
   </aside>
 </template>
+
 <style scoped>
 .sidebar-link {
   @apply
@@ -270,19 +81,24 @@ watch(() => route.path, () => {
   color: #fff;
   font-weight: 600;
 }
+
 .sidebar-menu__item {
-    border-top: 1px solid rgb(223, 228, 237);
+  border-top: 1px solid rgb(223, 228, 237);
 }
 </style>
 
-
 <script setup>
-import { ref, computed, onMounted, watch } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { useDepartmentsStore } from '../../stores/department'
+import { storeToRefs } from 'pinia'
 
 const route = useRoute()
+const departmentsStore = useDepartmentsStore()
+const { departments } = storeToRefs(departmentsStore)
 
-const sidebarData = {
+// Static sidebar data
+const staticSidebarData = {
     universitet: {
         title: 'Universitet',
         items: [
@@ -317,19 +133,6 @@ const sidebarData = {
             { label: 'Iqtisodiyot va menejment kafedrasi', href: '/kafedra?id=iqtisodiyot' },
             { label: 'Gumanitar fanlar kafedrasi', href: '/kafedra?id=gumanitar' },
             { label: 'Axborot texnologiyalari kafedrasi', href: '/kafedra?id=it' }
-        ]
-    },
-    bolimlar: {
-        title: 'Bo\'limlar',
-        items: [
-            { label: 'Moliya-iqtisod bo\'limi', href: '/department/staffs?department_id=1' },
-            { label: 'Xo\'jalik bo\'limi', href: '/department/staffs?department_id=2' },
-            { label: 'Axborot texnologiyalar markazi', href: '/department/staffs?department_id=3' },
-            { label: 'Axborot-resurslar markazi', href: '/department/staffs?department_id=4' },
-            { label: 'Xodimlar bo\'limi', href: '/department/staffs?department_id=5' },
-            { label: 'O\'quv-uslubiy bo\'lim', href: '/department/staffs?department_id=6' },
-            { label: 'Marketing va shartnomalar bo\'limi', href: '/department/staffs?department_id=7' },
-            { label: 'Talabalarga xizmat ko\'rsatish bo\'limi', href: '/department/staffs?department_id=8' }
         ]
     },
     faoliyatlar: {
@@ -393,69 +196,107 @@ const sidebarData = {
     }
 }
 
+// Default bo'limlar (agar API ishlamasa)
+const defaultDepartments = [
+    // { id: 1, name: 'Moliya-iqtisod bo\'limi' },
+    // { id: 2, name: 'Xo\'jalik bo\'limi' },
+    // { id: 3, name: 'Axborot texnologiyalar markazi' },
+    // { id: 4, name: 'Axborot-resurslar markazi' },
+    // { id: 5, name: 'Xodimlar bo\'limi' },
+    // { id: 6, name: 'O\'quv-uslubiy bo\'lim' },
+    // { id: 7, name: 'Marketing va shartnomalar bo\'limi' },
+    // { id: 8, name: 'Talabalarga xizmat ko\'rsatish bo\'limi' },
+    // { id: 10, name: 'Nazorat va sifat monitoringi bo\'limi' }
+]
+
+// Dinamik bo'limlar menusi
+const bolimlarSection = computed(() => {
+    // Agar store da ma'lumot bo'lsa
+    if (departments.value && departments.value.length > 0) {
+        return {
+            title: 'Bo\'limlar',
+            items: departments.value.map(dept => ({
+                label: dept.name,
+                href: `/department/staffs?department_id=${dept.id}`
+            }))
+        }
+    }
+    
+    // Agar store bo'sh bo'lsa, default ma'lumotlardan foydalanish
+    return {
+        title: 'Bo\'limlar',
+        items: defaultDepartments.map(dept => ({
+            label: dept.name,
+            href: `/department/staffs?department_id=${dept.id}`
+        }))
+    }
+})
+
+// Current section ni aniqlash
 const currentSection = computed(() => {
     const path = route.path
     const fullPath = route.fullPath
 
-    // Yo'nalishlar (direction pages)
+    // Yo'nalishlar
     if (path.startsWith('/direction/')) {
-        return sidebarData.yonalishlar
+        return staticSidebarData.yonalishlar
     }
 
     // Universitet
     if (['/rektor', '/history', '/partners', '/document', '/sertificat', '/campus'].some(p => path.includes(p))) {
-        return sidebarData.universitet
+        return staticSidebarData.universitet
     }
     
     // Tuzilma
     if (path.includes('/leadership')) {
-        return sidebarData.tuzilma
+        return staticSidebarData.tuzilma
     }
     
     // Fakultetlar
     if (path.includes('/faculty') || (path.includes('/directions') && fullPath.includes('faculty='))) {
-        return sidebarData.fakultetlar
+        return staticSidebarData.fakultetlar
     }
     
     // Kafedralar
     if (path.includes('/kafedra')) {
-        return sidebarData.kafedralar
+        return staticSidebarData.kafedralar
     }
     
-    // Bo'limlar
+    // Bo'limlar - DINAMIK
     if (path.includes('/department')) {
-        return sidebarData.bolimlar
+        return bolimlarSection.value
     }
     
     // Faoliyatlar
     if (path.includes('/activity/')) {
-        return sidebarData.faoliyatlar
+        return staticSidebarData.faoliyatlar
     }
     
     // Ta'lim
     if (['/education-portal', '/library', '/academic-calendar'].some(p => path === p) || 
         (path === '/directions' && !fullPath.includes('faculty='))) {
-        return sidebarData.talim
+        return staticSidebarData.talim
     }
     
     // Qabul
     if (['/grant', '/academic-change', '/payment'].some(p => path === p)) {
-        return sidebarData.qabul
+        return staticSidebarData.qabul
     }
     
     // Press
     if (['/press-service', '/gallery'].some(p => path === p)) {
-        return sidebarData.press
+        return staticSidebarData.press
     }
     
     // Student life
     if (['/bed-room', '/club'].some(p => path === p)) {
-        return sidebarData.studentlife
+        return staticSidebarData.studentlife
     }
 
     return null
 })
 
+// Active link tekshirish
 const isActive = (href) => {
     const currentFullPath = route.fullPath
     const currentPath = route.path
@@ -468,4 +309,17 @@ const isActive = (href) => {
     // Oddiy path moslik
     return currentPath === href
 }
+
+// Component mount bo'lganda store dan ma'lumot olish
+onMounted(async () => {
+    // Agar store bo'sh bo'lsa, API dan yuklash
+    if (!departments.value || departments.value.length === 0) {
+        try {
+            await departmentsStore.fetchDepartments({  })
+        } catch (error) {
+            console.error('Bo\'limlarni yuklashda xatolik:', error)
+            // Default ma'lumotlar ishlatiladi
+        }
+    }
+})
 </script>

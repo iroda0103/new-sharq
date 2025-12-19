@@ -13,50 +13,70 @@ export const menuItems = [
 
   {
     title: "Tuzilma",
-    children: [      { title: "Rahbariyat", to: "/leadership" },
-      {
-        title: "Fakultetlar",
-        to: "/faculty",
-        children: [
-          { title: "Texnik va raqamli texnologiyalar fakulteti", to: "/directions?faculty=texnika" },
-          { title: "Iqtisod va biznes fakulteti", to: "/directions?faculty=iqtisod" },
-          { title: "Gumanitar fanlar fakulteti", to: "/directions?faculty=gumanitar" },
-        ],
-      },
-      {
-        title: "Kafedralar",
-        to: "/kafedra",
-        children: [
-          { title: "Iqtisodiyot va menejment kafedrasi", to: "/kafedra?id=iqtisodiyot" },
-          { title: "Gumanitar fanlar kafedrasi", to: "/kafedra?id=gumanitar" },
-          { title: "Axborot texnologiyalari kafedrasi", to: "/kafedra?id=it" },
-        ],
-      },
-      {
-        title: "Bo'limlar",
-        to: "/department",
-        children: [
-          { title: "Moliya-iqtisod bo‘limi", to: "/department/staffs?department_id=1" },
-          { title: "Xo‘jalik bo‘limi", to: "/department/staffs?department_id=2" },
-          { title: "Axborot texnologiyalari markazi", to: "/department/staffs?department_id=3" },
-          { title: "Axborot-resurslar markazi", to: "/department/staffs?department_id=4" },
-          { title: "Xodimlar bo‘limi", to: "/department/staffs?department_id=5" },
-          { title: "O‘quv-uslubiy bo‘lim", to: "/department/staffs?department_id=6" },
-          { title: "Marketing va shartnomalar bo‘limi", to: "/department/staffs?department_id=7" },
-          { title: "Talabalarga xizmat ko‘rsatish bo‘limi", to: "/department/staffs?department_id=8" },
-        ],
-      },
-      {
-        title: "Faoliyatlar",
-        to: "/activity",
-        children: [
-          { title: "Yoshlar ittifoqi", to: "/activity/yoshlar" },
-          { title: "Xotin-qizlar kengashi", to: "/activity/women" },
-          { title: "Kasaba uyushmasi", to: "/activity/kasaba" },
-          { title: "Tyutorlar faoliyati", to: "/activity/tutoring" },
-          { title: "Psixologlar faoliyati", to: "/activity/psychology" },
-        ],
-      },
+    children: [{ title: "Rahbariyat", to: "/leadership" },
+    {
+      title: "Fakultetlar",
+      to: "/faculty",
+      children: [
+        { title: "Texnik va raqamli texnologiyalar fakulteti", to: "/directions?faculty=texnika" },
+        { title: "Iqtisod va biznes fakulteti", to: "/directions?faculty=iqtisod" },
+        { title: "Gumanitar fanlar fakulteti", to: "/directions?faculty=gumanitar" },
+      ],
+    },
+    {
+      title: "Kafedralar",
+      to: "/kafedra",
+      children: [
+        { title: "Iqtisodiyot va menejment kafedrasi", to: "/kafedra?id=iqtisodiyot" },
+        { title: "Gumanitar fanlar kafedrasi", to: "/kafedra?id=gumanitar" },
+        { title: "Axborot texnologiyalari kafedrasi", to: "/kafedra?id=it" },
+      ],
+    },
+    {
+      title: "Bo‘limlar",
+      to: "/department",
+      children: [
+        {
+          title: "Axborot texnologiyalari markazi",
+          to: "/department/staffs?department_id=1"
+        },
+        {
+          title: "Yoshlar bilan ishlash, ma'naviyat va ma'rifat bo‘limi",
+          to: "/department/staffs?department_id=2"
+        },
+        {
+          title: "Talabalarga xizmat ko‘rsatish bo‘limi",
+          to: "/department/staffs?department_id=3"
+        },
+        {
+          title: "Akademik faoliyat boshqarmasi",
+          to: "/department/staffs?department_id=4"
+        },
+        {
+          title: "Nazorat va sifat monitoringi bo‘limi",
+          to: "/department/staffs?department_id=5"
+        },
+        {
+          title: "Texnik foydalanish va xo‘jalik bo‘limi",
+          to: "/department/staffs?department_id=6"
+        },
+        {
+          title: "Inson resurslarini boshqarish bo‘limi",
+          to: "/department/staffs?department_id=7"
+        }
+      ]
+    },
+    {
+      title: "Faoliyatlar",
+      to: "/activity",
+      children: [
+        { title: "Yoshlar ittifoqi", to: "/activity/yoshlar" },
+        { title: "Xotin-qizlar kengashi", to: "/activity/women" },
+        { title: "Kasaba uyushmasi", to: "/activity/kasaba" },
+        { title: "Tyutorlar faoliyati", to: "/activity/tutoring" },
+        { title: "Psixologlar faoliyati", to: "/activity/psychology" },
+      ],
+    },
     ],
   },
 
