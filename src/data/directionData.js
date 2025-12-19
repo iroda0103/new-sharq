@@ -4,7 +4,7 @@ export const directions = {
         nameEn: 'History',
         degree: 'Bakalavr',
         img: '/img/faculty/tarix.png',
-        description: `Mazkur yo'nalishning asosiy maqsadi --- talabalarni tarix fanining nazariy asoslari hamda amaliy jihatlari bilan chuqur tanishtirish, ularga arxeologiya, etnografiya, O'zbekiston va jahon tarixiga oid muhim bilimlar hamda real kasbiy vaziyatlarda zarur bo'lgan kompetensiyalarni shakllantirish va rivojlantirishdir. Talabalar o'quv davomida tarixiy faktlarni tahlil qilish, ularni kontekstda baholash, dalillar bilan ishlash, tarixiy tafakkur yuritish va mustaqil ilmiy tadqiqot olib borish ko'nikmalarini egallab boradilar.`,
+        description: `Mazkur yo'nalishning asosiy maqsadi - talabalarni tarix fanining nazariy asoslari hamda amaliy jihatlari bilan chuqur tanishtirish, ularga arxeologiya, etnografiya, O'zbekiston va jahon tarixiga oid muhim bilimlar hamda real kasbiy vaziyatlarda zarur bo'lgan kompetensiyalarni shakllantirish va rivojlantirishdir. Talabalar o'quv davomida tarixiy faktlarni tahlil qilish, ularni kontekstda baholash, dalillar bilan ishlash, tarixiy tafakkur yuritish va mustaqil ilmiy tadqiqot olib borish ko'nikmalarini egallab boradilar.`,
         structure: [
             { year: 1, subjects: ['Qadimgi dunyo tarixi', "O'zbekiston tarixi", 'Tarixshunoslik', 'Arxeologiya asoslari'] },
             { year: 2, subjects: ["O'rta asrlar tarixi", 'Etnografiya', 'Tarixiy manbalar', 'Muzeylar nazariyasi'] },
@@ -24,7 +24,7 @@ export const directions = {
         nameEn: 'Psychology',
         img: '/img/faculty/tarix.png',
         degree: 'Bakalavr',
-        description: `Psixologiya --- bu inson ongining, xulq-atvorining, hissiyotlari va ruhiy jarayonlarining ilmiy asosda o'rganilishi bilan shug'ullanuvchi fan sohasi. Ushbu yo'nalishning asosiy maqsadi --- talabalarni turli yoshdagi insonlarning psixologik holatini baholash, tahlil qilish, ularni tushunish va amaliy yechimlar ishlab chiqish bo'yicha chuqur nazariy bilimlar va amaliy ko'nikmalar bilan qurollantirishdan iborat.`,
+        description: `Psixologiya - bu inson ongining, xulq-atvorining, hissiyotlari va ruhiy jarayonlarining ilmiy asosda o'rganilishi bilan shug'ullanuvchi fan sohasi. Ushbu yo'nalishning asosiy maqsadi - talabalarni turli yoshdagi insonlarning psixologik holatini baholash, tahlil qilish, ularni tushunish va amaliy yechimlar ishlab chiqish bo'yicha chuqur nazariy bilimlar va amaliy ko'nikmalar bilan qurollantirishdan iborat.`,
         structure: [
             { year: 1, subjects: ['Umumiy psixologiya', 'Psixologiya tarixi', 'Fiziologiya asoslari', 'Statistika'] },
             { year: 2, subjects: ['Rivojlanish psixologiyasi', 'Shaxsiyat psixologiyasi', 'Ijtimoiy psixologiya', 'Psixodiagnostika'] },
@@ -44,7 +44,7 @@ export const directions = {
         nameEn: 'Philology and Language Teaching: English',
         degree: 'Bakalavr',
         img: '/img/faculty/english.png',
-        description: `Mazkur yo'nalish talabalarga ingliz tilini nazariy va amaliy jihatdan chuqur o'rganish, uni o'rgatish metodikasi, til tizimi, madaniyatlararo muloqot, tarjima asoslari hamda tilshunoslik va adabiyotshunoslik kabi fanlarni puxta egallash imkonini beradi. Yo'nalishning asosiy maqsadi --- zamonaviy ingliz tilini mukammal biladigan, uni o'rgata oladigan, xalqaro maydonda raqobatbardosh va yuksak saviyali mutaxassislar yetishtirishdir.`,
+        description: `Mazkur yo'nalish talabalarga ingliz tilini nazariy va amaliy jihatdan chuqur o'rganish, uni o'rgatish metodikasi, til tizimi, madaniyatlararo muloqot, tarjima asoslari hamda tilshunoslik va adabiyotshunoslik kabi fanlarni puxta egallash imkonini beradi. Yo'nalishning asosiy maqsadi - zamonaviy ingliz tilini mukammal biladigan, uni o'rgata oladigan, xalqaro maydonda raqobatbardosh va yuksak saviyali mutaxassislar yetishtirishdir.`,
         structure: [
             { year: 1, subjects: ['English Grammar', 'Phonetics', 'Reading & Writing', 'Speaking & Listening'] },
             { year: 2, subjects: ['Advanced Grammar', 'Lexicology', 'English Literature', 'Teaching Methodology'] },
@@ -64,7 +64,7 @@ export const directions = {
         nameEn: 'Philology and Language Teaching: Russian',
         degree: 'Bakalavr',
         img: '/img/faculty/filologiya.png',
-        description: `Mazkur yo'nalish talabalarni rus tilining nazariy asoslari, amaliy qo'llanilishi, adabiyoti va o'qitish metodikasi bilan chuqur tanishtiradi. Yo'nalishning asosiy maqsadi --- rus tilini puxta egallagan, uni o'rgatish bo'yicha zamonaviy metodik ko'nikmalarga ega, til va madaniyatlararo muloqotni rivojlantira oladigan filolog-pedagoglar tayyorlashdan iborat.`,
+        description: `Mazkur yo'nalish talabalarni rus tilining nazariy asoslari, amaliy qo'llanilishi, adabiyoti va o'qitish metodikasi bilan chuqur tanishtiradi. Yo'nalishning asosiy maqsadi - rus tilini puxta egallagan, uni o'rgatish bo'yicha zamonaviy metodik ko'nikmalarga ega, til va madaniyatlararo muloqotni rivojlantira oladigan filolog-pedagoglar tayyorlashdan iborat.`,
         structure: [
             { year: 1, subjects: ['Rus tili grammatikasi', 'Fonetika', 'Og\'zaki va yozma nutq', 'Til nazariyasi'] },
             { year: 2, subjects: ['Morfologiya va sintaksis', 'Leksikologiya', 'Rus adabiyoti', 'Til o\'qitish metodikasi'] },
@@ -104,7 +104,7 @@ export const directions = {
         nameEn: 'Economics',
         degree: 'Bakalavr',
         img: '/img/faculty/iqtisodiyot.png',
-        description: `Iqtisodiyot --- bu jamiyatda tovar va xizmatlar qanday yaratilishi, taqsimlanishi va iste'mol qilinishini o'rganadigan fan sohasidir. Bu yo'nalish resurslar tanqisligi sharoitida ularni oqilona ishlab chiqarish, boshqarish va ulardan foydalanish tizimlarini chuqur tahlil qiluvchi ijtimoiy-ilmiy sohaga kiradi.`,
+        description: `Iqtisodiyot - bu jamiyatda tovar va xizmatlar qanday yaratilishi, taqsimlanishi va iste'mol qilinishini o'rganadigan fan sohasidir. Bu yo'nalish resurslar tanqisligi sharoitida ularni oqilona ishlab chiqarish, boshqarish va ulardan foydalanish tizimlarini chuqur tahlil qiluvchi ijtimoiy-ilmiy sohaga kiradi.`,
         structure: [
             { year: 1, subjects: ['Mikroiqtisodiyot', 'Makroiqtisodiyot', 'Matematika', 'Statistika asoslari'] },
             { year: 2, subjects: ['Moliya', 'Buxgalteriya hisobi', 'Iqtisodiy tahlil', 'Marketing asoslari'] },
@@ -144,7 +144,7 @@ export const directions = {
         nameEn: 'Marketing',
         degree: 'Bakalavr',
         img: '/img/faculty/biznes.png',
-        description: `Marketing --- bu tovar va xizmatlarni iste'molchilarga yetkazishning eng samarali yo'llarini izlaydigan, bozor ehtiyojlarini tahlil qiladigan va mijozlar bilan mustahkam aloqalarni yo'lga qo'yadigan amaliy va strategik fan sohasi hisoblanadi.`,
+        description: `Marketing - bu tovar va xizmatlarni iste'molchilarga yetkazishning eng samarali yo'llarini izlaydigan, bozor ehtiyojlarini tahlil qiladigan va mijozlar bilan mustahkam aloqalarni yo'lga qo'yadigan amaliy va strategik fan sohasi hisoblanadi.`,
         structure: [
             { year: 1, subjects: ['Marketing asoslari', 'Iqtisodiyot', 'Psixologiya', 'Reklama asoslari'] },
             { year: 2, subjects: ['Raqamli marketing', 'Brending', 'Iste\'molchi xulqi', 'Bozor tadqiqoti'] },
@@ -164,7 +164,7 @@ export const directions = {
         nameEn: 'Business Management',
         degree: 'Bakalavr',
         img: '/img/faculty/biznes.png',
-        description: `Biznesni boshqarish --- bu tashkilot va korxonalarni samarali boshqarish, ularning strategik rivojlanishi, moliyaviy barqarorligi va raqobatbardoshligini ta'minlashga qaratilgan ko'p tarmoqli fan sohasi hisoblanadi.`,
+        description: `Biznesni boshqarish - bu tashkilot va korxonalarni samarali boshqarish, ularning strategik rivojlanishi, moliyaviy barqarorligi va raqobatbardoshligini ta'minlashga qaratilgan ko'p tarmoqli fan sohasi hisoblanadi.`,
         structure: [
             { year: 1, subjects: ['Menejment asoslari', 'Iqtisodiyot', 'Biznes matematikasi', 'Biznes kommunikatsiya'] },
             { year: 2, subjects: ['Strategik menejment', 'HR menejment', 'Moliya menejmenti', 'Operatsion menejment'] },
@@ -184,7 +184,7 @@ export const directions = {
         nameEn: 'Cybersecurity Engineering',
         degree: 'Bakalavr',
         img: '/img/faculty/kiber.png',
-        description: `Kiberxavfsizlik injiniringi --- bu axborot tizimlarini, kompyuter tarmoqlarini, dasturiy ta'minot va foydalanuvchi ma'lumotlarini tashqi va ichki tahdidlardan himoya qilishga yo'naltirilgan ilg'or texnologik yo'nalishdir.`,
+        description: `Kiberxavfsizlik injiniringi - bu axborot tizimlarini, kompyuter tarmoqlarini, dasturiy ta'minot va foydalanuvchi ma'lumotlarini tashqi va ichki tahdidlardan himoya qilishga yo'naltirilgan ilg'or texnologik yo'nalishdir.`,
         structure: [
             { year: 1, subjects: ['Dasturlash asoslari', 'Kompyuter tizimlari', 'Tarmoqlar asoslari', 'Matematik mantiq'] },
             { year: 2, subjects: ['Axborot xavfsizligi', 'Operatsion tizimlar', 'Kriptografiya', 'Veb xavfsizligi'] },
@@ -204,7 +204,7 @@ export const directions = {
         nameEn: 'Software Engineering',
         degree: 'Bakalavr',
         img: '/img/faculty/engineering.png',
-        description: `Dasturiy injiniring --- bu dasturiy mahsulotlarni tizimli loyihalash, ishlab chiqish, test qilish va qo'llab-quvvatlash bilan shug'ullanuvchi zamonaviy muhandislik yo'nalishidir. Talabalar algoritmlar, dasturlash tillari, ma'lumotlar tuzilmasi, AI, mobil va veb-ilovalar yaratish bo'yicha bilim egallaydi.`,
+        description: `Dasturiy injiniring - bu dasturiy mahsulotlarni tizimli loyihalash, ishlab chiqish, test qilish va qo'llab-quvvatlash bilan shug'ullanuvchi zamonaviy muhandislik yo'nalishidir. Talabalar algoritmlar, dasturlash tillari, ma'lumotlar tuzilmasi, AI, mobil va veb-ilovalar yaratish bo'yicha bilim egallaydi.`,
         structure: [
             { year: 1, subjects: ['Dasturlash asoslari', 'Matematik analiz', 'Diskret matematika', 'Web asoslari'] },
             { year: 2, subjects: ["Ma'lumotlar tuzilmasi", 'Algoritmlar', 'OOP', "Ma'lumotlar bazasi"] },
@@ -224,7 +224,7 @@ export const directions = {
         nameEn: 'Artificial Intelligence',
         degree: 'Bakalavr',
         img: '/img/faculty/si.png',
-        description: `Sun'iy intellekt --- bu mashinalarni inson aql-idrokiga yaqin darajada fikrlashga, o'rganishga va muammolarni mustaqil hal qilishga o'rgatuvchi ilg'or texnologik yo'nalishdir. Talabalar mashinaviy o'rganish, neyron tarmoqlar, NLP, computer vision texnologiyalarini o'rganadilar.`,
+        description: `Sun'iy intellekt - bu mashinalarni inson aql-idrokiga yaqin darajada fikrlashga, o'rganishga va muammolarni mustaqil hal qilishga o'rgatuvchi ilg'or texnologik yo'nalishdir. Talabalar mashinaviy o'rganish, neyron tarmoqlar, NLP, computer vision texnologiyalarini o'rganadilar.`,
         structure: [
             { year: 1, subjects: ['Python dasturlash', 'Matematik analiz', 'Chiziqli algebra', 'Ehtimollar nazariyasi'] },
             { year: 2, subjects: ['Mashinaviy o\'rganish', 'Chuqur o\'rganish', "Ma'lumotlar tahlili", 'Statistika'] },

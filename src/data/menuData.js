@@ -2,7 +2,7 @@ export const menuItems = [
   {
     title: "Universitet",
     children: [
-      { title: "Rektor haqida", to: "/rektor" },
+      { title: "Rektor", to: "/rektor" },
       { title: "Tarixi", to: "/history" },
       { title: "Hamkorlar", to: "/partners" },
       { title: "Asosiy me'yoriy hujjatlar", to: "/document" },
