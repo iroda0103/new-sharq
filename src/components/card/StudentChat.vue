@@ -71,7 +71,7 @@ const isOpen = ref(true);
 const ambassador = {
   name: 'Shukurullayev Adham',
   degree: 'Moliya va moliyaviy texnologiyalar',
-  telegramUrl: 'https://t.me/SHARQ_YI'
+  telegramUrl: 'https://t.me/Shukurullayev_A_J',
 };
 </script>
 
