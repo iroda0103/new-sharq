@@ -10,7 +10,7 @@ export const menuItems = [
       { title: "360 gradusda binolar tuzilishi", to: "/campus" },
     ],
   },
-
+  
   {
     title: "Tuzilma",
     children: [{ title: "Rahbariyat", to: "/leadership" },

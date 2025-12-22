@@ -38,6 +38,7 @@ import TestStaff from '../views/TestStaff.vue'
 import FutureStep from '../views/FutureStep.vue'
 import Direction from '../views/Direction.vue'
 import News from '../views/News.vue'
+import Admission from '../views/Admission.vue'
 
 // Layout componentlar
 import DefaultLayout from '../components/layout/DefaultLayout.vue'
@@ -53,6 +54,7 @@ const routes = [
       { path: 'apply', name: 'ApplyFor', component: ApplyFor },
       { path: 'gallery', name: 'GalleryPage', component: GalleryPage },
       { path: 'kelajakkaqadam', name: 'FutureStep', component: FutureStep },
+      { path: 'admission', name: 'Admission', component: Admission },
 
       // Boshqa sidebarsiz sahifalar...
     ]

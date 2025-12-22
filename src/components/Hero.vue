@@ -15,7 +15,7 @@
                     Sizni zamonaviy kelajak sari yetaklovchi, innovatsion universitetda oʻqish imkoniyati
                     kutmoqda!
                 </p>
-                <a class="blue-link font-bold" href="https://qabul.sharqedu.uz/">Ariza berish</a>
+                <a href="https://qabul.sharqedu.uz/"><button disabled class="blue-link font-bold">Ariza berish</button></a>
             </div>
             <!-- <Stats :stats="statsData" :title="'Bizning Statistikalar'" :delay="200" /> -->
 
@@ -147,11 +147,13 @@ main {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    opacity: 0.6;
     transition: opacity 0.3s;
 }
 
 .blue-link:hover {
-    opacity: 0.8;
+    // opacity: 0.8;
+    cursor: no-drop;
 }
 
 .blue-link:active {

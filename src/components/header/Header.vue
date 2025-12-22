@@ -32,7 +32,8 @@
                     <a href="https://www.youtube.com/@sharquniversiteti" aria-label="YouTube" target="_blank">
                         <font-awesome-icon :icon="['fab', 'youtube']" />
                     </a>
-                </div>
+                </div>                    <Hemis></Hemis>
+
                 <button class="header__btn" @click="toggleMenu" aria-label="Toggle menu">
                     <span class="hamburger"></span>
                 </button>
@@ -96,6 +97,7 @@
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { menuItems } from "../../data/menuData"
+import Hemis from '../../utilits/ui/hemis.vue'
 
 const activeIndex = ref(null)
 
@@ -236,8 +238,9 @@ onUnmounted(() => {
     }
 
     .logo__img {
-        height: 58px;
-        width: auto;
+        // height: 58px;
+        // width: auto;
+        width: 190px;
         transition: transform 0.3s ease;
 
         &:hover {
@@ -562,12 +565,12 @@ onUnmounted(() => {
         gap: 15px;
 
         a {
-            color: #fff;
+            color: rgb(233, 231, 231);
             font-size: 18px;
             transition: all 0.3s ease;
 
             &:hover {
-                color: #ffffff;
+                color: #fff;
                 transform: translateY(-3px);
                 // transform: scale(1.1);
             }

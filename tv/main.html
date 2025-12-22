@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sharq Universiteti - Yangi Yil 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: #0a0e27;
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 50%, #0a0e27 100%);
+        }
+
+        #bg-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            opacity: 0.4;
+        }
+
+        /* Yangi yil qor effekti */
+        .snowflakes {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            color: #fff;
+            font-size: 1em;
+            opacity: 0.8;
+            animation: fall linear infinite;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+
+        /* Yangi yil charaqlagich effekti */
+        .sparkles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .sparkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #ffd700;
+            border-radius: 50%;
+            animation: sparkle 2s ease-in-out infinite;
+            box-shadow: 0 0 10px #ffd700;
+        }
+
+        @keyframes sparkle {
+
+            0%,
+            100% {
+                opacity: 0;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 1;
+                transform: scale(1.5);
+            }
+        }
+
+        /* Overlay qatlam */
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(10, 14, 39, 0.95) 0%, rgba(10, 14, 39, 0.7) 50%, transparent 100%);
+            padding: 60px 80px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            opacity: 0;
+            animation: fadeIn 1s ease-out 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        .info-section {
+            color: white;
+            position: relative;
+        }
+
+        .new-year-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #c41e3a, #ff6b6b);
+            color: white;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.5);
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .university-title {
+            font-size: 52px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            text-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+            background: linear-gradient(135deg, #ffffff, #ffd700);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .university-tagline {
+            font-size: 26px;
+            font-weight: 500;
+            opacity: 0.95;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            color: #e0e0e0;
+        }
+
+        .new-year-greeting {
+            font-size: 28px;
+            font-weight: 600;
+            color: #ffd700;
+            margin-top: 15px;
+            text-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+
+            0%,
+            100% {
+                text-shadow: 0 2px 10px rgba(255, 215, 0, 0.5);
+            }
+
+            50% {
+                text-shadow: 0 2px 20px rgba(255, 215, 0, 0.8), 0 0 30px rgba(255, 215, 0, 0.6);
+            }
+        }
+
+        .contact-section {
+            text-align: right;
+            color: white;
+        }
+
+        .contact-item {
+            font-size: 22px;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 12px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        .contact-icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        /* Yuqori qism */
+        .top-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 40px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: linear-gradient(to bottom, rgba(10, 14, 39, 0.8) 0%, transparent 100%);
+            opacity: 0;
+            animation: fadeIn 1s ease-out 1.5s forwards;
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .logo {
+            height: 80px;
+            filter: drop-shadow(0 4px 12px rgba(255, 215, 0, 0.3));
+        }
+
+        .time-date {
+            color: white;
+            text-align: right;
+        }
+
+        .time {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+            color: #ffd700;
+        }
+
+        .date {
+            font-size: 20px;
+            opacity: 0.9;
+            text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+        }
+
+        /* Musiqa boshqaruv tugmasi */
+        .music-control {
+            position: absolute;
+            top: 40px;
+            right: 50%;
+            transform: translateX(50%);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            padding: 12px 30px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 100;
+        }
+
+        .music-control:hover {
+            background: rgba(255, 255, 255, 0.25);
+            /* transform: translateX(-50%) scale(1.05); */
+        }
+
+        .music-icon {
+            width: 24px;
+            height: 24px;
+            color: #ffd700;
+        }
+
+        .music-text {
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .playing {
+            animation: musicPulse 1s ease-in-out infinite;
+        }
+
+        @keyframes musicPulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 1920px) {
+            .university-title {
+                font-size: 46px;
+            }
+
+            .university-tagline {
+                font-size: 24px;
+            }
+
+            .new-year-greeting {
+                font-size: 26px;
+            }
+        }
+
+        @media (max-width: 1366px) {
+            .overlay {
+                padding: 40px 60px;
+            }
+
+            .top-bar {
+                padding: 30px 60px;
+            }
+
+            .university-title {
+                font-size: 38px;
+            }
+
+            .university-tagline {
+                font-size: 20px;
+            }
+
+            .new-year-greeting {
+                font-size: 22px;
+            }
+
+            .logo {
+                height: 70px;
+            }
+
+            .time {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="video-container">
+        <video autoplay muted loop playsinline id="bg-video">
+            <source src="./logo_sh2.mp4" type="video/mp4">
+        </video>
+
+        <!-- Qor effekti -->
+        <div class="snowflakes" id="snowflakes"></div>
+
+        <!-- Charaqlagich effekti -->
+        <div class="sparkles" id="sparkles"></div>
+
+        <!-- Musiqa -->
+        <audio id="jingle-bells" loop>
+            <source src="./jingle-bells-orchestra_35sec-172988.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Musiqa boshqaruv -->
+        <div class="music-control" id="music-control">
+            <svg class="music-icon" id="music-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" />
+            </svg>
+            <span class="music-text" id="music-text">Musiqa</span>
+        </div>
+
+        <div class="top-bar">
+            <div class="logo-section">
+                <img src="./logo_sharq.webp" alt="Sharq University" class="logo">
+            </div>
+            <div class="time-date">
+                <div class="time" id="current-time">00:00</div>
+                <div class="date" id="current-date">01.01.2025</div>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <div class="info-section">
+                <div class="new-year-badge">🎄 YANGI YIL 2026 🎄</div>
+                <h1 class="university-title">Sharq Universiteti</h1>
+                <p class="university-tagline">Zamonaviy ta'lim, imkoniyat va qadriyatlar uyg‘unligi</p>
+                <p class="new-year-greeting">Yangi yilingiz muborak bo‘lsin! </p>
+            </div>
+            <div class="contact-section">
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +998 79 222-07-00
+                </div>
+                <div class="contact-item">
+                    <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path
+                            d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                    </svg>
+                    www.sharqedu.uz
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Vaqt va sana
+        function updateDateTime() {
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            document.getElementById('current-time').textContent = `${hours}:${minutes}`;
+
+            const day = String(now.getDate()).padStart(2, '0');
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const year = now.getFullYear();
+            const weekdays = ['Yakshanba', 'Dushanba', 'Seshanba', 'Chorshanba', 'Payshanba', 'Juma', 'Shanba'];
+            const weekday = weekdays[now.getDay()];
+
+            document.getElementById('current-date').textContent = `${day}.${month}.${year} - ${weekday}`;
+        }
+
+        updateDateTime();
+        setInterval(updateDateTime, 1000);
+
+        // Qor effekti
+        function createSnowflakes() {
+            const container = document.getElementById('snowflakes');
+            for (let i = 0; i < 50; i++) {
+                const snowflake = document.createElement('div');
+                snowflake.className = 'snowflake';
+                snowflake.textContent = '❄';
+                snowflake.style.left = Math.random() * 100 + '%';
+                snowflake.style.animationDuration = (Math.random() * 3 + 5) + 's';
+                snowflake.style.animationDelay = Math.random() * 5 + 's';
+                snowflake.style.fontSize = (Math.random() * 0.5 + 0.5) + 'em';
+                snowflake.style.opacity = Math.random() * 0.6 + 0.4;
+                container.appendChild(snowflake);
+            }
+        }
+
+        // Charaqlagich effekti
+        function createSparkles() {
+            const container = document.getElementById('sparkles');
+            for (let i = 0; i < 30; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * 100 + '%';
+                sparkle.style.top = Math.random() * 100 + '%';
+                sparkle.style.animationDelay = Math.random() * 2 + 's';
+                container.appendChild(sparkle);
+            }
+        }
+
+        createSnowflakes();
+        createSparkles();
+
+        // Musiqa boshqaruv
+        const audio = document.getElementById('jingle-bells');
+        const musicControl = document.getElementById('music-control');
+        const musicIcon = document.getElementById('music-icon');
+        const musicText = document.getElementById('music-text');
+        let isPlaying = false;
+
+        musicControl.addEventListener('click', () => {
+            if (isPlaying) {
+                audio.pause();
+                musicIcon.innerHTML = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/>';
+                musicText.textContent = 'Musiqa';
+                musicIcon.classList.remove('playing');
+            } else {
+                audio.play();
+                musicIcon.innerHTML = '<path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM16.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/><path d="M19 12c0 2.53-1.48 4.7-3.61 5.74v2.06C18.78 18.85 21 15.73 21 12s-2.22-6.85-5.61-7.8v2.06C17.52 7.3 19 9.47 19 12z"/>';
+                musicText.textContent = 'Ijro etilmoqda';
+                musicIcon.classList.add('playing');
+            }
+            isPlaying = !isPlaying;
+        });
+
+        // Video boshqaruv
+        const video = document.getElementById('bg-video');
+        video.addEventListener('error', e => console.error('Video xatolik:', e));
+        video.addEventListener('pause', () => video.play().catch(e => { }));
+        video.addEventListener('ended', () => {
+            video.currentTime = 0;
+            video.play();
+        });
+    </script>
+</body>
+
+</html>
