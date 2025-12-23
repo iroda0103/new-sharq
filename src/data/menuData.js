@@ -3,11 +3,11 @@ export const menuItems = [
     title: "Universitet",
     children: [
       { title: "Rektor", to: "/rektor" },
-      { title: "Tarixi", to: "/history" },
+      { title: "Universitet haqida", to: "/history" },
       { title: "Hamkorlar", to: "/partners" },
       { title: "Asosiy me'yoriy hujjatlar", to: "/document" },
       { title: "Litsenziya va sertifikatlar", to: "/sertificat" },
-      { title: "360 gradusda binolar tuzilishi", to: "/campus" },
+      { title: "360° Virtual sayohat", to: "/campus" },
     ],
   },
   
