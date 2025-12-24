@@ -25,7 +25,7 @@
                             info@sharqedu.uz </a>
                         <a href="tel:+998712410115" class="leadership-info__link">
                             <i class="fa-solid fa-phone"></i>
-                            +998 (79) 222-77-07 </a>
+                            +998 (79) 222-07-00 </a>
                     </div>
                     <div class="leadership-info__social">
                         <a href="https://www.instagram.com/sharq_university_psychologist" class="icon-instagram"

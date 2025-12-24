@@ -10,7 +10,7 @@
                         <i class="fas fa-envelope"></i> <span class="contact-text">info@sharqedu.uz</span>
                     </a>
                     <a href="tel:+998712234567" class="contact-link contact-tel">
-                        <i class="fas fa-phone"></i> <span class="contact-text">+998 (79) 222-77-07</span>
+                        <i class="fas fa-phone"></i> <span class="contact-text">+998 (79) 222-07-00</span>
                     </a>
                 </div>
                 <span class="header-warning" data-bs-toggle="tooltip" data-bs-placement="bottom"
@@ -214,7 +214,7 @@
                     </a>
                     <a href="tel:+998792227707" class="contact-link contact-tel">
                         <i class="fas fa-phone"></i>
-                        <span class="contact-text">+998 (79) 222-77-07</span>
+                        <span class="contact-text">+998 (79) 222-07-00</span>
                     </a>
                 </div>
                 <span class="header-warning">

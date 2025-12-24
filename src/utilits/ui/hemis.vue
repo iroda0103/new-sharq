@@ -28,7 +28,9 @@ export default {
     },
     methods: {
         toggleDropdown() {
-            this.open = !this.open;
+            // this.open = !this.open;
+                            window.open("https://hemis.sharqedu.uz/", "_blank");
+
         },
         select(value, label) {
             this.selected = value;

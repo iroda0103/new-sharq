@@ -44,19 +44,18 @@
 
             <!-- BIOGRAPHY -->
             <div class="page-block">
-                <h3 class="page-block__subtitle">Tarjimai hol</h3>
+                <h3 class="page-block__subtitle"> Rektor murojaati</h3>
                 <div class="page-block__divider"></div>
-                <div class="content">
-                    <p>
-                        <strong>Tug'ilgan:</strong> 26.09.1983, Navoiy viloyati<br>
-                        <strong>Ilmiy daraja:</strong> Iqtisodiyot fanlari bo'yicha PhD, dotsent<br>
-                        <strong>Millati:</strong> O'zbek<br>
-                        <strong>Tillar:</strong> Rus, Turk, Ingliz
-                    </p>
-                    <p>
-                        20 yildan ortiq taʼlim sohasida faoliyat yuritib kelmoqda.
-                        Ko‘plab ilmiy maqolalar, darsliklar muallifi va bir qator xalqaro loyihalar asoschisi.
-                    </p>
+                 <div class="content">
+                    <p class="greeting">Hurmatli professor-o'qituvchilar, talabalar va ota-onalar,</p>
+                    <p>Sizni Sharq universiteti jamoasi nomidan samimiy qutlayman.</p>
+                    <p>Sharq universiteti — zamonaviy bilim, milliy qadriyatlar va innovatsion yondashuvlarga asoslangan oliy ta'lim muassasasi sifatida o'z faoliyatini izchil rivojlantirib bormoqda. Universitetimiz milliy va xalqaro talablar asosida raqobatbardosh mutaxassislar tayyorlashni o'z oldiga ustuvor maqsad qilib qo'ygan.</p>
+                    <p>Universitetda yuqori malakali professor-o'qituvchilar ishtirokida shakllangan ochiq va qo'llab-quvvatlovchi akademik muhit mavjud. Sharq universiteti bilim olish, mustaqil fikrlash hamda shaxsiy va kasbiy rivojlanishga intiluvchi yoshlar uchun keng imkoniyatlar yaratadi.</p>
+                    <p>Ta'lim jarayoni milliy va xalqaro standartlarga muvofiq tashkil etilgan bo'lib, ta'lim dasturlari iqtisodiyot, boshqaruv, biznes, sun'iy intellekt va axborot texnologiyalari bilan bir qatorda tarix, xorijiy tillar hamda psixologiya yo'nalishlarini ham qamrab oladi. Ushbu yo'nalishlar jamiyatning ma'naviy-intellektual taraqqiyoti, inson kapitali sifati va kasbiy barqarorlikni ta'minlashda muhim ahamiyat kasb etadi.</p>
+                    <p>Sharq universitetida ilmiy-tadqiqot faoliyati ta'lim jarayoni bilan uyg'un holda rivojlantirilmoqda. Yosh tadqiqotchilarni qo'llab-quvvatlash, fan va amaliyot integratsiyasini kuchaytirish universitet faoliyatining ustuvor yo'nalishlaridan biri hisoblanadi.</p>
+                    <p>Universitetimiz "Yangi O'zbekiston" taraqqiyot strategiyasiga hamohang ravishda yoshlarni har tomonlama qo'llab-quvvatlash, zamonaviy ko'nikmalarga ega, mas'uliyatli va faol fuqarolarni tarbiyalashni o'z oldiga maqsad qilgan.</p>
+                    <p>Sharq universitetining asosiy vazifasi — jamiyat va mehnat bozori ehtiyojlariga mos, bilimli, tafakkuri keng va raqobatbardosh mutaxassislarni tayyorlashdir.</p>
+                    <p class="slogan">ILM SHARQDAN BOSHLANADI!</p>
                 </div>
             </div>
 
@@ -72,24 +71,6 @@
                 </div>
             </div>
 
-            <!-- EXPERIENCE -->
-            <div class="page-block">
-                <h3 class="page-block__subtitle">Mehnat faoliyati</h3>
-                <div class="page-block__divider"></div>
-                <div class="content">
-                    <ul>
-                        <li>2025 — h.v. — Sharq universiteti rektori</li>
-                        <li>2024–2025 — Navoiy DKvTU, "Iqtisodiyot va menejment" kafedrasi dotsenti</li>
-                        <li>2023–2024 — Navoiy innovatsiyalar universiteti, prorektor</li>
-                        <li>2022–2023 — Navoiy DKvTU, dekan o‘rinbosari</li>
-                        <li>2018–2022 — Navoiy DKI, dekan o‘rinbosari</li>
-                        <li>2009–2018 — Navoiy DKI, katta o‘qituvchi</li>
-                        <li>2006–2009 — Navoiy DKI, assistent</li>
-                        <li>2004–2006 — Samarqand IvSI, magistrant</li>
-                        <li>2000–2004 — Navoiy DKI, talaba</li>
-                    </ul>
-                </div>
-            </div>
 
         </div>
     </div>

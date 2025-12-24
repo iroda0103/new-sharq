@@ -41,7 +41,7 @@
                   :href="`tel:${leader.phone}`"
                   class="leadership-info__link"
                 >
-                  <i class="icon-phone"></i>3
+                  <i class="icon-phone"></i>
                   
                   {{ leader.phone }}
                 </a>
@@ -75,7 +75,7 @@ export default {
           name: 'PhD. Sherzod Atamurodov',
           position: 'Sharq universiteti rektori',
           image: '/img/person/rector.jpg',
-          email: 'info@sharqedu.uz',
+          email: 'atamuradov@sharqedu.uz',
           phone: '+998 (79) 222-77-07',
           reception: 'Du–Ju, 09:00–17:00'
         },
@@ -84,7 +84,7 @@ export default {
           position: "Akademik faoliyat boshqarmasi boshlig'i",
           image: '/img/person/bektosh.jpg',
           email: 'info@sharqedu.uz',
-          phone: '+998 (79) 222-77-07',
+          phone: '+998 (79) 222-07-00',
           reception: 'Du–Ju, 09:00–17:00'
         },
          {
@@ -92,7 +92,7 @@ export default {
           position: "Kasaba uyushmasi raisi",
           image: '/img/person/qahramon.jpg',
           email: 'markett22@mail.ru',
-          phone: '+998 (91) 308-17-10',
+          phone: '+998 (79) 222-07-00',
           reception: 'Du–Ju, 09:00–17:00'
         }
       ]

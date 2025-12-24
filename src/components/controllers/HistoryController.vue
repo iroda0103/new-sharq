@@ -10,7 +10,7 @@
 
         <!-- MATN -->
         <div class="history__content">
-          <h2 class="page-title">SHARQ UNIVERSITETI</h2>
+          <!-- <h2 class="page-title">SHARQ UNIVERSITETI</h2> -->
 
           <p>
             <strong>SHARQ UNIVERSITETI</strong> — zamonaviy ta'lim, ilmiy salohiyat 
@@ -79,14 +79,14 @@
           oshirilmoqda.
         </p>
 
-        <h3>🔬 Ilmiy-tadqiqot va innovatsiya</h3>
+        <h3> Ilmiy-tadqiqot va innovatsiya</h3>
         <p>
           Yosh tadqiqotchilarni qo'llab-quvvatlash, ilmiy izlanishlarni 
           rag'batlantirish va fan hamda amaliyot integratsiyasini kuchaytirish 
           ustuvor yo'nalishlar hisoblanadi.
         </p>
 
-        <h3>🏗️ Rivojlanish strategiyasi</h3>
+        <h3 class="page-block__subtitle"> Rivojlanish strategiyasi</h3>
         <p>
           5 yillik rivojlanish strategiyasi doirasida 2027–2028 o'quv yiliga 
           qadar 8 000 nafar talabani qamrab olish imkoniyatiga ega bo'lgan 
