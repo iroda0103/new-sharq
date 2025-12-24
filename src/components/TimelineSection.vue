@@ -47,7 +47,7 @@
     <!-- CTA Section -->
     <div class="cta-section" :class="{ visible: ctaVisible }" ref="ctaSection">
       <div class="cta-box">
-        <h2 class="cta-title">{{ ctaTitle }}</h2>
+        <h2 class="cta-title title">{{ ctaTitle }}</h2>
         <p class="cta-description">{{ ctaDescription }}</p>
         <button class="cta-button" @click="handleCTAClick">
           {{ ctaButtonText }}
@@ -201,7 +201,7 @@ export default {
 <style scoped>
 .timeline-section {
   min-height: 150vh;
-  padding: 80px 0;
+  padding: 20px 0;
   background: #f8fafc;
   color: #1e293b;
   overflow: hidden;
@@ -215,7 +215,7 @@ export default {
 }
 
 .hero-title {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   font-weight: 700;
   background: linear-gradient(135deg, #1e3a8a, #3b82f6);
   -webkit-background-clip: text;
@@ -269,7 +269,7 @@ export default {
 /* Timeline item */
 .timeline-item {
   position: relative;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -461,7 +461,7 @@ export default {
 /* CTA Section */
 .cta-section {
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 60px 20px;
   opacity: 0;
   transform: translateY(50px);
@@ -484,10 +484,10 @@ export default {
 }
 
 .cta-title {
-  font-size: 2.2rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 16px;
-  color: #1e293b;
+  /* color: #1e293b; */
 }
 
 .cta-description {
@@ -511,6 +511,8 @@ export default {
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 6px 25px rgba(30, 58, 138, 0.3);
+  opacity: 0.4;
+  cursor: not-allowed;
 }
 
 .cta-button:hover {

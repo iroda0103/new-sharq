@@ -147,7 +147,7 @@ main {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    opacity: 0.6;
+    opacity: 0.4;
     transition: opacity 0.3s;
 }
 

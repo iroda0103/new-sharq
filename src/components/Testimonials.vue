@@ -78,7 +78,8 @@ export default {
           position: "Rektor",
           // image: "sherzod_atamuradov.webp",
           image: "rector.jpg",
-          text: "Yuqori sifatli xizmat ko'rsatish va ilg'or innovatsion yechimlar faoliyatimizni samarali tarzda o'zgartirdi, bu esa barcha aloqa nuqtalarida talabalar ehtiyojini qondirish va universitetning jadal o'sishiga zamin yaratdi."
+          text: `Sharq universitetida biz bilim, qadriyatlar va innovatsiyalar uyg‘unligiga asoslangan zamonaviy akademik muhitni yaratmoqdamiz.
+Kuchli jamoamiz bilan jamiyat va kelajak taraqqiyotiga munosib hissa qo‘shadigan raqobatbardosh mutaxassislarni tayyorlashni maqsad qilganmiz`
         },
         // {
         //   name: "Botir Ibragimov",
@@ -122,7 +123,7 @@ export default {
 
 <style lang="scss" scoped>
 .testimonials {
-  padding: 100px 0;
+  padding: 30px 0;
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   position: relative;
   overflow: hidden;
