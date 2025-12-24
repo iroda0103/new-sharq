@@ -46,8 +46,47 @@
                 </div>
             </div>
 
+            <!-- MA'LUMOTI -->
+            <div class="page-block">
+                <h3 class="page-block__subtitle">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    Ma'lumoti
+                </h3>
+                <div class="page-block__divider"></div>
+                <div class="content">
+                    <ul>
+                        <li><strong>2004 y.</strong> — Navoiy davlat konchilik instituti (Bakalavr)</li>
+                        <li><strong>2006 y.</strong> — Samarqand Iqtisodiyot va servis instituti (Magistr)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- ILMIY FAOLIYAT -->
+            <div class="page-block achievements-block">
+                <h3 class="page-block__subtitle">
+                    <i class="fa-solid fa-award"></i>
+                    Ilmiy faoliyat
+                </h3>
+                <div class="page-block__divider"></div>
+                <div class="content">
+                    <div class="achievements-grid">
+                        <div class="achievement-item">
+                            <div class="achievement-number">20</div>
+                            <div class="achievement-label">yil ta'lim sohasida</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-number">50+</div>
+                            <div class="achievement-label">ilmiy maqolalar</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-number">10+</div>
+                            <div class="achievement-label">darslik va qo'llanmalar</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- QABUL VAQTI -->
-            <div class=" reception-block page-block">
+            <!-- <div class=" reception-block page-block">
                 <h3 class="page-block__subtitle">
                     <i class="fa-regular fa-clock"></i>
                     Qabul vaqti
@@ -56,7 +95,7 @@
                 <div class="content reception-content">
                     <p><strong>Juma</strong> soat <strong>14:00</strong> dan <strong>17:00</strong> gacha</p>
                 </div>
-            </div>
+            </div> -->
 
             <!-- REKTOR MUROJAATI -->
             <div class="page-block message-block">
@@ -94,7 +133,7 @@
             </div>
 
             <!-- ILMIY FAOLIYAT -->
-            <!-- <div class="page-block achievements-block">
+            <div class="page-block achievements-block">
                 <h3 class="page-block__subtitle">
                     <i class="fa-solid fa-award"></i>
                     Ilmiy faoliyat
@@ -116,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
             <!-- EXPERIENCE -->
             <!-- <div class="page-block">
