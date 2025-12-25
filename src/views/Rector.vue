@@ -118,7 +118,7 @@
             </div>
 
             <!-- MA'LUMOTI -->
-            <div class="page-block">
+            <!-- <div class="page-block">
                 <h3 class="page-block__subtitle">
                     <i class="fa-solid fa-graduation-cap"></i>
                     Ma'lumoti
@@ -130,10 +130,10 @@
                         <li><strong>2006 y.</strong> — Samarqand Iqtisodiyot va servis instituti (Magistr)</li>
                     </ul>
                 </div>
-            </div>
+            </div> -->
 
             <!-- ILMIY FAOLIYAT -->
-            <div class="page-block achievements-block">
+            <!-- <div class="page-block achievements-block">
                 <h3 class="page-block__subtitle">
                     <i class="fa-solid fa-award"></i>
                     Ilmiy faoliyat
@@ -155,7 +155,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- EXPERIENCE -->
             <!-- <div class="page-block">

@@ -13,7 +13,7 @@
           <!-- <h2 class="page-title">SHARQ UNIVERSITETI</h2> -->
 
           <p>
-            <strong>SHARQ UNIVERSITETI</strong> — zamonaviy ta'lim, ilmiy salohiyat 
+            <strong class="special">SHARQ UNIVERSITETI</strong> — zamonaviy ta'lim, ilmiy salohiyat 
             va innovatsion yondashuv uyg'unligiga asoslangan xususiy oliy ta'lim 
             muassasasi. Universitet jamiyat va mehnat bozori ehtiyojlariga mos, 
             raqobatbardosh va mas'uliyatli mutaxassislar tayyorlashni o'z oldiga 
@@ -23,9 +23,9 @@
           <p>
             "SHARQ UNIVERSITY" MCHJ <strong>2024-yil 29-mart</strong> kuni Navoiy 
             shahar Davlat xizmatlari markazida <strong>№2424023-raqam</strong> bilan 
-            davlat ro'yxatidan o'tkazilgan. Universitet O'zbekiston Respublikasi 
+            davlat ro'yxatidan o'tkazilgan. Universitet <strong class="special">O'zbekiston Respublikasi 
             Prezidenti tomonidan 2024-yil 12-dekabrda qabul qilingan 
-            <strong>PQ–430-sonli qaror</strong>ning 24-bandiga muvofiq tashkil etilgan.
+            PQ–430-sonli qaror</strong>ning 24-bandiga muvofiq tashkil etilgan.
           </p>
 
           <p>
@@ -37,7 +37,7 @@
 
       <!-- QO'SHIMCHA BLOK -->
       <div class="text-wrapper">
-        <h3> Missiya va strategik maqsadlar</h3>
+        <h3 class="special"> Missiya va strategik maqsadlar</h3>
         <p>
           Ilm-fan, ta'lim va innovatsiyalarni uyg'unlashtirgan holda, milliy va
           xalqaro talablariga javob beradigan yuqori malakali hamda raqobatbardosh 
@@ -47,7 +47,7 @@
           egallash.
         </p>
 
-        <h3> Ta'lim yo'nalishlari (2025–2026 o'quv yili)</h3>
+        <h3 class="special"> Ta'lim yo'nalishlari (2025–2026 o'quv yili)</h3>
         <p>
           <strong>Axborot texnologiyalari va muhandislik:</strong><br>
           • Sun'iy intellekt<br>
@@ -68,7 +68,7 @@
           • Tarix
         </p>
 
-        <h3> Xalqaro hamkorlik</h3>
+        <h3 class="special"> Xalqaro hamkorlik</h3>
         <p>
           Turkiya (Karabuk universiteti, Istanbul Tijorat universiteti, Anqara 
           Yildirim Boyazid universiteti, Istanbul Okan universiteti), Ozarbayjon 
@@ -79,14 +79,14 @@
           oshirilmoqda.
         </p>
 
-        <h3> Ilmiy-tadqiqot va innovatsiya</h3>
+        <h3 class="special"> Ilmiy-tadqiqot va innovatsiya</h3>
         <p>
           Yosh tadqiqotchilarni qo'llab-quvvatlash, ilmiy izlanishlarni 
           rag'batlantirish va fan hamda amaliyot integratsiyasini kuchaytirish 
           ustuvor yo'nalishlar hisoblanadi.
         </p>
 
-        <h3 class="page-block__subtitle"> Rivojlanish strategiyasi</h3>
+        <h3 class="page-block__subtitle special"> Rivojlanish strategiyasi</h3>
         <p>
           5 yillik rivojlanish strategiyasi doirasida 2027–2028 o'quv yiliga 
           qadar 8 000 nafar talabani qamrab olish imkoniyatiga ega bo'lgan 
@@ -103,7 +103,7 @@
 
         <p class="history__slogan">
           "Zamonaviy ta'lim, imkoniyat va qadriyatlar uyg'unligi"<br>
-          ILM SHARQDAN BOSHLANADI!
+          <!-- ILM SHARQDAN BOSHLANADI! -->
         </p>
       </div>
 
@@ -150,11 +150,14 @@
       margin-bottom: 14px;
 
       strong {
-        color: #004aad;
+        color: #000;
       }
+      
     }
   }
-
+.special{
+        color: #004aad;
+      }
   &__slogan {
     margin-top: 24px;
     font-weight: 600;
