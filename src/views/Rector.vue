@@ -14,7 +14,7 @@
                 <p class="leadership-info__text">Sharq universiteti rektori</p>
                 <p class="leadership-info__degree">Iqtisodiyot fanlari bo'yicha falsafa doktori, dotsent</p>
 
-                 <div class="leadership-info__bottom">
+                <div class="leadership-info__bottom">
                     <div class="leadership-info__links">
                         <a href="mailto:atamuradov@sharqedu.uz" class="leadership-info__link">
                             <i class="fa-regular fa-envelope"></i>
@@ -24,14 +24,18 @@
                             +998 (79) 222-77-07 </a>
                     </div>
                     <div class="leadership-info__social">
-                        <a href="https://instagram.com" class="icon-instagram" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-instagram"></i></a>
-                        <a href="https://t.me/SHARQ_YI" class="icon-telegram" rel="nofollow" target="_blank"><i
+                        <a href="https://www.instagram.com/sherakramovich" class="icon-instagram" rel="nofollow"
+                            target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://t.me/sherzodatamuradov" class="icon-telegram" rel="nofollow" target="_blank"><i
                                 class="fa-brands fa-telegram"></i></a>
-                        <a href="https://facebook.com" class="icon-facebook" rel="nofollow" target="_blank"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="https://youtube.com" class="icon-youtube" rel="nofollow" target="_blank"><i
+                        <a href="https://www.facebook.com/sherakramovich" class="icon-facebook" rel="nofollow"
+                            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://t.co/oCH0480ZMg" class="icon-youtube" rel="nofollow" target="_blank"><i
                                 class="fa-brands fa-youtube"></i></a>
+                        <a href="https://scholar.google.com/citations?user=p-zyVV8AAAAJ&hl=ru" class="icon-google-scholar"
+                            rel="nofollow" target="_blank"><i class="fa-brands fa-google-scholar"></i></a>
+                        <a href="https://www.linkedin.com/in/sherzodatamuradov" class="icon-linkedin" rel="nofollow"
+                            target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     </div>
 
                 </div>
@@ -41,7 +45,7 @@
                     </div>
 
                     <div class="info-item">
-                        <strong>Xona:</strong> 701
+                        <strong>Xona:</strong> 301
                     </div>
                 </div>
             </div>
@@ -57,6 +61,8 @@
                     <ul>
                         <li><strong>2004 y.</strong> — Navoiy davlat konchilik instituti (Bakalavr)</li>
                         <li><strong>2006 y.</strong> — Samarqand Iqtisodiyot va servis instituti (Magistr)</li>
+                        <li><strong>2021 y.</strong> — Oʻzbekiston Respublikasi Prezidenti huzuridagi davlat boshqaruvi
+                            akademiyasi (Iqtisodiyot fanlari bo‘yicha falsafa doktori)</li>
                     </ul>
                 </div>
             </div>
@@ -81,6 +87,10 @@
                         <div class="achievement-item">
                             <div class="achievement-number">10+</div>
                             <div class="achievement-label">darslik va qo'llanmalar</div>
+                        </div>
+                        <div class="achievement-item">
+                            <div class="achievement-number">10+</div>
+                            <div class="achievement-label"> xalqaro hamkorlik aloqalari</div>
                         </div>
                     </div>
                 </div>
@@ -107,12 +117,26 @@
                 <div class="content">
                     <p class="greeting">Hurmatli professor-o'qituvchilar, talabalar va ota-onalar,</p>
                     <p>Sizni Sharq universiteti jamoasi nomidan samimiy qutlayman.</p>
-                    <p>Sharq universiteti — zamonaviy bilim, milliy qadriyatlar va innovatsion yondashuvlarga asoslangan oliy ta'lim muassasasi sifatida o'z faoliyatini izchil rivojlantirib bormoqda. Universitetimiz milliy va xalqaro talablar asosida raqobatbardosh mutaxassislar tayyorlashni o'z oldiga ustuvor maqsad qilib qo'ygan.</p>
-                    <p>Universitetda yuqori malakali professor-o'qituvchilar ishtirokida shakllangan ochiq va qo'llab-quvvatlovchi akademik muhit mavjud. Sharq universiteti bilim olish, mustaqil fikrlash hamda shaxsiy va kasbiy rivojlanishga intiluvchi yoshlar uchun keng imkoniyatlar yaratadi.</p>
-                    <p>Ta'lim jarayoni milliy va xalqaro standartlarga muvofiq tashkil etilgan bo'lib, ta'lim dasturlari iqtisodiyot, boshqaruv, biznes, sun'iy intellekt va axborot texnologiyalari bilan bir qatorda tarix, xorijiy tillar hamda psixologiya yo'nalishlarini ham qamrab oladi. Ushbu yo'nalishlar jamiyatning ma'naviy-intellektual taraqqiyoti, inson kapitali sifati va kasbiy barqarorlikni ta'minlashda muhim ahamiyat kasb etadi.</p>
-                    <p>Sharq universitetida ilmiy-tadqiqot faoliyati ta'lim jarayoni bilan uyg'un holda rivojlantirilmoqda. Yosh tadqiqotchilarni qo'llab-quvvatlash, fan va amaliyot integratsiyasini kuchaytirish universitet faoliyatining ustuvor yo'nalishlaridan biri hisoblanadi.</p>
-                    <p>Universitetimiz "Yangi O'zbekiston" taraqqiyot strategiyasiga hamohang ravishda yoshlarni har tomonlama qo'llab-quvvatlash, zamonaviy ko'nikmalarga ega, mas'uliyatli va faol fuqarolarni tarbiyalashni o'z oldiga maqsad qilgan.</p>
-                    <p>Sharq universitetining asosiy vazifasi — jamiyat va mehnat bozori ehtiyojlariga mos, bilimli, tafakkuri keng va raqobatbardosh mutaxassislarni tayyorlashdir.</p>
+                    <p>Sharq universiteti — zamonaviy bilim, milliy qadriyatlar va innovatsion yondashuvlarga asoslangan
+                        oliy ta'lim muassasasi sifatida o'z faoliyatini izchil rivojlantirib bormoqda. Universitetimiz
+                        milliy va xalqaro talablar asosida raqobatbardosh mutaxassislar tayyorlashni o'z oldiga ustuvor
+                        maqsad qilib qo'ygan.</p>
+                    <p>Universitetda yuqori malakali professor-o'qituvchilar ishtirokida shakllangan ochiq va
+                        qo'llab-quvvatlovchi akademik muhit mavjud. Sharq universiteti bilim olish, mustaqil fikrlash
+                        hamda shaxsiy va kasbiy rivojlanishga intiluvchi yoshlar uchun keng imkoniyatlar yaratadi.</p>
+                    <p>Ta'lim jarayoni milliy va xalqaro standartlarga muvofiq tashkil etilgan bo'lib, ta'lim dasturlari
+                        iqtisodiyot, boshqaruv, biznes, sun'iy intellekt va axborot texnologiyalari bilan bir qatorda
+                        tarix, xorijiy tillar hamda psixologiya yo'nalishlarini ham qamrab oladi. Ushbu yo'nalishlar
+                        jamiyatning ma'naviy-intellektual taraqqiyoti, inson kapitali sifati va kasbiy barqarorlikni
+                        ta'minlashda muhim ahamiyat kasb etadi.</p>
+                    <p>Sharq universitetida ilmiy-tadqiqot faoliyati ta'lim jarayoni bilan uyg'un holda
+                        rivojlantirilmoqda. Yosh tadqiqotchilarni qo'llab-quvvatlash, fan va amaliyot integratsiyasini
+                        kuchaytirish universitet faoliyatining ustuvor yo'nalishlaridan biri hisoblanadi.</p>
+                    <p>Universitetimiz "Yangi O'zbekiston" taraqqiyot strategiyasiga hamohang ravishda yoshlarni har
+                        tomonlama qo'llab-quvvatlash, zamonaviy ko'nikmalarga ega, mas'uliyatli va faol fuqarolarni
+                        tarbiyalashni o'z oldiga maqsad qilgan.</p>
+                    <p>Sharq universitetining asosiy vazifasi — jamiyat va mehnat bozori ehtiyojlariga mos, bilimli,
+                        tafakkuri keng va raqobatbardosh mutaxassislarni tayyorlashdir.</p>
                     <p class="slogan">ILM SHARQDAN BOSHLANADI!</p>
                 </div>
             </div>
@@ -183,7 +207,7 @@
     </div>
 </template>
 
-<style >
+<style>
 .wrapper {
     background-image: url('/img/bg/image_copy.png');
     background-repeat: no-repeat;
@@ -361,7 +385,7 @@
     margin-bottom: 12px;
 }
 
-.leadership-info__wrapper > :not(:last-child) {
+.leadership-info__wrapper> :not(:last-child) {
     margin-bottom: 12px;
 }
 
@@ -460,7 +484,7 @@
 
 .achievement-item {
     text-align: center;
-    padding: 16px;
+    padding: 6px 8px;
     background: linear-gradient(135deg, rgba(82, 148, 229, 0.08), rgba(82, 148, 229, 0.03));
     border-radius: 10px;
     border: 2px solid rgba(82, 148, 229, 0.2);
