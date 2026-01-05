@@ -1,7 +1,7 @@
 // api/departments.js
 import axios from 'axios'
 
-// Axios instance yaratish (agar umuminst bo'lmasa)
+// Axios instance yaratish (agar umuminst bO‘lmasa)
 const apiClient = axios.create({
   baseURL: 'https://api.sharqedu.uz/api',
   // baseURL: 'http://localhost:3000/api',
@@ -10,7 +10,7 @@ const apiClient = axios.create({
   }
 })
 
-// Request interceptor (agar token kerak bo'lsa)
+// Request interceptor (agar token kerak bO‘lsa)
 apiClient.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('token')
@@ -33,7 +33,7 @@ apiClient.interceptors.response.use(
       console.error('API Error:', error.response.data)
       return Promise.reject(error.response.data)
     } else if (error.request) {
-      // So'rov yuborildi lekin javob kelmadi
+      // SO‘rov yuborildi lekin javob kelmadi
       console.error('Network Error:', error.request)
       return Promise.reject({ message: 'Tarmoq xatosi. Internet aloqangizni tekshiring.' })
     } else {
@@ -45,27 +45,27 @@ apiClient.interceptors.response.use(
 )
 
 export const departmentsApi = {
-  // Barcha bo'limlarni olish
+  // Barcha bO‘limlarni olish
   getDepartments(params = {}) {
     return apiClient.get('/departments', { params })
   },
 
-  // Bo'limni ID bo'yicha olish
+  // BO‘limni ID bO‘yicha olish
   getDepartmentById(id) {
     return apiClient.get(`/departments/${id}`)
   },
 
-  // Bo'lim yaratish
+  // BO‘lim yaratish
   createDepartment(data) {
     return apiClient.post('/departments', data)
   },
 
-  // Bo'limni yangilash
+  // BO‘limni yangilash
   updateDepartment(id, data) {
     return apiClient.put(`/departments/${id}`, data)
   },
 
-  // Bo'limni o'chirish
+  // BO‘limni O‘chirish
   deleteDepartment(id) {
     return apiClient.delete(`/departments/${id}`)
   }

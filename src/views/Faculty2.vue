@@ -2,7 +2,7 @@
   <section class="faculties-page">
     <div class="">
       <!-- <h2 class="documents__title page-title">Fakultetlar</h2> -->
-      <!-- <p class="documents__subtitle page-subtitle">Bizda mavjud bo'lgan fakultetlar ro'yxati bilan tanishing</p> -->
+      <!-- <p class="documents__subtitle page-subtitle">Bizda mavjud bO‘lgan fakultetlar rO‘yxati bilan tanishing</p> -->
       
       <div class="faculties-grid">
         <div

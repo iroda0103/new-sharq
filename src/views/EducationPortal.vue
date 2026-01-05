@@ -6,7 +6,7 @@
                     <!-- <img loading="lazy"src="../img/logo_sharq.png" alt="SHarq Universiteti"> -->
                     <h1 class="page-title">Ta'lim Portali</h1>
                 </div>
-                <!-- <p>Oliy ta'lim jarayonlarini boshqarish, shu jumladan o'quv, ilmiy va moliyaviy funksiyalar uchun yagona
+                <!-- <p>Oliy ta'lim jarayonlarini boshqarish, shu jumladan O‘quv, ilmiy va moliyaviy funksiyalar uchun yagona
                     axborot tizimi</p> -->
             </header>
 
@@ -26,7 +26,7 @@
                     <i class="fas fa-sign-in-alt"></i> Portalgа kirish
                 </a>
                 <a href="#" class="portal-button secondary">
-                    <i class="fas fa-question-circle"></i> Qo'llanma
+                    <i class="fas fa-question-circle"></i> QO‘llanma
                 </a>
             </div>
 
@@ -41,7 +41,7 @@
                         <div class="news-content">
                             <h4>{{ news.title }}</h4>
                             <p>{{ news.summary }}</p>
-                            <a href="#" class="news-link">Batafsil o'qish</a>
+                            <a href="#" class="news-link">Batafsil O‘qish</a>
                         </div>
                     </div>
                 </div>
@@ -67,19 +67,19 @@ export default {
                 {
                     icon: "fas fa-user-graduate",
                     title: "Talaba kabineti",
-                    description: "Shaxsiy kabinet orqali o'quv jarayonini kuzatish va boshqarish",
+                    description: "Shaxsiy kabinet orqali O‘quv jarayonini kuzatish va boshqarish",
                     link: "#"
                 },
                 {
                     icon: "fas fa-calendar-alt",
                     title: "Dars jadvali",
-                    description: "Kunlik, haftalik dars jadvali va o'zgarishlarni ko'rish",
+                    description: "Kunlik, haftalik dars jadvali va O‘zgarishlarni kO‘rish",
                     link: "#"
                 },
                 {
                     icon: "fas fa-book",
                     title: "Elektron kutubxona",
-                    description: "Darsliklar, qo'llanmalar va ilmiy adabiyotlarga kirish",
+                    description: "Darsliklar, qO‘llanmalar va ilmiy adabiyotlarga kirish",
                     link: "#"
                 },
                 {
@@ -93,20 +93,20 @@ export default {
                 {
                     day: "15",
                     month: "MAY",
-                    title: "2025/2026 o'quv yili uchun qabul jarayoni",
-                    summary: "Yangi o'quv yiliga qabul jarayoni boshlanganligi haqida ma'lumot"
+                    title: "2025/2026 O‘quv yili uchun qabul jarayoni",
+                    summary: "Yangi O‘quv yiliga qabul jarayoni boshlanganligi haqida ma'lumot"
                 },
                 {
                     day: "10",
                     month: "MAY",
-                    title: "Stipendiyalar bo'yicha e'lon",
-                    summary: "Davlat stipendiyalari bo'yicha natijalar e'lon qilindi"
+                    title: "Stipendiyalar bO‘yicha e'lon",
+                    summary: "Davlat stipendiyalari bO‘yicha natijalar e'lon qilindi"
                 },
                 {
                     day: "05",
                     month: "MAY",
                     title: "Ilmiy konferensiya",
-                    summary: "Xalqaro ilmiy-amaliy konferensiya o'tkazilishi haqida"
+                    summary: "Xalqaro ilmiy-amaliy konferensiya O‘tkazilishi haqida"
                 }
             ]
         };

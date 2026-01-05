@@ -16,7 +16,7 @@
                 <h3 class="leadership-info__fio">Abduqayimov Usmon</h3>
                 <div class="leadership-info__divider"></div>
                 <p class="leadership-info__text">
-                    O'zbekiston Yoshlar ittifoqi boshlang'ich tashkiloti Sharq universiteti yoshlar yetakchisi </p>
+                    O‘zbekiston Yoshlar ittifoqi boshlang'ich tashkiloti Sharq universiteti yoshlar yetakchisi </p>
 
                 <div class="leadership-info__bottom">
                     <div class="leadership-info__links">

@@ -46,8 +46,8 @@ export default {
         { icon: "fas fa-female", title: "Ijtimoiy reyestrdagi xotin-qizlar", description: "10% chegirma" },
         { icon: "fas fa-users", title: "Sinf­dosh dasturi", description: "5% (50% gacha)" },
         { icon: "fas fa-home", title: "Oila dasturi", description: "Har biriga 10% chegirma" },
-        { icon: "fas fa-exchange-alt", title: "OTMdan ko'chirilgan talabalar", description: "10% chegirma" },
-        { icon: "fas fa-calendar-day", title: "15-avgustgacha 100% to'lov", description: "1 million so'm chegirma" },
+        { icon: "fas fa-exchange-alt", title: "OTMdan kO‘chirilgan talabalar", description: "10% chegirma" },
+        { icon: "fas fa-calendar-day", title: "15-avgustgacha 100% tO‘lov", description: "1 million sO‘m chegirma" },
         { icon: "fas fa-graduation-cap", title: "Yuqori baholarga", description: "Stipendiya dasturi" },
       ]
     };

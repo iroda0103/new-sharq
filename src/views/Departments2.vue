@@ -74,7 +74,7 @@ const defaultDepartments = [
   // {
   //   id: 10,
   //   slug: 'nazorat-sifat',
-  //   name: "Nazorat va sifat monitoringi bo'limi",
+  //   name: "Nazorat va sifat monitoringi bO‘limi",
   //   description: "Taʼlim sifatini nazorat qilish boʻlimining asosiy maqsadi Sharq universiteti talabalari bilimlarining davlat taʼlim standartlariga muvofiqligini oʻrganib borish, tahlil qilish, kadrlar tayyorlash sifati monitoringini yuritish, Sharq universiteti ichki attestatsiyadan oʻtkazishni tashkil etish va uning natijalari boʻyicha taʼlim sifatiga salbiy taʼsir etuvchi omillarni aniqlash hamda ularni bartaraf etish va oldini olish choralarini koʻrishdan iborat.",
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
@@ -88,8 +88,8 @@ const defaultDepartments = [
   // {
   //   id: 1,
   //   slug: 'moliya-iqtisod',
-  //   name: "Moliya-iqtisod bo'limi",
-  //   description: "Moliya-iqtisod bo'limi universitetning moliyaviy barqarorligini ta'minlash, byudjetlarni shakllantirish va harajatlarni tahlil qilish, hisobotlarni tayyorlash bilan shug'ullanadi.",
+  //   name: "Moliya-iqtisod bO‘limi",
+  //   description: "Moliya-iqtisod bO‘limi universitetning moliyaviy barqarorligini ta'minlash, byudjetlarni shakllantirish va harajatlarni tahlil qilish, hisobotlarni tayyorlash bilan shug'ullanadi.",
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
   //   address: '1-qavat, 102-xona',
@@ -100,8 +100,8 @@ const defaultDepartments = [
   // {
   //   id: 2,
   //   slug: 'xojalik',
-  //   name: "Xo'jalik bo'limi",
-  //   description: "Xo'jalik bo'limi universitet binolarining ta'miri, tozaligi, yoritilishi, isitilishi va barcha moddiy-texnik infratuzilmasi uchun mas'ul.",
+  //   name: "XO‘jalik bO‘limi",
+  //   description: "XO‘jalik bO‘limi universitet binolarining ta'miri, tozaligi, yoritilishi, isitilishi va barcha moddiy-texnik infratuzilmasi uchun mas'ul.",
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
   //   address: '1-qavat, 104-xona',
@@ -125,7 +125,7 @@ const defaultDepartments = [
   //   id: 4,
   //   slug: 'arm',
   //   name: 'Axborot-resurslar markazi',
-  //   description: "ARM universitet kutubxona tizimini boshqaradi. O'quv, ilmiy, metodik va badiiy adabiyotlar bilan ta'minlaydi.",
+  //   description: "ARM universitet kutubxona tizimini boshqaradi. O‘quv, ilmiy, metodik va badiiy adabiyotlar bilan ta'minlaydi.",
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
   //   address: '2-qavat, 210-xona',
@@ -136,7 +136,7 @@ const defaultDepartments = [
   // {
   //   id: 5,
   //   slug: 'xodimlar',
-  //   name: "Xodimlar bo'limi",
+  //   name: "Xodimlar bO‘limi",
   //   description: 'Kadrlar bilan ishlash, mehnat shartnomalarini rasmiylashtirish, ishga qabul qilish va bo\'shatish, attestatsiyalar, ish tartibini monitoring qilish bilan shug\'ullanadi.',
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
@@ -148,8 +148,8 @@ const defaultDepartments = [
   // {
   //   id: 6,
   //   slug: 'oubolim',
-  //   name: "O'quv-uslubiy bo'lim",
-  //   description: "O'quv jarayonini rejalashtirish, o'quv rejalari va fan dasturlarini ishlab chiqish, kredit-modul tizimini boshqarish va ta'lim monitoringini yuritadi.",
+  //   name: "O‘quv-uslubiy bO‘lim",
+  //   description: "O‘quv jarayonini rejalashtirish, O‘quv rejalari va fan dasturlarini ishlab chiqish, kredit-modul tizimini boshqarish va ta'lim monitoringini yuritadi.",
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
   //   address: '3-qavat, 305-xona',
@@ -161,7 +161,7 @@ const defaultDepartments = [
   //   id: 7,
   //   slug: 'marketing',
   //   name: 'Marketing va shartnomalar bo\'limi',
-  //   description: "Talabalarni jalb qilish, reklama kampaniyalari, ta'lim xizmatlari bo'yicha shartnomalarni rasmiylashtirish va nazorat qilish bilan shug'ullanadi.",
+  //   description: "Talabalarni jalb qilish, reklama kampaniyalari, ta'lim xizmatlari bO‘yicha shartnomalarni rasmiylashtirish va nazorat qilish bilan shug'ullanadi.",
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
   //   address: '4-qavat, 401-xona',
@@ -172,8 +172,8 @@ const defaultDepartments = [
   // {
   //   id: 8,
   //   slug: 'talabalarga-xizmat',
-  //   name: "Talabalarga xizmat ko'rsatish bo'limi",
-  //   description: "Talabalar uchun hujjatlarni rasmiylashtirish, stipendiya, yotoqxona, maslahat va huquqiy yordam xizmatlarini ko'rsatadi.",
+  //   name: "Talabalarga xizmat kO‘rsatish bO‘limi",
+  //   description: "Talabalar uchun hujjatlarni rasmiylashtirish, stipendiya, yotoqxona, maslahat va huquqiy yordam xizmatlarini kO‘rsatadi.",
   //   email: 'info@sharqedu.uz',
   //   phone: '+998 79 222 07 00',
   //   address: '4-qavat, 410-xona',
@@ -205,7 +205,7 @@ const fetchDepartments = async () => {
     // Aks holda default ma'lumotlar qoladi
   } catch (error) {
     console.error('Ma\'lumotlarni yuklashda xatolik:', error);
-    // Xatolik bo'lsa ham default ma'lumotlar ko'rsatiladi
+    // Xatolik bO‘lsa ham default ma'lumotlar kO‘rsatiladi
   }
 };
 

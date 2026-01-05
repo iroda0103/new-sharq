@@ -16,7 +16,7 @@
                 <h3 class="leadership-info__fio">Tillayeva Maftuna</h3>
                 <div class="leadership-info__divider"></div>
                 <p class="leadership-info__text">
-                    Xotin-qizlar qo'mitasi raisi </p>
+                    Xotin-qizlar qO‘mitasi raisi </p>
 
                 <div class="leadership-info__bottom">
                     <div class="leadership-info__links">

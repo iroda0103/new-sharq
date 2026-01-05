@@ -32,7 +32,12 @@
                     <a href="https://www.youtube.com/@sharquniversiteti" aria-label="YouTube" target="_blank">
                         <font-awesome-icon :icon="['fab', 'youtube']" />
                     </a>
-                </div>                    <Hemis></Hemis>
+                </div>
+                <div class="header-portal-wrapper">
+                    <Hemis></Hemis>
+                    <ELibrary></ELibrary>
+                </div>
+
 
                 <button class="header__btn" @click="toggleMenu" aria-label="Toggle menu">
                     <span class="hamburger"></span>
@@ -50,7 +55,8 @@
                             <a class="nav__link" href="#" @click.prevent="toggleDropdown(index)">
                                 <span>{{ item.title }}</span>
 
-                               <span class="dropdown-icon"> <i v-if="item.children" class="fas fa-chevron-down"></i></span>
+                                <span class="dropdown-icon"> <i v-if="item.children"
+                                        class="fas fa-chevron-down"></i></span>
                             </a>
 
                             <!-- DROPDOWN -->
@@ -80,11 +86,11 @@
                             </ul>
                         </li>
 
-                        <li class="nav__item">
+                        <!-- <li class="nav__item">
                             <router-link to="/kelajakkaqadam" class="nav__link">
                                 Kelajakka qadam
                             </router-link>
-                        </li>
+                        </li> -->
                     </ul>
 
                 </nav>
@@ -98,6 +104,7 @@ import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
 import { menuItems } from "../../data/menuData"
 import Hemis from '../../utilits/ui/hemis.vue'
+import ELibrary from '../../utilits/ui/e-library.vue'
 
 const activeIndex = ref(null)
 
@@ -118,9 +125,9 @@ const toggleMenu = () => {
 }
 
 const toggleDropdown = (index) => {
-  if (window.innerWidth > 768) return
+    if (window.innerWidth > 768) return
 
-  activeIndex.value = activeIndex.value === index ? null : index
+    activeIndex.value = activeIndex.value === index ? null : index
 }
 
 /* SCROLL + ROUTE LOGIC */
@@ -154,6 +161,10 @@ onUnmounted(() => {
 })
 </script>
 <style scoped lang="scss">
+    .header-portal-wrapper{
+        display: flex;
+        gap: 20px;
+    }
 .header {
     position: fixed;
     width: 100%;
@@ -589,7 +600,11 @@ onUnmounted(() => {
         color: #ffffffc9;
         font-size: 14px;
     }
-
+@media (max-width:1100px) {
+    .header-portal-wrapper{
+        display: none;
+    }
+}
     @media (max-width: 852px) {
         .contact-info {
             gap: 15px;
@@ -604,7 +619,7 @@ onUnmounted(() => {
         }
 
         .logo__img {
-            height: 40px;
+            // height: 40px;
         }
 
         .contact-mail .contact-text {
@@ -669,7 +684,8 @@ onUnmounted(() => {
         }
 
         .logo__img {
-            height: 36px;
+            // height: 36px;
+            width: 150px;
         }
 
         .header-bottom {
@@ -830,9 +846,11 @@ onUnmounted(() => {
 .nav__item--has-dropdown:hover .dropdown-icon {
     transform: rotate(180deg);
 }
-.nav__item.active > .dropdown {
+
+.nav__item.active>.dropdown {
     max-height: 1000px;
 }
+
 .nav__item.active .dropdown-icon {
     transform: rotate(180deg);
 }

@@ -106,7 +106,7 @@
                             <label class="label">Hozirgi yashash manzili *</label>
                             <textarea v-model="form.currentAddress" class="textarea"
                                 :class="{ error: errors.currentAddress }"
-                                placeholder="Viloyat, tuman/shahar, ko'cha, uy raqami..." rows="3" required></textarea>
+                                placeholder="Viloyat, tuman/shahar, kO‘cha, uy raqami..." rows="3" required></textarea>
                             <div v-if="errors.currentAddress" class="error-message">{{ errors.currentAddress }}</div>
                         </div>
 
@@ -137,9 +137,9 @@
                             </div>
                         </div>
 
-                        <!-- Qo'shimcha ma'lumotlar -->
+                        <!-- QO‘shimcha ma'lumotlar -->
                         <div class="form-group">
-                            <label class="label">Qo'shimcha ma'lumotlar</label>
+                            <label class="label">QO‘shimcha ma'lumotlar</label>
                             <textarea v-model="form.additionalInfo" class="textarea"
                                 placeholder="Yotoqxonada qolish sabablaringiz, maxsus ehtiyojlaringiz haqida yozing..."
                                 rows="4"></textarea>
@@ -152,7 +152,7 @@
                                 <input type="checkbox" v-model="form.agreement" required>
                                 <span class="checkmark"></span>
                                 <span class="agreement-text">
-                                    Men barcha ma'lumotlarning to'g'riligini tasdiqlaymen va yotoqxona qoidalariga rioya
+                                    Men barcha ma'lumotlarning tO‘g'riligini tasdiqlaymen va yotoqxona qoidalariga rioya
                                     qilishga roziman *
                                 </span>
                             </label>
@@ -174,7 +174,7 @@
                     </form>
                 </div>
 
-                <!-- Qo'llanma bo'limi -->
+                <!-- QO‘llanma bO‘limi -->
                 <div class="info-section">
                     <div class="info-card">
                         <h3>
@@ -184,19 +184,19 @@
                         <ul>
                             <li>
                                 <i class="fas fa-check"></i>
-                                Barcha kerakli hujjatlarni to'g'ri formatda yuklang
+                                Barcha kerakli hujjatlarni tO‘g'ri formatda yuklang
                             </li>
                             <li>
                                 <i class="fas fa-check"></i>
-                                Telefon raqamingiz faol va ishlaydigan bo'lishi kerak
+                                Telefon raqamingiz faol va ishlaydigan bO‘lishi kerak
                             </li>
                             <li>
                                 <i class="fas fa-check"></i>
-                                Hujjatlar tiniq va aniq holatda bo'lishi shart
+                                Hujjatlar tiniq va aniq holatda bO‘lishi shart
                             </li>
                             <li>
                                 <i class="fas fa-check"></i>
-                                Yotoqxona joylashtirish ro'yxati shakllangach, hujjatlar saralanadi
+                                Yotoqxona joylashtirish rO‘yxati shakllangach, hujjatlar saralanadi
                             </li>
                         </ul>
                     </div>
@@ -206,7 +206,7 @@
                             <i class="fab fa-telegram"></i>
                             Bog'lanish
                         </h3>
-                        <p>Qo'shimcha savollar uchun:</p>
+                        <p>QO‘shimcha savollar uchun:</p>
                         <a href="https://t.me/sharq_qabul" target="_blank" class="telegram-btn">
                             <i class="fab fa-telegram-plane"></i>
                             @sharq_qabul
@@ -221,7 +221,7 @@
                         <div class="steps">
                             <div class="step" :class="{ active: currentStep >= 1, completed: currentStep > 1 }">
                                 <div class="step-number">1</div>
-                                <span>Ariza to'ldirish</span>
+                                <span>Ariza tO‘ldirish</span>
                             </div>
                             <div class="step" :class="{ active: currentStep >= 2, completed: currentStep > 2 }">
                                 <div class="step-number">2</div>
@@ -358,7 +358,7 @@
                     timestamp: new Date().toISOString()
                 }
 
-                // localStorage o'rniga session ma'lumotlaridan foydalanish
+                // localStorage O‘rniga session ma'lumotlaridan foydalanish
                 window.dormitoryDraft = draftData
                 alert('Qoralama saqlandi!')
             }

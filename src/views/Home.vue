@@ -3,9 +3,10 @@
         <Hero></Hero>
         <Ticker></Ticker>
         <!-- <About></About> -->
-        <TimelineSection></TimelineSection>
 
         <Testimonials></Testimonials>
+        <TimelineSection></TimelineSection>
+
         <!-- <Stats></Stats> -->
          <News></News>
          <CampusLife></CampusLife>

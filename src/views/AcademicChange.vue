@@ -1,6 +1,6 @@
 <template>
     <div class="academic-calendar">
-        <p class="page-title academic-title">O'qishni ko'chirish</p>
+        <p class="page-title academic-title">O‘qishni kO‘chirish</p>
 
         <div class="pdf-viewer">
             <iframe

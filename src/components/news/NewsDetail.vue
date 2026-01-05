@@ -49,75 +49,102 @@ import Banner from '../banner/Banner.vue'
 const route = useRoute()
 const newsData = ref([
     {
-        id: 1,
-        title: "🎉 YANGI YIL KECHASI — MASQUARADE BALL! 🎭",
-        image: "/img/blog/news.png",
-        date: "2025-12-14",
-        views: 543,
+          id: 1,
+        title: "📣  SHARQ UNIVERSITETI TALABALARI DIQQATIGA!",
+        image: "/img/blog/winter-school.jpg",
+        date: "2026-01-02",
+        views: 308,
         featured: true,
-        content: `Sharq Universiteti barcha talabalarni unutilmas Yangi yil bayramiga taklif etadi!
+        content: `📣  SHARQ UNIVERSITETI TALABALARI DIQQATIGA!
 
-Dress code: Black
-Sana: 24-dekabr
-Vaqt: 12:00
+🇺🇿🇨🇿 SHARQ University va Prague Institute of Management and Technology (PIMT) hamkorligida Chexiyada o‘tkaziladigan Winter School in Prague dasturiga arizalar qabul qilinmoqda.
 
-Musiqa, raqs, taomlar va ichimliklar, foto zona hamda sovg‘alar sizni kutmoqda.
+Davomiyligi: 1 hafta
+Joy: Praga 🇨🇿 + Karlovi Vari 🇨🇿 + Drezden 🇩🇪
+Natija: Xalqaro sertifikat (PIMT)
 
-Murojaat uchun: @Samadovaa_7`
+✨ Dastur imkoniyatlari:
+➤ Yevropa ta’lim tizimi bilan tanishuv;
+➤ Iqtisodiyot, karyera va startaplar bo‘yicha treninglar;
+➤ AI va ta’limdagi innovatsiyalar;
+➤ Xalqaro networking va madaniy dasturlar;
+➤ Ekskursiyalar va sayohatlar.
+
+👉 BATAFSIL MA’LUMOT OLISH UCHUN 👈
+
+Ro‘yxatdan o‘tish va bog‘lanish uchun:
+📞 +998 93 269 04 38
+🌐 info@pimt.cz / www.pimt.cz
+
+⏳ Joylar cheklangan!
+Xalqaro tajriba, sayohat va sertifikat — barchasi bitta dasturda!
+`
 
     },
     {
         id: 2,
-        title: `Sharq Universiteti hamda Prague Institute of Management and Technology universiteti o‘rtasida hamkorlik bo‘yicha memorandum imzolandi.`,
-        image: "/img/blog/praga.png",
-        date: "2025-12-11",
-        views: 591,
+        title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
+        image: "/img/blog/navoiy.jpg",
+        date: "2026-01-01",
+        views: 401,
         featured: true,
-        content: `Mazkur memorandum professor-o‘qituvchilar malakasini oshirish, talaba almashinuvi, qisqa o‘quv kurslari, qo‘shma ilmiy tadqiqotlar va xalqaro ilmiy-amaliy tadbirlarni tashkil etish kabi yo‘nalishlarda hamkorlikni rivojlantirishni nazarda tutadi.
+        content: `📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.
 
-Shuningdek, zamonaviy ta’lim yo‘nalishlari bo‘yicha o‘quv dasturlarini birgalikda takomillashtirish hamda ushbu sohada mutaxassislar ishtirokida mahorat darslari tashkil etish bo‘yicha kelishuvga erishildi.`
+Tanlovda universitetning barcha talabalari yakka tartibda ishtirok etishlari mumkin.
+
+🔹 Tanlov shartlari:
+■ Alisher Navoiy shaxsiyati va ijodiga ta’rif berish.
+■ Alisher Navoiyning g‘azallaridan 5 ta, ruboiylaridan 5 ta yoddan aytib berish.
+■ Alisher Navoiyning “Xamsa” (Kitob nashriyoti: “Yoshlar matbuoti”, 2023-yil) asari yuzasidan qisqacha sharh va savol-javob.
+
+📅 O‘tkazilish sanasi: 05.02.2026-yil
+
+🏆 G‘oliblarni taqdirlash:
+➤ 1-o‘rin: 1 000 000 so‘m pul mukofoti
+➤ 2- va 3-o‘rinlar: qimmatbaho sovg‘alar
+
+Murojaat uchun: 91-333-56-01`
 
     },
     {
         id: 3,
-        title: ' “Sharq kitobxonlari” tanlovi',
-        image: "/img/blog/kitobxon3.png",
-        date: "2025-12-3",
-        views: 807,
+        title: "🎉 Kirib kelayotgan Yangi 2026-yilingiz bilan!",
+        image: "/img/blog/new-year.png",
+        date: "2026-01-01",
+        views: 401,
         featured: true,
-        content: `Filologiya yo‘nalishi talabalari o‘rtasida o‘tkaziladigan mazkur tanlovning 3-bosqichi: 
-O‘tkir Hoshimov — “Dunyoning ishlari” asari asosida
+        content: `🎉 Kirib kelayotgan Yangi 2026-yilingiz bilan!
 
-➛ Sana: 4-dekabr 2025-yil
-➛ Vaqt: 14:00
-➛  Joy: Universitet kutubxonasi`
+Aziz talabalar va hurmatli professor-o‘qituvchilar! 
+Sizlarni Yangi 2026-yil bilan chin qalbimizdan muborakbod etamiz. 
+
+2026-yil yurtimizda tinchlik va taraqqiyot, har bir inson hayotida esa sog‘lik, baxt va muvaffaqiyatlar yili bo‘lishini tilaymiz. Birgalikdagi sa’y-harakatlarimiz ilm-fan ravnaqi va jamiyatimizning farovon kelajagiga munosib hissa bo‘lsin.
+
+✨ Yangi 2026-yil Sharq universiteti uchun yangi zafarlar yili bo‘lsin!`
 
     },
     {
-        id: 4,
-        title: '📚 Sharq Universiteti kutubxonasida “Tanishing: yangi adabiyotlar” nomli kitoblar taqdimoti bo‘lib o‘tdii',
-        image: "/img/blog/kitob.png",
-        date: "2025-12-2",
-        views: 807,
+         id: 4,
+        title: "🎉 YANGI YIL KECHASI — MASQUARADE BALL! 🎭",
+        image: "/img/blog/news.png",
+        date: "2025-12-24",
+        views: 543,
         featured: true,
-        content: `Tadbir davomida talabalarga zamonaviy va ilmiy adabiyotlar tanishtirilib, mutolaa madaniyatini rivojlantirishga alohida e’tibor qaratildi`
+        content: `✨ Bayram davomida talabalar uchun qiziqarli, interaktiv va ko‘ngilochar o‘yinlar o‘tkazildi.`
 
     },
     {
         id: 5,
-        title: 'Sharq universitetida Talabalar ligasiga START berildi! Guruhlar o‘rtasida futbol musobaqasi bo‘lib o‘tadi.',
-        image: "/img/blog/futbol.png",
-        date: "2025-12-2",
-        views: 569,
+        title: "📚 Sharq Universitetining hamkorlik aloqalari kengaymoqda!",
+        image: "/img/blog/kutubxona-hamkorlik.jpg",
+        date: "2025-12-25",
+        views: 611,
         featured: true,
-        content: `🎓 Sharq universitetida Talabalar ligasiga START berildi! Guruhlar o‘rtasida futbol musobaqasi bo‘lib o‘tadi.
+        content: `📚 Sharq Universitetining hamkorlik aloqalari kengaymoqda!
 
-➤ Sana: 1-dekabr
-➤ Vaqt: 15:00
+Sharq Universiteti va Abdulla Qodiriy nomidagi Navoiy viloyat axborot-kutubxona markazi o‘rtasida hamkorlik memorandumi imzolandi.
 
- 🏆 Barcha talabalarni faol ishtirok etishga va o‘z guruhlari sha’nini himoya qilishga chaqiramiz! 
-
-📌 Savol va takliflar: Sharq universiteti Yoshlar yetakchisiga murojaat qiling @Usmon_Abduqayimov`
+✨ Mazkur memorandum asosida talaba va o‘qituvchilar uchun kitobxonlikni rivojlantirishga qaratilgan ko‘rik-tanlovlar, ijodiy uchrashuvlar va davra suhbatlari, yangi kitoblar bilan muntazam tanishtirish, shuningdek “Ochiq eshiklar kuni” va “Kitob yarmarkasi” kabi tadbirlar tashkil etilishi ko‘zda tutilgan.`
 
     },
     {
@@ -226,7 +253,8 @@ const formatDate = (date) => {
 }
 
 .news-main-image {
-    width: 100%;
+    // width: 100%;
+    height: 300px;
     border-radius: 12px;
     margin-bottom: 32px;
 }
@@ -236,7 +264,7 @@ const formatDate = (date) => {
     line-height: 1.8;
     color: #333;
     margin-bottom: 32px;
-
+white-space: pre-line;
     :deep(p) {
         margin-bottom: 16px;
     }

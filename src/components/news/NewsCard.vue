@@ -55,7 +55,7 @@ const formatDate = (date) => {
 
     &.featured {
         .news-image {
-            height: 420px;
+            height: 180px;
         }
 
         .news-title {
@@ -73,7 +73,7 @@ const formatDate = (date) => {
 
 .news-image {
     width: 100%;
-    height: 180px;
+    height: 200px;
     overflow: hidden;
     background: #e8eef5;
 
@@ -125,7 +125,7 @@ const formatDate = (date) => {
 @media (max-width: 768px) {
     .news-card.featured {
         .news-image {
-            height: 200px;
+            height: 220px;
         }
 
         .news-title {

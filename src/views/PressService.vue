@@ -76,7 +76,7 @@
             <div class="page-block">
                 <h3 class="page-block__subtitle">Jamoa tarkibi:</h3>
                 <p>Sharq Universiteti Media bo‘limida Matbuot kotibi (Media Menejer) faoliyat olib boradi. Jamoada
-                    shuningdek 1 nafar grafik dizayner va montajyor hamda turli yo‘nalishlardan volontyor mobilograf va
+                    shuningdek 1 nafar grafik dizayner va montajchi hamda turli yo‘nalishlardan volontyor mobilograf va
                     fotograflar mavjud bo‘lib, ular media loyihalarni ishlab chiqish va amalga oshirishda faol ishtirok
                     etadi.</p>
             </div>

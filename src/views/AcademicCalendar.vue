@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <div class="academic-calendar">
         <p class="page-title academic-title">Dars jadvali</p>
         <div class="pdf-viewer">
@@ -6,27 +6,47 @@
         </div>
     </div>
 
+</template> -->
+<template>
+  <div class="academic-calendar">
+    <p class="page-title academic-title">Dars jadvali</p>
+
+    <div class="pdf-viewer">
+      <iframe
+        src="/file/dars-jadval.pdf#toolbar=0&navpanes=0&scrollbar=0"
+        loading="lazy"
+      ></iframe>
+    </div>
+  </div>
 </template>
+    
+
 <style>
-/* .academic-title {
-    margin-bottom: 20px;
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-} */
+.academic-calendar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
 
 .academic-title {
-    /* display: inline-flex;
-    align-items: center; */
-    /* border-radius: 12px;
-    background-color: rgba(234, 238, 245, 1);
-    padding: 6px 17p;
-    max-width: 100%;
-    align-content: flex-start;
-    row-gap: 4px;
-    font-size: 16px;
-    justify-content: center;
-    margin-bottom: 10px;
-    font-weight: 600; */
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1a1a1a;
 }
+
+.pdf-viewer {
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  background: #fff;
+}
+
+.pdf-viewer iframe {
+  width: 100%;
+  height: 85vh;
+  border: none;
+}
+
 </style>

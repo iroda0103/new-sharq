@@ -3,7 +3,7 @@
         <div class="leadersheap-image">
             <div class="leadership-image__inner">
                 <!-- <img src="/img/person/sherzod_atamuradov.webp" alt=""> -->
-                <img src="/img/person/rector.jpg" alt="">
+                <img src="/img/person/sherzod_atamuradov.JPG" alt="">
             </div>
 
         </div>

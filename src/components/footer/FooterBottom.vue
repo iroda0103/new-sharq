@@ -20,7 +20,7 @@
             <h3 class="footer__title">Universitet</h3>
             <ul class="footer__list">
               <li><a href="#" class="footer__link">Biz haqimizda</a></li>
-              <li><a href="#" class="footer__link">Yo'nalishlar</a></li>
+              <li><a href="#" class="footer__link">Yo‘nalishlar</a></li>
               <li><a href="#" class="footer__link">Talabalar hayoti</a></li>
               <li><a href="#" class="footer__link">Yangiliklar</a></li>
             </ul>
@@ -30,7 +30,7 @@
             <h3 class="footer__title">Foydali</h3>
             <ul class="footer__list">
               <li><a href="#" class="footer__link">FAQ</a></li>
-              <li><a href="#" class="footer__link">Bog'lanish</a></li>
+              <li><a href="#" class="footer__link">Bog‘lanish</a></li>
               <li><a href="#" class="footer__link">Kirish tizimi</a></li>
             </ul>
           </div>

@@ -27,7 +27,7 @@ export default {
 <style scoped>
 .campus-360-viewer {
   width: 100%;
-  max-width: 1000px; /* optional, sayt layout ga qarab o'zgartiring */
+  max-width: 1000px; /* optional, sayt layout ga qarab O‘zgartiring */
   margin: 0 auto;
   border-radius: 8px;
   overflow: hidden;

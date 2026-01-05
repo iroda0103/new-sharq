@@ -2,7 +2,7 @@
   <section class="faq-section">
     <div class="container faq-container">
       <h2 class="title">Tez-tez Beriladigan Savollar</h2>
-      <!-- <p class="faq-subtitle">O'quv jarayoni, qabul va grantlar haqida eng ko'p so'raladigan savollarga javoblar</p> -->
+      <!-- <p class="faq-subtitle">O‘quv jarayoni, qabul va grantlar haqida eng ko‘p so‘raladigan savollarga javoblar</p> -->
 
       <div class="faq-accordion">
         <div v-for="(item, index) in faqItems" :key="index" class="faq-item"
@@ -33,12 +33,12 @@ export default {
       activeIndex: null,
       faqItems: [
         {
-          question: "Qabul qilish uchun hujjatlar to'plami qanday?",
+          question: "Qabul qilish uchun hujjatlar to‘plami qanday?",
           answer: "Qabul uchun talab etiladigan asosiy hujjatlar: diplom yoki attestat nusxasi, passport nusxasi, 3x4 rasm (6 ta), ariza topshirish",
           link: "https://t.me/sharq_qabul"
         },
         {
-          question: "Grant asosida o'qish imkoniyati bormi?",
+          question: "Grant asosida o‘qish imkoniyati bormi?",
           answer: `Ha, universitetimizda iqtidorli abituriyentlar uchun grantlar mavjud.Xususan:
           Maktabni oltin medal bilan tugatganlarga;
           IELTS sertifikati egalariga;
@@ -47,8 +47,8 @@ export default {
           link: "https://t.me/sharquniversiteti/1292"
         },
         {
-          question: "O'qishni sirtqi shaklda olib borish mumkinmi?",
-          answer: "Ha, bizning universitetda bakalavr yo'nalishida sirtqi ta'lim shakli mavjud. Darslar qulay o`quv grafigi asosida o`tiladi.",
+          question: "O‘qishni sirtqi shaklda olib borish mumkinmi?",
+          answer: "2025-yil 5-maydagi Oʻzbekiston Respublikasi Prezidentining 76-sonli qarorining IV boʻlimi 7-“a” bandiga muvofiq, 2025–2026 oʻquv yilidan boshlab sirtqi taʼlim shakliga yangi qabul jarayoni toʻxtatilgan. Mazkur taʼlim shakliga talabalarni faqatgina oʻqishni koʻchirish tartibi asosida qabul qilishga ruxsat etiladi",
           link: "/"
         },
         {
@@ -64,7 +64,7 @@ To‘lovni o‘qishni tugatgach 6 oy ichida boshlaysiz 7 yilgacha bo‘lib to‘
           link: 'https://t.me/sharquniversiteti/1282'
         },
         {
-          question: "Universitetga qanday ishga kirish mumkin?",
+          question: "Universitetda vakansiyalar mavjudmi?",
           answer: "https://t.me/HR_SharqUniversiteti_bot bot orqali hujjat topshirishlari mumkin",
           link: 'https://t.me/sharquniversiteti/1268'
         }

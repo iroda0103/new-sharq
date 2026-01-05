@@ -1,7 +1,7 @@
 <template>
   <section class="recent-news-section">
     <div class="container">
-      <h2 class="faq-title">So'nggi yangiliklar</h2>
+      <h2 class="faq-title">SO‘nggi yangiliklar</h2>
 
       <div class="news-list">
         <div v-for="(news, index) in newsList" :key="index" class="news-card">

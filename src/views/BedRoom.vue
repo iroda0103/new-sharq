@@ -107,7 +107,7 @@
             <div class="max-w-4xl mx-auto px-3 sm:px-4">
                 <div class="text-center mb-8 sm:mb-5">
                     <h2 class="text-2xl sm:text-2xl font-bold text-gray-800 mb-2 sm:mb-4 page-title">
-                        Ko'p beriladigan savollar
+                        KO‘p beriladigan savollar
                     </h2>
                 </div>
 
@@ -166,13 +166,13 @@ export default {
             ],
             faqs: [
                 {
-                    question: "Yotoqxonaga ro'yxatdan o'tish jarayoni qanday?",
-                    answer: "Yotoqxonaga ro'yxatdan o'tish uchun universitetning talabalar ishlari bo'limiga murojaat qilishingiz kerak. Talab etiladigan hujjatlar ro'yxati universitet veb-saytida joylashtirilgan.",
+                    question: "Yotoqxonaga rO‘yxatdan O‘tish jarayoni qanday?",
+                    answer: "Yotoqxonaga rO‘yxatdan O‘tish uchun universitetning talabalar ishlari bO‘limiga murojaat qilishingiz kerak. Talab etiladigan hujjatlar rO‘yxati universitet veb-saytida joylashtirilgan.",
                     active: false
                 },
                 {
-                    question: "Yotoqxona uchun to'lovni qanday amalga oshirish mumkin?",
-                    answer: "Yotoqxona to'lovlari bank orqali yoki universitetning moliya bo'limida naqd pulda amalga oshirilishi mumkin. To'lovlar har oyning 10-sanasigacha amalga oshirilishi kerak.",
+                    question: "Yotoqxona uchun tO‘lovni qanday amalga oshirish mumkin?",
+                    answer: "Yotoqxona tO‘lovlari bank orqali yoki universitetning moliya bO‘limida naqd pulda amalga oshirilishi mumkin. TO‘lovlar har oyning 10-sanasigacha amalga oshirilishi kerak.",
                     active: false
                 },
                 {
@@ -182,7 +182,7 @@ export default {
                 },
                 {
                     question: "Yotoqxonaga mehmonlarni qabul qilish mumkinmi?",
-                    answer: "Yotoqxonaga mehmonlarni qabul qilish mumkin, ammo ularni oldindan ro'yxatdan o'tkazish va ma'lum vaqt chegaralariga rioya qilish zarur.",
+                    answer: "Yotoqxonaga mehmonlarni qabul qilish mumkin, ammo ularni oldindan rO‘yxatdan O‘tkazish va ma'lum vaqt chegaralariga rioya qilish zarur.",
                     active: false
                 }
             ]

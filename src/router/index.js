@@ -39,6 +39,7 @@ import FutureStep from '../views/FutureStep.vue'
 import Direction from '../views/Direction.vue'
 import News from '../views/News.vue'
 import Admission from '../views/Admission.vue'
+import Vacancy from '../views/Vacancy.vue'
 
 // Layout componentlar
 import DefaultLayout from '../components/layout/DefaultLayout.vue'
@@ -53,7 +54,7 @@ const routes = [
       { path: '', name: 'HomePage', component: HomePage },
       { path: 'apply', name: 'ApplyFor', component: ApplyFor },
       { path: 'gallery', name: 'GalleryPage', component: GalleryPage },
-      { path: 'kelajakkaqadam', name: 'FutureStep', component: FutureStep },
+      // { path: 'kelajakkaqadam', name: 'FutureStep', component: FutureStep },
       { path: 'admission', name: 'Admission', component: Admission },
 
       // Boshqa sidebarsiz sahifalar...
@@ -85,10 +86,11 @@ const routes = [
       { path: 'campus', name: 'Campus', component: Test },
       { path: 'gallery', name: 'Gallery', component: Gallery },
       { path: 'academic-calendar', name: 'AcademicCalendar', component: AcademicCalendar },
+      { path: 'kelajakkaqadam', name: 'FutureStep', component: FutureStep },
       { path: 'academic-change', name: 'AcademicChange', component: AcademicChange },
       { path: 'payment', name: 'Payment', component: Payment },
       { path: 'press-service', name: 'PressService', component: PressService },
-      { path: 'activity', name: 'Activity', component: Activity },
+      // { path: 'activity', name: 'Activity', component: Activity },
       { path: 'club', name: 'Club', component: Club },
       { path: 'department/staffs', name: 'Staff', component: Staffs },
       { path: 'activity/tutoring', name: 'Tyutor', component: Tyutor },
@@ -101,6 +103,7 @@ const routes = [
 
       { path: 'test-staff', name: 'TestStaff', component: TestStaff },
       { path: 'direction/:id', name: 'Direction', component: Direction },
+      { path: 'vacancy', name: 'Vacancy', component: Vacancy },
 
 
     ]

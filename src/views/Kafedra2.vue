@@ -1,6 +1,6 @@
 <template>
   <div class="departments">
-    <!-- Kafedralar ro'yxati -->
+    <!-- Kafedralar rO‘yxati -->
     <aside class="departments__sidebar">
       <h2 class="departments__sidebar-title">Kafedralar</h2>
       <ul class="departments__list">
@@ -82,7 +82,7 @@
               <div class="department__team">
                 <div v-for="(member, index) in selectedDepartment.teamMembers" :key="index" class="department__member">
 
-                  <img loading="lazy"src="../../public/img/person/sherzod_atamuradov.jpg" :alt="member.name" class="department__member-photo">
+                  <img loading="lazy"src="../../public/img/person/sherzod_atamuradov.JPG" :alt="member.name" class="department__member-photo">
                   <div class="department__member-info">
                     <h4 class="department__member-name">{{ member.name }}</h4>
                     <p class="department__member-position">{{ member.position }}</p>
@@ -99,7 +99,7 @@
                 <path d="M10 19C14.9706 19 19 14.9706 19 10C19 5.02944 14.9706 1 10 1C5.02944 1 1 5.02944 1 10C1 14.9706 5.02944 19 10 19Z" stroke="#004AAD" stroke-width="1.5" stroke-linejoin="round"/>
                 <path d="M10 5V10L13 13" stroke="#004AAD" stroke-width="1.5" stroke-linejoin="round"/>
               </svg>
-              Ta'lim yo'nalishlari
+              Ta'lim yo‘nalishlari
             </h3>
             <div class="department__section-content">
               <p>{{ selectedDepartment.programs }}</p>
@@ -248,7 +248,7 @@
           <path d="M24 16V24L30 28" stroke="#004AAD" stroke-width="2" stroke-linejoin="round"/>
         </svg>
         <h3 class="department__empty-title">Kafedrani tanlang</h3>
-        <p class="department__empty-text">Chap tomondagi ro'yxatdan kafedralardan birini tanlang yoki qidiruvdan foydalaning</p>
+        <p class="department__empty-text">Chap tomondagi rO‘yxatdan kafedralardan birini tanlang yoki qidiruvdan foydalaning</p>
       </div>
     </main>
   </div>
@@ -261,12 +261,12 @@ const departments = [
   {
     slug: "iqtisod",
     name: "Iqtisodiyot va menejment kafedrasi",
-    description: "Zamonaviy iqtisodiy bilimlar va boshqaruv texnologiyalarini o'rgatuvchi yetakchi kafedra",
+    description: "Zamonaviy iqtisodiy bilimlar va boshqaruv texnologiyalarini O‘rgatuvchi yetakchi kafedra",
     motto: "Yaxshi boshqaruv — taraqqiyot garovi",
-    about: "Kafedra 2001-yilda tashkil etilgan bo'lib, iqtisodiyot, menejment va moliyaviy tahlil sohalarida faoliyat yuritadi. Bizning kafedramizda 10 dan ortiq professor-o'qituvchilar faoliyat ko'rsatadi, jumladan 2 nafar fan doktori, 4 nafar fan nomzodi. Kafedramizda zamonaviy ta'lim texnologiyalari joriy etilgan bo'lib, talabalar amaliy ko'nikmalarga ega bo'lishlari uchun barcha shart-sharoitlar yaratilgan.",
-    team: "Kafedramizda yuqori malakali professor-o'qituvchilar faoliyat ko'rsatadi. Har bir o'qituvchimiz o'z sohasining yetakchi mutaxassisi hisoblanadi va xalqaro miqyosdagi ilmiy ishlar olib boradi.",
-    programs: "Kafedramiz bakalavriat, magistratura va doktorantura bosqichlarida ta'lim beradi. Asosiy yo'nalishlar: Iqtisodiyot (bakalavr), Menejment (bakalavr), Moliya (magistratura), Biznes boshqaruvi (DBA).",
-    research: "Kafedramiz bozor iqtisodiyoti, investitsiya tahlili, innovatsion menejment yo'nalishlarida ilmiy izlanishlar olib boradi. Har yili 50 dan ortiq ilmiy maqolalar nashr etiladi, xalqaro konferensiyalarda ishtirok etiladi.",
+    about: "Kafedra 2001-yilda tashkil etilgan bo‘lib, iqtisodiyot, menejment va moliyaviy tahlil sohalarida faoliyat yuritadi. Bizning kafedramizda 10 dan ortiq professor-O‘qituvchilar faoliyat kO‘rsatadi, jumladan 2 nafar fan doktori, 4 nafar fan nomzodi. Kafedramizda zamonaviy ta'lim texnologiyalari joriy etilgan bo‘lib, talabalar amaliy kO‘nikmalarga ega bo‘lishlari uchun barcha shart-sharoitlar yaratilgan.",
+    team: "Kafedramizda yuqori malakali professor-O‘qituvchilar faoliyat kO‘rsatadi. Har bir o‘qituvchimiz O‘z sohasining yetakchi mutaxassisi hisoblanadi va xalqaro miqyosdagi ilmiy ishlar olib boradi.",
+    programs: "Kafedramiz bakalavriat, magistratura va doktorantura bosqichlarida ta'lim beradi. Asosiy yo‘nalishlar: Iqtisodiyot (bakalavr), Menejment (bakalavr), Moliya (magistratura), Biznes boshqaruvi (DBA).",
+    research: "Kafedramiz bozor iqtisodiyoti, investitsiya tahlili, innovatsion menejment yo‘nalishlarida ilmiy izlanishlar olib boradi. Har yili 50 dan ortiq ilmiy maqolalar nashr etiladi, xalqaro konferensiyalarda ishtirok etiladi.",
     cooperation: "Kafedramiz Rossiya, Qozog'iston, Janubiy Koreya universitetlari bilan hamkorlikda loyihalar olib boradi. Erasmus+, Mevlana va boshqa xalqaro almashinuv dasturlari ishlab chiqilgan.",
     resources: "Talabalar uchun elektron darsliklar, statistik ma'lumotlar bazasi, treninglar tayyorlangan. Har bir talaba Moodle platformasidan foydalanish imkoniyatiga ega.",
     email: "iqtisod@universitet.uz",
@@ -299,7 +299,7 @@ const departments = [
     ],
     programList: [
       {
-        title: "Iqtisodiyot (tarmoqlar va sohalar bo'yicha)",
+        title: "Iqtisodiyot (tarmoqlar va sohalar bo‘yicha)",
         degree: "Bakalavr",
         duration: "4 yil",
         link: "#"
@@ -319,16 +319,16 @@ const departments = [
     ],
     researchProjects: [
       {
-        title: "O'zbekistonda yashil iqtisodiyotni rivojlantirish",
-        description: "Atrof-muhitni muhofaza qilish bilan iqtisodiy o'sishni uyg'unlashtirish mexanizmlari",
+        title: "O‘zbekistonda yashil iqtisodiyotni rivojlantirish",
+        description: "Atrof-muhitni muhofaza qilish bilan iqtisodiy O‘sishni uyg'unlashtirish mexanizmlari",
         year: "2022-2024",
         partners: "Toshkent davlat iqtisodiyot universiteti, Berlin iqtisodiyot maktabi"
       },
       {
         title: "Kichik biznes va tadbirkorlikni moliyalashtirish",
-        description: "Kichik va o'rta biznes subyektlariga moliyaviy xizmatlarni takomillashtirish",
+        description: "Kichik va O‘rta biznes subyektlariga moliyaviy xizmatlarni takomillashtirish",
         year: "2021-2023",
-        partners: "O'zbekiston Respublikasi Moliya vazirligi"
+        partners: "O‘zbekiston Respublikasi Moliya vazirligi"
       }
     ],
     partnerList: [
@@ -354,7 +354,7 @@ const departments = [
         link: "#"
       },
       {
-        title: "O'quv qo'llanmalar",
+        title: "O‘quv qo‘llanmalar",
         link: "#"
       },
       {
@@ -383,13 +383,13 @@ const departments = [
   },
   {
     slug: "filologiya",
-    name: "Filologiya va tillarni o'qitish kafedrasi",
-    description: "Chet tillarini chuqur o'rgatish, til va adabiyot bo'yicha tadqiqot olib boruvchi kafedra",
+    name: "Filologiya va tillarni o‘qitish kafedrasi",
+    description: "Chet tillarini chuqur O‘rgatish, til va adabiyot bo‘yicha tadqiqot olib boruvchi kafedra",
     motto: "Tilni bilgan — dunyoni biladi",
-    about: "Kafedra 1998-yilda tashkil etilgan bo'lib, ingliz, rus va boshqa tillar bo'yicha o'quv dasturlarni ishlab chiqadi. Kafedramizda 15 nafar pedagog, 3 nafar fan nomzodi, 2 nafar chet ellik mutaxassis faoliyat ko'rsatadi.",
-    team: "Kafedramiz tarkibida turli tillar bo'yicha mutaxassislar ishlaydi. Har bir o'qituvchimiz xalqaro sertifikatlarga ega bo'lib, zamonaviy pedagogik usullardan foydalanadi.",
-    programs: "Filologiya, Chet tili o'qitish (ingliz), Rus tili va adabiyoti, Sharq tillari kabi yo'nalishlarda ta'lim beriladi.",
-    research: "Tilshunoslik, tarjima nazariyasi, adabiyotshunoslik yo'nalishlarida ilmiy izlanishlar olib boriladi. Har yili xalqaro konferensiyalar tashkil etiladi.",
+    about: "Kafedra 1998-yilda tashkil etilgan bo‘lib, ingliz, rus va boshqa tillar bo‘yicha o‘quv dasturlarni ishlab chiqadi. Kafedramizda 15 nafar pedagog, 3 nafar fan nomzodi, 2 nafar chet ellik mutaxassis faoliyat kO‘rsatadi.",
+    team: "Kafedramiz tarkibida turli tillar bo‘yicha mutaxassislar ishlaydi. Har bir o‘qituvchimiz xalqaro sertifikatlarga ega bo‘lib, zamonaviy pedagogik usullardan foydalanadi.",
+    programs: "Filologiya, Chet tili o‘qitish (ingliz), Rus tili va adabiyoti, Sharq tillari kabi yO‘nalishlarda ta'lim beriladi.",
+    research: "Tilshunoslik, tarjima nazariyasi, adabiyotshunoslik yo‘nalishlarida ilmiy izlanishlar olib boriladi. Har yili xalqaro konferensiyalar tashkil etiladi.",
     cooperation: "Britaniya Kengashi, Goethe Instituti, Fransuz madaniyat markazi bilan loyihalar olib boriladi.",
     resources: "Talabalar uchun audio-video darsliklar, interaktiv mashqlar, test banklar tayyorlangan. Til laboratoriyalari mavjud.",
     email: "filologiya@universitet.uz",
@@ -422,7 +422,7 @@ const departments = [
         link: "#"
       },
       {
-        title: "Chet tillarini o'qitish metodikasi",
+        title: "Chet tillarini o‘qitish metodikasi",
         degree: "Magistr",
         duration: "2 yil",
         link: "#"
@@ -430,8 +430,8 @@ const departments = [
     ],
     researchProjects: [
       {
-        title: "Zamonaviy til o'qitish metodlari",
-        description: "Ingliz tilini chet til sifatida o'qitishning innovatsion usullari",
+        title: "Zamonaviy til o‘qitish metodlari",
+        description: "Ingliz tilini chet til sifatida o‘qitishning innovatsion usullari",
         year: "2021-2023",
         partners: "Britaniya Kengashi"
       }
@@ -454,7 +454,7 @@ const departments = [
         link: "#"
       },
       {
-        title: "Grammatika qo'llanmalari",
+        title: "Grammatika qo‘llanmalari",
         link: "#"
       }
     ],

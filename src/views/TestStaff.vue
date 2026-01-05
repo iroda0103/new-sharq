@@ -12,7 +12,7 @@ import Staffs from './Staffs.vue';
                 </li>
             <li class="tab-item">
                 <button class="tab-item__btn" data-bs-toggle="pill" data-bs-target="#tab-535" aria-selected="false"
-                    role="tab" tabindex="-1">Bo'lim tarkibi</button>
+                    role="tab" tabindex="-1">BO‘lim tarkibi</button>
             </li>
         </ul>
         <div class="page-block">

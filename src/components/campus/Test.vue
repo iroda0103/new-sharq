@@ -3,7 +3,7 @@
                 <div class="">
                         <div class=" campus-content">
                                 <div class="page-block">
-                                        <h2 class="page-title">Virtual Ko'rinish</h2>
+                                        <h2 class="page-title">Virtual Ko‘rinish</h2>
 
                                         <iframe id="tour-embedded" name="Sharq_1_qavat" :src="tourUrl" frameborder="0"
                                                 width="100%" height="400px" scrolling="no" allowvr="yes"

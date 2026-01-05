@@ -6,7 +6,7 @@
             <div class="news-header">
                 <h2>Universitet <span>Yangiliklari</span></h2>
                 <router-link to="/news" class="see-more">
-                    ko'proq ko'rish <i class="fas fa-chevron-right"></i>
+                    ko‘proq ko‘rish <i class="fas fa-chevron-right"></i>
                 </router-link>
             </div>
 
@@ -32,45 +32,80 @@ const props = defineProps({
 })
 
 const newsData = ref([
+     
     {
           id: 1,
+        title: "📣  SHARQ UNIVERSITETI TALABALARI DIQQATIGA!",
+        image: "/img/blog/winter-school.jpg",
+        date: "2026-01-02",
+        views: 308,
+        featured: true
+    },
+       {
+          id: 2,
+        title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
+        image: "/img/blog/navoiy.jpg",
+        date: "2026-01-01",
+        views: 401,
+        featured: true
+    },
+  
+    {
+          id: 3,
+        title: "🎉 Kirib kelayotgan Yangi 2026-yilingiz bilan!",
+        image: "/img/blog/new-year.png",
+        date: "2026-01-01",
+        views: 401,
+        featured: true
+    },
+   {
+          id: 4,
         title: "🎉 YANGI YIL KECHASI — MASQUARADE BALL! 🎭",
         image: "/img/blog/news.png",
-        date: "2025-12-14",
+        date: "2025-12-24",
         views: 543,
         featured: true
     },
+    //  {
+    //     id: 3,
+    //     title: ' “Sharq kitobxonlari” tanlovi',
+    //     image: "/img/blog/kitobxon3.png",
+    //     date: "2025-12-3",
+    //     views: 807
+    // },
+    //     {
+    //     id: 4,
+    //     title: '📚 Sharq Universiteti kutubxonasida “Tanishing: yangi adabiyotlar” nomli kitoblar taqdimoti bo‘lib o‘tdii',
+    //     image: "/img/blog/kitob.png",
+    //     date: "2025-12-2",
+    //     views: 807
+    // },
+    //       {
+    //     id: 5,
+    //     title: 'Sharq universitetida Talabalar ligasiga START berildi! Guruhlar o‘rtasida futbol musobaqasi bo‘lib o‘tadi.',
+    //     image: "/img/blog/futbol.png",
+    //     date: "2025-12-2",
+    //     views: 569
+    // },
+    
       {
-          id: 2,
+          id: 5,
+        title: "📚 Sharq Universitetining hamkorlik aloqalari kengaymoqda!",
+        image: "/img/blog/kutubxona-hamkorlik.jpg",
+        date: "2025-12-25",
+        views: 611,
+        featured: true
+    },
+       {
+          id: 6,
         title: `Sharq Universiteti hamda Prague Institute of Management and Technology universiteti o‘rtasida hamkorlik bo‘yicha memorandum imzolandi.`,
         image: "/img/blog/praga.png",
         date: "2025-12-11",
         views: 591,
         featured: true
     },
-     {
-        id: 3,
-        title: ' “Sharq kitobxonlari” tanlovi',
-        image: "/img/blog/kitobxon3.png",
-        date: "2025-12-3",
-        views: 807
-    },
-        {
-        id: 4,
-        title: '📚 Sharq Universiteti kutubxonasida “Tanishing: yangi adabiyotlar” nomli kitoblar taqdimoti bo‘lib o‘tdii',
-        image: "/img/blog/kitob.png",
-        date: "2025-12-2",
-        views: 807
-    },
-          {
-        id: 5,
-        title: 'Sharq universitetida Talabalar ligasiga START berildi! Guruhlar o‘rtasida futbol musobaqasi bo‘lib o‘tadi.',
-        image: "/img/blog/futbol.png",
-        date: "2025-12-2",
-        views: 569
-    },
     {
-        id: 6,
+        id: 7,
         title: "🇺🇿 Yurt bayrog‘i — milliy g‘urur, tinchlik va hamjihatlik timsoli.",
         image: "/img/blog/flag.jpg",
         date: "2025-11-18",
@@ -78,14 +113,14 @@ const newsData = ref([
         featured: true
     },
     {
-        id: 7,
+        id: 8,
         title: ' “Sharq kitobxonlari” tanlovi',
         image: "/img/blog/reader_competetion.jpg",
         date: "2025-11-13",
         views: 507
     },
     {
-        id: 8,
+        id: 9,
         title: "🎭 Diqqat, ijodkor talabalar!",
         image: "/img/blog/kasting.jpg",
         date: "2025-11-13",
@@ -161,6 +196,14 @@ const featuredNews = computed(() => newsData.value.slice(0, props.limit))
     :deep(.news-card:first-child) {
         grid-column: 1 / 2;
         grid-row: 1 / 3;
+        .news-image img{
+            height: 100% !important;
+        }
+        .news-image{
+            height: auto;
+            width: auto;
+            max-height: 500px;
+        }
     }
 }
 

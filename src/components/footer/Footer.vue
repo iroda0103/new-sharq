@@ -29,7 +29,7 @@ import FooterBottom from './FooterBottom.vue';
             <h3 class="footer__title">Universitet</h3>
             <ul class="footer__list">
               <li><a href="#" class="footer__link">Biz haqimizda</a></li>
-              <li><a href="#" class="footer__link">Yo'nalishlar</a></li>
+              <li><a href="#" class="footer__link">YO‘nalishlar</a></li>
               <li><a href="#" class="footer__link">Talabalar hayoti</a></li>
               <li><a href="#" class="footer__link">Yangiliklar</a></li>
             </ul>

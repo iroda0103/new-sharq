@@ -74,14 +74,14 @@ export default {
         {
           name: 'PhD. Sherzod Atamurodov',
           position: 'Sharq universiteti rektori',
-          image: '/img/person/rector.jpg',
+          image: '/img/person/sherzod_atamuradov.JPG',
           email: 'atamuradov@sharqedu.uz',
           phone: '+998 (79) 222-77-07',
           reception: 'Du–Ju, 09:00–17:00'
         },
         {
           name: 'Qodirov Bektosh',
-          position: "Akademik faoliyat boshqarmasi boshlig'i",
+          position: "Akademik faoliyat boshqarmasi boshlig‘i",
           image: '/img/person/bektosh.jpg',
           email: 'info@sharqedu.uz',
           phone: '+998 (79) 222-07-00',
@@ -89,7 +89,7 @@ export default {
         },
          {
           name: 'Habibullayev Qahramon',
-          position: "Kasaba uyushmasi raisi",
+          position: "Nazorat va sifat monitoringi bo‘limi boshlig‘i",
           image: '/img/person/qahramon.jpg',
           email: 'markett22@mail.ru',
           phone: '+998 (79) 222-07-00',
@@ -225,7 +225,7 @@ export default {
 .leadership-image__inner img {
     width: 100%;
     height: 100%;
-    object-position: center;
+    /* object-position: right; */
     object-fit: cover;
     border-radius: 12px;
 }

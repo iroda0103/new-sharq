@@ -15,7 +15,7 @@ export const useDepartmentsStore = defineStore('departments', {
   }),
 
   getters: {
-    // Bo'limlar ro'yxati
+    // BO‘limlar rO‘yxati
     getDepartments: (state) => state.departments,
     
     // Yuklanish holati
@@ -24,15 +24,15 @@ export const useDepartmentsStore = defineStore('departments', {
     // Xatolik
     getError: (state) => state.error,
     
-    // Bo'lim soni
+    // BO‘lim soni
     getTotalCount: (state) => state.pageInfo.total,
     
-    // ID bo'yicha bo'limni topish
+    // ID bO‘yicha bO‘limni topish
     getDepartmentById: (state) => (id) => {
       return state.departments.find(dept => dept.id === id)
     },
 
-    // ID bo'yicha bo'lim xodimlarini topish
+    // ID bO‘yicha bO‘lim xodimlarini topish
     getEmployeesByDepartmentId: (state) => (departmentId) => {
       const department = state.departments.find(dept => dept.id === parseInt(departmentId))
       return department?.employees || []
@@ -40,7 +40,7 @@ export const useDepartmentsStore = defineStore('departments', {
   },
 
   actions: {
-    // Bo'limlarni yuklash
+    // BO‘limlarni yuklash
     async fetchDepartments(params = {}) {
       this.loading = true
       this.error = null
@@ -70,7 +70,7 @@ export const useDepartmentsStore = defineStore('departments', {
               phone: staff.phone,
               position: staff.position,
               type: staff.type,
-              photo: null // Agar kerak bo'lsa, backend dan rasm URL qo'shiladi
+              photo: null // Agar kerak bO‘lsa, backend dan rasm URL qO‘shiladi
             })) || []
           }))
           
@@ -87,7 +87,7 @@ export const useDepartmentsStore = defineStore('departments', {
       }
     },
 
-    // Bo'limni ID bo'yicha yuklash
+    // BO‘limni ID bO‘yicha yuklash
     async fetchDepartmentById(id) {
       this.loading = true
       this.error = null
@@ -119,11 +119,11 @@ export const useDepartmentsStore = defineStore('departments', {
               phone: staff.phone,
               position: staff.position,
               type: staff.type,
-              photo: null // Agar backend dan rasm URL kelsa, shu yerga qo'shiladi
+              photo: null // Agar backend dan rasm URL kelsa, shu yerga qO‘shiladi
             })) || []
           }
 
-          // Agar bu bo'lim allaqachon mavjud bo'lsa, yangilash
+          // Agar bu bO‘lim allaqachon mavjud bO‘lsa, yangilash
           const index = this.departments.findIndex(d => d.id === mappedDepartment.id)
           if (index !== -1) {
             this.departments[index] = mappedDepartment
@@ -144,7 +144,7 @@ export const useDepartmentsStore = defineStore('departments', {
       }
     },
 
-    // Bo'limlar ro'yxatini tozalash
+    // BO‘limlar rO‘yxatini tozalash
     clearDepartments() {
       this.departments = []
       this.error = null

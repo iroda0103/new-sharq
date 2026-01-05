@@ -6,7 +6,7 @@
       </div>
 
       <div v-else-if="!direction" class="flex justify-center items-center h-64">
-        <div class="text-xl text-gray-600">Yo'nalish topilmadi</div>
+        <div class="text-xl text-gray-600">Yo‘nalish topilmadi</div>
       </div>
 
       <div v-else>
@@ -35,7 +35,7 @@
                 {{ direction.degree }} - {{ direction.name }}
               </h1>
 
-              <!-- Yo'nalish haqida -->
+              <!-- YO‘nalish haqida -->
               <div v-if="activeTab === 'description'" class="prose max-w-none">
                 <p class="text-gray-700 leading-relaxed">{{ direction.description }}</p>
               </div>
@@ -90,7 +90,7 @@
                 </div>
               </div>
 
-              <!-- To'lov -->
+              <!-- TO‘lov -->
               <div v-if="activeTab === 'fees'" class="space-y-4">
                 <div class="border rounded-lg p-4">
                   <div class="font-semibold mb-1">Mahalliy talabalar</div>
@@ -99,7 +99,7 @@
                 <Payment></Payment>
               </div>
 
-              <!-- Ish o'rinlari -->
+              <!-- Ish O‘rinlari -->
               <div v-if="activeTab === 'jobs'" class="grid sm:grid-cols-2 gap-3">
                 <div
                   v-for="(job, i) in direction.jobs"
@@ -138,11 +138,11 @@ const activeTab = ref('description');
 const loading = ref(true);
 
 const tabs = [
-  { id: 'description', label: "Yo'nalish haqida" },
+  { id: 'description', label: "Yo‘nalish haqida" },
   { id: 'structure', label: 'Tuzilma' },
   { id: 'requirements', label: 'Talablar' },
-  { id: 'fees', label: "To'lov" },
-  { id: 'jobs', label: "Ish o'rinlari" }
+  { id: 'fees', label: "To‘lov" },
+  { id: 'jobs', label: "Ish o‘rinlari" }
 ];
 
 const loadDirection = () => {

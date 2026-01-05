@@ -48,7 +48,7 @@
         </div>
 
         <p class="text-gray-600 mb-4 leading-relaxed text-xs">
-          Talaba hayoti haqida ko'proq ma'lumot olishni xohlaysizmi? Bizning talaba elchilarimiz bilan suhbatlashing va savollaringizni bering.
+          Talaba hayoti haqida ko‘proq maʼlumot olishni xohlaysizmi? Bizning talaba elchilarimiz bilan suhbatlashing va savollaringizni bering.
         </p>
 
         <a

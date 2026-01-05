@@ -13,44 +13,44 @@
           <!-- <h2 class="page-title">SHARQ UNIVERSITETI</h2> -->
 
           <p>
-            <strong class="special">SHARQ UNIVERSITETI</strong> — zamonaviy ta'lim, ilmiy salohiyat 
-            va innovatsion yondashuv uyg'unligiga asoslangan xususiy oliy ta'lim 
+            <strong class="special">SHARQ UNIVERSITETI</strong> — zamonaviy taʼlim, ilmiy salohiyat 
+            va innovatsion yondashuv uyg'unligiga asoslangan xususiy oliy taʼlim 
             muassasasi. Universitet jamiyat va mehnat bozori ehtiyojlariga mos, 
-            raqobatbardosh va mas'uliyatli mutaxassislar tayyorlashni o'z oldiga 
-            ustuvor vazifa qilib qo'ygan.
+            raqobatbardosh va mas'uliyatli mutaxassislar tayyorlashni o‘z oldiga 
+            ustuvor vazifa qilib qo‘ygan.
           </p>
 
           <p>
             "SHARQ UNIVERSITY" MCHJ <strong>2024-yil 29-mart</strong> kuni Navoiy 
             shahar Davlat xizmatlari markazida <strong>№2424023-raqam</strong> bilan 
-            davlat ro'yxatidan o'tkazilgan. Universitet <strong class="special">O'zbekiston Respublikasi 
+            davlat ro‘yxatidan o‘tkazilgan. Universitet <strong class="special">O‘zbekiston Respublikasi 
             Prezidenti tomonidan 2024-yil 12-dekabrda qabul qilingan 
             PQ–430-sonli qaror</strong>ning 24-bandiga muvofiq tashkil etilgan.
           </p>
 
           <p>
-            Hozirda Sharq University Oliy ta'lim, fan va innovatsiyalar vazirligining 
+            Hozirda Sharq University Oliy taʼlim, fan va innovatsiyalar vazirligining 
             <strong>1009085-raqamli litsenziyasi</strong> asosida faoliyat yuritmoqda.
           </p>
         </div>
       </div>
 
-      <!-- QO'SHIMCHA BLOK -->
+      <!-- QO‘SHIMCHA BLOK -->
       <div class="text-wrapper">
         <h3 class="special"> Missiya va strategik maqsadlar</h3>
         <p>
-          Ilm-fan, ta'lim va innovatsiyalarni uyg'unlashtirgan holda, milliy va
+          Ilm-fan, taʼlim va innovatsiyalarni uyg'unlashtirgan holda, milliy va
           xalqaro talablariga javob beradigan yuqori malakali hamda raqobatbardosh 
-          mutaxassislar tayyorlash. Zamonaviy ta'lim yondashuvlari orqali xalqaro 
+          mutaxassislar tayyorlash. Zamonaviy taʼlim yondashuvlari orqali xalqaro 
           andozalarga mos kadrlar yetishtirish, akademik sifatni doimiy oshirib 
-          borish hamda istiqbolda yetakchi universitetlar qatoridan munosib o'rin 
+          borish hamda istiqbolda yetakchi universitetlar qatoridan munosib o‘rin 
           egallash.
         </p>
 
-        <h3 class="special"> Ta'lim yo'nalishlari (2025–2026 o'quv yili)</h3>
+        <h3 class="special"> Taʼlim yo‘nalishlari (2025–2026 o‘quv yili)</h3>
         <p>
           <strong>Axborot texnologiyalari va muhandislik:</strong><br>
-          • Sun'iy intellekt<br>
+          • Sunʼiy intellekt<br>
           • Kiberxavfsizlik injiniringi<br>
           • Dasturiy injiniring
         </p>
@@ -58,12 +58,12 @@
           <strong>Iqtisodiyot va biznes:</strong><br>
           • Iqtisodiyot<br>
           • Moliya va moliyaviy texnologiyalar<br>
-          • Biznesni boshqarish (tarmoqlar bo'yicha)<br>
-          • Marketing (tarmoqlar va sohalar bo'yicha)
+          • Biznesni boshqarish (tarmoqlar bo‘yicha)<br>
+          • Marketing (tarmoqlar va sohalar bo‘yicha)
         </p>
         <p>
-          <strong>Gumanitar yo'nalishlar:</strong><br>
-          • Filologiya va tillarni o'qitish (o'zbek, rus va ingliz tillari)<br>
+          <strong>Gumanitar yo‘nalishlar:</strong><br>
+          • Filologiya va tillarni o‘qitish (o‘zbek, rus va ingliz tillari)<br>
           • Psixologiya<br>
           • Tarix
         </p>
@@ -73,24 +73,24 @@
           Turkiya (Karabuk universiteti, Istanbul Tijorat universiteti, Anqara 
           Yildirim Boyazid universiteti, Istanbul Okan universiteti), Ozarbayjon 
           (Hazar universiteti), Indoneziya, Italiya va Shimoliy Kipr davlatlaridagi 
-          yetakchi universitetlar bilan <strong>2+2 ta'lim dasturlari</strong> 
-          yo'lga qo'yilgan. Talabalar almashinuvi, xorijiy professorlarni jalb 
-          etish hamda mahalliy o'qituvchilarning malakasini oshirish amalga 
+          yetakchi universitetlar bilan <strong>2+2 taʼlim dasturlari</strong> 
+          yo‘lga qo‘yilgan. Talabalar almashinuvi, xorijiy professorlarni jalb 
+          etish hamda mahalliy o‘qituvchilarning malakasini oshirish amalga 
           oshirilmoqda.
         </p>
 
         <h3 class="special"> Ilmiy-tadqiqot va innovatsiya</h3>
         <p>
-          Yosh tadqiqotchilarni qo'llab-quvvatlash, ilmiy izlanishlarni 
+          Yosh tadqiqotchilarni qo‘llab-quvvatlash, ilmiy izlanishlarni 
           rag'batlantirish va fan hamda amaliyot integratsiyasini kuchaytirish 
-          ustuvor yo'nalishlar hisoblanadi.
+          ustuvor yo‘nalishlar hisoblanadi.
         </p>
 
         <h3 class="page-block__subtitle special"> Rivojlanish strategiyasi</h3>
         <p>
-          5 yillik rivojlanish strategiyasi doirasida 2027–2028 o'quv yiliga 
-          qadar 8 000 nafar talabani qamrab olish imkoniyatiga ega bo'lgan 
-          <strong>12 qavatli o'quv binosi</strong> va zamonaviy talabalar 
+          5 yillik rivojlanish strategiyasi doirasida 2027–2028 o‘quv yiliga 
+          qadar 8 000 nafar talabani qamrab olish imkoniyatiga ega bo‘lgan 
+          <strong>12 qavatli o‘quv binosi</strong> va zamonaviy talabalar 
           yotoqxonasi qurib topshirilishi rejalashtirilgan.
         </p>
         <p>
@@ -102,7 +102,7 @@
         </p>
 
         <p class="history__slogan">
-          "Zamonaviy ta'lim, imkoniyat va qadriyatlar uyg'unligi"<br>
+          "Zamonaviy taʼlim, imkoniyat va qadriyatlar uyg'unligi"<br>
           <!-- ILM SHARQDAN BOSHLANADI! -->
         </p>
       </div>

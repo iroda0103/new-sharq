@@ -33,6 +33,9 @@
 </template>
 
 <style scoped>
+  .page-title{
+    font-size: 20px;
+  }
 .future-step {
   /* padding: 150px 0 300px; */
   padding: 0 20px;
@@ -45,7 +48,6 @@ background-image: url('/img/bg/image_copy.png');
   background-position: center;
   background-color: rgba(255, 255, 255, 0.877);
   background-blend-mode: overlay;
-  padding-top: 130px;
   padding-bottom: 80px;
   /* z-index: -100; */
 }

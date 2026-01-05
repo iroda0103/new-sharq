@@ -37,9 +37,9 @@
 
 <script setup>
 const stats = [
-  { icon: '👨‍🏫', number: '84%', label: "O'qituvchilarning ilmiy salohiyati" },
-  { icon: '🧑‍🎓', number: '15:1', label: "Har bir o'qituvchi uchun talaba" },
-  { icon: '🎓', number: '10+', label: "Zamonaviy yo'nalishlar" },
+  { icon: '👨‍🏫', number: '84%', label: "O‘qituvchilarning ilmiy salohiyati" },
+  { icon: '🧑‍🎓', number: '15:1', label: "Har bir O‘qituvchi uchun talaba" },
+  { icon: '🎓', number: '10+', label: "Zamonaviy yO‘nalishlar" },
   { icon: '💰', number: '1.5 mlrd. so\'m', label: 'Grantlar miqdori' }
 ];
 

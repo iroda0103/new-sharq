@@ -9,7 +9,7 @@
             <tr>
               <th class="px-4 py-3 text-left">#</th>
               <th class="px-4 py-3 text-left">Fan nomi</th>
-              <th class="px-4 py-3 text-left">O'qituvchi</th>
+              <th class="px-4 py-3 text-left">O‘qituvchi</th>
               <th class="px-4 py-3 text-left">Guruh</th>
               <th class="px-4 py-3 text-left">Xona</th>
               <th class="px-4 py-3 text-left">Kun</th>

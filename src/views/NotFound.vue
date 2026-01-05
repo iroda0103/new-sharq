@@ -4,7 +4,7 @@
       <h1 class="error-code">404</h1>
       <h2 class="message">Kechirasiz, sahifa topilmadi</h2>
       <p class="description">
-        Siz izlayotgan sahifa mavjud emas yoki ko‘chirilgan bo'lishi mumkin.
+        Siz izlayotgan sahifa mavjud emas yoki ko‘chirilgan bO‘lishi mumkin.
       </p>
       <router-link to="/" class="home-button">
         Bosh sahifaga qaytish

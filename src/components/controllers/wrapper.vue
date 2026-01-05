@@ -96,7 +96,7 @@ const currentPageConfig = computed(() => {
   }
 })
 
-// Yo'lni yangilash
+// YO‘lni yangilash
 const updatePath = () => {
   currentPath.value = window.location.pathname
 }

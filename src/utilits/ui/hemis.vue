@@ -48,7 +48,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .hemis-dropdown {
     position: relative;
     width: 160px;

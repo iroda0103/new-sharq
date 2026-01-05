@@ -4,13 +4,13 @@
         <div class="ticker__container">
             <div class="ticker__grid">
                 <div class="ticker__item">
-                    <span class="ticker__date">Har kuni</span>
+                    <span class="ticker__date">Har hafta Juma kunlari</span>
                     <span class="ticker__title">Ochiq eshiklar kuni</span>
-                    <a href="https://t.me/sharq_qabul" class="ticker__button">Ro'yxatdan o'tish</a>
+                    <a href="https://t.me/sharq_qabul" class="ticker__button">Ro‘yxatdan o‘tish</a>
                 </div>
                 <div class="ticker__item">
                     <span class="ticker__date">30-sentyabrgacha</span>
-                    <span class="ticker__title">Qabul-2025</span>
+                    <span class="ticker__title">Qabul-2026</span>
                     <a href="https://qabul.sharqedu.uz/" class="ticker__button">Ariza topshirish</a>
                 </div>
              

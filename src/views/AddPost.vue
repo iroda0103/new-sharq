@@ -30,7 +30,7 @@
 
           <!-- Media Upload -->
           <div class="form-group">
-            <label class="label">Media qo'shish</label>
+            <label class="label">Media qO‘shish</label>
             <div class="upload-area" @click="$refs.fileInput.click()">
               <input ref="fileInput" type="file" multiple accept="image/*,video/*" @change="handleFileUpload" hidden>
               <i class="fas fa-cloud-upload-alt"></i>

@@ -58,7 +58,7 @@
   }
 }
 
-/* Ta'lim yo'nalishlari kartlari uchun */
+/* Ta'lim yo‘nalishlari kartlari uchun */
 .directions-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -182,7 +182,7 @@
 <template>
   <section class="directions-page">
     <div class="">
-      <h2 class="page-title">Ta'lim yo'nalishlari</h2>
+      <h2 class="page-title">Taʼlim yo‘nalishlari</h2>
       <p class="page-subtitle">Zamonaviy kasblar va istiqbolli mutaxassisliklar</p>
 
       <div class="direction-filters">
@@ -251,7 +251,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "18,000,000 so'm/yil",
+          price: "18,000,000 sO‘m/yil",
           faculty: "texnika",
           type: "kunduzgi",
           link: "/direction/suniy-intellekt",
@@ -263,7 +263,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "18,000,000 so'm/yil",
+          price: "18,000,000 sO‘m/yil",
           faculty: "texnika",
           type: "kunduzgi",
           link: "/direction/kiberxavfsizlik",
@@ -275,7 +275,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "18,000,000 so'm/yil",
+          price: "18,000,000 sO‘m/yil",
           faculty: "texnika",
           type: "kunduzgi",
           link: "/direction/dasturiy-injiniring",
@@ -287,7 +287,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "15,000,000 so'm/yil",
+          price: "15,000,000 sO‘m/yil",
           faculty: "iqtisod",
           type: "kunduzgi",
           link: "/direction/iqtisodiyot",
@@ -299,7 +299,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "16,000,000 so'm/yil",
+          price: "16,000,000 sO‘m/yil",
           faculty: "iqtisod",
           type: "kunduzgi",
           link: "/direction/biznes",
@@ -311,7 +311,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "16,000,000 so'm/yil",
+          price: "16,000,000 sO‘m/yil",
           faculty: "iqtisod",
           type: "kunduzgi",
           link: "/direction/marketing",
@@ -323,7 +323,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "17,000,000 so'm/yil",
+          price: "17,000,000 sO‘m/yil",
           faculty: "iqtisod",
           type: "kunduzgi",
           link: "/direction/moliya",
@@ -335,7 +335,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "15,000,000 so'm/yil",
+          price: "15,000,000 sO‘m/yil",
           faculty: "gumanitar",
           type: "kunduzgi",
           link: "/direction/tarix",
@@ -347,7 +347,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "15,000,000 so'm/yil",
+          price: "15,000,000 sO‘m/yil",
           faculty: "gumanitar",
           type: "kunduzgi",
           link: "/direction/psixologiya",
@@ -359,7 +359,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "15,000,000 so'm/yil",
+          price: "15,000,000 sO‘m/yil",
           faculty: "gumanitar",
           type: "kunduzgi",
           link: "/direction/ozbek-tili",
@@ -371,7 +371,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "15,000,000 so'm/yil",
+          price: "15,000,000 sO‘m/yil",
           faculty: "gumanitar",
           type: "kunduzgi",
           link: "/direction/rus-tili",
@@ -383,7 +383,7 @@ export default {
           duration: "4 yil",
           credits: "240 kredit",
           semester: "Kuzgi semestr",
-          price: "15,000,000 so'm/yil",
+          price: "15,000,000 sO‘m/yil",
           faculty: "gumanitar",
           type: "kunduzgi",
           link: "/direction/ingliz-tili",
@@ -415,7 +415,7 @@ export default {
     },
   },
   created() {
-    // Sahifa yuklanganda query asosida selectlarni to'g'rilab qo'yamiz
+    // Sahifa yuklanganda query asosida selectlarni tO‘g'rilab qO‘yamiz
     const { faculty, type } = this.$route.query;
     if (faculty) this.selectedFaculty = faculty;
     if (type) this.selectedType = type;

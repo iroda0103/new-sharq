@@ -21,7 +21,7 @@
         <input
           :value="searchQuery"
           @input="$emit('search', $event.target.value)"
-          placeholder="Rasm nomi yoki teg bo'yicha qidirish..."
+          placeholder="Rasm nomi yoki teg bO‘yicha qidirish..."
           aria-label="Image search"
         />
       </div>

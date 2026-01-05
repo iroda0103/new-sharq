@@ -7,7 +7,7 @@
             <div class="hero__content">
                 <h2 class="hero__title">
                     <span class="highlight-white animate-slide">Zamonaviy</span>
-                    <span class="highlight-gradient animate-fade">Ta'lim</span>,
+                    <span class="highlight-gradient animate-fade">Taʼlim</span>,
                     <span class="highlight-outline animate-slide">Imkoniyat</span> va
                     <span class="highlight-outline animate-fade">Qadriyatlar</span> uyg‘unligi
                 </h2>
@@ -46,7 +46,7 @@ export default {
     data() {
         return {
             statsData: [
-                { icon: "trophy", value: "98%", label: "Bitiruvchilarning ishga joylashish ko'rsatkichi" },
+                { icon: "trophy", value: "98%", label: "Bitiruvchilarning ishga joylashish kO‘rsatkichi" },
                 { icon: "journal-whills", value: "150+", label: "Nashr etilgan ilmiy maqolalar" },
                 { icon: "globe", value: "30+", label: "Xalqaro hamkorlikdagi loyihalar" },
                 { icon: "people-group", value: "5000+", label: "Faol talabalar jamoasi" }

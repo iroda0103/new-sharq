@@ -15,7 +15,7 @@
 
     <!-- Asosiy kontent -->
     <div class="content">
-      <!-- Topshiriqlar bo'limi -->
+      <!-- Topshiriqlar bO‘limi -->
       <section v-show="activeTab === 'tasks'" class="tasks-section">
         <h2><i class="fas fa-tasks"></i> Topshiriqlar</h2>
         <div class="filter-options">
@@ -23,7 +23,7 @@
             <option value="all">Barchasi</option>
             <option value="active">Aktiv</option>
             <option value="completed">Yakunlangan</option>
-            <option value="overdue">Muddati o'tgan</option>
+            <option value="overdue">Muddati O‘tgan</option>
           </select>
           <button class="refresh-btn">
             <i class="fas fa-sync-alt"></i>
@@ -57,7 +57,7 @@
         </div>
       </section>
 
-      <!-- Dars jadvali bo'limi -->
+      <!-- Dars jadvali bO‘limi -->
       <section v-show="activeTab === 'schedule'" class="schedule-section">
         <h2><i class="fas fa-calendar-alt"></i> Dars jadvali</h2>
         <div class="week-selector">
@@ -93,7 +93,7 @@
         </div>
       </section>
 
-      <!-- Fanlar bo'limi -->
+      <!-- Fanlar bO‘limi -->
       <section v-show="activeTab === 'subjects'" class="subjects-section">
         <h2><i class="fas fa-book"></i> Fanlar</h2>
         <div class="subject-list">
@@ -114,7 +114,7 @@
                   :style="{ width: subject.progress + '%' }"
                 ></div>
               </div>
-              <span>{{ subject.progress }}% o'zlashtirildi</span>
+              <span>{{ subject.progress }}% O‘zlashtirildi</span>
             </div>
             <div class="subject-resources">
               <span><i class="fas fa-file-alt"></i> {{ subject.materials }} material</span>
@@ -124,7 +124,7 @@
         </div>
       </section>
 
-      <!-- Ma'lumotlar bo'limi -->
+      <!-- Ma'lumotlar bO‘limi -->
       <section v-show="activeTab === 'documents'" class="documents-section">
         <h2><i class="fas fa-file-contract"></i> Shartnomalar va hujjatlar</h2>
         <div class="document-list">
@@ -206,7 +206,7 @@
         <div v-else-if="selectedItem.type === 'lesson'" class="lesson-details">
           <h3>{{ selectedItem.subject }}</h3>
           <div class="detail-row">
-            <span class="label">O'qituvchi:</span>
+            <span class="label">O‘qituvchi:</span>
             <span class="value">{{ selectedItem.teacher }}</span>
           </div>
           <div class="detail-row">
@@ -252,7 +252,7 @@
             <span class="value">{{ selectedItem.code }}</span>
           </div>
           <div class="detail-row">
-            <span class="label">O'qituvchi:</span>
+            <span class="label">O‘qituvchi:</span>
             <span class="value">{{ selectedItem.teacher }}</span>
           </div>
           <div class="detail-row">
@@ -265,7 +265,7 @@
           </div>
           <div class="progress-container">
             <div class="progress-info">
-              <span>O'zlashtirish darajasi:</span>
+              <span>O‘zlashtirish darajasi:</span>
               <span>{{ selectedItem.progress }}%</span>
             </div>
             <div class="progress-bar">
@@ -286,7 +286,7 @@
             </div>
             <div class="stat">
               <i class="fas fa-chart-line"></i>
-              <span>O'rtacha baho: {{ selectedItem.averageGrade }}</span>
+              <span>O‘rtacha baho: {{ selectedItem.averageGrade }}</span>
             </div>
           </div>
           <div class="action-buttons">
@@ -325,7 +325,7 @@
             >
             <div v-else class="no-preview">
               <i class="fas fa-file-alt"></i>
-              <span>Oldindan ko'rish mavjud emas</span>
+              <span>Oldindan kO‘rish mavjud emas</span>
             </div>
           </div>
           <div class="action-buttons">
@@ -340,7 +340,7 @@
       </div>
     </div>
 
-    <!-- Rasm ko'rish modali -->
+    <!-- Rasm kO‘rish modali -->
     <div v-if="selectedImage" class="image-modal" @click="closeImageModal">
       <div class="image-container">
         <img loading="lazy":src="selectedImage" alt="Preview">
@@ -586,10 +586,10 @@ export default {
     },
     openAttachment(file) {
       if (file.type === 'pdf' || file.type === 'doc' || file.type === 'ppt') {
-        // Bu yerda haqiqiy faylni ochish logikasi bo'lishi kerak
+        // Bu yerda haqiqiy faylni ochish logikasi bO‘lishi kerak
         alert(`${file.name} fayli ochilmoqda...`);
       } else {
-        // Rasm yoki boshqa ko'rinadigan kontent uchun
+        // Rasm yoki boshqa kO‘rinadigan kontent uchun
         this.selectedImage = 'https://example.com/' + file.name;
       }
     },

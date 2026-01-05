@@ -5,7 +5,7 @@
                 <div class="col">
                     <div class="footer-info">
                         <h2 class="footer-title">
-                            Bizning <br> <span>ijtimoiy tarmoqlarga</span><br> ga obuna bo'ling </h2>
+                            Bizning <br> <span>ijtimoiy tarmoqlarga</span><br> ga obuna bO‘ling </h2>
                         <!-- <p class="footer-text">
                             Follow the latest news about us </p> -->
                     </div>

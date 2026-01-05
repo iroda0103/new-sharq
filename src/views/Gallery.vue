@@ -13,7 +13,7 @@
                 </div>
 
                 <div class="search">
-                    <input v-model="query" @input="onSearch" placeholder="Rasm nomi yoki teg bo'yicha qidirish..."
+                    <input v-model="query" @input="onSearch" placeholder="Rasm nomi yoki teg bO‘yicha qidirish..."
                         aria-label="Image search" />
                 </div>
             </div>

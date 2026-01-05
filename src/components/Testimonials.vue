@@ -2,11 +2,11 @@
   <section class="testimonials">
     <div class="container">
       <div class="section-title" data-aos="fade-up">
-        <!-- <h2>O'qituvchilarimiz</h2>
+        <!-- <h2>O‘qituvchilarimiz</h2>
         <p>
           Sharq Universitetining asosiy kuchi — bu yuksak malakali, fidokor va zamonaviy bilimlarga ega
-          professor-o'qituvchilar jamoasidir. Ular nafaqat dars berishadi, balki har bir talabaga ilhom, yo'l-yo'riq va
-          ma'naviy tayanch bo'lishadi.
+          professor-O‘qituvchilar jamoasidir. Ular nafaqat dars berishadi, balki har bir talabaga ilhom, yO‘l-yO‘riq va
+          ma'naviy tayanch bO‘lishadi.
         </p> -->
       </div>
 
@@ -29,7 +29,7 @@
                         fill="currentColor" />
                     </svg>
                   </div>
-                  <p class="testimonial-text">{{ item.text }}</p>
+                  <p class="testimonial-text" v-html="item.text"></p>
                   <div class="author-info">
                     <h3>{{ item.name }}</h3>
                     <span class="position">{{ item.position }}</span>
@@ -77,15 +77,15 @@ export default {
           name: "Sherzod Atamuradov",
           position: "Rektor",
           // image: "sherzod_atamuradov.webp",
-          image: "rector.jpg",
-          text: `Sharq universitetida biz bilim, qadriyatlar va innovatsiyalar uyg‘unligiga asoslangan zamonaviy akademik muhitni yaratmoqdamiz.
-Kuchli jamoamiz bilan jamiyat va kelajak taraqqiyotiga munosib hissa qo‘shadigan raqobatbardosh mutaxassislarni tayyorlashni maqsad qilganmiz`
+          image: "sherzod_atamuradov.JPG",
+          text: `&nbsp;&nbsp;&nbsp; Sharq universitetida biz bilim, qadriyatlar va innovatsiyalar uyg‘unligiga asoslangan zamonaviy akademik muhitni yaratmoqdamiz.
+              &nbsp; &nbsp;&nbsp;Kuchli jamoamiz bilan jamiyat va kelajak taraqqiyotiga munosib hissa qo‘shadigan raqobatbardosh mutaxassislarni tayyorlashni maqsad qilganmiz`
         },
         // {
         //   name: "Botir Ibragimov",
         //   position: "Registr ofis menejeri",
         //   image: "botir _ibragimov.webp",
-        //   text: "Sharq Universiteti o'quv jarayoni HEMIS tizimi bilan integratsiyalashgan! Talabalar HEMIS orqali raqamli ta'lim infratuzilmasidan foydalanishing imkoniyatiga ega."
+        //   text: "Sharq Universiteti O‘quv jarayoni HEMIS tizimi bilan integratsiyalashgan! Talabalar HEMIS orqali raqamli ta'lim infratuzilmasidan foydalanishing imkoniyatiga ega."
         // }
       ]
     }
@@ -237,7 +237,7 @@ Kuchli jamoamiz bilan jamiyat va kelajak taraqqiyotiga munosib hissa qo‘shadig
         height: 100%;
         object-fit: cover;
         transition: transform 0.6s ease;
-object-position: 10% center;
+//object-position: 10% center;
             // background-position: right;
 
       }
@@ -280,6 +280,8 @@ object-position: 10% center;
         z-index: 1;
         font-style: italic;
         font-weight: 400;
+          white-space: pre-line;
+
       }
 
       .author-info {

@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="content">
                     <h2 class="title">
-                        O'z sohangizni yetuk mutaxassisi bo'lib,
+                        O‘z sohangizni yetuk mutaxassisi bO‘lib,
                         <span class="highlight">Kelajakingizni shakllantiring</span>
                     </h2>
                     <p class="subtitle">

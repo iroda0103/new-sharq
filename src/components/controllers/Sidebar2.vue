@@ -105,7 +105,7 @@ const sidebarData = {
             { label: 'Ta\'lim yo\'nalishlari', href: '/directions' },
             { label: 'Yotoqxona', href: '/bed-room' },
             { label: 'Grantlar', href: '/grant' },
-            { label: 'Umumiy ma\'lumot', href: '/info' },
+            { label: 'Umumiy ma\'lumot', href: '/infO‘ },
             { label: 'Qabul statistikasi', href: '/statistics' },
             { label: 'O\'qish to\'lovlari va stipendiyalar', href: '/payment' }
         ]
@@ -155,7 +155,7 @@ const currentSection = computed(() => {
     }
 
     if (path.includes('/directions') || path.includes('/bed-room') ||
-        path.includes('/grant') || path.includes('/info') ||
+        path.includes('/grant') || path.includes('/infO‘) ||
         path.includes('/statistics') || path.includes('/payment')) {
         return sidebarData.abituriyentlar
     }
@@ -335,7 +335,7 @@ const currentSection = computed(() => {
         return sidebarData.kafedralar
     }
     
-    // Bo'limlar
+    // BO‘limlar
     if (path.includes('/department')) {
         return sidebarData.bolimlar
     }
@@ -373,7 +373,7 @@ const isActive = (href) => {
     const currentFullPath = route.fullPath
     const currentPath = route.path
     
-    // Query parametrlar bilan to'liq moslik
+    // Query parametrlar bilan tO‘liq moslik
     if (href.includes('?')) {
         return currentFullPath === href
     }

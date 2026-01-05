@@ -31,7 +31,7 @@ export default {
             documents: [
 
                 {
-                    name: "Ta'lim standartlari",
+                    name: "Taʼlim standartlari",
                     date: "2024-yil 15-yanvar",
                     file: "education_standards.pdf"
                 },
@@ -56,7 +56,7 @@ export default {
                     file: "university_charter.pdf"
                 },
                 {
-                    name: "Sirtqi ta'lim tartibi",
+                    name: "Sirtqi taʼlim tartibi",
                     date: "2024-yil 5-fevral",
                     file: "distance_education.pdf"
                 }

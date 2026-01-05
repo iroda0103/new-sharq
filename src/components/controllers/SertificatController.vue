@@ -35,7 +35,7 @@ export default {
           description: "Nodavlat taʼlim xizmatlarini koʼrsatish faoliyati uchun litsenziya",
           image: "/img/doc/sertifikat2.webp",
         },
-        // Ko'proq sertifikatlar qo‘shishingiz mumkin
+        // KO‘proq sertifikatlar qo‘shishingiz mumkin
       ],
     };
   },

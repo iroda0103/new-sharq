@@ -67,7 +67,7 @@ export default {
                     id: 1,
                     ism: "Sherzod Atamurodov",
                     lavozim: "Rektor",
-                    img: "/img/person/sherzod_atamuradov.webp",
+                    img: "/img/person/sherzod_atamuradov.JPG",
                     description: `  `,
                     bio: " Sharq Universiteti rektori Phd. Sherzod Akramovich Atamurodov 20 yildan ortiq ta’lim sohasida faoliyat yuritib kelmoqda. O`z faoliyati davomida ko‘plab ilmiy maqolalar, darsliklar yozgan va bir necha xalqaro loyihalarga asos solgan. Uning boshqaruvi ostida universitet yangi rivojlanish bosqichiga chiqmoqda.",
                 },

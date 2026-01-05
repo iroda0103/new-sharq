@@ -1,17 +1,25 @@
 <template>
-  <div class="deparment-person">
+  <div class="department-person">
     <div v-for="employee in employees" :key="employee.id" class="staff">
+      <!-- Xodim rasmi -->
       <div class="staff-image">
         <div class="staff-image__inner">
-          <img :src="`https://api.sharqedu.uz/uploads/img/person/${employee.fullName}.jpg`" :alt="employee.fullName" loading="lazy"
-            @error="handleImageError">
+          <img 
+            :src="`https://api.sharqedu.uz/uploads/img/person/${encodeURIComponent(employee.fullName)}.jpg`" 
+            :alt="employee.fullName" 
+            loading="lazy"
+            @error="handleImageError"
+          />
         </div>
       </div>
+
+      <!-- Xodim ma'lumotlari -->
       <div class="staff-info__wrapper">
         <div class="staff-info">
           <h3 class="staff-info__fio">{{ employee.fullName }}</h3>
           <div class="staff-info__divider"></div>
           <p class="staff-info__text">{{ employee.position }}</p>
+
           <div class="staff-info__bottom">
             <div class="staff-info__links">
               <a v-if="employee.email" :href="`mailto:${employee.email}`" class="staff-info__link">
@@ -36,63 +44,7 @@ const departmentsStore = useDepartmentsStore();
 
 // Default ma'lumotlar
 const mockEmployees = {
-  // 10: [
-  //   {
-  //     id: 1,
-  //     fullName: "Habibullayev Qahramon",
-  //     position: "Bo'lim boshlig'i",
-  //     email: "markett22@mail.ru",
-  //     photo: "/img/person/qahramon.jpg"
-  //   }
-  // ],
-  // 1: [
-  //   {
-  //     id: 1,
-  //     fullName: "Turgunova Komola Baxriddinovna",
-  //     position: "Chief Specialist",
-  //     email: "k.turgunova@newuu.uz",
-  //     photo: "/img/person/usmon.jpg"
-  //   },
-  //   {
-  //     id: 2,
-  //     fullName: "Karimova Dilnoza Sharipovna",
-  //     position: "Senior Specialist",
-  //     email: "d.karimova@newuu.uz",
-  //     photo: "/img/person/usmon.jpg"
-  //   },
-  //   {
-  //     id: 3,
-  //     fullName: "Rahimov Sardor Azimovich",
-  //     position: "Specialist",
-  //     email: "s.rahimov@newuu.uz",
-  //     photo: "/img/person/usmon.jpg"
-  //   }
-  // ],
-  // 2: [
-  //   {
-  //     id: 4,
-  //     fullName: "Aliyev Botir Raximovich",
-  //     position: "Department Head",
-  //     email: "b.aliyev@newuu.uz",
-  //     photo: "/img/person/usmon.jpg"
-  //   },
-  //   {
-  //     id: 5,
-  //     fullName: "Tursunov Jahongir Karimovich",
-  //     position: "Chief Specialist",
-  //     email: "j.tursunov@newuu.uz",
-  //     photo: "/img/person/usmon.jpg"
-  //   }
-  // ],
-  // 3: [
-  //   {
-  //     id: 6,
-  //     fullName: "Mahmudov Aziz Shavkatovich",
-  //     position: "IT Director",
-  //     email: "a.mahmudov@newuu.uz",
-  //     photo: "/img/person/usmon.jpg"
-  //   }
-  // ]
+  // kerak bo‘lsa bu yerga mock ma'lumot qo‘yishingiz mumkin
 };
 
 // Local employees ref
@@ -109,18 +61,13 @@ const fetchEmployees = async (deptId) => {
   }
 
   try {
-    // DOIM avval store ni tekshiramiz va kerak bo'lsa yuklaymiz
     if (!departmentsStore.departments || departmentsStore.departments.length === 0) {
-      console.log('Store bo\'sh, API dan yuklanmoqda...');
       await departmentsStore.fetchDepartments({ });
     }
 
-    // Store dan ma'lumotni olamiz
     const storeEmployees = departmentsStore.getEmployeesByDepartmentId(deptId);
 
-    // Agar store dan ma'lumot kelsa, uni ishlatamiz
     if (storeEmployees && storeEmployees.length > 0) {
-      console.log('Store dan xodimlar topildi:', storeEmployees.length);
       employees.value = storeEmployees.map(emp => ({
         id: emp.id,
         fullName: emp.fullName || emp.name,
@@ -131,13 +78,10 @@ const fetchEmployees = async (deptId) => {
       }));
       return;
     }
-    
-    // Agar store da yo'q bo'lsa, ma'lumot yo'q deb xabar beramiz
-    console.log('Store da bu bo\'lim xodimlari topilmadi');
+
     employees.value = mockEmployees[deptId] || [];
   } catch (error) {
     console.error('Xodimlarni yuklashda xatolik:', error);
-    // Xatolik bo'lsa default ma'lumotlarni ko'rsatamiz
     employees.value = mockEmployees[deptId] || [];
   }
 };
@@ -147,16 +91,14 @@ const handleImageError = (event) => {
   event.target.src = '/img/person/default.png';
 };
 
-// Department ID o'zgarganda xodimlarni qayta yuklash
+// Department ID o‘zgarganda xodimlarni qayta yuklash
 watch(departmentId, async (newId, oldId) => {
-  console.log('Department ID o\'zgardi:', oldId, '->', newId);
   if (newId && newId !== oldId) {
     await fetchEmployees(newId);
   }
 }, { immediate: false });
 
 onMounted(async () => {
-  console.log('Staff component mounted, department_id:', departmentId.value);
   if (departmentId.value) {
     await fetchEmployees(departmentId.value);
   }
@@ -164,29 +106,37 @@ onMounted(async () => {
 </script>
 
 <style scoped>
-.deparment-person {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
+.department-person {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 18px;
-  margin-top: calc(-1 * var(--bs-gutter-y));
-  margin-right: calc(-.5 * var(--bs-gutter-x));
-  margin-left: calc(-.5 * var(--bs-gutter-x));
+  justify-content: space-between;
+  margin-top: 0;
 }
+
 
 .staff {
   display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
-  gap: 5px;
-  flex: 0 0 auto;
-  width: calc(50% - 20px);
+  flex-direction: row;
+  gap: 16px;
+  flex: 1 1 calc(50% - 18px);
   max-width: 100%;
+  min-width: 250px;
 }
 
+/* Rasm qismi */
+.staff-image__inner img {
+  border-radius: 12px;
+  width: 100%;
+  max-width: 290px;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Info qismi */
 .staff-info__wrapper {
-  width: calc(100% - 160px - 8px);
   width: 100%;
 }
 
@@ -254,16 +204,36 @@ onMounted(async () => {
   background: rgba(248, 250, 253, 1);
 }
 
-.staff-image__inner img {
-  border-radius: 12px;
-  width: 290px;
-  height: 180px;
-  object-fit: cover;
-}
-
 .staff-info__link i {
   font-size: 18px;
   color: rgba(82, 148, 229, 1);
   height: 100%;
+}
+
+/* RESPONSIVE */
+
+
+
+/* Mobil ekranlar */
+@media (max-width: 768px) {
+  .staff-info__fio {
+    font-size: 18px;
+  }
+
+  .staff-info__text {
+    font-size: 14px;
+  }
+
+  .staff-info {
+    padding: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .department-person {
+    grid-template-columns: 1fr;
+  }
+  /* .staff-image__inner img{
+    max-width: 150px;
+  } */
 }
 </style>

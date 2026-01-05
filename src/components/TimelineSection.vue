@@ -15,7 +15,7 @@
       <div v-for="(item, index) in timelineItems" :key="item.id" class="timeline-item"
         :class="{ visible: item.visible }" :ref="el => setItemRef(el, item.id)">
         
-        <!-- O'rtadagi raqam -->
+        <!-- O‘rtadagi raqam -->
         <div class="timeline-number">
           <div class="number-pulse"></div>
           {{ item.id }}
@@ -85,7 +85,7 @@ export default {
     },
     ctaDescription: {
       type: String,
-      default: '12 ta zamonaviy yo\'nalishdan birini tanlang: IT, Iqtisodiyot, Filologiya, Tarix, Psixologiya va boshqalar'
+      default: '12 ta zamonaviy yo\‘nalishdan birini tanlang: IT, Iqtisodiyot, Filologiya, Tarix, Psixologiya va boshqalar'
     },
     ctaButtonText: {
       type: String,
@@ -106,7 +106,7 @@ export default {
       {
         id: 1,
         title: "Bizning maqsadimiz",
-        description: "Ilm-fan, ta'lim va innovatsiya jarayonlarni uyg'unlashtirgan holda, milliy va xalqaro standartlarga mos yuqori malakali mutaxassislarni tayyorlashdir.",
+        description: "Ilm-fan, taʼlim va innovatsiya jarayonlarni uyg‘unlashtirgan holda, milliy va xalqaro standartlarga mos yuqori malakali mutaxassislarni tayyorlashdir.",
         image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop",
         visible: false
       },
@@ -120,7 +120,7 @@ export default {
       {
         id: 3,
         title: "Bizning qadriyatimiz",
-        description: "Sharqona ma'daniyat bilan zamonaviy bilimlarni uyg'unlashtirish. 'Sharq madaniyati Yevropaga nafaqat ilm-fan, balki yangi ruh va izlanish usullarini ham olib keldi.'",
+        description: "Sharqona madaniyat bilan zamonaviy bilimlarni uyg‘unlashtirish. 'Sharq madaniyati Yevropaga nafaqat ilm-fan, balki yangi ruh va izlanish usullarini ham olib keldi.'",
         image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop",
         visible: false
       }
@@ -145,7 +145,7 @@ export default {
 
       // Progress bar
       const scrollPercent = (scrollTop / (documentHeight - windowHeight)) * 100;
-      console.log('ll',Math.min(scrollPercent, 100),'TEST',documentHeight,windowHeight,scrollTop);
+      // console.log('ll',Math.min(scrollPercent, 100),'TEST',documentHeight,windowHeight,scrollTop);
       
       progressHeight.value = Math.min(scrollPercent, 100);
 
@@ -157,7 +157,7 @@ export default {
           const elementTop = rect.top;
           const elementBottom = rect.bottom;
 
-          // Ekranda ko'rinsa visible true, yo'qsa false
+          // Ekranda kO‘rinsa visible true, yO‘qsa false
           if (elementTop < windowHeight * 0.8 && elementBottom > 0) {
             item.visible = true;
           } else {
@@ -269,7 +269,7 @@ export default {
 /* Timeline item */
 .timeline-item {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   opacity: 0;
   transform: translateY(100px);
   transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
@@ -281,7 +281,7 @@ export default {
   transform: translateY(0);
 }
 
-/* O'rtadagi raqam */
+/* O‘rtadagi raqam */
 .timeline-number {
   position: absolute;
   left: 50%;
@@ -461,8 +461,8 @@ export default {
 /* CTA Section */
 .cta-section {
   text-align: center;
-  margin-top: 50px;
-  padding: 60px 20px;
+  /* margin-top: 50px; */
+  padding: 30px 20px;
   opacity: 0;
   transform: translateY(50px);
   transition: all 1s ease;
