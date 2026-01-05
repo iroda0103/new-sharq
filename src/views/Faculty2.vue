@@ -46,29 +46,29 @@ export default {
   data() {
     return {
       faculties: [
+        // {
+        //   name: "Texnik va raqamli texnologiyalar fakulteti",
+        //   key: "iqtisod",
+        //   directions: [
+            // {
+            //   title: "Sun'iy intellekt",
+            //   link: "/directions?faculty=iqtisod",
+            //   image: "/img/faculty/si.png"
+            // },
+            // {
+            //   title: "Kiberxavfsizlik injiniringi",
+            //   link: "/directions?faculty=iqtisod",
+            //   image: "/img/faculty/kiber.png"
+            // },
+            // {
+            //   title: "Dasturiy injiniring",
+            //   link: "/directions?faculty=iqtisod",
+            //   image: "/img/faculty/engineering.png"
+            // }
+        //   ]
+        // },
         {
-          name: "Texnik va raqamli texnologiyalar fakulteti",
-          key: "texnika",
-          directions: [
-            {
-              title: "Sun'iy intellekt",
-              link: "/directions?faculty=texnika",
-              image: "/img/faculty/si.png"
-            },
-            {
-              title: "Kiberxavfsizlik injiniringi",
-              link: "/directions?faculty=texnika",
-              image: "/img/faculty/kiber.png"
-            },
-            {
-              title: "Dasturiy injiniring",
-              link: "/directions?faculty=texnika",
-              image: "/img/faculty/engineering.png"
-            }
-          ]
-        },
-        {
-          name: "Iqtisod va biznes fakulteti",
+          name: "Iqtisodiyot va axborot texnologiyalari fakulteti",
           key: "iqtisod",
           directions: [
             {
@@ -80,11 +80,26 @@ export default {
               title: "Biznesni boshqarish",
               link: "/directions?faculty=iqtisod",
               image: "/img/faculty/biznes.png"
+            },
+             {
+              title: "Sun'iy intellekt",
+              link: "/directions?faculty=iqtisod",
+              image: "/img/faculty/si.png"
+            },
+            {
+              title: "Kiberxavfsizlik injiniringi",
+              link: "/directions?faculty=iqtisod",
+              image: "/img/faculty/kiber.png"
+            },
+            {
+              title: "Dasturiy injiniring",
+              link: "/directions?faculty=iqtisod",
+              image: "/img/faculty/engineering.png"
             }
           ]
         },
         {
-          name: "Gumanitar fanlar fakulteti",
+          name: "Ijtimoiy - gumanitar fanlar fakulteti",
           key: "gumanitar",
           directions: [
             {

@@ -190,9 +190,8 @@
           <!-- <label for="faculty-filter">:</label> -->
           <select id="faculty-filter" v-model="selectedFaculty">
             <option value="all">Barchasi</option>
-            <option value="texnika">Texnik va raqamli texnologiyalar fakulteti</option>
-            <option value="iqtisod">Iqtisod va biznes fakulteti</option>
-            <option value="gumanitar">Gumanitar fanlar fakulteti</option>
+            <option value="iqtisod">Iqtisodiyot va axborot texnologiyalari fakulteti</option>
+            <option value="gumanitar">Ijtimoiy - gumanitar fanlar fakulteti</option>
           </select>
         </div>
 
@@ -252,7 +251,7 @@ export default {
           credits: "240 kredit",
           semester: "Kuzgi semestr",
           price: "18,000,000 sO‘m/yil",
-          faculty: "texnika",
+          faculty: "iqtisod",
           type: "kunduzgi",
           link: "/direction/suniy-intellekt",
         },
@@ -264,7 +263,7 @@ export default {
           credits: "240 kredit",
           semester: "Kuzgi semestr",
           price: "18,000,000 sO‘m/yil",
-          faculty: "texnika",
+          faculty: "iqtisod",
           type: "kunduzgi",
           link: "/direction/kiberxavfsizlik",
         },
@@ -276,7 +275,7 @@ export default {
           credits: "240 kredit",
           semester: "Kuzgi semestr",
           price: "18,000,000 sO‘m/yil",
-          faculty: "texnika",
+          faculty: "iqtisod",
           type: "kunduzgi",
           link: "/direction/dasturiy-injiniring",
         },

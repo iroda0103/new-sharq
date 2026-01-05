@@ -22,9 +22,9 @@ export const menuItems = [
       showInSidebar: true,
       to: "/faculty",
       children: [
-        { title: "Texnik va raqamli texnologiyalar fakulteti", to: "/directions?faculty=texnika" },
-        { title: "Iqtisod va biznes fakulteti", to: "/directions?faculty=iqtisod" },
-        { title: "Gumanitar fanlar fakulteti", to: "/directions?faculty=gumanitar" },
+        // { title: "Iqtisodiyot va axborot texnologiyalari fakulteti", to: "/directions?faculty=texnika" },
+        { title: "Iqtisodiyot va axborot texnologiyalari fakulteti", to: "/directions?faculty=iqtisod" },
+        { title: "Ijtimoiy - gumanitar fanlar fakulteti", to: "/directions?faculty=gumanitar" },
       ],
     },
     {
