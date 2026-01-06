@@ -63,8 +63,8 @@
                 <div class="page-block__divider"></div>
                 <div class="content">
                     <ul>
-                        <li><strong>2004 y.</strong> — Navoiy davlat konchilik instituti. Menejment(Bakalavr)</li>
-                        <li><strong>2006 y.</strong> — Samarqand Iqtisodiyot va servis instituti. Menejment(Magistr)</li>
+                        <li><strong>2004 y.</strong> — Navoiy davlat konchilik instituti. Menejment (Bakalavr)</li>
+                        <li><strong>2006 y.</strong> — Samarqand Iqtisodiyot va servis instituti. Menejment (Magistr)</li>
                         <li><strong>2021 y.</strong> — Oʻzbekiston Respublikasi Prezidenti huzuridagi davlat boshqaruvi
                             akademiyasi (Iqtisodiyot fanlari bo‘yicha falsafa doktori)</li>
                     </ul>
