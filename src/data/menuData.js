@@ -82,7 +82,7 @@ export const menuItems = [
       children: [
         { title: "Yoshlar ittifoqi", to: "/activity/yoshlar" },
         { title: "Xotin-qizlar kengashi", to: "/activity/women" },
-        { title: "Kasaba uyushmasi", to: "/activity/kasaba" },
+        // { title: "Kasaba uyushmasi", to: "/activity/kasaba" },
         { title: "Tyutorlar faoliyati", to: "/activity/tutoring" },
         { title: "Psixologlar faoliyati", to: "/activity/psychology" },
       ],
@@ -151,8 +151,8 @@ export const menuItems = [
       { title: "Klublar", to: "/club" },
     ],
   },
-  {
-    title: "Vakansiyalar",
-    to: "/vacancy"
-  },
+  // {
+  //   title: "Vakansiyalar",
+  //   to: "/vacancy"
+  // },
 ];
