@@ -45,7 +45,7 @@
                     </div>
 
                     <div class="info-item">
-                        <strong>Xona:</strong> 701
+                        <strong>Xona:</strong> 304
                     </div>
                 </div>
             </div>
