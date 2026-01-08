@@ -38,7 +38,9 @@
           <!-- Rasm (qarama-qarshi tomonda) -->
           <div class="image-container" :class="{ 'border-animate': item.visible }">
             <!-- <img :src="item.image" :alt="item.title" class="timeline-image" /> -->
-            <img :src="(item.id==1 || item.id==3)?'/img/education/sharq1.webp':'/img/education/sharq2.webp'" :alt="item.title" class="timeline-image" />
+            <!-- <img :src="(item.id==1 || item.id==3)?'/img/bg/timeline3.jpeg':'/img/education/sharq2.webp'" :alt="item.title" class="timeline-image" /> -->
+            <img :src="item.image" :alt="item.title" class="timeline-image" />
+            <!-- <img :src="(item.id==1 || item.id==3)?'/img/education/sharq1.webp':'/img/education/sharq2.webp'" :alt="item.title" class="timeline-image" /> -->
           </div>
         </div>
       </div>
@@ -102,30 +104,29 @@ export default {
     const ctaSection = ref(null);
 
     // Default timeline items with images
-    const defaultItems = [
+ const defaultItems = [
       {
         id: 1,
-        title: "Bizning maqsadimiz",
-        description: "Ilm-fan, taʼlim va innovatsiya jarayonlarni uyg‘unlashtirgan holda, milliy va xalqaro standartlarga mos yuqori malakali mutaxassislarni tayyorlashdir.",
-        image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=600&h=400&fit=crop",
+        title: "Xalqaro imkoniyatlar",
+        description: "Sharq Universiteti xalqaro hamkorliklar orqali talabalarga qo‘shma dasturlar va akademik almashinuv asosida xorijda tahsil olish imkonini yaratadi.",
+        image: "/img/bg/timeline3.jpeg",
         visible: false
       },
       {
         id: 2,
-        title: "Bizning imkoniyatlarimiz",
-        description: "Har bir talaba uchun individual yondashuv. Faol talabalar klublari va tashabbuslarga ochiq platforma. Mentorlik dasturlari va ustozlar bilan bevosita aloqa.",
-        image: "https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?w=600&h=400&fit=crop",
+        title: "Hamyonbop kontrakt va grantlar",
+        description: "Universitetda kontrakt to‘lovlari qulay bo‘lib, yil davomida 4 ga bo‘lib to‘lash, xotin-qizlar uchun 0% ta’lim krediti hamda bilimli va faol talabalar uchun turli grant dasturlari mavjud.",
+        image: "/img/bg/timeline1_3.jpeg",
         visible: false
       },
       {
         id: 3,
-        title: "Bizning qadriyatimiz",
-        description: "Sharqona madaniyat bilan zamonaviy bilimlarni uyg‘unlashtirish. 'Sharq madaniyati Yevropaga nafaqat ilm-fan, balki yangi ruh va izlanish usullarini ham olib keldi.'",
-        image: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=600&h=400&fit=crop",
+        title: "Bitiruvdan keyingi imkoniyatlar",
+        description: "Bitiruvchilar universitet koworking markazi orqali ish, amaliyot va vakansiyalar haqida muntazam ma’lumot olib, mehnat bozorida o‘z o‘rnini topish uchun real imkoniyatlarga ega bo‘ladilar.",
+        image: "/img/bg/timeline1_2.jpeg",
         visible: false
       }
     ];
-
     const timelineItems = ref(
       props.items.length > 0
         ? props.items.map(item => ({ ...item, visible: false }))

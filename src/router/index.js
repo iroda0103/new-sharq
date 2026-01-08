@@ -40,6 +40,7 @@ import Direction from '../views/Direction.vue'
 import News from '../views/News.vue'
 import Admission from '../views/Admission.vue'
 import Vacancy from '../views/Vacancy.vue'
+import Vacancy2 from '../views/Vacation.vue'
 
 // Layout componentlar
 import DefaultLayout from '../components/layout/DefaultLayout.vue'
@@ -103,7 +104,7 @@ const routes = [
 
       { path: 'test-staff', name: 'TestStaff', component: TestStaff },
       { path: 'direction/:id', name: 'Direction', component: Direction },
-      { path: 'vacancy', name: 'Vacancy', component: Vacancy },
+      { path: 'vacancy', name: 'Vacancy', component: Vacancy2 },
 
 
     ]
