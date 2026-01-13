@@ -109,7 +109,7 @@ export default {
         id: 1,
         title: "Xalqaro imkoniyatlar",
         description: "Sharq Universiteti xalqaro hamkorliklar orqali talabalarga qo‘shma dasturlar va akademik almashinuv asosida xorijda tahsil olish imkonini yaratadi.",
-        image: "/img/bg/timeline3.jpeg",
+        image: "/img/bg/img4.jpg",
         visible: false
       },
       {
@@ -123,7 +123,7 @@ export default {
         id: 3,
         title: "Bitiruvdan keyingi imkoniyatlar",
         description: "Bitiruvchilar universitet koworking markazi orqali ish, amaliyot va vakansiyalar haqida muntazam ma’lumot olib, mehnat bozorida o‘z o‘rnini topish uchun real imkoniyatlarga ega bo‘ladilar.",
-        image: "/img/bg/timeline1_2.jpeg",
+        image: "/img/bg/timeline2_7.jpeg",
         visible: false
       }
     ];
