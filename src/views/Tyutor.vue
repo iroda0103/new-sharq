@@ -40,7 +40,7 @@
     </p>
 </div>
 
-        <div class="page-block content">
+        <!-- <div class="page-block content">
             <p>At <strong>New Uzbekistan University</strong>, each course has an appointed <strong>tutor</strong> who
                 plays a vital role in supporting students both academically and personally. Tutors are responsible for
                 helping students adapt to university life, ensuring their well-being, and preventing academic failures
@@ -138,26 +138,7 @@
                     </tbody>
                 </table>
             </div>
-            <!-- <p><img src="/uploads/pages/campus_life/ghjfj.jpg" alt="" width="402" height="269"
-                    style="width: 402px; height: 269px; max-width: none; max-height: none;"></p>
-            <p>Otabek Abduvoxidov</p>
-            <p></p>
-            <p><img src="/uploads/pages/campus_life/34123.jpg" alt="" width="408" height="272"
-                    style="width: 408px; height: 272px; max-width: none; max-height: none;"></p>
-            <p>Mehroj Kuldashev</p>
-            <p><img src="/uploads/pages/campus_life/oui987.jpg" alt="" width="410" height="274"
-                    style="width: 410px; height: 274px; max-width: none; max-height: none;"></p>
-            <p>Dolmatov Temirbulat</p>
-            <p><img src="/uploads/pages/campus_life/8765.jpg" alt="" width="412" height="309"
-                    style="width: 412px; height: 309px; max-width: none; max-height: none;"></p>
-            <p>Shoira Dadaxonova</p>
-            <p><img src="/uploads/pages/campus_life/poui9.jpg" alt="" width="417" height="279"
-                    style="width: 417px; height: 279px; max-width: none; max-height: none;"></p>
-            <p>A’zamxo‘djayeva Diyora</p>
-            <p><strong>Students are encouraged to stay in touch with their tutors</strong> for guidance, support, and
-                academic success. If you are struggling with attendance or coursework, don’t hesitate to seek help!</p>
-            <p></p> -->
-        </div>
+        </div> -->
     </div>
 </template>
 <style>

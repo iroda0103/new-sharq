@@ -72,8 +72,8 @@ export default {
     return {
       leaders: [
         {
-          name: 'PhD. Sherzod Atamurodov',
-          position: 'Sharq universiteti rektori',
+          name: 'Sherzod Atamuradov',
+          position: 'Rektor',
           image: '/img/person/sherzod_atamuradov.JPG',
           email: 'atamuradov@sharqedu.uz',
           phone: '+998 (79) 222-77-07',

@@ -1,34 +1,67 @@
 <template>
   <div class="news">
-    <div class="row justify-content-center">
-      <div class="col-md-6 col-12">
+    <div class="row justify-content-center d-flex news-wrapper">
+      <div class="col-md-6 col-3">
         <div class="event-card">
           <!-- IMAGE -->
           <img
-            src="/img/blog/news.png"
+            src="/img/blog/unesco.png"
             class="img-news"
             alt="Yangilik rasmi"
-            @click="openImage"
+            @click="openImage(1)"
           />
 
           <div class="new-wrapper d-flex flex-column">
             <div class="event-card__date">
-              <span>24 Dekabr 2025</span>
+              <span>1 Fevral 2026</span>
               <span>Chorshanba</span>
               <span>12:00</span>
             </div>
 
             <div class="event-card__info">
-              <h1 class="event-card__title">
-                🎉 YANGI YIL KECHASI — MASQUERADE BALL! 🎭
+              <h1 class="event-card__title" >
+                 🌍 Sharq Universiteti talabalari uchun — UNESCO grant dasturi!
               </h1>
 
               <div class="event-card__divider"></div>
 
               <span class="event-card__place">
                 <i class="icon-pin"></i>
-                Sharq Universiteti
+            
               </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-3">
+        <div class="event-card">
+          <!-- IMAGE -->
+          <img
+            src="/img/blog/indoneziya.png"
+            class="img-news"
+            alt="Yangilik rasmi"
+            @click="openImage(2)"
+          />
+
+          <div class="new-wrapper d-flex flex-column">
+            <div class="event-card__date">
+              <span>2 Fevral 2026</span>
+              <span>302-xona</span>
+              <span>14:00</span>
+            </div>
+
+            <div class="event-card__info">
+              <h1 class="event-card__title">
+                 📣 DIQQAT! TANLOV! <br>
+                 Indoneziyada o‘qish imkoniyatiga ega bo‘ling
+              </h1>
+
+              <div class="event-card__divider"></div>
+
+              <span class="event-card__place">
+                <i class="icon-pin"></i>
+
+  </span>
             </div>
           </div>
         </div>
@@ -55,8 +88,8 @@ import { ref, onMounted, onUnmounted } from 'vue'
 const showModal = ref(false)
 const modalImage = ref('')
 
-const openImage = () => {
-  modalImage.value = '/img/blog/news.png'
+const openImage = (id) => {
+  modalImage.value = `/img/blog/${id === 1 ? 'unesco.png' : 'indoneziya.png'}`
   showModal.value = true
   document.body.style.overflow = 'hidden'
 }
@@ -103,6 +136,13 @@ onUnmounted(() => window.removeEventListener('keydown', handleKey))
 .new-wrapper {
   gap: 12px;
 }
+.news-wrapper{
+  display: flex;
+  flex-wrap: nowrap !important;
+}
+.news-wrapper .col-3{
+  width: 50%; }
+
 
 .event-card__info {
   border-radius: 12px;

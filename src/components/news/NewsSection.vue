@@ -33,23 +33,56 @@ const props = defineProps({
 
 const newsData = ref([
      
+    // {
+    //       id: 1,
+    //     title: "📣  SHARQ UNIVERSITETI TALABALARI DIQQATIGA!",
+    //     image: "/img/blog/winter-school.jpg",
+    //     date: "2026-01-02",
+    //     views: 308,
+    //     featured: true
+    // },
+    
     {
           id: 1,
-        title: "📣  SHARQ UNIVERSITETI TALABALARI DIQQATIGA!",
-        image: "/img/blog/winter-school.jpg",
-        date: "2026-01-02",
+        title: "🌍 Sharq Universiteti talabalari uchun — UNESCO grant dasturi!",
+        image: "/img/blog/unesco.png",
+        date: "2026-02-01",
+        views: 308,
+        featured: true
+    },
+       
+    {
+          id: 2,
+        title: " Universitetimiz hamkorlik doiralari kengayib bormoqda!",
+        image: "/img/blog/malaka.png",
+        date: "2026-02-05",
         views: 308,
         featured: true
     },
        {
-          id: 2,
+          id: 3,
         title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
         image: "/img/blog/navoiy.jpg",
         date: "2026-01-01",
         views: 401,
         featured: true
     },
-  
+  {
+          id: 4,
+        title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
+        image: "/img/blog/indoneziya.png",
+        date: "2026-01-01",
+        views: 401,
+        featured: true
+    },
+      {
+          id: 5,
+        title: "SHARQ universitetida “Zakovat” intellektual o‘yini",
+        image: "/img/blog/zakovat.png",
+        date: "2026-01-23",
+        views: 401,
+        featured: true
+    },
     {
           id: 3,
         title: "🎉 Kirib kelayotgan Yangi 2026-yilingiz bilan!",

@@ -50,39 +50,52 @@ const route = useRoute()
 const newsData = ref([
     {
           id: 1,
-        title: "📣  SHARQ UNIVERSITETI TALABALARI DIQQATIGA!",
-        image: "/img/blog/winter-school.jpg",
-        date: "2026-01-02",
+        title: "🌍 Sharq Universiteti talabalari uchun — UNESCO grant dasturi!",
+        image: "/img/blog/unesco.png",
+        date: "2026-02-05",
         views: 308,
         featured: true,
-        content: `📣  SHARQ UNIVERSITETI TALABALARI DIQQATIGA!
+        content: `🌍 Sharq Universiteti talabalari uchun — UNESCO grant dasturi!
 
-🇺🇿🇨🇿 SHARQ University va Prague Institute of Management and Technology (PIMT) hamkorligida Chexiyada o‘tkaziladigan Winter School in Prague dasturiga arizalar qabul qilinmoqda.
+UNESCO tashkiloti tomonidan a’zo davlatlar universitetlariga rasmiy taklif xati yuborildi. 
+Ushbu tashabbus doirasida Sharq Universiteti talabalari va yosh tadqiqotchilaridan turli ijtimoiy, innovatsion va ilmiy loyihalar bo‘yicha takliflar qabul qilinmoqda.
 
-Davomiyligi: 1 hafta
-Joy: Praga 🇨🇿 + Karlovi Vari 🇨🇿 + Drezden 🇩🇪
-Natija: Xalqaro sertifikat (PIMT)
+💰 Agar loyiha UNESCO talablariga mos deb topilsa, uni amalga oshirish uchun 26 000 AQSH dollargacha grant ajratiladi!
 
-✨ Dastur imkoniyatlari:
-➤ Yevropa ta’lim tizimi bilan tanishuv;
-➤ Iqtisodiyot, karyera va startaplar bo‘yicha treninglar;
-➤ AI va ta’limdagi innovatsiyalar;
-➤ Xalqaro networking va madaniy dasturlar;
-➤ Ekskursiyalar va sayohatlar.
+🎯 Bu — nafaqat grant, balki:
+➤ xalqaro tajriba;
+➤ UNESCO bilan hamkorlik;
+➤ global miqyosdagi loyiha yuritish imkoniyati;
+➤ CV uchun kuchli yutuq.
 
-👉 BATAFSIL MA’LUMOT OLISH UCHUN 👈
+❗️Befarq bo‘lmang! O‘z g‘oyangizni loyiha sifatida taqdim eting va xalqaro moliyalashtirish imkoniyatiga ega bo‘ling!
 
-Ro‘yxatdan o‘tish va bog‘lanish uchun:
-📞 +998 93 269 04 38
-🌐 info@pimt.cz / www.pimt.cz
-
-⏳ Joylar cheklangan!
-Xalqaro tajriba, sayohat va sertifikat — barchasi bitta dasturda!
+📌 Batafsil ma’lumot uchun Xalqaro aloqalar bo‘limiga (https://t.me/beautyofdreams) murojaat qiling
 `
 
     },
     {
-        id: 2,
+          id: 2,
+        title: " Universitetimiz hamkorlik doiralari kengayib bormoqda!",
+        image: "/img/blog/malaka.png",
+        date: "2026-02-05",
+        views: 308,
+        featured: true,
+        content: `
+SHARQ Universiteti hamda Sharof Rashidov nomidagi Samarqand davlat universiteti huzuridagi pedagog kadrlarni qayta tayyorlash va ularning malakasini oshirish mintaqaviy markazi o‘rtasida hamkorlik memorandumi imzolandi.
+
+🤝 Mazkur hamkorlik doirasida:
+➤ Ta’lim va ilmiy hamkorlikni rivojlantirish;
+➤ Professor-o‘qituvchilar va mutaxassislar almashinuvi;
+➤ Pedagog kadrlar uchun amaliy dasturlar;
+➤ Seminar va ilmiy tadbirlarni birgalikda o‘tkazish;
+➤ Masofaviy ta’lim va onlayn platformalarni rivojlantirish kabi vazifalar ko‘zda tutilgan.
+`
+
+    },
+    
+    {
+        id: 4,
         title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
         image: "/img/blog/navoiy.jpg",
         date: "2026-01-01",
@@ -104,6 +117,50 @@ Tanlovda universitetning barcha talabalari yakka tartibda ishtirok etishlari mum
 ➤ 2- va 3-o‘rinlar: qimmatbaho sovg‘alar
 
 Murojaat uchun: 91-333-56-01`
+
+    },
+    {
+          id: 3,
+        title: " Universitetimiz hamkorlik doiralari kengayib bormoqda!",
+        image: "/img/blog/indoneziya.png",
+        date: "2026-02-05",
+        views: 308,
+        featured: true,
+        content: `📣 DIQQAT! TANLOV!
+
+Indoneziyadagi Universitas Muhammadiyah Yogyakarta bilan tuzilgan hamkorlik memorandumi doirasida Sharq Universitetining 6 nafar talabasi bir semestr davomida Indoneziyada o‘qish imkoniyatiga ega bo‘ladi.
+
+Nomzodlar tanlov asosida saralab olinadi.
+
+Asosiy talablar:
+• Ingliz tilida erkin muloqot qila olish (asosiy mezon);
+• Semestr yakunlari bo‘yicha a’lo yoki yuqori akademik ko‘rsatkichlar;
+• Universitet hayotida faol ishtirok.
+
+Tanlov shakli:
+• Ingliz tilidan test;
+• Ingliz tilida suhbat (intervyu)
+
+Tanlov sanasi va joyi:
+📅 02.02.2026 | ⏰ 14:00 |📍 302-xona
+
+Qo‘shimcha ma’lumot uchun universitetning xalqaro aloqalar bo‘limiga (https://t.me/beautyofdreams) murojaat qilishingiz mumkin.
+`
+
+    },
+    {
+        id: 5,
+        title: "SHARQ universitetida “Zakovat” intellektual o‘yini",
+        image: "/img/blog/zakovat.png",
+        date: "2026-01-23",
+        views: 401,
+        featured: true,
+        content: `🎓 SHARQ universitetida “Zakovat” intellektual o‘yini
+
+SHARQ universiteti professor-o‘qituvchilari va ishchi xodimlari o‘rtasida “Zakovat” intellektual o‘yini tashkil etildi.
+Tadbirda barcha bo‘lim va kafedralar jamoalari ishtirok etdi.
+
+🏆 Tadbir yakunida g‘olib jamoalar va faol ishtirokchilar esdalik sovg‘alari bilan taqdirlandi.`
 
     },
     {

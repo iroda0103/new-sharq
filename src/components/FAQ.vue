@@ -63,11 +63,11 @@ Yillik foiz stavkasi:
 To‘lovni o‘qishni tugatgach 6 oy ichida boshlaysiz 7 yilgacha bo‘lib to‘lash imkoni mavjud!`,
           link: 'https://t.me/sharquniversiteti/1282'
         },
-        {
-          question: "Universitetda vakansiyalar mavjudmi?",
-          answer: "https://t.me/HR_SharqUniversiteti_bot bot orqali hujjat topshirishlari mumkin",
-          link: 'https://t.me/sharquniversiteti/1268'
-        }
+        // {
+        //   question: "Universitetda vakansiyalar mavjudmi?",
+        //   answer: "https://t.me/HR_SharqUniversiteti_bot bot orqali hujjat topshirishlari mumkin",
+        //   link: 'https://t.me/sharquniversiteti/1268'
+        // }
       ]
     }
   },
