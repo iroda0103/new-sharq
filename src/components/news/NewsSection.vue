@@ -63,15 +63,15 @@ const newsData = ref([
           id: 3,
         title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
         image: "/img/blog/navoiy.jpg",
-        date: "2026-01-01",
+        date: "2026-02-02",
         views: 401,
         featured: true
     },
   {
           id: 4,
-        title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
+        title: "📣 DIQQAT! TANLOV!",
         image: "/img/blog/indoneziya.png",
-        date: "2026-01-01",
+        date: "2026-01-29",
         views: 401,
         featured: true
     },

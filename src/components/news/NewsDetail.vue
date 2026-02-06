@@ -98,7 +98,7 @@ SHARQ Universiteti hamda Sharof Rashidov nomidagi Samarqand davlat universiteti 
         id: 4,
         title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
         image: "/img/blog/navoiy.jpg",
-        date: "2026-01-01",
+        date: "2026-02-02",
         views: 401,
         featured: true,
         content: `📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.
@@ -123,7 +123,7 @@ Murojaat uchun: 91-333-56-01`
           id: 3,
         title: " Universitetimiz hamkorlik doiralari kengayib bormoqda!",
         image: "/img/blog/indoneziya.png",
-        date: "2026-02-05",
+        date: "2026-01-29",
         views: 308,
         featured: true,
         content: `📣 DIQQAT! TANLOV!
