@@ -41,6 +41,7 @@
   import Admission from '../views/Admission.vue'
   import Vacancy from '../views/Vacancy.vue'
   import Vacancy2 from '../views/Vacation.vue'
+  import JournalAbout from '../views/JournalAbout.vue'
 
   // Layout componentlar
   import DefaultLayout from '../components/layout/DefaultLayout.vue'
@@ -105,6 +106,7 @@
         { path: 'test-staff', name: 'TestStaff', component: TestStaff },
         { path: 'direction/:id', name: 'Direction', component: Direction },
         { path: 'vacancy', name: 'Vacancy', component: Vacancy2 },
+        { path: 'jurnal', name: 'JournalAbout', component: JournalAbout },
 
 
       ]

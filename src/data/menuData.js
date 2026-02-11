@@ -151,6 +151,14 @@ export const menuItems = [
       { title: "Klublar", to: "/club" },
     ],
   },
+  {
+    title: "Universitet jurnali",
+    to: "/jurnal",
+    sidebarKey: "jurnal",
+    children: [
+      { title: "Jurnal haqida", to: "/jurnal" },
+    ],
+  },
   // {
   //   title: "Vakansiyalar",
   //   to: "/vacancy"

@@ -33,17 +33,25 @@ import {
     faUtensils,
     faMicrochip,
     faBook,
+    faBookOpen,
     faCircleInfo,
     faTrophy,
     faGlobe,
     faJournalWhills,
-    faPeopleGroup
+    faPeopleGroup,
+    faUsers,
+    faUserTie,
+    faUser,
+    faCertificate,
+    faPhone,
+    faLocationDot,
+    faEnvelope
 
 } from '@fortawesome/free-solid-svg-icons'
 // import { faRocket } from '@fortawesome/free-regular-svg-icons'
 import { faInstagram, faTelegram, faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
-library.add(faJournalWhills, faPeopleGroup, faGlobe, faTrophy, faCircleInfo, faBook, faMicrochip, faShieldAlt, faRobot, faStar, faRocket, faEye, faInstagram, faTelegram, faFacebook, faYoutube, faFileAlt, faDownload, faMinus, faPlus, faCode, faChartLine, faBriefcase, faBullhorn, faCoins, faLandmark, faBrain, faLanguage, faBed, faBuilding, faWifi, faUtensils)
+library.add(faJournalWhills, faPeopleGroup, faGlobe, faTrophy, faCircleInfo, faBook, faBookOpen, faMicrochip, faShieldAlt, faRobot, faStar, faRocket, faEye, faInstagram, faTelegram, faFacebook, faYoutube, faFileAlt, faDownload, faMinus, faPlus, faCode, faChartLine, faBriefcase, faBullhorn, faCoins, faLandmark, faBrain, faLanguage, faBed, faBuilding, faWifi, faUtensils, faUsers, faUserTie, faUser, faCertificate, faPhone, faLocationDot, faEnvelope)
 import './css/index.css'
 
 createApp(App).use(createPinia())
