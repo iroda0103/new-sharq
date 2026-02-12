@@ -2,15 +2,21 @@
   <div class="lg:hidden bg-gradient-to-b from-[#00455e] to-[#1b6ae9]">
     <ul>
       <li v-for="(item, index) in menuItems" :key="index">
-        <a @click.prevent="$emit('toggle', index)" class="text-white">
+        <a v-if="item.href && !item.children" :href="item.href" target="_blank" rel="noopener noreferrer" class="text-white">
           {{ item.title }}
         </a>
+        <template v-else>
+          <a @click.prevent="$emit('toggle', index)" class="text-white">
+            {{ item.title }}
+          </a>
 
-        <ul v-if="item.children && activeIndex === index">
-          <li v-for="(child, i) in item.children" :key="i">
-            <router-link :to="child.to">{{ child.title }}</router-link>
-          </li>
-        </ul>
+          <ul v-if="item.children && activeIndex === index">
+            <li v-for="(child, i) in item.children" :key="i">
+              <a v-if="child.href" :href="child.href" target="_blank" rel="noopener noreferrer">{{ child.title }}</a>
+              <router-link v-else :to="child.to">{{ child.title }}</router-link>
+            </li>
+          </ul>
+        </template>
       </li>
     </ul>
   </div>

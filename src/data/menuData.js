@@ -153,12 +153,16 @@ export const menuItems = [
   },
   {
     title: "Universitet jurnali",
-    to: "/jurnal",
+    href: "https://journal.sharqedu.uz/",
     sidebarKey: "jurnal",
-    children: [
-      { title: "Jurnal haqida", to: "/jurnal" },
-    ],
-  },
+    children:[
+       { title: "Bosh sahifa", href: "https://journal.sharqedu.uz/" },
+      { title: "Jurnal haqida", href: "https://journal.sharqedu.uz/jurnal-haqida" },
+      { title: "Arxiv", href: "https://journal.sharqedu.uz/nashrlar" },
+      { title: "Maqolalar", href: "https://journal.sharqedu.uz/maqolalar" },
+      { title: "Tahririyat", href: "https://journal.sharqedu.uz/tahririyat" },
+    ]
+  }, 
   // {
   //   title: "Vakansiyalar",
   //   to: "/vacancy"

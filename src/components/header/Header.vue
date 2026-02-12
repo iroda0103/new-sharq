@@ -52,7 +52,10 @@
                     <ul class="nav__list">
                         <li v-for="(item, index) in menuItems" :key="index" class="nav__item"
                             :class="{ 'nav__item--has-dropdown': item.children, active: activeIndex === index }">
-                            <a class="nav__link" href="#" @click.prevent="toggleDropdown(index)">
+                            <a v-if="item.href && !item.children" class="nav__link" :href="item.href" target="_blank" rel="noopener noreferrer">
+                                <span>{{ item.title }}</span>
+                            </a>
+                            <a v-else class="nav__link" href="#" @click.prevent="toggleDropdown(index)">
                                 <span>{{ item.title }}</span>
 
                                 <span class="dropdown-icon"> <i v-if="item.children"
@@ -63,7 +66,10 @@
                             <ul v-if="item.children" class="dropdown">
                                 <li v-for="(child, cIndex) in item.children" :key="cIndex"
                                     :class="{ 'has-submenu': child.children }">
-                                    <router-link v-if="!child.children" :to="child.to">
+                                    <a v-if="child.href" :href="child.href" target="_blank" rel="noopener noreferrer">
+                                        {{ child.title }}
+                                    </a>
+                                    <router-link v-else-if="!child.children" :to="child.to">
                                         {{ child.title }}
                                     </router-link>
 

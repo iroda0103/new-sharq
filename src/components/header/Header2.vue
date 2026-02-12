@@ -132,17 +132,33 @@
                         @mouseenter="handleMouseEnter(index)"
                         @mouseleave="handleMouseLeave"
                     >
+                        <!-- External Link (no children) -->
+                        <a
+                            v-if="item.href && !item.children"
+                            :href="item.href"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center justify-between lg:justify-center lg:py-4 py-3.5 px-5 lg:px-1 text-white text-[17px] lg:text-base font-medium border-b lg:border-0 border-white/10 hover:bg-white/10 lg:hover:bg-transparent transition-all relative"
+                        >
+                            <span class="relative px-1 transition-transform group-hover:lg:-translate-y-0.5">
+                                {{ item.title }}
+                            </span>
+
+                            <!-- Underline effect (Desktop) -->
+                            <span class="hidden lg:block absolute bottom-3 left-1/2 w-0 h-0.5 bg-white -translate-x-1/2 transition-all duration-300 group-hover:w-[calc(100%-8px)] group-hover:delay-300"></span>
+                        </a>
                         <!-- Main Menu Link -->
-                        <a 
-                            href="#" 
+                        <a
+                            v-else
+                            href="#"
                             @click.prevent="toggleDropdown(index)"
                             class="flex items-center justify-between lg:justify-center lg:py-4 py-3.5 px-5 lg:px-1 text-white text-[17px] lg:text-base font-medium border-b lg:border-0 border-white/10 hover:bg-white/10 lg:hover:bg-transparent transition-all relative"
                         >
                             <span class="relative px-1 transition-transform group-hover:lg:-translate-y-0.5">
                                 {{ item.title }}
                             </span>
-                            <i 
-                                v-if="item.children" 
+                            <i
+                                v-if="item.children"
                                 class="fas fa-chevron-down text-xs ml-1.5 lg:ml-1 transition-transform duration-300"
                                 :class="activeIndex === index ? 'rotate-180' : ''"
                             ></i>
@@ -169,8 +185,17 @@
                                 :key="cIndex"
                                 class="relative border-b border-white/10 last:border-0 group/submenu"
                             >
-                                <router-link 
-                                    v-if="!child.children"
+                                <a
+                                    v-if="child.href"
+                                    :href="child.href"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="block py-3 px-5 lg:py-3 text-white/90 hover:text-white text-[15px] transition-all hover:bg-white/15 lg:pl-5"
+                                >
+                                    {{ child.title }}
+                                </a>
+                                <router-link
+                                    v-else-if="!child.children"
                                     :to="child.to"
                                     class="block py-3 px-5 lg:py-3 text-white/90 hover:text-white text-[15px] transition-all hover:bg-white/15 lg:pl-5"
                                 >
@@ -220,16 +245,26 @@
                         :key="index"
                         :class="{ 'active': activeIndex === index }"
                     >
-                        <a 
-                            href="#" 
+                        <a
+                            v-if="item.href && !item.children"
+                            :href="item.href"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="flex items-center justify-between py-3.5 px-5 text-white text-base font-medium border-b border-white/10 hover:bg-white/10 transition-all"
+                        >
+                            <span>{{ item.title }}</span>
+                        </a>
+                        <a
+                            v-else
+                            href="#"
                             @click.prevent="toggleDropdown(index)"
                             class="flex items-center justify-between py-3.5 px-5 text-white text-base font-medium border-b border-white/10 hover:bg-white/10 transition-all"
                         >
                             <span class="transition-transform" :class="activeIndex === index ? 'translate-x-2' : ''">
                                 {{ item.title }}
                             </span>
-                            <i 
-                                v-if="item.children" 
+                            <i
+                                v-if="item.children"
                                 class="fas fa-chevron-down text-xs transition-transform duration-300"
                                 :class="activeIndex === index ? 'rotate-180' : ''"
                             ></i>
@@ -246,8 +281,17 @@
                                 :key="cIndex"
                                 class="border-b border-white/10 last:border-0"
                             >
-                                <router-link 
-                                    v-if="!child.children"
+                                <a
+                                    v-if="child.href"
+                                    :href="child.href"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="block py-2.5 px-8 text-white/90 hover:text-white text-sm transition-all hover:bg-white/20"
+                                >
+                                    {{ child.title }}
+                                </a>
+                                <router-link
+                                    v-else-if="!child.children"
                                     :to="child.to"
                                     class="block py-2.5 px-8 text-white/90 hover:text-white text-sm transition-all hover:bg-white/20"
                                 >
