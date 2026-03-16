@@ -41,7 +41,10 @@
   import Admission from '../views/Admission.vue'
   import Vacancy from '../views/Vacancy.vue'
   import Vacancy2 from '../views/Vacation.vue'
+  import VacancyList from '../views/VacancyList.vue'
+  import VacancyDetail from '../views/VacancyDetail.vue'
   import JournalAbout from '../views/JournalAbout.vue'
+  import Accept from '../views/Accept.vue'
 
   // Layout componentlar
   import DefaultLayout from '../components/layout/DefaultLayout.vue'
@@ -105,7 +108,10 @@
 
         { path: 'test-staff', name: 'TestStaff', component: TestStaff },
         { path: 'direction/:id', name: 'Direction', component: Direction },
-        { path: 'vacancy', name: 'Vacancy', component: Vacancy2 },
+        { path: 'vacancy', name: 'VacancyList', component: VacancyList },
+        { path: 'accept', name: 'Accept', component: Accept },
+        { path: 'vacancy/apply', name: 'VacancyApply', component: Vacancy2 },
+        { path: 'vacancy/:slug', name: 'VacancyDetail', component: VacancyDetail },
         { path: 'jurnal', name: 'JournalAbout', component: JournalAbout },
 
 

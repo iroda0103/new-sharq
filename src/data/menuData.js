@@ -76,7 +76,7 @@ export const menuItems = [
     },
     {
       title: "Faoliyatlar",
-      // to: "/activity",
+      // to: "/activity", 
       sidebarKey: "faoliyatlar",
       showInSidebar: true,
       children: [
@@ -139,6 +139,15 @@ export const menuItems = [
       { title: "Yangiliklar", to: "/news" },
       // { title: "Postlar", to: "/posts" },
       { title: "Galeriya", to: "/gallery" },
+      // {
+      //   title: "Talabalar hayoti",
+      //   sidebarKey: "studentlife",
+      //   children: [
+      //     { title: "Yotoqxona", to: "/bed-room" },
+      //     // { title: "Tadbirlar", to: "/events" },
+      //     { title: "Klublar", to: "/club" },
+      //   ],
+      // },
     ],
   },
 
@@ -155,16 +164,21 @@ export const menuItems = [
     title: "Universitet jurnali",
     href: "https://journal.sharqedu.uz/",
     sidebarKey: "jurnal",
-    children:[
-       { title: "Bosh sahifa", href: "https://journal.sharqedu.uz/" },
+    children: [
+      { title: "Bosh sahifa", href: "https://journal.sharqedu.uz/" },
       { title: "Jurnal haqida", href: "https://journal.sharqedu.uz/jurnal-haqida" },
       { title: "Arxiv", href: "https://journal.sharqedu.uz/nashrlar" },
       { title: "Maqolalar", href: "https://journal.sharqedu.uz/maqolalar" },
       { title: "Tahririyat", href: "https://journal.sharqedu.uz/tahririyat" },
     ]
-  }, 
+  },
   // {
   //   title: "Vakansiyalar",
-  //   to: "/vacancy"
+  //   to: "/vacancy",
+  //   sidebarKey: "vakansiyalar",
+  //   children: [
+  //     { title: "Vakansiyalar ro'yxati", to: "/vacancy" },
+  //     { title: "Ariza topshirish", to: "/vacancy/apply" },
+  //   ]
   // },
 ];

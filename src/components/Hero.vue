@@ -6,16 +6,22 @@
         <div class="container hero__container">
             <div class="hero__content">
                 <h2 class="hero__title">
-                    <span class="highlight-white animate-slide">Zamonaviy</span>
-                    <span class="highlight-gradient animate-fade">Taʼlim</span>,
+                    <span class="highlight-white animate-slide">Zamonaviy Taʼlim</span>
+                    <!-- <span class="highlight-gradient animate-fade">Taʼlim</span>, -->
                     <span class="highlight-outline animate-slide">Imkoniyat</span> va
                     <span class="highlight-outline animate-fade">Qadriyatlar</span> uyg‘unligi
                 </h2>
+                <!-- <h2 class="hero__title hero__title2">ZamonaviyTaʼlim,
+                    Imkoniyat va
+                   Qadriyatlar uyg‘unligi
+                </h2> -->
                 <p class="hero__text">
                     Sizni zamonaviy kelajak sari yetaklovchi, innovatsion universitetda oʻqish imkoniyati
                     kutmoqda!
                 </p>
-                <a href="https://qabul.sharqedu.uz/"><button disabled class="blue-link font-bold">Ariza berish</button></a>
+
+                <router-link to="/accept"><button class="blue-link font-bold">Ro‘yhatdan o‘tish</button></router-link>
+                <!-- <router-link to="/accept"><button class="blue-link font-bold">Ariza berish</button></router-link> -->
             </div>
             <!-- <Stats :stats="statsData" :title="'Bizning Statistikalar'" :delay="200" /> -->
 
@@ -141,19 +147,19 @@ main {
     display: inline-block;
     padding: 9px 26px;
     background: linear-gradient(to right,
-            rgba(0, 69, 94, 0.87),
-            rgba(27, 106, 233, 0.93));
+            rgb(1, 50, 67),
+            rgb(21, 90, 202));
     border-radius: 85px;
     text-decoration: none;
     color: #fff;
     font-size: 20px;
-    opacity: 0.7;
+    // opacity: 0.7;
     transition: opacity 0.3s;
 }
 
 .blue-link:hover {
     // opacity: 0.8;
-    cursor: no-drop;
+    //cursor: no-drop;
 }
 
 .blue-link:active {
@@ -247,6 +253,9 @@ main {
 
     .highlight-gradient {
         background: linear-gradient(90deg, #00bafc, #0066ff);
+        //  background: linear-gradient(to right,
+        //     rgb(21, 90, 202),rgb(255, 255, 255),
+        //     );
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         font-weight: 800;
@@ -257,6 +266,19 @@ main {
         -webkit-text-stroke: 1.2px #fff;
         font-weight: 800;
     }
+}
+
+.hero__title2 {
+    // span {
+        font-size: clamp(26px, 5vw, 48px);
+
+    // -webkit-background-clip: text;
+        // -webkit-text-fill-color: transparent;
+        font-weight: 800;
+        // background: linear-gradient(to right,
+        //         rgb(21, 90, 202), rgb(255, 255, 255),
+        //     );
+    // }
 }
 
 /* ANIMATSIYALAR */

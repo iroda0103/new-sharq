@@ -190,6 +190,11 @@ const currentSection = computed(() => {
   if (['/bed-room', '/club'].some(p => path === p)) {
     return sidebarData['studentlife']
   }
+
+  // Vakansiyalar
+  if (path.startsWith('/vacancy')) {
+    return sidebarData['vakansiyalar']
+  }
   return null
 })
 
