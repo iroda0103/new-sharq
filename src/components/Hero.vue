@@ -20,7 +20,7 @@
                     kutmoqda!
                 </p>
 
-                <router-link to="/accept"><button class="blue-link font-bold">Ro‘yhatdan o‘tish</button></router-link>
+                <router-link to="/accept"><button class="blue-link font-bold">O‘z o‘rningizni band qiling</button></router-link>
                 <!-- <router-link to="/accept"><button class="blue-link font-bold">Ariza berish</button></router-link> -->
             </div>
             <!-- <Stats :stats="statsData" :title="'Bizning Statistikalar'" :delay="200" /> -->

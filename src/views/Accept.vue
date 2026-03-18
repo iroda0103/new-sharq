@@ -71,7 +71,7 @@
             <button type="submit" :disabled="loading"
                 class="w-full py-1 bg-gradient-to-r from-[#0045DE] to-[#1B6AE9] text-white font-semibold rounded-lg shadow-md hover:opacity-90 transition form-control submit-btn">
                 <span v-if="loading" class="spinner"></span>
-                <span>{{ loading ? 'Yuborilmoqda...' : 'Ro‘yxatdan o‘tish' }}</span>
+                <span>{{ loading ? 'Yuborilmoqda...' : 'Yuborish' }}</span>
             </button>
         </form>
     </div>
