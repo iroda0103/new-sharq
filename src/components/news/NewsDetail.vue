@@ -50,117 +50,68 @@ const route = useRoute()
 const newsData = ref([
     {
           id: 1,
-        title: "🌍 Sharq Universiteti talabalari uchun — UNESCO grant dasturi!",
-        image: "/img/blog/unesco.png",
-        date: "2026-02-05",
-        views: 308,
+        title: "🔥 Bugun viloyatimiz markazidagi Navro‘z sayli – obyektivlarimiz nigohida. ",
+        image: "/img/blog/NAVRUZ.png",
+        date: "2026-03-21",
+        views: 387,
         featured: true,
-        content: `🌍 Sharq Universiteti talabalari uchun — UNESCO grant dasturi!
+        content: `🔥 Bugun viloyatimiz markazidagi Navro‘z sayli – obyektivlarimiz nigohida. 
 
-UNESCO tashkiloti tomonidan a’zo davlatlar universitetlariga rasmiy taklif xati yuborildi. 
-Ushbu tashabbus doirasida Sharq Universiteti talabalari va yosh tadqiqotchilaridan turli ijtimoiy, innovatsion va ilmiy loyihalar bo‘yicha takliflar qabul qilinmoqda.
-
-💰 Agar loyiha UNESCO talablariga mos deb topilsa, uni amalga oshirish uchun 26 000 AQSH dollargacha grant ajratiladi!
-
-🎯 Bu — nafaqat grant, balki:
-➤ xalqaro tajriba;
-➤ UNESCO bilan hamkorlik;
-➤ global miqyosdagi loyiha yuritish imkoniyati;
-➤ CV uchun kuchli yutuq.
-
-❗️Befarq bo‘lmang! O‘z g‘oyangizni loyiha sifatida taqdim eting va xalqaro moliyalashtirish imkoniyatiga ega bo‘ling!
-
-📌 Batafsil ma’lumot uchun Xalqaro aloqalar bo‘limiga (https://t.me/beautyofdreams) murojaat qiling
+Universitetimiz jamoasi va talabalari esa faol ishtiroki bilan diqqat markazida.
 `
 
     },
     {
           id: 2,
-        title: " Universitetimiz hamkorlik doiralari kengayib bormoqda!",
-        image: "/img/blog/malaka.png",
-        date: "2026-02-05",
-        views: 308,
+        title: " 🌷 Navro‘z — yangilanish, umid va yangi boshlanishlar bayrami!",
+        image: "/img/blog/navruz-poster.png",
+        date: "2026-03-21",
+        views: 420,
         featured: true,
-        content: `
-SHARQ Universiteti hamda Sharof Rashidov nomidagi Samarqand davlat universiteti huzuridagi pedagog kadrlarni qayta tayyorlash va ularning malakasini oshirish mintaqaviy markazi o‘rtasida hamkorlik memorandumi imzolandi.
+        content: `🌷 Navro‘z — yangilanish, umid va yangi boshlanishlar bayrami!
 
-🤝 Mazkur hamkorlik doirasida:
-➤ Ta’lim va ilmiy hamkorlikni rivojlantirish;
-➤ Professor-o‘qituvchilar va mutaxassislar almashinuvi;
-➤ Pedagog kadrlar uchun amaliy dasturlar;
-➤ Seminar va ilmiy tadbirlarni birgalikda o‘tkazish;
-➤ Masofaviy ta’lim va onlayn platformalarni rivojlantirish kabi vazifalar ko‘zda tutilgan.
+SHARQ Universiteti jamoasi nomidan barchangizni Navroʻz ayyomi bilan samimiy tabriklaymiz!
+Ushbu muborak kun xonadonlaringizga baraka, qalblaringizga quvonch va hayotingizga yangi imkoniyatlar olib kelsin.
+
+✨ Navro‘z muborak bo‘lsin!
+
 `
 
     },
     
     {
         id: 4,
-        title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
-        image: "/img/blog/navoiy.jpg",
-        date: "2026-02-02",
-        views: 401,
+        title: "🎉  SHARQ Universitetida Navro‘z tantanasi!",
+        image: "/img/blog/navruz-sayl.png",
+        date: "2026-03-21",
+        views: 430,
         featured: true,
-        content: `📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.
-
-Tanlovda universitetning barcha talabalari yakka tartibda ishtirok etishlari mumkin.
-
-🔹 Tanlov shartlari:
-■ Alisher Navoiy shaxsiyati va ijodiga ta’rif berish.
-■ Alisher Navoiyning g‘azallaridan 5 ta, ruboiylaridan 5 ta yoddan aytib berish.
-■ Alisher Navoiyning “Xamsa” (Kitob nashriyoti: “Yoshlar matbuoti”, 2023-yil) asari yuzasidan qisqacha sharh va savol-javob.
-
-📅 O‘tkazilish sanasi: 05.02.2026-yil
-
-🏆 G‘oliblarni taqdirlash:
-➤ 1-o‘rin: 1 000 000 so‘m pul mukofoti
-➤ 2- va 3-o‘rinlar: qimmatbaho sovg‘alar
-
-Murojaat uchun: 91-333-56-01`
+        content: `🎉  SHARQ Universitetida Navro‘z tantanasi!`
 
     },
     {
           id: 3,
         title: " Universitetimiz hamkorlik doiralari kengayib bormoqda!",
-        image: "/img/blog/indoneziya.png",
-        date: "2026-01-29",
-        views: 308,
+        image: "/img/blog/p-club.png",
+        date: "2026-03-18",
+        views: 534,
         featured: true,
-        content: `📣 DIQQAT! TANLOV!
-
-Indoneziyadagi Universitas Muhammadiyah Yogyakarta bilan tuzilgan hamkorlik memorandumi doirasida Sharq Universitetining 6 nafar talabasi bir semestr davomida Indoneziyada o‘qish imkoniyatiga ega bo‘ladi.
-
-Nomzodlar tanlov asosida saralab olinadi.
-
-Asosiy talablar:
-• Ingliz tilida erkin muloqot qila olish (asosiy mezon);
-• Semestr yakunlari bo‘yicha a’lo yoki yuqori akademik ko‘rsatkichlar;
-• Universitet hayotida faol ishtirok.
-
-Tanlov shakli:
-• Ingliz tilidan test;
-• Ingliz tilida suhbat (intervyu)
-
-Tanlov sanasi va joyi:
-📅 02.02.2026 | ⏰ 14:00 |📍 302-xona
-
-Qo‘shimcha ma’lumot uchun universitetning xalqaro aloqalar bo‘limiga (https://t.me/beautyofdreams) murojaat qilishingiz mumkin.
+        content: `SHARQ Universitetining Psixologiya klubidan lavhalar 
 `
 
     },
     {
         id: 5,
-        title: "SHARQ universitetida “Zakovat” intellektual o‘yini",
-        image: "/img/blog/zakovat.png",
-        date: "2026-01-23",
-        views: 401,
+        title: "🎓 Universitetimizning hamkorlik doiralari kengaymoqda!",
+        image: "/img/blog/m-shartnoma.png",
+        date: "2026-03-13",
+        views: 665,
         featured: true,
-        content: `🎓 SHARQ universitetida “Zakovat” intellektual o‘yini
+        content: `🎓 Universitetimizning hamkorlik doiralari kengaymoqda!
 
-SHARQ universiteti professor-o‘qituvchilari va ishchi xodimlari o‘rtasida “Zakovat” intellektual o‘yini tashkil etildi.
-Tadbirda barcha bo‘lim va kafedralar jamoalari ishtirok etdi.
+SHARQ Universiteti va “Ustozlar” NNT o‘rtasida hamkorlik memorandumi imzolandi. 
 
-🏆 Tadbir yakunida g‘olib jamoalar va faol ishtirokchilar esdalik sovg‘alari bilan taqdirlandi.`
+Uzoq muddatli hamkorlik doirasida yoshlar startaplarini qo‘llab-quvvatlash, innovatsion ishlanmalarni rivojlantirish va talabalarni ilmiy-tadqiqot hamda jamoat faoliyatlariga jalb qilish rejalashtirilgan.`
 
     },
     {

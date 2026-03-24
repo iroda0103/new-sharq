@@ -44,43 +44,43 @@ const newsData = ref([
     
     {
           id: 1,
-        title: "🌍 Sharq Universiteti talabalari uchun — UNESCO grant dasturi!",
-        image: "/img/blog/unesco.png",
-        date: "2026-02-01",
-        views: 308,
+        title: "🔥 Bugun viloyatimiz markazidagi Navro‘z sayli – obyektivlarimiz nigohida. ",
+        image: "/img/blog/NAVRUZ.png",
+        date: "2026-03-21",
+        views: 387,
         featured: true
     },
        
     {
           id: 2,
-        title: " Universitetimiz hamkorlik doiralari kengayib bormoqda!",
-        image: "/img/blog/malaka.png",
-        date: "2026-02-05",
-        views: 308,
+        title: "🌷 Navro‘z — yangilanish, umid va yangi boshlanishlar bayrami!",
+        image: "/img/blog/navruz-poster.png",
+        date: "2026-03-21",
+        views: 420,
         featured: true
     },
        {
           id: 3,
-        title: "📣 Sharq Universiteti talabalari uchun “Navoiyga ehtirom” tanlovi e’lon qilinadi.",
-        image: "/img/blog/navoiy.jpg",
-        date: "2026-02-02",
-        views: 401,
+        title: "🎉  SHARQ Universitetida Navro‘z tantanasi!",
+        image: "/img/blog/navruz-sayl.png",
+        date: "2026-03-21",
+        views: 430,
         featured: true
     },
   {
           id: 4,
-        title: "📣 DIQQAT! TANLOV!",
-        image: "/img/blog/indoneziya.png",
-        date: "2026-01-29",
-        views: 401,
+        title: "SHARQ Universitetining Psixologiya klubidan lavhalar ",
+        image: "/img/blog/p-club.png",
+        date: "2026-03-18",
+        views: 534,
         featured: true
     },
       {
           id: 5,
-        title: "SHARQ universitetida “Zakovat” intellektual o‘yini",
-        image: "/img/blog/zakovat.png",
-        date: "2026-01-23",
-        views: 401,
+        title: "🎓 Universitetimizning hamkorlik doiralari kengaymoqda!",
+        image: "/img/blog/m-shartnoma.png",
+        date: "2026-03-13",
+        views: 665,
         featured: true
     },
     {
